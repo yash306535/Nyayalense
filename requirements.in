@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-multipart
+google-genai
+pdfplumber
+python-docx
+rapidfuzz
+cachetools
+slowapi
+jinja2
+markdown-it-py
+weasyprint
+anyio

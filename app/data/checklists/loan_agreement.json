@@ -1,0 +1,44 @@
+{
+  "doc_type": "loan_agreement",
+  "title": "Taking a loan",
+  "items": [
+    {"id": "principal", "title": "The amount borrowed is stated", "look_for": "The sanctioned amount, in digits and words", "why_it_matters": "The amount disbursed is sometimes less than the amount sanctioned", "question_to_ask": "How much will actually reach my account?", "roles": []},
+    {"id": "interest_rate", "title": "The interest rate and its type are stated", "look_for": "A rate, and whether it is fixed or floating", "why_it_matters": "A floating rate can raise your instalment without warning", "question_to_ask": "Is this rate fixed or floating, and what is it linked to?", "roles": []},
+    {"id": "total_repayable", "title": "The total amount repayable is stated", "look_for": "The sum of all instalments over the full term", "why_it_matters": "The total is the number that tells you what the loan costs", "question_to_ask": "What is the total I will have repaid by the end?", "roles": ["borrower"]},
+    {"id": "processing_fees", "title": "All fees and charges are listed", "look_for": "Processing fee, documentation charges, insurance and any deduction at disbursal", "why_it_matters": "Fees deducted upfront reduce what you receive", "question_to_ask": "What is deducted before the money reaches me?", "roles": ["borrower"]},
+    {"id": "emi_schedule", "title": "The repayment schedule is set out", "look_for": "Instalment amount, due date and number of instalments", "why_it_matters": "It is what you have to plan your month around", "question_to_ask": "What is the instalment and which date is it due?", "roles": []},
+    {"id": "prepayment", "title": "Prepayment terms are stated", "look_for": "Whether you may repay early, and any charge for doing so", "why_it_matters": "A prepayment penalty can lock you into a costly loan", "question_to_ask": "Can I repay early, and what would that cost?", "roles": ["borrower"]},
+    {"id": "late_payment", "title": "Late payment consequences are stated", "look_for": "Penal interest, bounce charges and how they are calculated", "why_it_matters": "Penalties compound quickly on a missed instalment", "question_to_ask": "What happens if an instalment is a few days late?", "roles": []},
+    {"id": "security", "title": "Any security or guarantee is described", "look_for": "Assets pledged, or a guarantor's obligations", "why_it_matters": "A guarantor can be pursued for the whole amount", "question_to_ask": "What is pledged, and what would a guarantor be liable for?", "roles": []},
+    {"id": "default_events", "title": "What counts as default is defined", "look_for": "Events that let the lender demand the whole balance at once", "why_it_matters": "A broad default clause can be triggered by a minor lapse", "question_to_ask": "What exactly counts as a default?", "roles": []},
+    {"id": "recovery_conduct", "title": "Recovery practice is addressed", "look_for": "How and when the lender may contact you about arrears", "why_it_matters": "It sets a written standard you can point to", "question_to_ask": "How will you contact me if a payment is missed?", "roles": ["borrower"]},
+    {"id": "insurance_bundled", "title": "Any bundled insurance is optional and priced", "look_for": "An insurance premium added to the loan, and whether it is optional", "why_it_matters": "Bundled cover is often added to the borrowed amount and charged interest", "question_to_ask": "Is this insurance optional, and what does it add to my cost?", "roles": ["borrower"]},
+    {"id": "statement_access", "title": "You can get a statement of account", "look_for": "A right to a statement or a foreclosure letter on request", "why_it_matters": "You need it to check the balance and to close the loan", "question_to_ask": "How do I get a statement of account?", "roles": ["borrower"]},
+    {"id": "grievance_route", "title": "A grievance route is given", "look_for": "A grievance officer, an address or an escalation path", "why_it_matters": "It is the first step if something goes wrong", "question_to_ask": "Who do I contact if I have a complaint?", "roles": []}
+  ],
+  "suggested_questions": [
+    "What is the total amount I will repay?",
+    "Can I repay the loan early, and what does that cost?",
+    "What happens if I miss an instalment?",
+    "What fees are deducted before the money reaches me?",
+    "Is the interest rate fixed or floating?"
+  ],
+  "scenarios": [
+    {"id": "miss_emi", "title": "I miss one instalment"},
+    {"id": "repay_early", "title": "I repay the whole loan early"},
+    {"id": "rate_rises", "title": "The interest rate rises"},
+    {"id": "lose_income", "title": "I lose my income for three months"}
+  ],
+  "facts_to_have_ready": [
+    "The amount sanctioned and the amount actually received",
+    "The date of disbursal and the instalment due date",
+    "Instalments paid so far, with dates",
+    "Any charges deducted, with the statement showing them"
+  ],
+  "documents_to_bring": [
+    "The loan agreement and the sanction letter",
+    "The repayment schedule",
+    "Bank statements showing disbursal and instalments",
+    "Any notice you have received about arrears"
+  ]
+}

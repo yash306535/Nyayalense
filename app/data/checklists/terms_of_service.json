@@ -1,0 +1,43 @@
+{
+  "doc_type": "terms_of_service",
+  "title": "Signing up to an online service",
+  "items": [
+    {"id": "what_you_agree", "title": "What you are agreeing to is clear", "look_for": "A description of the service and what counts as acceptance", "why_it_matters": "Continuing to use a service is often treated as acceptance", "question_to_ask": "What exactly am I agreeing to by signing up?", "roles": []},
+    {"id": "charges", "title": "Charges and renewals are stated", "look_for": "Prices, billing cycle and whether it renews automatically", "why_it_matters": "Automatic renewal is the most common unexpected charge", "question_to_ask": "Does this renew automatically, and how do I stop it?", "roles": ["customer"]},
+    {"id": "cancellation", "title": "How to cancel is explained", "look_for": "Steps to cancel and any notice needed", "why_it_matters": "A hard cancellation route keeps you paying", "question_to_ask": "How do I cancel, and when does it take effect?", "roles": ["customer"]},
+    {"id": "refunds", "title": "Refund terms are stated", "look_for": "When a refund is given and how long it takes", "why_it_matters": "Without a stated policy, a refund is at their discretion", "question_to_ask": "In what situations do you give a refund?", "roles": ["customer"]},
+    {"id": "data_collected", "title": "What data is collected is described", "look_for": "Categories of personal data and why they are collected", "why_it_matters": "It is what you are paying with when the service is free", "question_to_ask": "What personal data do you collect about me?", "roles": []},
+    {"id": "data_sharing", "title": "Who your data is shared with is stated", "look_for": "Third parties, advertisers or group companies named", "why_it_matters": "Sharing is usually where the real exposure is", "question_to_ask": "Who else receives my data?", "roles": ["customer"]},
+    {"id": "data_deletion", "title": "You can get your data deleted", "look_for": "A way to delete your account and your data", "why_it_matters": "Leaving a service should not mean leaving your data behind", "question_to_ask": "How do I delete my account and my data?", "roles": ["customer"]},
+    {"id": "unilateral_changes", "title": "How the terms can change is stated", "look_for": "Whether they may change terms and whether you are told", "why_it_matters": "Silent changes can alter what you agreed to", "question_to_ask": "Will you tell me before the terms change?", "roles": []},
+    {"id": "account_suspension", "title": "Grounds for suspension are listed", "look_for": "Reasons your account may be suspended or closed, and any appeal", "why_it_matters": "Losing access can mean losing content or money held in the account", "question_to_ask": "On what grounds can my account be closed, and can I appeal?", "roles": ["customer"]},
+    {"id": "liability_limits", "title": "The limit on their liability is stated", "look_for": "A cap on what they would pay if something goes wrong", "why_it_matters": "It tells you what recovery is realistically available", "question_to_ask": "What is your liability if the service fails?", "roles": []},
+    {"id": "dispute_forum", "title": "Where disputes are heard is stated", "look_for": "A named city, court or arbitration process", "why_it_matters": "A distant forum makes a small dispute impractical to pursue", "question_to_ask": "Where would a dispute be heard?", "roles": []},
+    {"id": "grievance_officer", "title": "A grievance contact is given", "look_for": "A named officer, an email address or a form", "why_it_matters": "It is the first step before any external complaint", "question_to_ask": "Who is your grievance officer?", "roles": []}
+  ],
+  "suggested_questions": [
+    "Does this subscription renew automatically?",
+    "How do I delete my account and my data?",
+    "Who is my data shared with?",
+    "Can they change these terms without telling me?",
+    "Where would a dispute be heard?"
+  ],
+  "scenarios": [
+    {"id": "account_closed", "title": "My account is suspended without warning"},
+    {"id": "charged_after_cancel", "title": "I am charged after cancelling"},
+    {"id": "terms_change", "title": "The terms change while I am using the service"},
+    {"id": "data_breach", "title": "My data is exposed in a breach"}
+  ],
+  "facts_to_have_ready": [
+    "The date you signed up and the plan you are on",
+    "What you were charged and when",
+    "Screenshots of the terms as they were when you signed up",
+    "Any support tickets or emails you sent"
+  ],
+  "documents_to_bring": [
+    "The terms and the privacy policy",
+    "Payment receipts or card statements",
+    "Screenshots of the cancellation attempt",
+    "Any reply you received from support"
+  ]
+}

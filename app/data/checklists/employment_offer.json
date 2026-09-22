@@ -1,0 +1,44 @@
+{
+  "doc_type": "employment_offer",
+  "title": "Accepting a job offer",
+  "items": [
+    {"id": "total_pay", "title": "The pay is broken down", "look_for": "Fixed pay, variable pay and what is guaranteed each month", "why_it_matters": "A headline figure can include amounts you may never receive", "question_to_ask": "How much of this reaches my bank account each month?", "roles": []},
+    {"id": "variable_pay_terms", "title": "Conditions on the variable part are stated", "look_for": "What the bonus depends on and when it is paid", "why_it_matters": "A bonus with undefined conditions is not a promise", "question_to_ask": "What exactly has to happen for the variable pay to be paid?", "roles": ["employee"]},
+    {"id": "joining_date", "title": "The joining date and place are fixed", "look_for": "A start date and a work location or a remote arrangement", "why_it_matters": "An unstated location can become a transfer you did not plan for", "question_to_ask": "Where will I be based, and can that change?", "roles": []},
+    {"id": "probation", "title": "The probation terms are stated", "look_for": "Length of probation and the notice period during it", "why_it_matters": "Notice during probation is often much shorter", "question_to_ask": "How long is probation and what notice applies during it?", "roles": []},
+    {"id": "notice_period", "title": "The notice period is stated for both sides", "look_for": "How much notice you must give and how much you would receive", "why_it_matters": "A long notice period can block your next job", "question_to_ask": "Is the notice period the same for both sides, and can it be bought out?", "roles": []},
+    {"id": "service_bond", "title": "Any service bond and its cost are clear", "look_for": "A minimum period you must stay and the amount payable if you leave", "why_it_matters": "A bond can make leaving expensive for years", "question_to_ask": "What exactly would I owe if I left after one year?", "roles": ["employee"]},
+    {"id": "clawback", "title": "Any joining bonus clawback is stated", "look_for": "A requirement to repay a joining bonus or relocation cost", "why_it_matters": "A clawback can arrive as an unexpected bill after you resign", "question_to_ask": "Would I have to repay the joining bonus, and on what timetable?", "roles": ["employee"]},
+    {"id": "non_compete", "title": "Any restriction after leaving is narrow", "look_for": "Limits on where you may work next, for how long and in what area", "why_it_matters": "A broad restriction can limit your next role", "question_to_ask": "Which companies or roles would this stop me from taking?", "roles": ["employee"]},
+    {"id": "working_hours", "title": "Working hours and leave are stated", "look_for": "Expected hours, weekly off and annual leave", "why_it_matters": "Leave and hours are what you actually live with day to day", "question_to_ask": "What are the working hours and how much leave do I get?", "roles": []},
+    {"id": "relieving_documents", "title": "Exit documents are promised", "look_for": "A commitment to issue a relieving letter and experience letter", "why_it_matters": "The next employer usually asks for these", "question_to_ask": "When would I receive my relieving and experience letters?", "roles": ["employee"]},
+    {"id": "settlement_timeline", "title": "Final settlement has a deadline", "look_for": "A number of days within which dues are settled after leaving", "why_it_matters": "Without a date, a pending settlement can drag on", "question_to_ask": "Within how many days of my last day will dues be settled?", "roles": ["employee"]},
+    {"id": "ip_ownership", "title": "What the company owns is defined", "look_for": "Wording about work you create, and whether it extends outside work hours", "why_it_matters": "Very broad wording can cover personal projects", "question_to_ask": "Does this cover work I do on my own time?", "roles": ["employee"]},
+    {"id": "termination_grounds", "title": "The grounds for termination are listed", "look_for": "Reasons the company may end employment and whether notice applies", "why_it_matters": "It tells you what protection you actually have", "question_to_ask": "On what grounds can employment be ended, and with what notice?", "roles": []}
+  ],
+  "suggested_questions": [
+    "What is my notice period?",
+    "Is there a service bond, and what would it cost me to leave early?",
+    "What happens to my joining bonus if I resign within a year?",
+    "What restrictions apply after I leave?",
+    "When would I receive my relieving letter?"
+  ],
+  "scenarios": [
+    {"id": "resign_month_six", "title": "I resign in month 6"},
+    {"id": "fail_probation", "title": "I am let go during probation"},
+    {"id": "join_competitor", "title": "I join a competitor after leaving"},
+    {"id": "offer_withdrawn", "title": "The offer is withdrawn before I join"}
+  ],
+  "facts_to_have_ready": [
+    "The date you received the offer and the date you are expected to join",
+    "Your current notice period, if you are employed",
+    "Any amount already paid to you, such as a joining bonus",
+    "Emails or messages about the terms you were promised"
+  ],
+  "documents_to_bring": [
+    "The offer letter and any annexures",
+    "The appointment letter, if it is different",
+    "Any bond or undertaking you were asked to sign",
+    "Payslips, if the dispute is about pay"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "doc_type": "nda",
+  "title": "Signing a confidentiality agreement",
+  "items": [
+    {"id": "definition_confidential", "title": "What counts as confidential is defined", "look_for": "A definition of confidential information, and whether it must be marked", "why_it_matters": "An unlimited definition can cover things you already knew", "question_to_ask": "Does this cover information I already had?", "roles": []},
+    {"id": "carve_outs", "title": "The usual exceptions are present", "look_for": "Exceptions for public information, information you already had, and independent development", "why_it_matters": "Without them you can be held to secrecy over public facts", "question_to_ask": "Can we add the standard exceptions for public and pre-existing information?", "roles": []},
+    {"id": "mutual_or_one_way", "title": "Whether obligations run both ways is clear", "look_for": "Whether both sides or only one side is bound", "why_it_matters": "A one-way agreement protects only the other side", "question_to_ask": "Should this be mutual?", "roles": []},
+    {"id": "duration", "title": "The confidentiality period is limited", "look_for": "How long the obligation lasts after the agreement ends", "why_it_matters": "A perpetual obligation is hard to comply with and hard to escape", "question_to_ask": "How long does this last after we stop working together?", "roles": []},
+    {"id": "permitted_use", "title": "The permitted purpose is defined", "look_for": "What you may use the information for", "why_it_matters": "It sets the boundary between use and misuse", "question_to_ask": "What may I use this information for?", "roles": []},
+    {"id": "permitted_disclosure", "title": "Disclosure to your own team is allowed", "look_for": "Permission to share with employees or advisers who need to know", "why_it_matters": "Without it, ordinary work becomes a breach", "question_to_ask": "May I share this with my team and my accountant?", "roles": []},
+    {"id": "legal_compulsion", "title": "Disclosure required by law is carved out", "look_for": "Permission to disclose when compelled by law or a court", "why_it_matters": "You cannot contract out of a legal obligation", "question_to_ask": "What do I do if I am legally required to disclose?", "roles": []},
+    {"id": "return_destroy", "title": "What happens at the end is stated", "look_for": "A duty to return or destroy material, and any retention for records", "why_it_matters": "Backups make total destruction impractical", "question_to_ask": "Can I keep one copy for my records and for backups?", "roles": []},
+    {"id": "penalty_clause", "title": "Any pre-set penalty is reasonable", "look_for": "A fixed sum payable on breach", "why_it_matters": "A large fixed penalty raises the stakes of an accidental slip", "question_to_ask": "Is this penalty figure negotiable?", "roles": []},
+    {"id": "no_licence", "title": "No rights are transferred by accident", "look_for": "Wording that no intellectual property or licence passes", "why_it_matters": "Sharing information should not transfer ownership", "question_to_ask": "Does this give either of us rights over the other's work?", "roles": []},
+    {"id": "dispute_forum", "title": "Where disputes are heard is stated", "look_for": "A named city, court or arbitration process", "why_it_matters": "A distant forum makes enforcement costly for both sides", "question_to_ask": "Where would a dispute be heard?", "roles": []}
+  ],
+  "suggested_questions": [
+    "How long does the confidentiality obligation last?",
+    "Does this cover information I already had?",
+    "Can I share this with my own team?",
+    "Is this agreement mutual?",
+    "What do I have to do with the material at the end?"
+  ],
+  "scenarios": [
+    {"id": "accidental_share", "title": "I share information with a colleague by mistake"},
+    {"id": "compelled_disclosure", "title": "A court orders me to disclose"},
+    {"id": "deal_falls_through", "title": "The deal does not happen"},
+    {"id": "independent_development", "title": "My team builds something similar independently"}
+  ],
+  "facts_to_have_ready": [
+    "When you signed and what information was shared",
+    "Who on your side has seen the information",
+    "Whether the same information was available publicly",
+    "What you have been asked to stop doing"
+  ],
+  "documents_to_bring": [
+    "The signed agreement",
+    "Emails showing what was shared and when",
+    "Any notice alleging a breach"
+  ]
+}

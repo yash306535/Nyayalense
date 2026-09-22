@@ -1,0 +1,84 @@
+{
+  "entries": [
+    {"term": "indemnify", "aliases": ["indemnity", "indemnification"], "meaning": {
+      "en": "To agree to cover someone else's losses or legal costs if a particular problem arises.",
+      "hi": "यह सहमति देना कि किसी विशेष समस्या पर दूसरे पक्ष के नुकसान या कानूनी खर्च आप वहन करेंगे।",
+      "mr": "एखादी अडचण आल्यास दुसऱ्या पक्षाचे नुकसान किंवा कायदेशीर खर्च तुम्ही भरून द्याल असे मान्य करणे."}},
+    {"term": "lock-in period", "aliases": ["lock in period", "lockin"], "meaning": {
+      "en": "A minimum period during which a party cannot end the agreement, or can only end it at a cost.",
+      "hi": "वह न्यूनतम अवधि जिसमें कोई पक्ष अनुबंध समाप्त नहीं कर सकता, या केवल शुल्क देकर कर सकता है।",
+      "mr": "किमान कालावधी ज्यात पक्ष करार संपवू शकत नाही, किंवा केवळ शुल्क देऊन संपवू शकतो."}},
+    {"term": "force majeure", "aliases": [], "meaning": {
+      "en": "A clause excusing a party from performing when something outside their control makes it impossible.",
+      "hi": "वह उपबंध जो नियंत्रण से बाहर की परिस्थिति में दायित्व निभाने से छूट देता है।",
+      "mr": "नियंत्रणाबाहेरील परिस्थितीत जबाबदारी पार पाडण्यापासून सूट देणारे कलम."}},
+    {"term": "liquidated damages", "aliases": [], "meaning": {
+      "en": "An amount fixed in advance as the payment due if a party breaks the agreement.",
+      "hi": "पहले से तय वह राशि जो अनुबंध भंग होने पर देय होती है।",
+      "mr": "करार मोडल्यास द्यावी लागणारी आधीच ठरवलेली रक्कम."}},
+    {"term": "arbitration", "aliases": ["arbitral"], "meaning": {
+      "en": "Settling a dispute before a private decision-maker instead of a court.",
+      "hi": "न्यायालय के बजाय निजी निर्णायक के समक्ष विवाद का निपटारा।",
+      "mr": "न्यायालयाऐवजी खासगी निर्णायकासमोर वाद मिटवणे."}},
+    {"term": "leave and licence", "aliases": ["leave and license"], "meaning": {
+      "en": "A common form of Indian rental arrangement giving permission to occupy premises without transferring an interest in them.",
+      "hi": "भारत में प्रचलित किराया व्यवस्था, जिसमें परिसर में रहने की अनुमति दी जाती है पर कोई हित हस्तांतरित नहीं होता।",
+      "mr": "भारतात प्रचलित भाडे व्यवस्था, ज्यात जागेत राहण्याची परवानगी दिली जाते पण हक्क हस्तांतरित होत नाही."}},
+    {"term": "licensee", "aliases": [], "meaning": {
+      "en": "The person given permission to occupy or use something under a licence.",
+      "hi": "वह व्यक्ति जिसे अनुज्ञप्ति के अंतर्गत कुछ उपयोग करने की अनुमति दी गई है।",
+      "mr": "परवान्याअंतर्गत काही वापरण्याची परवानगी दिलेली व्यक्ती."}},
+    {"term": "licensor", "aliases": [], "meaning": {
+      "en": "The person who gives permission to occupy or use something under a licence.",
+      "hi": "वह व्यक्ति जो अनुज्ञप्ति के अंतर्गत उपयोग की अनुमति देता है।",
+      "mr": "परवान्याअंतर्गत वापरण्याची परवानगी देणारी व्यक्ती."}},
+    {"term": "service bond", "aliases": ["employment bond"], "meaning": {
+      "en": "An undertaking to stay with an employer for a minimum period, or to pay a stated amount instead.",
+      "hi": "नियोक्ता के साथ न्यूनतम अवधि तक बने रहने, अन्यथा निर्धारित राशि देने का वचन।",
+      "mr": "नियोक्त्यासोबत किमान कालावधी राहण्याचे, अन्यथा ठरलेली रक्कम देण्याचे वचन."}},
+    {"term": "non-compete", "aliases": ["non compete", "restrictive covenant"], "meaning": {
+      "en": "A restriction on working for a competitor or starting a competing business after leaving.",
+      "hi": "नौकरी छोड़ने के बाद प्रतिस्पर्धी के यहाँ काम करने या प्रतिस्पर्धी व्यवसाय शुरू करने पर प्रतिबंध।",
+      "mr": "नोकरी सोडल्यानंतर स्पर्धकाकडे काम करण्यावर किंवा स्पर्धक व्यवसाय सुरू करण्यावर निर्बंध."}},
+    {"term": "clawback", "aliases": [], "meaning": {
+      "en": "A right to take back money already paid, such as a joining bonus, if a condition is not met.",
+      "hi": "पहले दी गई राशि, जैसे जॉइनिंग बोनस, शर्त पूरी न होने पर वापस लेने का अधिकार।",
+      "mr": "अट पूर्ण न झाल्यास आधी दिलेली रक्कम, उदा. जॉइनिंग बोनस, परत घेण्याचा अधिकार."}},
+    {"term": "sum insured", "aliases": [], "meaning": {
+      "en": "The maximum an insurance policy will pay during the policy period.",
+      "hi": "पॉलिसी अवधि में बीमा द्वारा दी जाने वाली अधिकतम राशि।",
+      "mr": "पॉलिसी कालावधीत विम्याकडून मिळणारी कमाल रक्कम."}},
+    {"term": "co-payment", "aliases": ["copay", "co pay"], "meaning": {
+      "en": "A share of each claim that the policyholder pays themselves.",
+      "hi": "प्रत्येक दावे का वह हिस्सा जो पॉलिसीधारक स्वयं वहन करता है।",
+      "mr": "प्रत्येक दाव्याचा तो भाग जो पॉलिसीधारक स्वतः भरतो."}},
+    {"term": "waiting period", "aliases": [], "meaning": {
+      "en": "A period after a policy starts during which certain claims are not covered.",
+      "hi": "पॉलिसी शुरू होने के बाद की वह अवधि जिसमें कुछ दावे कवर नहीं होते।",
+      "mr": "पॉलिसी सुरू झाल्यानंतरचा तो कालावधी ज्यात काही दावे कव्हर होत नाहीत."}},
+    {"term": "prepayment", "aliases": ["foreclosure", "pre-payment"], "meaning": {
+      "en": "Repaying a loan, in part or in full, before the scheduled date.",
+      "hi": "निर्धारित तिथि से पहले ऋण का आंशिक या पूर्ण भुगतान।",
+      "mr": "ठरलेल्या तारखेपूर्वी कर्जाची अंशतः किंवा पूर्ण परतफेड."}},
+    {"term": "penal interest", "aliases": ["default interest"], "meaning": {
+      "en": "Extra interest charged on an amount that was paid late.",
+      "hi": "विलंब से चुकाई गई राशि पर लगाया गया अतिरिक्त ब्याज।",
+      "mr": "उशिरा भरलेल्या रकमेवर आकारले जाणारे अतिरिक्त व्याज."}},
+    {"term": "stamp duty", "aliases": [], "meaning": {
+      "en": "A state tax payable on certain documents, which affects how easily they can be relied on.",
+      "hi": "कुछ दस्तावेज़ों पर देय राज्य कर, जिससे उन पर निर्भरता प्रभावित होती है।",
+      "mr": "काही दस्तऐवजांवर देय राज्य कर, ज्याचा त्यांच्यावर अवलंबून राहण्यावर परिणाम होतो."}},
+    {"term": "notice period", "aliases": [], "meaning": {
+      "en": "How much advance warning a party must give before ending an agreement.",
+      "hi": "अनुबंध समाप्त करने से पहले दी जाने वाली पूर्व सूचना की अवधि।",
+      "mr": "करार संपवण्यापूर्वी द्यावयाच्या पूर्वसूचनेचा कालावधी."}},
+    {"term": "confidential information", "aliases": ["confidentiality"], "meaning": {
+      "en": "Information a party must not share, as defined by the agreement itself.",
+      "hi": "वह जानकारी जिसे साझा नहीं किया जा सकता, जैसा अनुबंध में परिभाषित है।",
+      "mr": "जी माहिती सामायिक करता येत नाही, जशी करारात व्याख्या केली आहे."}},
+    {"term": "jurisdiction", "aliases": [], "meaning": {
+      "en": "Which court or place has the authority to hear a dispute.",
+      "hi": "कौन सा न्यायालय या स्थान विवाद सुनने के लिए अधिकृत है।",
+      "mr": "कोणते न्यायालय किंवा ठिकाण वाद ऐकण्यास अधिकृत आहे."}}
+  ]
+}

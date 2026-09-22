@@ -1,0 +1,43 @@
+{
+  "doc_type": "general_contract",
+  "title": "A contract you are about to sign",
+  "items": [
+    {"id": "parties", "title": "The parties are identified", "look_for": "Full names and addresses of everyone signing", "why_it_matters": "You need to know exactly who you are dealing with", "question_to_ask": "Who exactly is the other party to this?", "roles": []},
+    {"id": "obligations", "title": "What each side must do is stated", "look_for": "The main obligations on both sides", "why_it_matters": "The obligations are what you are actually agreeing to", "question_to_ask": "What am I committing to do?", "roles": []},
+    {"id": "money_terms", "title": "Amounts and payment dates are stated", "look_for": "Amounts in digits and words, and when each is due", "why_it_matters": "Money terms are where disputes usually begin", "question_to_ask": "How much is payable and when?", "roles": []},
+    {"id": "duration", "title": "The start and end are stated", "look_for": "Commencement date, term and any renewal", "why_it_matters": "An automatic renewal can extend a deal you wanted to end", "question_to_ask": "When does this start and end, and does it renew?", "roles": []},
+    {"id": "termination", "title": "How to end it is stated", "look_for": "Notice required, and grounds for ending it early", "why_it_matters": "You want a way out that you can actually use", "question_to_ask": "How can each of us end this?", "roles": []},
+    {"id": "penalties", "title": "Penalties and interest are stated", "look_for": "Charges for late performance or late payment", "why_it_matters": "Penalties can be larger than the underlying amount", "question_to_ask": "What happens if I am late?", "roles": []},
+    {"id": "indemnity", "title": "Any indemnity is limited", "look_for": "A promise to cover the other side's losses, and any cap", "why_it_matters": "An uncapped indemnity is an open-ended liability", "question_to_ask": "Can we put a cap on this?", "roles": []},
+    {"id": "liability_cap", "title": "Liability is capped", "look_for": "A maximum amount either side can be made to pay", "why_it_matters": "A cap turns an unknown risk into a known one", "question_to_ask": "What is the maximum I could be liable for?", "roles": []},
+    {"id": "confidentiality", "title": "Confidentiality is addressed", "look_for": "What must be kept confidential and for how long", "why_it_matters": "It affects what you may say about the deal afterwards", "question_to_ask": "What can I say about this arrangement?", "roles": []},
+    {"id": "dispute_forum", "title": "Where disputes are heard is stated", "look_for": "A named city, court or arbitration process", "why_it_matters": "A distant forum makes a small dispute expensive", "question_to_ask": "Where would a dispute be heard?", "roles": []},
+    {"id": "amendments", "title": "How changes are made is stated", "look_for": "A requirement that changes be in writing and signed", "why_it_matters": "It prevents a later disagreement about what was agreed", "question_to_ask": "How do we record a change to this?", "roles": []},
+    {"id": "signatures", "title": "Signature and witness requirements are clear", "look_for": "Who signs, whether witnesses are needed and whether stamping applies", "why_it_matters": "An improperly executed document is harder to rely on", "question_to_ask": "What needs to happen for this to be properly signed?", "roles": []}
+  ],
+  "suggested_questions": [
+    "What am I committing to do?",
+    "How can I end this agreement?",
+    "What is the maximum I could be liable for?",
+    "What happens if I am late?",
+    "Where would a dispute be heard?"
+  ],
+  "scenarios": [
+    {"id": "cannot_perform", "title": "I cannot do what I promised"},
+    {"id": "other_side_defaults", "title": "The other side does not do their part"},
+    {"id": "want_to_exit", "title": "I want to end the agreement early"},
+    {"id": "payment_late", "title": "A payment is late"}
+  ],
+  "facts_to_have_ready": [
+    "The date you signed and when performance was due",
+    "What has been done and paid so far",
+    "What has gone wrong, with dates",
+    "Messages between you and the other party"
+  ],
+  "documents_to_bring": [
+    "The signed agreement and any annexures",
+    "Proof of payments made or received",
+    "Any written notice sent or received",
+    "Records of what was delivered or performed"
+  ]
+}

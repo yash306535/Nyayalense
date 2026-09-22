@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Official source PDFs used to build law data (not redistributed)
+data_sources/*
+!data_sources/README.md
+
+# Tooling
+node_modules/
+test-results/
+playwright-report/
+.DS_Store
+
+# The build brief is not part of the repository
+BRIEF.md
+brief*.html

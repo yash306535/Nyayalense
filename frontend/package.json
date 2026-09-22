@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "nyayalens-frontend",
+  "type": "module",
+  "description": "Vanilla ES modules, no dependencies and no build step.",
+  "scripts": {
+    "test": "node --test tests"
+  }
+}

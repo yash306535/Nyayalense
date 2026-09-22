@@ -1,0 +1,42 @@
+{
+  "doc_type": "legal_notice",
+  "title": "A notice you have received",
+  "items": [
+    {"id": "who_sent", "title": "Who sent it is clear", "look_for": "The sender, and the person they say they act for", "why_it_matters": "You need to know who is making the claim", "question_to_ask": "Who exactly is making this claim?", "roles": []},
+    {"id": "what_claimed", "title": "What is being claimed is stated", "look_for": "The amount, the act or the outcome demanded", "why_it_matters": "A vague demand is hard to answer and hard to settle", "question_to_ask": "What exactly is being asked for?", "roles": []},
+    {"id": "deadline", "title": "There is a deadline to respond", "look_for": "A number of days to reply or comply", "why_it_matters": "Missing a deadline can remove options later", "question_to_ask": "By when must I respond?", "roles": ["notice_recipient"]},
+    {"id": "legal_sections", "title": "Any sections cited are identified", "look_for": "References to sections of an Act", "why_it_matters": "Old code references still appear even though the codes changed on 1 July 2024", "question_to_ask": "Which provisions are actually being relied on?", "roles": []},
+    {"id": "factual_claims", "title": "The facts alleged are listed", "look_for": "Dates, amounts and events the sender relies on", "why_it_matters": "These are the facts you would need to accept or dispute", "question_to_ask": "Which of these facts do I agree with?", "roles": ["notice_recipient"]},
+    {"id": "supporting_documents", "title": "Documents relied on are identified", "look_for": "Agreements, receipts or messages the notice refers to", "why_it_matters": "You will want copies of everything it relies on", "question_to_ask": "Can I have copies of the documents referred to?", "roles": ["notice_recipient"]},
+    {"id": "amount_breakdown", "title": "Any amount is broken down", "look_for": "How the amount claimed is made up", "why_it_matters": "An unexplained total is hard to check or dispute", "question_to_ask": "How is this amount calculated?", "roles": ["notice_recipient"]},
+    {"id": "consequences_stated", "title": "The stated consequences are identified", "look_for": "What the sender says will happen if you do not comply", "why_it_matters": "It tells you how urgent the matter is", "question_to_ask": "What does the sender say will happen next?", "roles": []},
+    {"id": "service_details", "title": "How and when it was sent is recorded", "look_for": "The date, the mode of delivery and the address used", "why_it_matters": "Deadlines are usually counted from the date of service", "question_to_ask": "When was this sent and to which address?", "roles": ["notice_recipient"]},
+    {"id": "reply_address", "title": "There is an address to reply to", "look_for": "An address or email for the response", "why_it_matters": "A reply sent to the wrong place may not count", "question_to_ask": "Where should my reply be sent?", "roles": ["notice_recipient"]},
+    {"id": "settlement_offer", "title": "Any settlement option is identified", "look_for": "An offer to resolve the matter without further steps", "why_it_matters": "Settling early is often cheaper than the alternative", "question_to_ask": "Is there an option to settle this?", "roles": []}
+  ],
+  "suggested_questions": [
+    "What is this notice asking me to do?",
+    "By when do I have to respond?",
+    "Which sections does it rely on?",
+    "What does it say will happen if I do not respond?",
+    "What documents does it refer to?"
+  ],
+  "scenarios": [
+    {"id": "no_reply", "title": "I do not reply at all"},
+    {"id": "dispute_facts", "title": "I disagree with the facts stated"},
+    {"id": "partial_payment", "title": "I pay part of the amount claimed"},
+    {"id": "deadline_passed", "title": "The deadline has already passed"}
+  ],
+  "facts_to_have_ready": [
+    "The date the notice reached you",
+    "Your version of the events described",
+    "Any payments you have already made, with proof",
+    "Messages between you and the sender"
+  ],
+  "documents_to_bring": [
+    "The notice and the envelope or email showing the date",
+    "The agreement the notice refers to",
+    "Receipts or bank statements for any payment",
+    "Any earlier correspondence about the same matter"
+  ]
+}

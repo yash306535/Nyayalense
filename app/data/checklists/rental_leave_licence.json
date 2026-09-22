@@ -1,0 +1,46 @@
+{
+  "doc_type": "rental_leave_licence",
+  "title": "Renting a home",
+  "items": [
+    {"id": "rent_amount", "title": "The rent is stated clearly", "look_for": "A monthly rent figure, in digits and in words, and the date it is due", "why_it_matters": "A rent written two different ways is the most common source of disputes", "question_to_ask": "Can we write the rent in both digits and words, and say which date it is due?", "roles": []},
+    {"id": "deposit_amount", "title": "The security deposit is stated", "look_for": "A deposit figure and what it covers", "why_it_matters": "The deposit is usually the largest sum you hand over", "question_to_ask": "How much is the deposit and what can it be used for?", "roles": []},
+    {"id": "deposit_refund_timeline", "title": "There is a deadline for refunding the deposit", "look_for": "A number of days within which the deposit is returned after you move out", "why_it_matters": "Without a deadline you have no date to point to when asking for your money back", "question_to_ask": "Within how many days of handing back the keys will the deposit be refunded?", "roles": ["tenant"]},
+    {"id": "deposit_deductions", "title": "Deductions from the deposit are limited", "look_for": "What the owner may deduct, and whether normal wear and tear is excluded", "why_it_matters": "An open-ended right to deduct can consume the whole deposit", "question_to_ask": "What exactly can be deducted, and is ordinary wear and tear excluded?", "roles": ["tenant"]},
+    {"id": "notice_period", "title": "The notice period is the same for both sides", "look_for": "How much notice each party must give to end the agreement", "why_it_matters": "A one-sided notice period leaves you exposed to a sudden move", "question_to_ask": "Can the notice period be the same for both of us?", "roles": []},
+    {"id": "lock_in", "title": "Any lock-in period is clear and mutual", "look_for": "A minimum period before either side can leave, and what happens if you leave early", "why_it_matters": "A lock-in can cost you months of rent if your plans change", "question_to_ask": "Is there a lock-in, does it apply to both of us, and what does leaving early cost?", "roles": []},
+    {"id": "rent_escalation", "title": "Any rent increase is capped and predictable", "look_for": "A percentage or figure by which rent rises, and how often", "why_it_matters": "An uncapped increase makes your future cost unknown", "question_to_ask": "By how much can the rent rise, and how often?", "roles": ["tenant"]},
+    {"id": "maintenance_split", "title": "Who pays for maintenance and repairs is set out", "look_for": "Which repairs fall on the owner and which on the occupant", "why_it_matters": "Unassigned repairs become an argument at the worst moment", "question_to_ask": "Which repairs are yours and which are mine?", "roles": []},
+    {"id": "utilities", "title": "Electricity, water and society charges are assigned", "look_for": "Who pays each bill and how meters are read", "why_it_matters": "Society dues and electricity can add substantially to the monthly cost", "question_to_ask": "Which bills am I responsible for?", "roles": []},
+    {"id": "entry_notice", "title": "The owner must give notice before entering", "look_for": "A requirement to give notice before visiting the premises", "why_it_matters": "It protects your privacy and sets expectations on both sides", "question_to_ask": "How much notice will you give before visiting?", "roles": ["tenant"]},
+    {"id": "registration", "title": "Registration and stamp duty are addressed", "look_for": "Who arranges registration and who pays the stamp duty", "why_it_matters": "An unregistered agreement is harder to rely on later", "question_to_ask": "Who will register the agreement and who pays the stamp duty?", "roles": []},
+    {"id": "termination_grounds", "title": "The reasons either side can end it are listed", "look_for": "Events that allow early termination, and whether they apply both ways", "why_it_matters": "Broad termination rights on one side only leave you with little security", "question_to_ask": "On what grounds can each of us end this early?", "roles": []},
+    {"id": "subletting_guests", "title": "Rules on guests and subletting are stated", "look_for": "Whether guests may stay and whether the premises may be shared", "why_it_matters": "A vague rule here can be used as grounds to end the agreement", "question_to_ask": "Can family or friends stay with me, and for how long?", "roles": ["tenant"]},
+    {"id": "dispute_forum", "title": "How disputes are handled is stated", "look_for": "A named city, court or arbitration process", "why_it_matters": "A far-away forum makes a small dispute expensive to pursue", "question_to_ask": "Where would a dispute be heard?", "roles": []}
+  ],
+  "suggested_questions": [
+    "How much is the security deposit and when do I get it back?",
+    "What notice do I have to give before leaving?",
+    "Can the rent be increased during the agreement?",
+    "What happens if I need to leave during the lock-in period?",
+    "Who pays for repairs?"
+  ],
+  "scenarios": [
+    {"id": "leave_early", "title": "I want to leave before the lock-in ends"},
+    {"id": "rent_late", "title": "I pay the rent a few days late"},
+    {"id": "deposit_withheld", "title": "The deposit is not returned after I move out"},
+    {"id": "owner_sells", "title": "The owner sells the flat during my stay"}
+  ],
+  "facts_to_have_ready": [
+    "The date you moved in and the date you plan to move out",
+    "How much deposit you paid and how you paid it",
+    "Rent receipts or bank transfer records",
+    "Photographs of the condition of the premises",
+    "Any messages about repairs or the deposit"
+  ],
+  "documents_to_bring": [
+    "The signed agreement and any registration receipt",
+    "Proof of the deposit payment",
+    "Electricity and society bills in your name",
+    "Any written notice you sent or received"
+  ]
+}

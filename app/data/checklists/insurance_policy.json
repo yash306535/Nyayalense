@@ -1,0 +1,43 @@
+{
+  "doc_type": "insurance_policy",
+  "title": "Buying or checking an insurance policy",
+  "items": [
+    {"id": "sum_insured", "title": "The cover amount is stated", "look_for": "The sum insured and whether it is per person or shared", "why_it_matters": "A shared cover can run out on the first claim in a family", "question_to_ask": "Is this cover per person or shared across everyone named?", "roles": []},
+    {"id": "premium_and_term", "title": "The premium and policy period are stated", "look_for": "Premium amount, how often it is paid and the policy dates", "why_it_matters": "A lapsed policy pays nothing", "question_to_ask": "When is the premium due and what is the grace period?", "roles": []},
+    {"id": "waiting_periods", "title": "Waiting periods are listed", "look_for": "Initial waiting period and any condition-specific waiting periods", "why_it_matters": "A claim inside a waiting period is normally refused", "question_to_ask": "Which conditions have a waiting period, and how long?", "roles": ["policyholder"]},
+    {"id": "pre_existing", "title": "Pre-existing conditions are addressed", "look_for": "How declared conditions are treated and after how long they are covered", "why_it_matters": "Non-disclosure is the most common reason a claim is rejected", "question_to_ask": "What must I declare, and when will declared conditions be covered?", "roles": ["policyholder"]},
+    {"id": "exclusions", "title": "The exclusions are listed", "look_for": "Treatments, causes or situations the policy does not cover", "why_it_matters": "Exclusions decide what you are actually buying", "question_to_ask": "What is definitely not covered?", "roles": []},
+    {"id": "sub_limits", "title": "Any caps within the cover are stated", "look_for": "Room rent caps, per-procedure caps and co-payment percentages", "why_it_matters": "Caps can leave you paying a large share even within the cover", "question_to_ask": "Is there a room rent limit or a co-payment?", "roles": ["policyholder"]},
+    {"id": "claim_process", "title": "How to claim is explained", "look_for": "Cashless and reimbursement steps, and who to notify", "why_it_matters": "Missing a step can cost you the claim", "question_to_ask": "What do I have to do, and by when, to make a claim?", "roles": []},
+    {"id": "claim_deadline", "title": "Claim notification deadlines are stated", "look_for": "How many hours or days you have to inform the insurer", "why_it_matters": "Late notification is a common ground for rejection", "question_to_ask": "How quickly must I inform you after an admission?", "roles": ["policyholder"]},
+    {"id": "network_hospitals", "title": "Where cashless treatment works is stated", "look_for": "A reference to a network list and how to check it", "why_it_matters": "Outside the network you pay first and claim later", "question_to_ask": "How do I check whether a hospital is in the network?", "roles": ["policyholder"]},
+    {"id": "renewal_terms", "title": "Renewal terms are stated", "look_for": "Whether renewal is guaranteed and how the premium may change", "why_it_matters": "A policy you cannot renew is only useful for one year", "question_to_ask": "Can the policy be refused at renewal, and how can the premium change?", "roles": ["policyholder"]},
+    {"id": "free_look", "title": "The free-look period is stated", "look_for": "A period within which you can cancel and get the premium back", "why_it_matters": "It is your only chance to withdraw without cost", "question_to_ask": "How long do I have to cancel if I change my mind?", "roles": ["policyholder"]},
+    {"id": "grievance_route", "title": "A grievance and ombudsman route is given", "look_for": "A grievance officer and a reference to the insurance ombudsman", "why_it_matters": "It is the escalation path if a claim is refused", "question_to_ask": "Who do I escalate to if a claim is rejected?", "roles": []}
+  ],
+  "suggested_questions": [
+    "What is not covered by this policy?",
+    "How long are the waiting periods?",
+    "Is there a room rent limit or a co-payment?",
+    "How quickly do I have to inform the insurer about a claim?",
+    "Can the policy be refused at renewal?"
+  ],
+  "scenarios": [
+    {"id": "claim_first_year", "title": "I make a claim in the first year"},
+    {"id": "undisclosed_condition", "title": "A condition I did not mention comes up"},
+    {"id": "non_network_hospital", "title": "I am treated at a hospital outside the network"},
+    {"id": "premium_missed", "title": "I miss a premium payment"}
+  ],
+  "facts_to_have_ready": [
+    "The policy number and the dates it runs between",
+    "Who is covered under the policy",
+    "The date of the treatment or event you are claiming for",
+    "What you told the insurer when you bought the policy"
+  ],
+  "documents_to_bring": [
+    "The policy document and the schedule",
+    "The proposal form you filled in",
+    "Hospital bills and discharge summary, if claiming",
+    "Any rejection letter you received"
+  ]
+}

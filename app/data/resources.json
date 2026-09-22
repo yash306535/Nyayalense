@@ -1,0 +1,100 @@
+{
+  "entries": [
+    {
+      "id": "nalsa_legal_aid",
+      "name": "NALSA free legal aid",
+      "category": "legal_aid",
+      "purpose": {
+        "en": "Free legal advice and representation for people who qualify, through State and District Legal Services Authorities.",
+        "hi": "पात्र व्यक्तियों के लिए राज्य और जिला विधिक सेवा प्राधिकरणों के माध्यम से नि:शुल्क कानूनी सलाह और प्रतिनिधित्व।",
+        "mr": "पात्र व्यक्तींसाठी राज्य व जिल्हा विधी सेवा प्राधिकरणांमार्फत मोफत कायदेशीर सल्ला व प्रतिनिधित्व."
+      },
+      "contact": { "url": "https://nalsa.gov.in", "phone": "15100" },
+      "cost": "Free for people who qualify",
+      "languages": ["en", "hi", "mr"],
+      "relevant_for": [],
+      "source_url": "https://nalsa.gov.in",
+      "verified_on": "2026-09-22"
+    },
+    {
+      "id": "cyber_crime_portal",
+      "name": "National Cyber Crime Reporting Portal",
+      "category": "cyber_crime",
+      "purpose": {
+        "en": "Report cybercrime online. The 1930 helpline is for reporting online financial fraud quickly.",
+        "hi": "साइबर अपराध की ऑनलाइन शिकायत दर्ज करें। ऑनलाइन वित्तीय धोखाधड़ी की तुरंत सूचना के लिए 1930 हेल्पलाइन है।",
+        "mr": "सायबर गुन्ह्याची ऑनलाइन तक्रार नोंदवा. ऑनलाइन आर्थिक फसवणुकीची त्वरित माहिती देण्यासाठी 1930 हेल्पलाइन आहे."
+      },
+      "contact": { "url": "https://cybercrime.gov.in", "phone": "1930" },
+      "cost": "Free",
+      "languages": ["en", "hi"],
+      "relevant_for": ["online_fraud", "legal_notice"],
+      "source_url": "https://cybercrime.gov.in",
+      "verified_on": "2026-09-22"
+    },
+    {
+      "id": "national_consumer_helpline",
+      "name": "National Consumer Helpline",
+      "category": "consumer",
+      "purpose": {
+        "en": "Guidance on complaints about a product, a service, an insurance policy or a loan.",
+        "hi": "किसी उत्पाद, सेवा, बीमा पॉलिसी या ऋण से जुड़ी शिकायत पर मार्गदर्शन।",
+        "mr": "उत्पादन, सेवा, विमा पॉलिसी किंवा कर्जाशी संबंधित तक्रारीबाबत मार्गदर्शन."
+      },
+      "contact": { "url": "https://consumerhelpline.gov.in", "phone": "1915" },
+      "cost": "Free",
+      "languages": ["en", "hi", "mr"],
+      "relevant_for": ["insurance_policy", "terms_of_service", "loan_agreement", "consumer_complaint"],
+      "source_url": "https://consumerhelpline.gov.in",
+      "verified_on": "2026-09-22"
+    },
+    {
+      "id": "edaakhil",
+      "name": "e-Daakhil",
+      "category": "consumer",
+      "purpose": {
+        "en": "File a consumer complaint online with the consumer commissions.",
+        "hi": "उपभोक्ता आयोगों में ऑनलाइन उपभोक्ता शिकायत दाखिल करें।",
+        "mr": "ग्राहक आयोगांकडे ऑनलाइन ग्राहक तक्रार दाखल करा."
+      },
+      "contact": { "url": "https://edaakhil.nic.in" },
+      "cost": "Filing fees apply, as set by the commission",
+      "languages": ["en"],
+      "relevant_for": ["insurance_policy", "terms_of_service", "loan_agreement", "consumer_complaint"],
+      "source_url": "https://edaakhil.nic.in",
+      "verified_on": "2026-09-22"
+    },
+    {
+      "id": "india_code",
+      "name": "India Code",
+      "category": "law_text",
+      "purpose": {
+        "en": "Official texts of central Acts, including the criminal-law codes.",
+        "hi": "केंद्रीय अधिनियमों के आधिकारिक पाठ, जिनमें आपराधिक विधि संहिताएँ शामिल हैं।",
+        "mr": "केंद्रीय अधिनियमांचे अधिकृत मजकूर, ज्यात फौजदारी कायदा संहितांचा समावेश आहे."
+      },
+      "contact": { "url": "https://www.indiacode.nic.in" },
+      "cost": "Free",
+      "languages": ["en", "hi"],
+      "relevant_for": ["law_reference", "legal_notice"],
+      "source_url": "https://www.indiacode.nic.in",
+      "verified_on": "2026-09-22"
+    },
+    {
+      "id": "bprd",
+      "name": "Bureau of Police Research and Development",
+      "category": "law_text",
+      "purpose": {
+        "en": "Publisher of the correspondence tables NyayaLens uses to map old criminal-law sections to the new codes.",
+        "hi": "उन सारणियों का प्रकाशक जिनसे NyayaLens पुरानी आपराधिक धाराओं को नई संहिताओं से जोड़ता है।",
+        "mr": "ज्या तक्त्यांच्या आधारे NyayaLens जुन्या फौजदारी कलमांना नव्या संहितांशी जोडते, त्यांचे प्रकाशक."
+      },
+      "contact": { "url": "https://bprd.nic.in" },
+      "cost": "Free",
+      "languages": ["en", "hi"],
+      "relevant_for": ["law_reference"],
+      "source_url": "https://bprd.nic.in",
+      "verified_on": "2026-09-22"
+    }
+  ]
+}
