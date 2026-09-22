@@ -4,6 +4,6 @@
   "type": "module",
   "description": "Vanilla ES modules, no dependencies and no build step.",
   "scripts": {
-    "test": "node --test tests"
+    "test": "node --test \"tests/*.test.js\""
   }
 }

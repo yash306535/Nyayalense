@@ -20,7 +20,7 @@ export function uploadPanel({ t, samples, demoMode, onFile, onPaste, onSample })
     type: 'file',
     id: 'file-input',
     className: 'sr-only',
-    attrs: { accept: ACCEPT },
+    attrs: { accept: ACCEPT, 'aria-label': t('upload.chooseFile') },
     onchange: (event) => {
       const [file] = event.target.files || [];
       if (file) onFile(file);
@@ -29,8 +29,8 @@ export function uploadPanel({ t, samples, demoMode, onFile, onPaste, onSample })
   });
 
   const zone = el('div', { className: 'dropzone' }, [
-    el('p', { style: 'margin:0', text: t('upload.dropHere') }),
-    el('p', { className: 'source-note', style: 'margin:0', text: t('upload.or') }),
+    el('p', { className: 'flush', text: t('upload.dropHere') }),
+    el('p', { className: 'source-note flush', text: t('upload.or') }),
     el('button', {
       type: 'button',
       className: 'btn btn--primary',
@@ -49,7 +49,7 @@ export function uploadPanel({ t, samples, demoMode, onFile, onPaste, onSample })
 
   const paste = el('details', { className: 'card' }, [
     el('summary', { text: t('upload.pasteInstead') }),
-    el('div', { className: 'stack', style: 'margin-top:1rem' }, [
+    el('div', { className: 'stack gap-above-lg' }, [
       el('div', { className: 'field' }, [
         el('label', { attrs: { for: 'paste-text' }, text: t('upload.pasteLabel') }),
         el('p', { id: 'paste-hint', className: 'field-hint', text: t('upload.pasteHint') }),
@@ -144,8 +144,8 @@ function privacyNotice({ t, demoMode }) {
   return el('section', { className: 'notice notice--seal' }, [
     el('div', {}, [
       el('strong', { text: t('upload.privacyTitle') }),
-      el('p', { style: 'margin:0.25rem 0 0', text: t('upload.privacyBody') }),
-      demoMode && el('p', { style: 'margin:0.25rem 0 0', text: t('upload.privacyDemo') }),
+      el('p', { className: 'tight', text: t('upload.privacyBody') }),
+      demoMode && el('p', { className: 'tight', text: t('upload.privacyDemo') }),
     ]),
   ]);
 }

@@ -26,7 +26,7 @@ export function reviewView(review, deps) {
         icon('high'),
         el('div', {}, [
           el('strong', { text: t('review.talkToLawyer') }),
-          el('p', { style: 'margin:0.25rem 0 0' }, [
+          el('p', { className: 'tight' }, [
             el('button', {
               type: 'button',
               className: 'btn btn--small',
@@ -56,7 +56,7 @@ function riskSection(risks, deps) {
     risks && risks.length > 0
       ? el(
           'ul',
-          { className: 'stack', style: 'list-style:none;padding:0' },
+          { className: 'stack plain-list' },
           risks.map((risk) =>
             el('li', { className: `risk risk--${risk.severity}` }, [
               el('div', { className: 'row-between' }, [
@@ -91,7 +91,7 @@ function missingSection(missing, deps) {
       el('p', { className: 'source-note', text: t('review.missingNote') }),
       el(
         'ul',
-        { className: 'stack', style: 'list-style:none;padding:0' },
+        { className: 'stack plain-list' },
         missing.map((item) =>
           el('li', { className: 'risk risk--medium' }, [
             el('strong', { text: item.title }),
@@ -131,7 +131,7 @@ function inconsistencySection(inconsistencies, deps) {
     t('review.inconsistencies'),
     el(
       'ul',
-      { className: 'stack', style: 'list-style:none;padding:0' },
+      { className: 'stack plain-list' },
       inconsistencies.map((entry) =>
         el('li', { className: 'risk risk--high' }, [
           el('div', { className: 'row' }, [icon('high'), el('strong', { text: entry.title })]),
@@ -158,7 +158,7 @@ function checklistSection(checklist, deps) {
       el('p', { className: 'source-note', text: t('review.checklistNote') }),
       el(
         'ul',
-        { className: 'stack', style: 'list-style:none;padding:0' },
+        { className: 'stack plain-list' },
         (checklist || []).map((item) =>
           el('li', { className: 'stack-sm' }, [
             el('div', { className: 'row-between' }, [
@@ -186,14 +186,14 @@ function checklistSection(checklist, deps) {
 function panel(title, content, collapsed = false) {
   if (collapsed) {
     return el('details', { className: 'panel' }, [
-      el('summary', { className: 'panel__header', style: 'cursor:pointer' }, [
+      el('summary', { className: 'panel__header pointer' }, [
         el('strong', { text: title }),
       ]),
       el('div', { className: 'panel__body' }, [content]),
     ]);
   }
   return el('section', { className: 'panel' }, [
-    el('div', { className: 'panel__header' }, [el('h3', { style: 'margin:0', text: title })]),
+    el('div', { className: 'panel__header' }, [el('h2', { className: 'flush', text: title })]),
     el('div', { className: 'panel__body' }, [content]),
   ]);
 }

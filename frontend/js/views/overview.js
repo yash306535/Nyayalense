@@ -53,7 +53,7 @@ export function overviewView(overview, deps) {
  */
 function section(title, content) {
   return el('section', { className: 'panel' }, [
-    el('div', { className: 'panel__header' }, [el('h3', { style: 'margin:0', text: title })]),
+    el('div', { className: 'panel__header' }, [el('h2', { className: 'flush', text: title })]),
     el('div', { className: 'panel__body' }, [content]),
   ]);
 }
@@ -68,7 +68,7 @@ function section(title, content) {
 function partyList(parties, t) {
   return el(
     'ul',
-    { className: 'stack-sm', style: 'list-style:none;padding:0' },
+    { className: 'stack-sm plain-list' },
     parties.map((party) =>
       el('li', { className: 'row' }, [
         el('strong', { text: party.name }),
@@ -90,16 +90,16 @@ function termList(terms, deps) {
   const { t } = deps;
   return el(
     'dl',
-    { className: 'stack-sm', style: 'margin:0' },
+    { className: 'stack-sm flush' },
     terms.flatMap((term) => [
-      el('dt', { style: 'font-weight:600' }, [term.label]),
-      el('dd', { style: 'margin:0 0 0.75rem' }, [
+      el('dt', { className: 'strong' }, [term.label]),
+      el('dd', { className: 'gap-below' }, [
         term.value
           ? el('div', { className: 'stack-sm' }, [
-              el('p', { style: 'margin:0', text: term.value }),
+              el('p', { className: 'flush', text: term.value }),
               statements(term.statements, deps),
             ])
-          : el('p', { className: 'empty-cell', style: 'margin:0', text: t('overview.notSpecified') }),
+          : el('p', { className: 'empty-cell flush', text: t('overview.notSpecified') }),
       ]),
     ]),
   );
@@ -118,16 +118,16 @@ function obligationList(obligations, deps) {
 
   return el(
     'ul',
-    { className: 'stack', style: 'list-style:none;padding:0' },
+    { className: 'stack plain-list' },
     obligations.map((obligation) =>
       el('li', { className: 'risk risk--low' }, [
         el('div', { className: 'row' }, [
           el('span', { className: 'chip', text: who[obligation.who] || obligation.who }),
           el('strong', { text: obligation.what }),
         ]),
-        obligation.timing && el('p', { className: 'source-note', style: 'margin:0.25rem 0', text: obligation.timing }),
+        obligation.timing && el('p', { className: 'source-note tight-y', text: obligation.timing }),
         obligation.consequence &&
-          el('p', { style: 'margin:0.25rem 0' }, [
+          el('p', { className: 'tight-y' }, [
             el('em', { text: obligation.consequence }),
           ]),
         statements(obligation.statements, deps),
@@ -144,17 +144,17 @@ function obligationList(obligations, deps) {
  * @returns {HTMLElement} The list.
  */
 function dateList(dates, deps) {
-  const { t, language } = deps;
+  const { language } = deps;
   return el(
     'ul',
-    { className: 'stack-sm', style: 'list-style:none;padding:0' },
+    { className: 'stack-sm plain-list' },
     dates.map((date) =>
-      el('li', { className: 'row', style: 'align-items:flex-start' }, [
+      el('li', { className: 'row top-aligned' }, [
         icon('check'),
         el('div', {}, [
           el('strong', { text: date.title }),
-          date.date && el('p', { style: 'margin:0', text: formatDate(date.date, language) }),
-          date.description && el('p', { className: 'source-note', style: 'margin:0', text: date.description }),
+          date.date && el('p', { className: 'flush', text: formatDate(date.date, language) }),
+          date.description && el('p', { className: 'source-note flush', text: date.description }),
           statements(date.statements, deps),
         ]),
       ]),

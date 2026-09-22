@@ -45,7 +45,7 @@ security: ## Run the security scanners
 test: install ## Run backend tests with coverage, plus the frontend unit tests
 	$(PY) -m pytest --cov=app --cov-report=term-missing --cov-fail-under=90 \
 		--ignore=tests/e2e
-	node --test frontend/tests
+	node --test "frontend/tests/*.test.js"
 
 test-fast: ## Run backend tests without coverage
 	$(PY) -m pytest --ignore=tests/e2e -q

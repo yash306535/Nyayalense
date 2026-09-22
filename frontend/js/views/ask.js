@@ -16,22 +16,32 @@ import { questionPrompt, statements, trustBlock } from './evidence.js';
  * @returns {HTMLElement} The panel.
  */
 export function askView(deps) {
-  const { t, answers, suggested, busy, onAsk } = deps;
+  const { t, answers, suggested, onAsk } = deps;
 
   const input = el('input', {
     type: 'text',
     id: 'question-input',
     attrs: { placeholder: t('ask.placeholder'), maxlength: '1000', 'aria-describedby': 'ask-hint' },
-    onkeydown: (event) => {
-      if (event.key === 'Enter') submit();
-    },
   });
 
-  const submit = () => {
+  const button = el('button', {
+    type: 'submit',
+    className: 'btn btn--primary',
+    text: t('ask.submit'),
+  });
+
+  // Pending state is local to this form. Reading a global busy flag would leave
+  // the button disabled after an unrelated action finished.
+  const submit = async () => {
     const question = input.value.trim();
-    if (!question) return;
+    if (!question || button.disabled) return;
     input.value = '';
-    onAsk(question);
+    button.disabled = true;
+    try {
+      await onAsk(question);
+    } finally {
+      button.disabled = false;
+    }
   };
 
   return el('div', { className: 'stack' }, [
@@ -47,12 +57,7 @@ export function askView(deps) {
         input,
         el('p', { id: 'ask-hint', className: 'field-hint', text: t('ask.emptyState') }),
       ]),
-      el('button', {
-        type: 'submit',
-        className: 'btn btn--primary',
-        text: t('ask.submit'),
-        attrs: { disabled: busy },
-      }),
+      button,
     ]),
     suggested?.length > 0 && suggestedQuestions(suggested, t, onAsk),
     el(
@@ -73,7 +78,7 @@ export function askView(deps) {
  */
 function suggestedQuestions(suggested, t, onAsk) {
   return el('div', { className: 'stack-sm' }, [
-    el('p', { className: 'field-hint', style: 'margin:0', text: t('ask.suggested') }),
+    el('p', { className: 'field-hint flush', text: t('ask.suggested') }),
     el(
       'div',
       { className: 'row' },
@@ -102,7 +107,7 @@ function answerCard(answer, deps) {
 
   return el('article', { className: 'panel' }, [
     el('div', { className: 'panel__header' }, [
-      el('p', { style: 'margin:0;font-weight:600', text: answer.question }),
+      el('p', { className: 'flush-strong', text: answer.question }),
     ]),
     el('div', { className: 'panel__body stack-sm' }, [
       trustBlock(answer.verification, t),
@@ -156,10 +161,10 @@ function professionalNote(answer, t) {
       el('strong', { text: t('ask.needsProfessional') }),
       answer.questions_for_professional?.length > 0 &&
         el('div', {}, [
-          el('p', { style: 'margin:0.5rem 0 0.25rem', text: t('ask.questionsForLawyer') }),
+          el('p', { className: 'label-gap', text: t('ask.questionsForLawyer') }),
           el(
             'ul',
-            { style: 'margin:0' },
+            { className: 'flush' },
             answer.questions_for_professional.map((question) => el('li', { text: question })),
           ),
         ]),

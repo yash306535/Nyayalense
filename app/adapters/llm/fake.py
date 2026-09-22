@@ -92,7 +92,11 @@ _RISK_SIGNALS: Final[tuple[tuple[str, str, Severity], ...]] = (
     ("indemnify", "You take on the other side's losses", Severity.MEDIUM),
 )
 
-_CHECKLIST_ID_RE: Final = re.compile(r"^\s*-\s*(?P<id>[a-z0-9_]+):\s*(?P<text>.+)$", re.MULTILINE)
+#: Matches only the checklist lines the builder injects, not the instruction
+#: bullets that surround them in the same prompt.
+_CHECKLIST_ID_RE: Final = re.compile(
+    r"^\s*-\s*item\s+(?P<id>[a-z0-9_]+):\s*(?P<text>.+)$", re.MULTILINE
+)
 
 MIN_OVERLAP: Final = 1
 MAX_STATEMENTS: Final = 3

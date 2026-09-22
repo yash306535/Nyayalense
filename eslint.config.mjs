@@ -25,6 +25,11 @@ export default [
         SpeechSynthesisUtterance: 'readonly',
         CustomEvent: 'readonly',
         HTMLElement: 'readonly',
+        Node: 'readonly',
+        CSS: 'readonly',
+        URL: 'readonly',
+        URLSearchParams: 'readonly',
+        location: 'readonly',
       },
     },
     rules: {

@@ -38,8 +38,13 @@ MAX_EXPANDED_BYTES: Final = 80 * 1024 * 1024
 #: Below this many characters a document is probably a scan.
 MIN_USEFUL_CHARS: Final = 200
 
-#: Control characters below TAB never appear in text, only in binary formats.
-_FIRST_PRINTABLE_CONTROL: Final = 9
+#: Control characters that do appear in ordinary text: tab, newline, carriage
+#: return and form feed. Any other control character means the bytes are binary.
+_TEXT_CONTROLS: Final[frozenset[str]] = frozenset("\t\n\r\x0c")
+
+#: The C0 control block ends here, and DEL sits just past the printable range.
+_FIRST_PRINTABLE: Final = 0x20
+_DELETE: Final = 0x7F
 
 
 class FileKind(StrEnum):
@@ -130,7 +135,15 @@ def _looks_like_text(data: bytes) -> bool:
         decoded = data.decode("utf-8")
     except UnicodeDecodeError:
         return False
-    return not any(ord(character) < _FIRST_PRINTABLE_CONTROL for character in decoded)
+    return not any(_is_control(character) for character in decoded)
+
+
+def _is_control(character: str) -> bool:
+    """True for a control character that never appears in ordinary text."""
+    if character in _TEXT_CONTROLS:
+        return False
+    code = ord(character)
+    return code < _FIRST_PRINTABLE or code == _DELETE
 
 
 def extract(data: bytes, *, max_pages: int) -> Extracted:

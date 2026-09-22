@@ -50,7 +50,7 @@ export function helpStrip(resources, deps) {
 
   return el('section', { className: 'panel', attrs: { 'aria-labelledby': 'next-steps' } }, [
     el('div', { className: 'panel__header' }, [
-      el('h3', { id: 'next-steps', style: 'margin:0', text: t('help.nextSteps') }),
+      el('h2', { id: 'next-steps', className: 'flush', text: t('help.nextSteps') }),
     ]),
     el('div', { className: 'panel__body' }, [
       el('ul', { className: 'register' }, resources.map((entry) => resourceRow(entry, deps))),

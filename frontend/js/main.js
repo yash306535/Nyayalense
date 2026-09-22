@@ -173,6 +173,22 @@ function route() {
 
 /* ------------------------------------------------------------------ views */
 
+/**
+ * Keep the view's heading accurate as it changes between states.
+ *
+ * The heading stays in the DOM either way: a view with no level-one heading is
+ * a view a screen-reader user cannot orient themselves in.
+ *
+ * @param {object|null} doc The open document, or null on the upload screen.
+ */
+function setCheckHeading(doc) {
+  const heading = document.getElementById('check-heading');
+  if (!heading) return;
+  heading.textContent = doc
+    ? doc.title || t(`docTypes.${doc.doc_type}`)
+    : t('upload.heading');
+}
+
 /** Render the upload panel. */
 function renderUpload() {
   fill(
@@ -201,6 +217,7 @@ async function ingest(call) {
     checklist = await api.checklist(result.document.doc_type).catch(() => null);
     dom['upload-panel'].hidden = true;
     dom.workspace.hidden = false;
+    setCheckHeading(result.document);
     renderWorkspace();
     await loadAnalyses();
   });
@@ -270,6 +287,9 @@ function renderAssistant() {
   wireTabs(tablist, (tab) => {
     store.set({ tab });
     renderAssistant();
+    // The panel is rebuilt, which destroys the node that had focus. Without
+    // this, arrow-keying along the tabs drops the user out of the tab list.
+    document.getElementById(`tab-${tab}`)?.focus();
   });
 
   const panel = el('div', {
@@ -316,7 +336,6 @@ function tabContent(state, deps) {
       ...deps,
       answers: state.answers,
       suggested: checklist?.suggested_questions || [],
-      busy: state.status.busy,
       onAsk: ask,
     });
   }
@@ -355,9 +374,9 @@ function briefPanel(state, deps) {
 function loading() {
   return el('div', { className: 'stack-sm', attrs: { 'aria-busy': 'true' } }, [
     el('p', { className: 'source-note', text: t('app.loading') }),
-    el('div', { className: 'skeleton', style: 'height:1.2em' }),
-    el('div', { className: 'skeleton', style: 'height:1.2em;width:80%' }),
-    el('div', { className: 'skeleton', style: 'height:1.2em;width:60%' }),
+    el('div', { className: 'skeleton skeleton-line' }),
+    el('div', { className: 'skeleton skeleton-line skeleton-line--md' }),
+    el('div', { className: 'skeleton skeleton-line skeleton-line--sm' }),
   ]);
 }
 
@@ -399,7 +418,7 @@ function showClause(clauseId, citation) {
       : clause.id;
     fill(dom['clause-dialog-body'], [
       clause.heading && el('strong', { text: clause.heading }),
-      el('p', { style: 'white-space:pre-wrap', text: clause.text }),
+      el('p', { className: 'preserve-breaks', text: clause.text }),
     ]);
     openDialog(dom['clause-dialog']);
     return;
@@ -427,6 +446,7 @@ async function clearDocument() {
   checklist = null;
   dom.workspace.hidden = true;
   dom['upload-panel'].hidden = false;
+  setCheckHeading(null);
   dom.main.focus();
 }
 
@@ -453,7 +473,11 @@ async function downloadCalendar(dates) {
  */
 async function exportFile(payload) {
   await withBusy(t('app.loading'), async () => {
-    const file = await api.export({ ...payload, language: store.get().language });
+    const state = store.get();
+    const file = await api.export({
+      ...payload,
+      audience: { role: state.role, language: state.language, reading_level: state.readingLevel },
+    });
     saveBlob(file.blob, file.filename || downloadName(payload.kind, payload.format));
     announce(dom['live-polite'], t('a11y.fileReady', { format: payload.format.toUpperCase() }));
   });
@@ -568,7 +592,7 @@ function showError(error) {
   store.set({ error: message });
   announce(dom['live-alert'], message);
   const banner = el('div', { className: 'notice notice--error', attrs: { role: 'alert' } }, [
-    el('div', {}, [el('strong', { text: t('errors.summaryTitle') }), el('p', { style: 'margin:0', text: message })]),
+    el('div', {}, [el('strong', { text: t('errors.summaryTitle') }), el('p', { className: 'flush', text: message })]),
   ]);
   const host = dom.workspace.hidden ? dom['upload-controls'] : dom['assistant-pane'];
   host.prepend(banner);

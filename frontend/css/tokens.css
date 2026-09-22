@@ -16,10 +16,12 @@
   --paper-sunken: #f2f1ec;
   --app-bg: #edece6;
 
-  /* --- ink ------------------------------------------------------------ */
+  /* --- ink ------------------------------------------------------------
+     Every one of these clears 4.5:1 against paper, raised and sunken, which
+     the accessibility tests check rather than assume. */
   --ink: #1d2433;
   --ink-muted: #4a5468;
-  --ink-faint: #6b7688;
+  --ink-faint: #5c6678;
 
   /* --- the seal ------------------------------------------------------- */
   --seal: #5b3e96;
@@ -84,7 +86,7 @@
   --shadow-lift: 0 6px 24px rgb(29 36 51 / 14%);
 
   --measure: 68ch;
-  --pane-min: 20rem;
+  --pane-min: 26rem;
 
   /* Smallest interactive target, per WCAG 2.2 target size (minimum). */
   --target: 24px;
@@ -100,7 +102,7 @@
 
     --ink: #e8eaee;
     --ink-muted: #b3b9c4;
-    --ink-faint: #8d94a1;
+    --ink-faint: #979eab;
 
     --seal: #b9a4ea;
     --seal-strong: #cdbdf3;
@@ -139,7 +141,7 @@
 
   --ink: #e8eaee;
   --ink-muted: #b3b9c4;
-  --ink-faint: #8d94a1;
+  --ink-faint: #979eab;
 
   --seal: #b9a4ea;
   --seal-strong: #cdbdf3;

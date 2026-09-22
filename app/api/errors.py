@@ -66,9 +66,27 @@ def problem_response(
     return JSONResponse(body, status_code=status, media_type=PROBLEM_MEDIA_TYPE)
 
 
+async def _handle_unexpected_error(request: Request, exc: Exception) -> Response:
+    """Answer an unhandled exception without leaking internals."""
+    logger.exception("unhandled_error", exc_info=exc)
+    return problem_response(
+        status=int(HTTPStatus.INTERNAL_SERVER_ERROR),
+        code="internal-error",
+        title="Something went wrong",
+        detail="NyayaLens could not complete that request. Please try again.",
+        request=request,
+    )
+
+
 async def _handle_application_error(request: Request, exc: Exception) -> Response:
-    """Answer a deliberate application failure."""
-    assert isinstance(exc, NyayaLensError)  # noqa: S101 - registered for this type only
+    """Answer a deliberate application failure.
+
+    The type check is a real branch rather than an assert: assertions are
+    stripped under ``python -O``, and a handler that then leaked an exception
+    would turn a tidy 4xx into a stack trace.
+    """
+    if not isinstance(exc, NyayaLensError):  # pragma: no cover - registered per type
+        return await _handle_unexpected_error(request, exc)
     if exc.status >= HTTPStatus.INTERNAL_SERVER_ERROR:
         logger.error("application_error", extra={"code": exc.code}, exc_info=exc)
     else:
@@ -88,7 +106,8 @@ async def _handle_validation_error(request: Request, exc: Exception) -> Response
     Field locations and messages are returned, but submitted values are not, so
     no document text or personal data is echoed back.
     """
-    assert isinstance(exc, RequestValidationError)  # noqa: S101 - registered for this type only
+    if not isinstance(exc, RequestValidationError):  # pragma: no cover - registered per type
+        return await _handle_unexpected_error(request, exc)
     errors = [
         {"field": ".".join(str(part) for part in error["loc"][1:]), "message": error["msg"]}
         for error in exc.errors()
@@ -105,25 +124,14 @@ async def _handle_validation_error(request: Request, exc: Exception) -> Response
 
 async def _handle_http_exception(request: Request, exc: Exception) -> Response:
     """Answer a Starlette ``HTTPException`` in problem+json."""
-    assert isinstance(exc, HTTPException)  # noqa: S101 - registered for this type only
+    if not isinstance(exc, HTTPException):  # pragma: no cover - registered per type
+        return await _handle_unexpected_error(request, exc)
     status = HTTPStatus(exc.status_code)
     return problem_response(
         status=exc.status_code,
         code=status.phrase.lower().replace(" ", "-"),
         title=_GENERIC_TITLES.get(status, status.phrase),
         detail=str(exc.detail),
-        request=request,
-    )
-
-
-async def _handle_unexpected_error(request: Request, exc: Exception) -> Response:
-    """Answer an unhandled exception without leaking internals."""
-    logger.exception("unhandled_error", exc_info=exc)
-    return problem_response(
-        status=int(HTTPStatus.INTERNAL_SERVER_ERROR),
-        code="internal-error",
-        title="Something went wrong",
-        detail="NyayaLens could not complete that request. Please try again.",
         request=request,
     )
 

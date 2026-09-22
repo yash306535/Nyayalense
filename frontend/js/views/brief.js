@@ -53,9 +53,9 @@ export function briefView(brief, deps) {
           'dl',
           {},
           brief.keyTerms.flatMap((term) => [
-            el('dt', { style: 'font-weight:600', text: term.label }),
+            el('dt', { className: 'strong', text: term.label }),
             el('dd', {
-              style: 'margin:0 0 0.5rem',
+              className: 'gap-below-sm',
               text: term.specified ? term.value : t('overview.notSpecified'),
             }),
           ]),
@@ -66,7 +66,7 @@ export function briefView(brief, deps) {
       block(
         t('brief.topRisks'),
         brief.risks.map((risk) =>
-          el('div', { className: `risk risk--${risk.severity}`, style: 'margin-bottom:0.75rem' }, [
+          el('div', { className: `risk risk--${risk.severity} spaced` }, [
             el('div', { className: 'row-between' }, [
               el('strong', { text: risk.title }),
               severityBadge(risk.severity, t),
@@ -134,7 +134,7 @@ export function briefView(brief, deps) {
       block(
         t('brief.questions'),
         brief.questions.map((entry) =>
-          el('div', { style: 'margin-bottom:0.75rem' }, [
+          el('div', { className: 'spaced' }, [
             el('p', {}, [el('strong', { text: entry.question })]),
             entry.answered
               ? el('div', {}, entry.statements.map((statement) => quote(statement)))
@@ -159,7 +159,7 @@ export function briefView(brief, deps) {
       icon('seal'),
       el('div', {}, [
         el('strong', { text: t('brief.whereToGetHelp') }),
-        el('p', { style: 'margin:0.25rem 0 0' }, [
+        el('p', { className: 'tight' }, [
           el('button', {
             type: 'button',
             className: 'btn btn--small',
@@ -199,10 +199,10 @@ function block(title, content) {
  */
 function quote(statement) {
   return el('div', {}, [
-    el('p', { style: 'margin:0 0 0.25rem', text: statement.text }),
+    el('p', { className: 'gap-below-xs', text: statement.text }),
     ...statement.citations.map((citation) =>
-      el('blockquote', { style: 'margin:0 0 0.5rem;padding-left:0.75rem;border-left:3px solid var(--seal-rule)' }, [
-        el('p', { style: 'margin:0', text: `"${citation.quote}"` }),
+      el('blockquote', { className: 'quote-evidence' }, [
+        el('p', { className: 'flush', text: `"${citation.quote}"` }),
         el('cite', { className: 'source-note', text: citation.clauseId }),
       ]),
     ),

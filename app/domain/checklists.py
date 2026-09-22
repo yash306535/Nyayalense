@@ -97,8 +97,11 @@ class Checklist(Frozen):
             role: The reader's role, used to drop irrelevant items.
 
         Returns:
-            One ``- id: what to look for`` line per item.
+            One ``- item <id>: ...`` line per item. The ``item`` marker keeps
+            these lines apart from the instruction bullets around them in the
+            same prompt, which otherwise read as checklist ids.
         """
         return "\n".join(
-            f"- {item.id}: {item.title}. Look for: {item.look_for}" for item in self.for_role(role)
+            f"- item {item.id}: {item.title}. Look for: {item.look_for}"
+            for item in self.for_role(role)
         )

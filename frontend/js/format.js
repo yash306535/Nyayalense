@@ -39,6 +39,10 @@ export function formatNumber(value, language) {
  * @returns {string} The formatted amount.
  */
 export function formatMoney(value, language) {
+  // Stripping non-digits from text with no digits in it yields an empty string,
+  // which Number() reads as zero. A term worth "to be agreed" must never be
+  // shown as a rupee amount, so text without a digit is returned as written.
+  if (typeof value !== 'number' && !/\d/.test(String(value ?? ''))) return String(value ?? '');
   const number = typeof value === 'number' ? value : Number(String(value).replace(/[^\d.-]/g, ''));
   if (!Number.isFinite(number)) return String(value);
   return new Intl.NumberFormat(localeFor(language), {

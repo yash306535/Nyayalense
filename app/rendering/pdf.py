@@ -21,32 +21,23 @@ logger = logging.getLogger(__name__)
 
 PRINT_CSS: Final = TEMPLATES_DIR / "print.css"
 
-#: The only resources a rendered document may load. Everything else, including
-#: every http and https URL, is refused: a document can contain user text, and
-#: a renderer that fetches URLs from user text is a server-side request forgery.
-_ALLOWED_SCHEMES: Final[frozenset[str]] = frozenset({"data"})
-
 
 def no_network_fetcher(url: str, **_: Any) -> dict[str, Any]:
-    """Serve only packaged resources, refusing every network URL.
+    """Refuse every fetch.
+
+    An exported document needs nothing from outside: the stylesheet is read from
+    disk by path and there are no images. So the safest fetcher is one that
+    serves nothing at all. A document can contain text a user or a model
+    supplied, and a renderer that will fetch a URL out of that text is a
+    server-side request forgery waiting to happen.
 
     Args:
         url: The URL the renderer wants to fetch.
 
-    Returns:
-        A WeasyPrint resource dictionary for an allowed URL.
-
     Raises:
-        ExportError: The URL is not one of the few that are allowed.
+        ExportError: Always.
     """
-    scheme = urlparse(url).scheme.lower()
-    if scheme in _ALLOWED_SCHEMES:
-        from weasyprint.urls import default_url_fetcher  # noqa: PLC0415 - only on this path
-
-        resource: dict[str, Any] = default_url_fetcher(url)
-        return resource
-
-    logger.warning("pdf_fetch_refused", extra={"scheme": scheme})
+    logger.warning("pdf_fetch_refused", extra={"scheme": urlparse(url).scheme.lower()})
     msg = "This document tried to load an external resource, so it was not created."
     raise ExportError(msg)
 

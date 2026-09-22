@@ -10,14 +10,19 @@
 /**
  * Create an element.
  *
+ * Options are read in four ways. `className` and `text` are set directly;
+ * `dataset` and `attrs` are set as data attributes and attributes; a function
+ * becomes an event listener with its `on` prefix stripped; and anything else is
+ * set as a DOM property when the element has one, or an attribute otherwise.
+ *
  * @param {string} tag Tag name.
- * @param {object} [options] Attributes, classes, dataset and text.
+ * @param {object} [options] Properties, classes, dataset, attributes and text.
  * @param {(Node|string|null|undefined|false)[]} [children] Child nodes or text.
  * @returns {HTMLElement} The new element.
  */
 export function el(tag, options = {}, children = []) {
   const node = document.createElement(tag);
-  const { className, text, html: _ignored, dataset, attrs, ...rest } = options;
+  const { className, text, dataset, attrs, ...rest } = options;
 
   if (className) node.className = className;
   if (text !== undefined && text !== null) node.textContent = String(text);
@@ -30,11 +35,33 @@ export function el(tag, options = {}, children = []) {
     node.setAttribute(key, value === true ? '' : String(value));
   }
   for (const [key, value] of Object.entries(rest)) {
-    if (typeof value === 'function') node.addEventListener(key.replace(/^on/, ''), value);
+    if (typeof value === 'function') {
+      node.addEventListener(key.replace(/^on/, ''), value);
+    } else if (value !== null && value !== undefined && value !== false) {
+      setProperty(node, key, value);
+    }
   }
 
   append(node, children);
   return node;
+}
+
+/**
+ * Set one option on an element.
+ *
+ * Properties are preferred over attributes: `value` and `checked` only take
+ * effect as properties once an element is live, and `hidden` reads better as one.
+ *
+ * @param {HTMLElement} node The element.
+ * @param {string} key The option name.
+ * @param {unknown} value The value.
+ */
+function setProperty(node, key, value) {
+  if (key in node) {
+    node[key] = value;
+  } else {
+    node.setAttribute(key, value === true ? '' : String(value));
+  }
 }
 
 /**

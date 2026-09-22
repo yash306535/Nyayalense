@@ -102,17 +102,32 @@
   gap: var(--s2) var(--s4);
 }
 
+/* WCAG 2.2 target size (minimum): every link here is its own target. */
+.app-footer__inner a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: var(--target);
+  padding-inline: var(--s1);
+}
+
 /* --- the reading desk ------------------------------------------------ */
 
 .desk {
   display: grid;
   gap: var(--s5);
   align-items: start;
-  grid-template-columns: minmax(var(--pane-min), 1.15fr) minmax(var(--pane-min), 1fr);
+  /*
+   * auto-fit rather than two fixed tracks, because the panes must collapse to
+   * one column whenever they no longer fit -- not only at a width breakpoint.
+   * A media query measures the viewport in initial rem, so it cannot see text
+   * the reader has enlarged; this can, and the page stops scrolling sideways
+   * at 200% text as a result.
+   */
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--pane-min), 100%), 1fr));
 }
 
 @media (width < 60rem) {
-  .desk { grid-template-columns: 1fr; }
+  /* Once stacked, the assistant comes first: it is what the reader came for. */
   .desk__document { order: 2; }
 }
 

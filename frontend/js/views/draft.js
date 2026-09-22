@@ -109,7 +109,7 @@ async function openTemplate(templateId, templates, host, deps) {
       const result = await deps.api.draftPreview({
         template_id: templateId,
         facts,
-        language: deps.language,
+        audience: { role: deps.state.role, language: deps.language, reading_level: 'simple' },
       });
       fill(preview, renderBlocks(result.document || { blocks: [] }));
       fill(
@@ -139,7 +139,13 @@ async function openTemplate(templateId, templates, host, deps) {
           text: format === 'docx' ? t('draft.downloadWord') : t('draft.downloadPdf'),
           attrs: { disabled: !confirmed },
           onclick: () =>
-            deps.onExport({ kind: 'draft', format, template_id: templateId, facts }),
+            deps.onExport({
+              kind: 'draft',
+              format,
+              template_id: templateId,
+              facts,
+              confirmed: true,
+            }),
         }),
       ),
     );
@@ -157,7 +163,7 @@ async function openTemplate(templateId, templates, host, deps) {
         el('input', {
           type: 'checkbox',
           id: confirmId,
-          style: 'inline-size:auto;min-block-size:auto',
+          className: 'checkbox',
           onchange: (event) => {
             confirmed = event.target.checked;
             setDownloads();
@@ -265,7 +271,7 @@ function fieldErrors(error, t) {
       el('strong', { text: t('errors.summaryTitle') }),
       el(
         'ul',
-        { style: 'margin:0.5rem 0 0' },
+        { className: 'gap-above' },
         (error.fields || []).map((entry) =>
           el('li', {}, [
             el('a', { attrs: { href: `#fact-${entry.field}` }, text: `${entry.field}: ${entry.message}` }),
@@ -320,7 +326,7 @@ function inlineNodes(block) {
   return (block.runs || []).map((run) => {
     if (run.fact) {
       return el('span', {
-        style: 'text-decoration:underline dotted var(--seal);text-underline-offset:0.2em',
+        className: 'from-fact',
         text: run.text,
       });
     }

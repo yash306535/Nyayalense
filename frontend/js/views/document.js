@@ -41,8 +41,7 @@ export function documentPane({ t, document: doc, onClear }) {
         el('div', {}, [
           el('strong', { text: doc.title || t('document.title') }),
           el('p', {
-            className: 'source-note',
-            style: 'margin:0',
+            className: 'source-note flush',
             text: `${t(`docTypes.${doc.doc_type}`)} · ${t('document.clauses', { count: doc.clauses.length })}`,
           }),
         ]),
@@ -112,7 +111,7 @@ export function revealClause({ container, clauses, clauseId, citation, onBack, t
 
   if (onBack) {
     target.append(
-      el('p', { style: 'grid-column:1/-1;margin:0.5rem 0 0' }, [
+      el('p', { className: 'span-all' }, [
         el('button', {
           type: 'button',
           className: 'btn btn--small btn--quiet',

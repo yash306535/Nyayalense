@@ -61,9 +61,15 @@ convention = "google"
 ban-relative-imports = "all"
 
 [tool.ruff.lint.per-file-ignores]
-# Tests deliberately contain the ambiguous characters (RUF001) the normaliser
-# exists to handle, and assert on them (S101).
-"tests/**" = ["S101", "D100", "D101", "D102", "D103", "D104", "PLR2004", "ANN", "RUF001"]
+# Rules that are idiomatic inside a test suite: asserts (S101), literal
+# expectations (PLR2004), the ambiguous characters the normaliser exists to
+# handle (RUF001), imports placed beside the behaviour under test (PLC0415),
+# fixtures requested for their side effect (ARG001), and test data that reads
+# better as one string than wrapped (E501, S105).
+"tests/**" = [
+  "S101", "S105", "D100", "D101", "D102", "D103", "D104", "D205",
+  "PLR2004", "ANN", "RUF001", "PLC0415", "ARG001", "E501",
+]
 # RUF001 flags characters that look like ASCII but are not. Recognising exactly
 # those characters is what these modules are for, so the literals are deliberate.
 "app/domain/normalize.py" = ["RUF001"]

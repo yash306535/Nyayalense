@@ -68,8 +68,9 @@
     <main id="main" class="app-main" tabindex="-1">
       <!-- Check a document ------------------------------------------------ -->
       <section id="view-check" class="view" aria-labelledby="check-heading">
+        <h1 id="check-heading" data-i18n="upload.heading">Check a document before you sign it</h1>
+
         <div id="upload-panel" class="section">
-          <h1 id="check-heading" data-i18n="upload.heading">Check a document before you sign it</h1>
           <p class="prose" data-i18n="upload.intro">
             Upload or paste a rental agreement, job offer, loan agreement, policy or notice.
             NyayaLens explains it in plain language and shows you the exact clause behind every
@@ -116,7 +117,7 @@
 
     <footer class="app-footer">
       <div class="app-footer__inner">
-        <p style="margin: 0" data-i18n="app.disclaimer">
+        <p class="flush" data-i18n="app.disclaimer">
           NyayaLens explains documents. It isn't legal advice.
         </p>
         <a href="#/about" data-i18n="app.howItWorks">How it works and its limits</a>
@@ -127,7 +128,7 @@
     <!-- A citation opens its clause here on a phone, where there is one column. -->
     <dialog id="clause-dialog" aria-labelledby="clause-dialog-title">
       <div class="dialog__header">
-        <h2 id="clause-dialog-title" style="margin: 0"></h2>
+        <h2 id="clause-dialog-title" class="flush"></h2>
         <button
           type="button"
           class="btn btn--small btn--quiet"

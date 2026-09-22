@@ -212,7 +212,7 @@ function mappingCard(mapping, found, deps) {
 
   return el('section', { className: 'stack-sm' }, [
     el('div', { className: 'row-between' }, [
-      el('h3', { style: 'margin:0', text: `${mapping.old.act.toUpperCase()} ${mapping.old.section}` }),
+      el('h2', { className: 'flush', text: `${mapping.old.act.toUpperCase()} ${mapping.old.section}` }),
       el('div', { className: 'row' }, [
         el('span', { className: 'chip', text: t(`laws.changeTypes.${mapping.change_type}`) }),
         mapping.review_status !== 'verified' &&
@@ -256,10 +256,10 @@ function mappingCard(mapping, found, deps) {
  */
 function sourceCell(source, t) {
   return el('div', { className: 'stack-sm' }, [
-    el('p', { className: 'source-note', style: 'margin:0', text: source?.document || '' }),
-    source?.page ? el('p', { className: 'source-note', style: 'margin:0', text: `p. ${source.page}` }) : null,
+    el('p', { className: 'source-note flush', text: source?.document || '' }),
+    source?.page ? el('p', { className: 'source-note flush', text: `p. ${source.page}` }) : null,
     source?.url ? externalLink(source.url, source.url, t('a11y.newTab')) : null,
-    el('p', { className: 'source-note', style: 'margin:0', text: t('laws.sourceNote') }),
+    el('p', { className: 'source-note flush', text: t('laws.sourceNote') }),
   ]);
 }
 
