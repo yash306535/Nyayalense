@@ -1,0 +1,363 @@
+{
+  "id": "iea_bsa",
+  "old_act": "iea",
+  "new_act": "bsa",
+  "old_act_name": "Indian Evidence Act, 1872",
+  "new_act_name": "Bharatiya Sakshya Adhiniyam, 2023",
+  "in_force_from": "2024-07-01",
+  "source_note": "Correspondence tables published by the Bureau of Police Research & Development (https://bprd.nic.in), 21 June 2024. They are a police training aid and reference document, not a statutory instrument.",
+  "mappings": [
+    {
+      "old": {
+        "act": "iea",
+        "section": "3",
+        "title": "Interpretation clause"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "2",
+          "title": "Definitions"
+        }
+      ],
+      "change_type": "modified",
+      "note": "The new Act expands the definition of a document to cover electronic records.",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "5",
+        "title": "Evidence may be given of facts in issue and relevant facts"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "4",
+          "title": "Evidence may be given of facts in issue and relevant facts"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "17",
+        "title": "Admission defined"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "15",
+          "title": "Admission defined"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "24",
+        "title": "Confession caused by inducement, threat or promise"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "22",
+          "title": "Confession caused by inducement, threat or promise"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "25",
+        "title": "Confession to police officer not to be proved"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "23",
+          "title": "Confession to police officer not to be proved"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "27",
+        "title": "How much of information received from an accused may be proved"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "23",
+          "title": "Confession to police officer not to be proved"
+        }
+      ],
+      "change_type": "merged",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "32",
+        "title": "Cases in which a statement of a relevant fact by a person who is dead is relevant"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "26",
+          "title": "Cases in which a statement of a relevant fact by a person who is dead is relevant"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "45",
+        "title": "Opinions of experts"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "39",
+          "title": "Opinions of experts"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "60",
+        "title": "Oral evidence must be direct"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "55",
+          "title": "Oral evidence must be direct"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "61",
+        "title": "Proof of contents of documents"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "56",
+          "title": "Proof of contents of documents"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "62",
+        "title": "Primary evidence"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "57",
+          "title": "Primary evidence"
+        }
+      ],
+      "change_type": "modified",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "63",
+        "title": "Secondary evidence"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "58",
+          "title": "Secondary evidence"
+        }
+      ],
+      "change_type": "modified",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "65A",
+        "title": "Special provisions as to evidence relating to electronic record"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "63",
+          "title": "Admissibility of electronic records"
+        }
+      ],
+      "change_type": "merged",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "65B",
+        "title": "Admissibility of electronic records"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "63",
+          "title": "Admissibility of electronic records"
+        }
+      ],
+      "change_type": "modified",
+      "note": "The certificate requirement is carried forward in the new Act with a revised schedule and form.",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "101",
+        "title": "Burden of proof"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "104",
+          "title": "Burden of proof"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "114",
+        "title": "Court may presume existence of certain facts"
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "119",
+          "title": "Court may presume existence of certain facts"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    }
+  ]
+}

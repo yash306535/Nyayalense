@@ -1,0 +1,64 @@
+/* Shared A4 print styles for every exported PDF. */
+
+@page {
+  size: A4;
+  margin: 20mm 18mm 22mm;
+
+  @bottom-center {
+    content: counter(page) " / " counter(pages);
+    font-family: sans-serif;
+    font-size: 8pt;
+    color: #555;
+  }
+}
+
+body {
+  font-family: 'Noto Serif', 'Noto Serif Devanagari', Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  color: #111;
+  margin: 0;
+}
+
+h1 { font-size: 15pt; margin: 0 0 6mm; }
+h2 { font-size: 13pt; margin: 6mm 0 3mm; }
+h3, h4 { font-size: 11.5pt; margin: 5mm 0 2mm; }
+h1, h2, h3, h4 { break-after: avoid; font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif; }
+
+p { margin: 0 0 3.5mm; }
+ul, ol { margin: 0 0 3.5mm; padding-inline-start: 6mm; }
+li { margin-bottom: 1.5mm; }
+
+blockquote {
+  margin: 0 0 3.5mm;
+  padding-inline-start: 4mm;
+  border-inline-start: 1pt solid #888;
+  font-style: italic;
+}
+
+table {
+  inline-size: 100%;
+  border-collapse: collapse;
+  margin: 0 0 4mm;
+  font-size: 9.5pt;
+  font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+}
+
+/* The header row repeats on every page of a long table. */
+thead { display: table-header-group; }
+tfoot { display: table-footer-group; }
+tr { break-inside: avoid; }
+
+th, td {
+  border: 0.4pt solid #777;
+  padding: 2mm 2.5mm;
+  text-align: start;
+  vertical-align: top;
+}
+
+th { background: #f0f0ee; font-weight: 600; }
+
+hr { border: 0; border-top: 0.4pt solid #999; margin: 5mm 0; }
+
+ins { text-decoration: underline; }
+del { text-decoration: line-through; }

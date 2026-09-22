@@ -11,7 +11,7 @@ Analysis results built on top of these live in :mod:`app.domain.results`.
 from functools import cached_property
 from typing import Annotated, Self
 
-from pydantic import BaseModel, ConfigDict, Field, computed_field, field_validator, model_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 from app.constants import MAX_QUOTE_WORDS
 from app.domain.enums import (
@@ -211,13 +211,16 @@ class VerificationReport(Frozen):
     verified: Annotated[int, Field(ge=0)] = 0
     removed: list[RemovedStatement] = Field(default_factory=list)
 
-    @computed_field  # type: ignore[prop-decorator]
     @property
     def removed_count(self) -> int:
-        """How many statements were dropped."""
+        """How many statements were dropped.
+
+        A plain property, not a serialised field: the browser sends results back
+        with every request, and a field it cannot send back would be rejected.
+        The client derives the same number from ``removed``.
+        """
         return len(self.removed)
 
-    @computed_field  # type: ignore[prop-decorator]
     @property
     def all_verified(self) -> bool:
         """True when nothing had to be removed."""

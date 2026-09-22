@@ -1,0 +1,28 @@
+# Request to change a clause before signing
+
+{{ sender_name }}
+{% if sender_email %}{{ sender_email }}
+{% endif %}
+**To:** {{ recipient_name }}
+
+**Subject:** {{ document_name }} — a change I would like to discuss before signing
+
+Dear {{ recipient_name }},
+
+Thank you for sending me the {{ document_name }}. I have read it and I would like to discuss clause {{ clause_label }} before I sign.
+
+The clause currently reads:
+
+> {{ clause_quote }}
+
+I would like it changed as follows:
+
+{{ requested_change }}
+{% if reason %}
+{{ reason }}
+{% endif %}
+I am happy to sign once we have agreed on this. Could you let me know within {{ reply_days }} days whether this change is acceptable?
+
+Yours sincerely,
+
+{{ sender_name }}

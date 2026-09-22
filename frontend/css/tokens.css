@@ -1,0 +1,172 @@
+/*
+ * Design tokens.
+ *
+ * The direction is Indian stamp paper and the office rubber stamp: a calm page
+ * for the document, and one bold element — the violet verification seal — for
+ * the thing that makes this product different. Everything else stays quiet.
+ *
+ * Every colour is defined here on bare :root, then redefined for dark. No
+ * colour has its only definition inside a media query.
+ */
+
+:root {
+  /* --- surfaces ------------------------------------------------------- */
+  --paper: #fbfbf8;
+  --paper-raised: #ffffff;
+  --paper-sunken: #f2f1ec;
+  --app-bg: #edece6;
+
+  /* --- ink ------------------------------------------------------------ */
+  --ink: #1d2433;
+  --ink-muted: #4a5468;
+  --ink-faint: #6b7688;
+
+  /* --- the seal ------------------------------------------------------- */
+  --seal: #5b3e96;
+  --seal-strong: #472f78;
+  --seal-tint: #efeafb;
+  --seal-rule: #c9bce8;
+
+  /* --- severity ------------------------------------------------------- */
+  --high: #a4262c;
+  --high-tint: #fbeced;
+  --medium: #8a5a00;
+  --medium-tint: #fdf3e2;
+  --low: #3d5a73;
+  --low-tint: #eaf1f6;
+
+  /* --- change markers ------------------------------------------------- */
+  --added: #1f6b46;
+  --added-tint: #e6f4ec;
+  --removed: #8c3a3f;
+  --removed-tint: #f8ecec;
+
+  /* --- structure ------------------------------------------------------ */
+  --rule: #d5d8de;
+  --rule-strong: #b6bbc6;
+  --focus: #1a4fd6;
+
+  /* --- type ----------------------------------------------------------- */
+  --font-document: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia,
+    'Noto Serif', 'Noto Serif Devanagari', serif;
+  --font-app: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans',
+    'Noto Sans Devanagari', 'Nirmala UI', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  --text-xs: 0.78rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+
+  --leading-tight: 1.25;
+  --leading-normal: 1.55;
+  --leading-document: 1.7;
+
+  /* --- spacing, on a 4px step ---------------------------------------- */
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 0.75rem;
+  --s4: 1rem;
+  --s5: 1.5rem;
+  --s6: 2rem;
+  --s7: 3rem;
+  --s8: 4rem;
+
+  --radius-sm: 3px;
+  --radius: 6px;
+  --radius-lg: 10px;
+
+  --shadow-sm: 0 1px 2px rgb(29 36 51 / 8%);
+  --shadow: 0 2px 8px rgb(29 36 51 / 10%);
+  --shadow-lift: 0 6px 24px rgb(29 36 51 / 14%);
+
+  --measure: 68ch;
+  --pane-min: 20rem;
+
+  /* Smallest interactive target, per WCAG 2.2 target size (minimum). */
+  --target: 24px;
+  --target-touch: 44px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #1a1c20;
+    --paper-raised: #23262c;
+    --paper-sunken: #15171a;
+    --app-bg: #101114;
+
+    --ink: #e8eaee;
+    --ink-muted: #b3b9c4;
+    --ink-faint: #8d94a1;
+
+    --seal: #b9a4ea;
+    --seal-strong: #cdbdf3;
+    --seal-tint: #2a2440;
+    --seal-rule: #4b3f74;
+
+    --high: #ff9ba0;
+    --high-tint: #3a2124;
+    --medium: #ecc07a;
+    --medium-tint: #33280f;
+    --low: #a8c6dd;
+    --low-tint: #1c2830;
+
+    --added: #7fd3a6;
+    --added-tint: #162c21;
+    --removed: #e79aa0;
+    --removed-tint: #2f1e20;
+
+    --rule: #363a42;
+    --rule-strong: #4d525c;
+    --focus: #8fb2ff;
+
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
+    --shadow: 0 2px 8px rgb(0 0 0 / 45%);
+    --shadow-lift: 0 6px 24px rgb(0 0 0 / 55%);
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --paper: #1a1c20;
+  --paper-raised: #23262c;
+  --paper-sunken: #15171a;
+  --app-bg: #101114;
+
+  --ink: #e8eaee;
+  --ink-muted: #b3b9c4;
+  --ink-faint: #8d94a1;
+
+  --seal: #b9a4ea;
+  --seal-strong: #cdbdf3;
+  --seal-tint: #2a2440;
+  --seal-rule: #4b3f74;
+
+  --high: #ff9ba0;
+  --high-tint: #3a2124;
+  --medium: #ecc07a;
+  --medium-tint: #33280f;
+  --low: #a8c6dd;
+  --low-tint: #1c2830;
+
+  --added: #7fd3a6;
+  --added-tint: #162c21;
+  --removed: #e79aa0;
+  --removed-tint: #2f1e20;
+
+  --rule: #363a42;
+  --rule-strong: #4d525c;
+  --focus: #8fb2ff;
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
+  --shadow: 0 2px 8px rgb(0 0 0 / 45%);
+  --shadow-lift: 0 6px 24px rgb(0 0 0 / 55%);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}

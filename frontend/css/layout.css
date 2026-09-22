@@ -1,0 +1,153 @@
+/* Page frame, the two-pane reading desk, and how it collapses on a phone. */
+
+.app-header {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 20;
+  background: var(--paper-raised);
+  border-block-end: 1px solid var(--rule);
+  padding-block-start: env(safe-area-inset-top, 0);
+}
+
+.app-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s4);
+  max-inline-size: 90rem;
+  margin-inline: auto;
+  padding: var(--s3) var(--s4);
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s2);
+  font-weight: 650;
+  font-size: var(--text-lg);
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.brand__mark {
+  color: var(--seal);
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+.brand__tagline {
+  font-size: var(--text-xs);
+  font-weight: 400;
+  color: var(--ink-faint);
+}
+
+.app-nav {
+  display: flex;
+  gap: var(--s1);
+  flex-wrap: wrap;
+  margin-inline-end: auto;
+}
+
+.app-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: var(--target-touch);
+  padding: var(--s2) var(--s3);
+  border-radius: var(--radius);
+  color: var(--ink-muted);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.app-nav a:hover { background: var(--paper-sunken); color: var(--ink); }
+
+.app-nav a[aria-current='page'] {
+  color: var(--ink);
+  background: var(--seal-tint);
+  box-shadow: inset 0 -2px 0 var(--seal);
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  flex-wrap: wrap;
+}
+
+.app-main {
+  flex: 1;
+  inline-size: 100%;
+  max-inline-size: 90rem;
+  margin-inline: auto;
+  padding: var(--s5) var(--s4);
+}
+
+.app-footer {
+  border-block-start: 1px solid var(--rule);
+  background: var(--paper-raised);
+  padding: var(--s4);
+  padding-block-end: calc(var(--s4) + env(safe-area-inset-bottom, 0px));
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.app-footer__inner {
+  max-inline-size: 90rem;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s2) var(--s4);
+}
+
+/* --- the reading desk ------------------------------------------------ */
+
+.desk {
+  display: grid;
+  gap: var(--s5);
+  align-items: start;
+  grid-template-columns: minmax(var(--pane-min), 1.15fr) minmax(var(--pane-min), 1fr);
+}
+
+@media (width < 60rem) {
+  .desk { grid-template-columns: 1fr; }
+  .desk__document { order: 2; }
+}
+
+.desk__document,
+.desk__assistant {
+  min-inline-size: 0; /* lets long words wrap instead of widening the grid */
+}
+
+@media (width >= 60rem) {
+  .desk__assistant {
+    position: sticky;
+    inset-block-start: 5.5rem;
+    max-block-size: calc(100vh - 7rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
+
+.stack { display: flex; flex-direction: column; gap: var(--s4); }
+.stack-sm { display: flex; flex-direction: column; gap: var(--s2); }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2); }
+.row-between { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s3); justify-content: space-between; }
+
+.prose { max-inline-size: var(--measure); }
+
+.section { margin-block-end: var(--s6); }
+
+.view[hidden] { display: none; }
+
+@media print {
+  .app-header,
+  .app-footer,
+  .app-nav,
+  .no-print { display: none !important; }
+
+  .desk { display: block; }
+  body { background: #fff; }
+}

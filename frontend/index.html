@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>NyayaLens — Understand what you sign, with proof</title>
+    <meta
+      name="description"
+      content="NyayaLens explains legal documents in plain language and backs every statement with a quote it has checked against your document. It is information, not legal advice."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/print.css" media="print" />
+    <script type="module" src="/js/main.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main" data-i18n="a11y.skipToContent">Skip to main content</a>
+
+    <!-- Progress and results are announced here; errors use the assertive region. -->
+    <div id="live-polite" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+    <div id="live-alert" class="sr-only" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+    <header class="app-header">
+      <div class="app-header__inner">
+        <a class="brand" href="#/check">
+          <span class="brand__mark" aria-hidden="true">⁂</span>
+          <span>NyayaLens</span>
+          <span class="brand__tagline" data-i18n="app.tagline">Understand what you sign, with proof</span>
+        </a>
+
+        <nav class="app-nav" aria-label="Main">
+          <a href="#/check" data-route="check" data-i18n="nav.check">Check a document</a>
+          <a href="#/laws" data-route="laws" data-i18n="nav.laws">Old and new laws</a>
+          <a href="#/draft" data-route="draft" data-i18n="nav.draft">Draft a letter</a>
+          <a href="#/help" data-route="help" data-i18n="nav.help">Get help</a>
+        </nav>
+
+        <div class="header-controls">
+          <span id="demo-badge" class="badge badge--demo" hidden data-i18n="app.demoMode">Demo mode</span>
+
+          <div class="field">
+            <label class="sr-only" for="language-select" data-i18n="app.language">Language</label>
+            <select id="language-select" class="btn btn--small">
+              <option value="en">English</option>
+              <option value="hi" lang="hi">हिन्दी</option>
+              <option value="mr" lang="mr">मराठी</option>
+            </select>
+          </div>
+
+          <button
+            id="theme-toggle"
+            type="button"
+            class="btn btn--small btn--quiet"
+            aria-pressed="false"
+            data-i18n="app.darkMode"
+          >
+            Dark
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="app-main" tabindex="-1">
+      <!-- Check a document ------------------------------------------------ -->
+      <section id="view-check" class="view" aria-labelledby="check-heading">
+        <div id="upload-panel" class="section">
+          <h1 id="check-heading" data-i18n="upload.heading">Check a document before you sign it</h1>
+          <p class="prose" data-i18n="upload.intro">
+            Upload or paste a rental agreement, job offer, loan agreement, policy or notice.
+            NyayaLens explains it in plain language and shows you the exact clause behind every
+            statement.
+          </p>
+
+          <div class="stack" id="upload-controls"></div>
+        </div>
+
+        <div id="workspace" class="desk" hidden>
+          <div class="desk__document">
+            <div id="document-pane"></div>
+          </div>
+          <div class="desk__assistant">
+            <div id="assistant-pane"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Old and new laws ------------------------------------------------ -->
+      <section id="view-laws" class="view" aria-labelledby="laws-heading" hidden>
+        <h1 id="laws-heading" data-i18n="laws.heading">Old and new criminal laws</h1>
+        <div id="laws-pane"></div>
+      </section>
+
+      <!-- Draft a letter -------------------------------------------------- -->
+      <section id="view-draft" class="view" aria-labelledby="draft-heading" hidden>
+        <h1 id="draft-heading" data-i18n="draft.heading">Draft a letter</h1>
+        <div id="draft-pane"></div>
+      </section>
+
+      <!-- Get help -------------------------------------------------------- -->
+      <section id="view-help" class="view" aria-labelledby="help-heading" hidden>
+        <h1 id="help-heading" data-i18n="help.heading">Get help</h1>
+        <div id="help-pane"></div>
+      </section>
+
+      <!-- How it works ---------------------------------------------------- -->
+      <section id="view-about" class="view" aria-labelledby="about-heading" hidden>
+        <h1 id="about-heading" data-i18n="about.heading">How it works, and its limits</h1>
+        <div id="about-pane"></div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <div class="app-footer__inner">
+        <p style="margin: 0" data-i18n="app.disclaimer">
+          NyayaLens explains documents. It isn't legal advice.
+        </p>
+        <a href="#/about" data-i18n="app.howItWorks">How it works and its limits</a>
+        <a href="#/help" data-i18n="app.findLegalAid">Find free legal aid</a>
+      </div>
+    </footer>
+
+    <!-- A citation opens its clause here on a phone, where there is one column. -->
+    <dialog id="clause-dialog" aria-labelledby="clause-dialog-title">
+      <div class="dialog__header">
+        <h2 id="clause-dialog-title" style="margin: 0"></h2>
+        <button
+          type="button"
+          class="btn btn--small btn--quiet"
+          data-close-dialog
+          data-i18n="app.close"
+        >
+          Close
+        </button>
+      </div>
+      <div class="dialog__body" id="clause-dialog-body"></div>
+    </dialog>
+  </body>
+</html>

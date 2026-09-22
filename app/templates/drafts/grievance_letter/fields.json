@@ -1,0 +1,31 @@
+{
+  "id": "grievance_letter",
+  "title": "Complaint to a grievance officer",
+  "description": "A complaint to a company about a product, a service, a policy or a loan.",
+  "doc_types": ["insurance_policy", "terms_of_service", "loan_agreement", "general_contract"],
+  "wording_field": "what_happened",
+  "required_slots": [],
+  "fields": [
+    {"name": "sender_name", "type": "text", "required": true, "max_length": 120,
+     "labels": {"en": "Your full name", "hi": "आपका पूरा नाम", "mr": "तुमचे पूर्ण नाव"}},
+    {"name": "sender_address", "type": "address", "required": true, "max_length": 300,
+     "labels": {"en": "Your address", "hi": "आपका पता", "mr": "तुमचा पत्ता"}},
+    {"name": "sender_email", "type": "email", "required": false, "max_length": 120,
+     "labels": {"en": "Your email address", "hi": "आपका ईमेल पता", "mr": "तुमचा ईमेल पत्ता"}},
+    {"name": "sender_phone", "type": "phone", "required": false, "max_length": 20,
+     "labels": {"en": "Your phone number", "hi": "आपका फ़ोन नंबर", "mr": "तुमचा फोन क्रमांक"}},
+    {"name": "company_name", "type": "text", "required": true, "max_length": 200, "prefill_from": "party.other",
+     "labels": {"en": "Company name", "hi": "कंपनी का नाम", "mr": "कंपनीचे नाव"}},
+    {"name": "account_reference", "type": "text", "required": true, "max_length": 80,
+     "labels": {"en": "Your policy, loan or account number", "hi": "आपकी पॉलिसी, ऋण या खाता संख्या", "mr": "तुमचा पॉलिसी, कर्ज किंवा खाते क्रमांक"}},
+    {"name": "incident_date", "type": "date", "required": true,
+     "labels": {"en": "Date the problem happened", "hi": "समस्या की तिथि", "mr": "अडचण घडल्याची तारीख"}},
+    {"name": "what_happened", "type": "multiline", "required": true, "max_length": 1500,
+     "labels": {"en": "What happened", "hi": "क्या हुआ", "mr": "काय घडले"},
+     "help": {"en": "Dates, amounts and what was said. Stick to facts you can show.", "hi": "तिथियाँ, राशियाँ और जो कहा गया। केवल वही लिखें जो आप दिखा सकें।", "mr": "तारखा, रकमा आणि काय सांगितले गेले. जे दाखवू शकता तेच लिहा."}},
+    {"name": "what_you_want", "type": "multiline", "required": true, "max_length": 800,
+     "labels": {"en": "What you want them to do", "hi": "आप क्या चाहते हैं कि वे करें", "mr": "त्यांनी काय करावे असे तुम्हाला वाटते"}},
+    {"name": "reply_days", "type": "choice", "required": true, "choices": ["15", "30"],
+     "labels": {"en": "Days you are allowing for a reply", "hi": "उत्तर के लिए दिन", "mr": "उत्तरासाठी दिवस"}}
+  ]
+}

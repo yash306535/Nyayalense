@@ -1,0 +1,161 @@
+/* Element defaults and the accessibility primitives every view relies on. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 5rem; /* keeps a focused target clear of the sticky header */
+}
+
+body {
+  margin: 0;
+  background: var(--app-bg);
+  color: var(--ink);
+  font-family: var(--font-app);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 var(--s2);
+  line-height: var(--leading-tight);
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+h1 { font-size: var(--text-2xl); }
+h2 { font-size: var(--text-xl); }
+h3 { font-size: var(--text-lg); }
+h4 { font-size: var(--text-base); }
+
+p,
+ul,
+ol,
+dl,
+figure,
+table {
+  margin: 0 0 var(--s4);
+}
+
+p { max-width: var(--measure); }
+
+ul,
+ol { padding-inline-start: var(--s5); }
+
+li + li { margin-top: var(--s1); }
+
+a {
+  color: var(--seal-strong);
+  text-underline-offset: 0.18em;
+}
+
+a:hover { text-decoration-thickness: 2px; }
+
+img { max-width: 100%; height: auto; }
+
+:where(button, input, select, textarea) {
+  font: inherit;
+  color: inherit;
+}
+
+/* One focus style everywhere, meeting the 3:1 contrast requirement. */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+:focus:not(:focus-visible) { outline: none; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Visible once focused, so keyboard users can jump past the header. */
+.skip-link {
+  position: absolute;
+  inset-inline-start: var(--s3);
+  inset-block-start: -4rem;
+  z-index: 100;
+  padding: var(--s2) var(--s4);
+  background: var(--paper-raised);
+  color: var(--ink);
+  border: 2px solid var(--seal);
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  transition: inset-block-start 120ms ease;
+}
+
+.skip-link:focus { inset-block-start: var(--s3); }
+
+.icon {
+  inline-size: 1em;
+  block-size: 1em;
+  flex: none;
+  vertical-align: -0.125em;
+}
+
+mark {
+  background: var(--seal-tint);
+  color: inherit;
+  padding: 0.1em 0.15em;
+  border-radius: 2px;
+  box-decoration-break: clone;
+}
+
+ins {
+  background: var(--added-tint);
+  color: var(--added);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  padding: 0.05em 0.15em;
+}
+
+del {
+  background: var(--removed-tint);
+  color: var(--removed);
+  text-decoration: line-through;
+  padding: 0.05em 0.15em;
+}
+
+[hidden] { display: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (forced-colors: active) {
+  .seal,
+  .badge,
+  .chip {
+    border: 1px solid CanvasText;
+  }
+
+  :focus-visible { outline: 3px solid Highlight; }
+}

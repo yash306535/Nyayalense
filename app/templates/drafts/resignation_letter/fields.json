@@ -1,0 +1,33 @@
+{
+  "id": "resignation_letter",
+  "title": "Resignation letter",
+  "description": "Resigns, cites the notice period, and asks for the relieving letter and settlement.",
+  "doc_types": ["employment_offer"],
+  "wording_field": "closing_note",
+  "required_slots": [],
+  "fields": [
+    {"name": "sender_name", "type": "text", "required": true, "max_length": 120,
+     "labels": {"en": "Your full name", "hi": "आपका पूरा नाम", "mr": "तुमचे पूर्ण नाव"}},
+    {"name": "employee_id", "type": "text", "required": false, "max_length": 40,
+     "labels": {"en": "Your employee number", "hi": "आपका कर्मचारी नंबर", "mr": "तुमचा कर्मचारी क्रमांक"}},
+    {"name": "designation", "type": "text", "required": true, "max_length": 120,
+     "labels": {"en": "Your designation", "hi": "आपका पद", "mr": "तुमचे पद"}},
+    {"name": "sender_email", "type": "email", "required": false, "max_length": 120,
+     "labels": {"en": "Your personal email address", "hi": "आपका निजी ईमेल पता", "mr": "तुमचा वैयक्तिक ईमेल पत्ता"}},
+    {"name": "recipient_name", "type": "text", "required": true, "max_length": 120,
+     "labels": {"en": "Who you are writing to", "hi": "आप किसे लिख रहे हैं", "mr": "तुम्ही कोणाला लिहित आहात"}},
+    {"name": "company_name", "type": "text", "required": true, "max_length": 200, "prefill_from": "party.other",
+     "labels": {"en": "Company name", "hi": "कंपनी का नाम", "mr": "कंपनीचे नाव"}},
+    {"name": "notice_period_days", "type": "money", "required": true, "max_length": 6, "prefill_from": "key_term.notice_period",
+     "labels": {"en": "Notice period in days", "hi": "सूचना अवधि (दिनों में)", "mr": "सूचना कालावधी (दिवसांत)"},
+     "help": {"en": "As stated in your offer or appointment letter.", "hi": "जैसा आपके प्रस्ताव पत्र में है।", "mr": "तुमच्या ऑफर पत्रात दिल्याप्रमाणे."}},
+    {"name": "resignation_date", "type": "date", "required": true,
+     "labels": {"en": "Date of this letter", "hi": "इस पत्र की तिथि", "mr": "या पत्राची तारीख"}},
+    {"name": "last_working_day", "type": "date", "required": true,
+     "labels": {"en": "Your proposed last working day", "hi": "आपका प्रस्तावित अंतिम कार्यदिवस", "mr": "तुमचा प्रस्तावित शेवटचा कामाचा दिवस"}},
+    {"name": "settlement_days", "type": "choice", "required": true, "choices": ["30", "45", "60"],
+     "labels": {"en": "Days you are asking for settlement within", "hi": "निपटान के लिए दिन", "mr": "निपटाऱ्यासाठी दिवस"}},
+    {"name": "closing_note", "type": "multiline", "required": false, "max_length": 800,
+     "labels": {"en": "Anything else you want to say", "hi": "और कुछ जो आप कहना चाहते हैं", "mr": "आणखी काही सांगायचे असल्यास"}}
+  ]
+}

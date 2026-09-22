@@ -1,0 +1,1318 @@
+{
+  "id": "ipc_bns",
+  "old_act": "ipc",
+  "new_act": "bns",
+  "old_act_name": "Indian Penal Code, 1860",
+  "new_act_name": "Bharatiya Nyaya Sanhita, 2023",
+  "in_force_from": "2024-07-01",
+  "source_note": "Correspondence tables published by the Bureau of Police Research & Development (https://bprd.nic.in), 21 June 2024. They are a police training aid and reference document, not a statutory instrument.",
+  "mappings": [
+    {
+      "old": {
+        "act": "ipc",
+        "section": "120B",
+        "title": "Criminal conspiracy"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "61",
+          "title": "Criminal conspiracy"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "124A",
+        "title": "Sedition"
+      },
+      "new": [],
+      "change_type": "no_direct_equivalent",
+      "note": "The new code does not carry forward this offence under the same description. BNS 152 is a separately worded offence and is not presented here as a renumbering of IPC 124A.",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "141",
+        "title": "Unlawful assembly"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "189",
+          "title": "Unlawful assembly"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "147",
+        "title": "Rioting"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "191",
+          "title": "Rioting"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "153A",
+        "title": "Promoting enmity between groups"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "196",
+          "title": "Promoting enmity between groups"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "171B",
+        "title": "Bribery at elections"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "170",
+          "title": "Bribery at elections"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "191",
+        "title": "Giving false evidence"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "227",
+          "title": "Giving false evidence"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "201",
+        "title": "Causing disappearance of evidence"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "238",
+          "title": "Causing disappearance of evidence"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "269",
+        "title": "Negligent act likely to spread infection"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "271",
+          "title": "Negligent act likely to spread infection"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "279",
+        "title": "Rash driving on a public way"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "281",
+          "title": "Rash driving on a public way"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "292",
+        "title": "Sale of obscene material"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "294",
+          "title": "Sale of obscene material"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "299",
+        "title": "Culpable homicide"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "100",
+          "title": "Culpable homicide"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "300",
+        "title": "Murder"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "101",
+          "title": "Murder"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "302",
+        "title": "Punishment for murder"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "103",
+          "title": "Punishment for murder"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "304",
+        "title": "Punishment for culpable homicide not amounting to murder"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "105",
+          "title": "Punishment for culpable homicide not amounting to murder"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "304A",
+        "title": "Causing death by negligence"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "106",
+          "title": "Causing death by negligence"
+        }
+      ],
+      "change_type": "modified",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "304B",
+        "title": "Dowry death"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "80",
+          "title": "Dowry death"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "306",
+        "title": "Abetment of suicide"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "108",
+          "title": "Abetment of suicide"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "307",
+        "title": "Attempt to murder"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "109",
+          "title": "Attempt to murder"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "319",
+        "title": "Hurt"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "114",
+          "title": "Hurt"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "320",
+        "title": "Grievous hurt"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "116",
+          "title": "Grievous hurt"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "323",
+        "title": "Punishment for voluntarily causing hurt"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "115",
+          "title": "Voluntarily causing hurt"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "324",
+        "title": "Voluntarily causing hurt by dangerous weapons"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "118",
+          "title": "Voluntarily causing hurt by dangerous weapons"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "325",
+        "title": "Punishment for voluntarily causing grievous hurt"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "117",
+          "title": "Voluntarily causing grievous hurt"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "339",
+        "title": "Wrongful restraint"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "126",
+          "title": "Wrongful restraint"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "340",
+        "title": "Wrongful confinement"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "127",
+          "title": "Wrongful confinement"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "349",
+        "title": "Force"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "128",
+          "title": "Force"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "351",
+        "title": "Assault"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "130",
+          "title": "Assault"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "354",
+        "title": "Assault on a woman with intent to outrage her modesty"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "74",
+          "title": "Assault on a woman with intent to outrage her modesty"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "354A",
+        "title": "Sexual harassment"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "75",
+          "title": "Sexual harassment"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "354D",
+        "title": "Stalking"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "78",
+          "title": "Stalking"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "359",
+        "title": "Kidnapping"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "137",
+          "title": "Kidnapping"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "363",
+        "title": "Punishment for kidnapping"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "137",
+          "title": "Kidnapping"
+        }
+      ],
+      "change_type": "merged",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "375",
+        "title": "Rape"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "63",
+          "title": "Rape"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "376",
+        "title": "Punishment for rape"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "64",
+          "title": "Punishment for rape"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "377",
+        "title": "Unnatural offences"
+      },
+      "new": [],
+      "change_type": "no_direct_equivalent",
+      "note": "The new code does not carry forward a provision in these terms.",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "378",
+        "title": "Theft"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "303",
+          "title": "Theft"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "383",
+        "title": "Extortion"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "308",
+          "title": "Extortion"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "390",
+        "title": "Robbery"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "309",
+          "title": "Robbery"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "391",
+        "title": "Dacoity"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "310",
+          "title": "Dacoity"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "403",
+        "title": "Dishonest misappropriation of property"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "314",
+          "title": "Dishonest misappropriation of property"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "405",
+        "title": "Criminal breach of trust"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "316",
+          "title": "Criminal breach of trust"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "406",
+        "title": "Punishment for criminal breach of trust"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "316",
+          "title": "Criminal breach of trust"
+        }
+      ],
+      "change_type": "merged",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "415",
+        "title": "Cheating"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "318",
+          "title": "Cheating"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "420",
+        "title": "Cheating and dishonestly inducing delivery of property"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "318",
+          "title": "Cheating"
+        }
+      ],
+      "change_type": "merged",
+      "note": "The new code deals with cheating in a single section with graded punishments.",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "425",
+        "title": "Mischief"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "324",
+          "title": "Mischief"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "441",
+        "title": "Criminal trespass"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "329",
+          "title": "Criminal trespass"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "463",
+        "title": "Forgery"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "336",
+          "title": "Forgery"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "465",
+        "title": "Punishment for forgery"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "336",
+          "title": "Forgery"
+        }
+      ],
+      "change_type": "merged",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "468",
+        "title": "Forgery for purpose of cheating"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "336",
+          "title": "Forgery"
+        }
+      ],
+      "change_type": "merged",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "489A",
+        "title": "Counterfeiting currency notes"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "178",
+          "title": "Counterfeiting currency notes"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "494",
+        "title": "Marrying again during the lifetime of a husband or wife"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "82",
+          "title": "Marrying again during the lifetime of a husband or wife"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "497",
+        "title": "Adultery"
+      },
+      "new": [],
+      "change_type": "no_direct_equivalent",
+      "note": "The new code does not carry forward this offence.",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "498A",
+        "title": "Cruelty by husband or relatives of husband"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "85",
+          "title": "Cruelty by husband or relatives of husband"
+        },
+        {
+          "act": "bns",
+          "section": "86",
+          "title": "Meaning of cruelty"
+        }
+      ],
+      "change_type": "split",
+      "note": "The offence and the definition of cruelty are set out in two sections in the new code.",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "499",
+        "title": "Defamation"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "356",
+          "title": "Defamation"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "500",
+        "title": "Punishment for defamation"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "356",
+          "title": "Defamation"
+        }
+      ],
+      "change_type": "merged",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "503",
+        "title": "Criminal intimidation"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "351",
+          "title": "Criminal intimidation"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "506",
+        "title": "Punishment for criminal intimidation"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "351",
+          "title": "Criminal intimidation"
+        }
+      ],
+      "change_type": "merged",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "509",
+        "title": "Word or gesture intended to insult the modesty of a woman"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "79",
+          "title": "Word or gesture intended to insult the modesty of a woman"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "ipc",
+        "section": "511",
+        "title": "Attempting to commit offences"
+      },
+      "new": [
+        {
+          "act": "bns",
+          "section": "62",
+          "title": "Attempt to commit offences"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    }
+  ]
+}

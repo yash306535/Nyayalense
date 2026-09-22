@@ -26,16 +26,24 @@ from app.api.middleware import register_middleware
 from app.api.routes import (
     analysis,
     cache,
+    calendar,
     checklists,
+    compare,
     documents,
+    drafts,
+    exports,
     health,
+    laws,
     meta,
     qa,
     resources,
+    scenarios,
 )
 from app.config import FRONTEND_DIR, Settings, get_settings
 from app.constants import API_PREFIX, APP_NAME, APP_TAGLINE
 from app.logging_config import configure_logging
+from app.services.drafting import load_templates
+from app.services.exports import warm_up
 
 logger = logging.getLogger(__name__)
 
@@ -54,6 +62,8 @@ TAGS: Final = [
     {"name": "documents", "description": "Reading a document and finding what needs no model."},
     {"name": "analysis", "description": "Explaining and reviewing a whole document."},
     {"name": "ask", "description": "Questions answered only from the document."},
+    {"name": "laws", "description": "Mapping old criminal-law sections to the new codes."},
+    {"name": "drafting", "description": "Letters from confirmed facts, and Word or PDF files."},
     {"name": "reference data", "description": "Checklists, glossary and the help directory."},
     {"name": "meta", "description": "Build metadata, health and cache control."},
 ]
@@ -62,6 +72,12 @@ _ROUTERS: Final = (
     documents.router,
     analysis.router,
     qa.router,
+    compare.router,
+    scenarios.router,
+    laws.router,
+    drafts.router,
+    exports.router,
+    calendar.router,
     checklists.router,
     resources.router,
     cache.router,
@@ -76,8 +92,11 @@ STATIC_CACHE_SECONDS: Final = 86_400
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     """Validate packaged data at startup and log what was loaded."""
-    del app
     get_registry()
+    load_templates()
+    settings = app.dependency_overrides.get(get_settings, get_settings)()
+    if settings.export_warmup:
+        await warm_up(settings)
     logger.info("started", extra={"version": __version__})
     yield
 
@@ -105,6 +124,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         docs_url="/docs",
         redoc_url=None,
     )
+
+    # Without this, settings passed in would be ignored: every route resolves
+    # them through the dependency, which otherwise reads the environment.
+    app.dependency_overrides[get_settings] = lambda: settings
 
     register_middleware(app, settings)
     register_error_handlers(app)

@@ -1,0 +1,30 @@
+# Complaint
+
+{{ sender_name }}
+{{ sender_address }}
+{% if sender_email %}{{ sender_email }}
+{% endif %}{% if sender_phone %}{{ sender_phone }}
+{% endif %}
+**To:** The Grievance Officer, {{ company_name }}
+
+**Subject:** Complaint regarding {{ account_reference }}
+
+Dear Sir or Madam,
+
+I am writing about {{ account_reference }} held with {{ company_name }}.
+
+**What happened**
+
+On {{ incident_date }}:
+
+{{ what_happened }}
+
+**What I am asking for**
+
+{{ what_you_want }}
+
+I would be grateful for your written response within {{ reply_days }} days. Please tell me the reference number for this complaint so that I can follow it up.
+
+Yours faithfully,
+
+{{ sender_name }}

@@ -1,0 +1,583 @@
+{
+  "id": "crpc_bnss",
+  "old_act": "crpc",
+  "new_act": "bnss",
+  "old_act_name": "Code of Criminal Procedure, 1973",
+  "new_act_name": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+  "in_force_from": "2024-07-01",
+  "source_note": "Correspondence tables published by the Bureau of Police Research & Development (https://bprd.nic.in), 21 June 2024. They are a police training aid and reference document, not a statutory instrument.",
+  "mappings": [
+    {
+      "old": {
+        "act": "crpc",
+        "section": "41",
+        "title": "When police may arrest without warrant"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "35",
+          "title": "When police may arrest without warrant"
+        }
+      ],
+      "change_type": "modified",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "41A",
+        "title": "Notice of appearance before police officer"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "35",
+          "title": "When police may arrest without warrant"
+        }
+      ],
+      "change_type": "merged",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "50",
+        "title": "Person arrested to be informed of grounds of arrest"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "47",
+          "title": "Person arrested to be informed of grounds of arrest"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "91",
+        "title": "Summons to produce a document"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "94",
+          "title": "Summons to produce a document or other thing"
+        }
+      ],
+      "change_type": "modified",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "125",
+        "title": "Order for maintenance of wives, children and parents"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "144",
+          "title": "Order for maintenance of wives, children and parents"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "133",
+        "title": "Conditional order for removal of nuisance"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "152",
+          "title": "Conditional order for removal of nuisance"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "144",
+        "title": "Power to issue order in urgent cases of nuisance or apprehended danger"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "163",
+          "title": "Power to issue order in urgent cases of nuisance or apprehended danger"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "154",
+        "title": "Information in cognizable cases"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "173",
+          "title": "Information in cognizable cases"
+        }
+      ],
+      "change_type": "modified",
+      "note": "The new code provides for information to be given electronically and for zero FIR.",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "156",
+        "title": "Police officer's power to investigate a cognizable case"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "175",
+          "title": "Police officer's power to investigate a cognizable case"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "161",
+        "title": "Examination of witnesses by police"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "180",
+          "title": "Examination of witnesses by police"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "164",
+        "title": "Recording of confessions and statements"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "183",
+          "title": "Recording of confessions and statements"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "167",
+        "title": "Procedure when investigation cannot be completed in twenty four hours"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "187",
+          "title": "Procedure when investigation cannot be completed in twenty four hours"
+        }
+      ],
+      "change_type": "modified",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "173",
+        "title": "Report of police officer on completion of investigation"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "193",
+          "title": "Report of police officer on completion of investigation"
+        }
+      ],
+      "change_type": "modified",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "190",
+        "title": "Cognizance of offences by Magistrates"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "210",
+          "title": "Cognizance of offences by Magistrates"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "200",
+        "title": "Examination of complainant"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "223",
+          "title": "Examination of complainant"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "202",
+        "title": "Postponement of issue of process"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "225",
+          "title": "Postponement of issue of process"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "207",
+        "title": "Supply of copies of documents to the accused"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "230",
+          "title": "Supply of copies of documents to the accused"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "227",
+        "title": "Discharge"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "250",
+          "title": "Discharge"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "228",
+        "title": "Framing of charge"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "251",
+          "title": "Framing of charge"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "313",
+        "title": "Power to examine the accused"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "351",
+          "title": "Power to examine the accused"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "354",
+        "title": "Language and contents of judgment"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "392",
+          "title": "Language and contents of judgment"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "436",
+        "title": "In what cases bail to be taken"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "478",
+          "title": "In what cases bail to be taken"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "437",
+        "title": "When bail may be taken in case of a non-bailable offence"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "480",
+          "title": "When bail may be taken in case of a non-bailable offence"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "438",
+        "title": "Direction for grant of bail to a person apprehending arrest"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "482",
+          "title": "Direction for grant of bail to a person apprehending arrest"
+        }
+      ],
+      "change_type": "modified",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "439",
+        "title": "Special powers of High Court or Court of Session regarding bail"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "483",
+          "title": "Special powers of High Court or Court of Session regarding bail"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "crpc",
+        "section": "482",
+        "title": "Saving of inherent powers of High Court"
+      },
+      "new": [
+        {
+          "act": "bnss",
+          "section": "528",
+          "title": "Saving of inherent powers of High Court"
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
+        "page": 0,
+        "url": "https://bprd.nic.in"
+      },
+      "review_status": "extracted"
+    }
+  ]
+}

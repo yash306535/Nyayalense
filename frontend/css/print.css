@@ -1,0 +1,58 @@
+/* Print and PDF: A4, repeating table headers, and no interface furniture. */
+
+@page {
+  size: A4;
+  margin: 18mm 16mm;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  font-size: 10.5pt;
+  line-height: 1.5;
+}
+
+.app-header,
+.app-footer,
+.app-nav,
+.no-print,
+.tablist,
+.dropzone,
+button,
+select,
+input,
+textarea,
+dialog {
+  display: none !important;
+}
+
+.desk { display: block; }
+.card,
+.panel {
+  border: 0;
+  padding: 0;
+  margin-block-end: 8mm;
+  break-inside: avoid;
+}
+
+h1, h2, h3 { break-after: avoid; }
+
+a { color: #000; text-decoration: none; }
+a[href^='http']::after { content: ' (' attr(href) ')'; font-size: 0.85em; }
+
+/* The header row repeats on every printed page. */
+.ctable thead { display: table-header-group; }
+.ctable tfoot { display: table-footer-group; }
+.ctable tr { break-inside: avoid; }
+.ctable { border-collapse: collapse; inline-size: 100%; }
+.ctable th,
+.ctable td { border: 0.5pt solid #666; padding: 2mm; }
+.table-wrap { overflow: visible; border: 0; }
+
+/* Diff markers must survive without colour. */
+ins { text-decoration: underline; }
+del { text-decoration: line-through; }
+
+.seal { border: 0.5pt solid #000; }
+blockquote { border-inline-start: 1pt solid #666; padding-inline-start: 3mm; }
+.skeleton { display: none; }

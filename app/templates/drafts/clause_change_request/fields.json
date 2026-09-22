@@ -1,0 +1,29 @@
+{
+  "id": "clause_change_request",
+  "title": "Request to change a clause before signing",
+  "description": "Asks the other party to change specific clauses before you sign.",
+  "doc_types": ["rental_leave_licence", "employment_offer", "loan_agreement", "general_contract", "nda"],
+  "wording_field": "reason",
+  "required_slots": [],
+  "fields": [
+    {"name": "sender_name", "type": "text", "required": true, "max_length": 120,
+     "labels": {"en": "Your full name", "hi": "आपका पूरा नाम", "mr": "तुमचे पूर्ण नाव"}},
+    {"name": "sender_email", "type": "email", "required": false, "max_length": 120,
+     "labels": {"en": "Your email address", "hi": "आपका ईमेल पता", "mr": "तुमचा ईमेल पत्ता"}},
+    {"name": "recipient_name", "type": "text", "required": true, "max_length": 120, "prefill_from": "party.other",
+     "labels": {"en": "Their name", "hi": "उनका नाम", "mr": "त्यांचे नाव"}},
+    {"name": "document_name", "type": "text", "required": true, "max_length": 200,
+     "labels": {"en": "Which document", "hi": "कौन सा दस्तावेज़", "mr": "कोणता दस्तऐवज"}},
+    {"name": "clause_label", "type": "clause_ref", "required": true, "max_length": 32, "prefill_from": "clause.label",
+     "labels": {"en": "Clause number", "hi": "खंड संख्या", "mr": "कलम क्रमांक"}},
+    {"name": "clause_quote", "type": "multiline", "required": true, "max_length": 1000, "prefill_from": "clause.text",
+     "labels": {"en": "The clause as it stands", "hi": "मौजूदा खंड", "mr": "सध्याचे कलम"},
+     "help": {"en": "Copied from your document.", "hi": "आपके दस्तावेज़ से लिया गया।", "mr": "तुमच्या दस्तऐवजातून घेतलेले."}},
+    {"name": "requested_change", "type": "multiline", "required": true, "max_length": 800,
+     "labels": {"en": "The change you are asking for", "hi": "आप जो बदलाव चाहते हैं", "mr": "तुम्हाला हवा असलेला बदल"}},
+    {"name": "reason", "type": "multiline", "required": false, "max_length": 1000,
+     "labels": {"en": "Why you are asking", "hi": "आप यह क्यों चाहते हैं", "mr": "तुम्ही हे का मागत आहात"}},
+    {"name": "reply_days", "type": "choice", "required": true, "choices": ["3", "7", "15"],
+     "labels": {"en": "Days you are allowing for a reply", "hi": "उत्तर के लिए दिन", "mr": "उत्तरासाठी दिवस"}}
+  ]
+}

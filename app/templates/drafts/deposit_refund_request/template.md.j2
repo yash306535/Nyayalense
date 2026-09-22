@@ -1,0 +1,31 @@
+# Request to refund the security deposit
+
+{{ sender_name }}
+{{ sender_address }}
+{% if sender_email %}{{ sender_email }}
+{% endif %}
+**To:** {{ recipient_name }}
+{{ recipient_address }}
+
+**Subject:** Refund of the security deposit for {{ premises }}
+
+Dear {{ recipient_name }},
+
+I occupied {{ premises }} under the agreement dated {{ agreement_date }}. I paid you a refundable security deposit of {{ deposit_amount }}.
+
+I handed back possession of the premises on {{ move_out_date }}. The deposit has not yet been refunded to me.
+
+I request you to refund the deposit of {{ deposit_amount }} within {{ reply_days }} days of receiving this letter.
+{% if bank_details %}
+You can send the refund to: {{ bank_details }}.
+{% endif %}
+{% if additional_points %}
+{{ additional_points }}
+{% endif %}
+If any amount is being deducted, please send me a written account of what is being deducted and why.
+
+I would be grateful for your reply.
+
+Yours sincerely,
+
+{{ sender_name }}
