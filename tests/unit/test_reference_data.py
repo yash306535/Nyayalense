@@ -64,7 +64,16 @@ def test_the_prompt_lines_name_every_relevant_item() -> None:
     rental = next(c for c in checklists() if c.doc_type is DocType.RENTAL_LEAVE_LICENCE)
     lines = rental.as_prompt_lines(Role.TENANT)
     for item in rental.for_role(Role.TENANT):
-        assert f"- {item.id}:" in lines
+        assert f"- item {item.id}:" in lines
+
+
+def test_the_prompt_lines_are_distinguishable_from_instruction_bullets() -> None:
+    """The review prompt surrounds these with its own bullets, which must not
+    be mistaken for checklist ids.
+    """
+    rental = next(c for c in checklists() if c.doc_type is DocType.RENTAL_LEAVE_LICENCE)
+    for line in rental.as_prompt_lines(Role.TENANT).splitlines():
+        assert line.startswith("- item ")
 
 
 def test_a_checklist_with_too_few_items_is_refused() -> None:

@@ -29,3 +29,6 @@ playwright-report/
 # The build brief is not part of the repository
 BRIEF.md
 brief*.html
+
+# The evaluation report is written only by a real run of `make eval`.
+# It is committed when real, never generated as a placeholder.
