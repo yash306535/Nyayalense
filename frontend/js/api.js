@@ -205,6 +205,12 @@ export const api = {
    */
   lawChanges: (kind) => request(`/laws/changes?kind=${encodeURIComponent(kind)}`),
 
+  /**
+   * @param {object} body A general legal question and the reader's audience.
+   * @returns {Promise<object>} Matched sections and a verified answer.
+   */
+  legalQA: (body) => request('/laws/qa', { json: body }),
+
   /** @returns {Promise<object[]>} Letter templates with their field schemas. */
   draftTemplates: () => request('/drafts/templates'),
 

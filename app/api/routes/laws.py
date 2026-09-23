@@ -10,12 +10,13 @@ from fastapi import APIRouter, Query
 from pydantic import BaseModel, ConfigDict, Field
 
 from app.api.deps import ContextDep, RegistryDep, SettingsDep
+from app.api.schemas import MAX_QUESTION_CHARS
 from app.constants import NEW_CODES_IN_FORCE_ON
 from app.domain.audience import Audience
 from app.domain.enums import ChangeKind, LawAct
-from app.domain.laws.models import LawMapping, LawReference, Provision
+from app.domain.laws.models import LawMapping, LawReference, Provision, ProvisionRef
 from app.domain.results import Answer
-from app.services.laws import browse, explain_change, lookup, provision_diff
+from app.services.laws import answer_legal_question, browse, explain_change, lookup, provision_diff
 
 router = APIRouter(prefix="/laws", tags=["laws"])
 
@@ -174,6 +175,46 @@ async def compare_provision(
             mapping, result.provisions, audience=body.audience, context=context
         ),
     )
+
+
+class LegalQuestionRequest(BaseModel):
+    """A general legal question, with no document behind it."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    question: Annotated[str, Field(min_length=1, max_length=MAX_QUESTION_CHARS)] = Field(
+        description="A general question about the criminal-law codes, e.g. 'What is cheating?'."
+    )
+    audience: Audience = Field(default_factory=Audience)
+
+
+class LegalQAResponse(BaseModel):
+    """A general legal question, answered from matched statute sections."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    question: str
+    matched: list[ProvisionRef] = Field(
+        default_factory=list, description="Sections the answer was allowed to draw from."
+    )
+    answer: Answer
+
+
+@router.post(
+    "/qa",
+    response_model=LegalQAResponse,
+    summary="Ask a general legal question",
+    description=(
+        "Answers from real, reviewed sections of the criminal-law codes matched to the "
+        "question's own words -- never from a model's memory of what a law says. With no "
+        "matching section, or nothing in the matched text that verifies, the answer is "
+        "'not_found'. This is general legal information, not advice about your situation."
+    ),
+)
+async def ask_legal_question(body: LegalQuestionRequest, context: ContextDep) -> LegalQAResponse:
+    """Answer one general legal question."""
+    result = await answer_legal_question(body.question, body.audience, context)
+    return LegalQAResponse(question=result.question, matched=result.matched, answer=result.answer)
 
 
 @router.get(

@@ -194,6 +194,13 @@ def _figures_are_supported(text: str, citations: list[Citation], index: ClauseIn
     evidence side counts both spellings, so a claim of ``60000`` is supported by
     a clause that says "Sixty Thousand".
 
+    A cited clause's own label counts as supported too, on the same logic: when
+    a statement names which clause it comes from -- "clause 7.2", "IPC 376" --
+    that number identifies the citation itself rather than claiming something
+    the clause's text has to separately state. Without this, a statement would
+    be dropped for citing the very clause it is quoting, whenever that clause
+    does not also repeat its own number in its body.
+
     A quote is checked against its whole source clause rather than the quoted
     span, because normalisation and the model's own trimming both move the
     boundaries a little. The clause is still the evidence the user is shown.
@@ -213,6 +220,9 @@ def _figures_are_supported(text: str, citations: list[Citation], index: ClauseIn
     for citation in citations:
         supported |= numeric_values(citation.quote)
         supported |= index.numeric_values(citation.clause_id)
+        clause = index.clause(citation.clause_id)
+        if clause is not None and clause.label:
+            supported |= numeric_values(clause.label)
     return claimed <= supported
 
 

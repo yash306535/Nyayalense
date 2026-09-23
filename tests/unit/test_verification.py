@@ -201,6 +201,45 @@ def test_a_statement_with_no_figures_needs_no_figure_support(index: ClauseIndex)
     assert result is not None
 
 
+def test_naming_the_cited_clauses_own_label_is_not_an_unsupported_figure(
+    index: ClauseIndex,
+) -> None:
+    """C2's label is '9', which its own body text never repeats.
+
+    A statement that names which clause it is quoting -- 'clause 9', 'IPC 376'
+    -- is citing the source, not making a claim the source has to separately
+    state. Without this, any statement naming its own clause number would be
+    wrongly dropped whenever that clause does not also restate its number.
+    """
+    result, _ = verify_statement(
+        Statement(
+            text="Clause 9 lets either party end the agreement with notice.",
+            citations=[cite("C2", "Either party may terminate this agreement")],
+        ),
+        index,
+        threshold=THRESHOLD,
+    )
+    assert result is not None
+
+
+def test_a_figure_matching_only_a_different_clauses_label_still_fails(
+    index: ClauseIndex,
+) -> None:
+    """The label exemption is per citation, not a blanket pass for any digit
+    that happens to label some other clause in the document.
+    """
+    result, reason = verify_statement(
+        Statement(
+            text="Clause 9 requires 500 days notice.",
+            citations=[cite("C2", "Either party may terminate this agreement")],
+        ),
+        index,
+        threshold=THRESHOLD,
+    )
+    assert result is None
+    assert reason is RemovalReason.FIGURE_NOT_IN_QUOTE
+
+
 def test_lettered_section_numbers_are_not_figures(index: ClauseIndex) -> None:
     """498A and 65B are labels, so neither side of the check produces a token."""
     result, _ = verify_statement(

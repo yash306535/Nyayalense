@@ -161,6 +161,63 @@ def test_the_reading_level_can_be_changed(loaded: Page) -> None:
     expect(loaded.locator(".seal").first).to_be_visible()
 
 
+def test_the_legal_assistant_page_offers_three_modes(page: Page, base_url: str) -> None:
+    page.goto(f"{base_url}/#/laws", wait_until="networkidle")
+    expect(page.locator('label[for="assistant-mode-compare"]')).to_be_visible()
+    expect(page.locator('label[for="assistant-mode-legal_qa"]')).to_be_visible()
+    expect(page.locator('label[for="assistant-mode-document_qa"]')).to_be_visible()
+    expect(page.locator("#assistant-mode-compare")).to_be_checked()
+
+
+def test_comparing_by_topic_finds_a_mapping_with_no_citation_typed(
+    page: Page, base_url: str
+) -> None:
+    """The point of the topic search: 'cheating' names no act, and still works."""
+    page.goto(f"{base_url}/#/laws", wait_until="networkidle")
+    page.fill("#law-search", "cheating")
+    page.click("#law-search ~ button, form button[type='submit']")
+    page.wait_for_selector("#law-results h2", timeout=10_000)
+    expect(page.locator("#law-results")).to_contain_text("IPC")
+
+
+def test_a_legal_question_gets_a_grounded_answer_with_section_numbers(
+    page: Page, base_url: str
+) -> None:
+    page.goto(f"{base_url}/#/laws", wait_until="networkidle")
+    page.click('label[for="assistant-mode-legal_qa"]')
+    page.fill("#legal-qa-input", "cheating")
+    page.click("#legal-qa-input ~ button, form button[type='submit']")
+    page.wait_for_selector(".chat-turn__answer .statement", timeout=40_000)
+
+    answer = page.locator(".chat-turn__answer").first
+    expect(answer.locator(".quote-block cite").first).to_be_visible()
+    expect(answer.locator(".chip").first).to_be_visible()
+
+
+def test_document_qa_mode_prompts_for_a_document_when_none_is_open(
+    page: Page, base_url: str
+) -> None:
+    page.goto(f"{base_url}/#/laws", wait_until="networkidle")
+    page.click('label[for="assistant-mode-document_qa"]')
+    expect(page.locator("text=Upload a document first")).to_be_visible()
+    expect(page.locator('#assistant-mode-content a[href="#/check"]')).to_be_visible()
+
+
+def test_document_qa_mode_answers_from_the_open_document(loaded: Page) -> None:
+    """The third mode is the same grounded document Q&A, reached from one page.
+
+    The check workspace's own ask tab is also in the page at this point, just
+    hidden behind the route switch, so this also guards against the two
+    panels colliding on the same element ids.
+    """
+    loaded.click('a[data-route="laws"]')
+    loaded.click('label[for="assistant-mode-document_qa"]')
+    loaded.fill("#assistant-question-input", "How much is the security deposit?")
+    loaded.click('#assistant-mode-content button[type="submit"]')
+    loaded.wait_for_selector("#assistant-answers .panel .seal", timeout=40_000)
+    expect(loaded.locator("#assistant-answers .seal").first).to_be_visible()
+
+
 def test_the_comparison_marks_changes_without_relying_on_colour(loaded: Page) -> None:
     loaded.click('[data-tab="compare"]')
     loaded.select_option("#compare-other", "leave-licence-v2")

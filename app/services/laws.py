@@ -1,11 +1,13 @@
 """Looking up a statutory provision and comparing the old text with the new.
 
 The mapping itself is pure data: a model is never asked what a section maps to.
-A model is used for one thing only, and only when both provision texts are
-stored: describing the difference between those two texts, which is then put
-through the same verifier as everything else.
+A model is put to two uses, and only where there is real statute text to check
+it against: describing the difference between two stored provision texts, and
+answering a general legal question from whichever stored provisions match it.
+Both go through the same verifier as everything else.
 """
 
+import hashlib
 import logging
 from dataclasses import dataclass, field
 
@@ -15,10 +17,10 @@ from app.adapters.llm.schemas import LLMAnswer
 from app.domain.audience import Audience
 from app.domain.diff import DiffToken, word_diff
 from app.domain.enums import AnswerType, ChangeType, DocType, LawAct
-from app.domain.laws.lookup import LawIndex, MappingHit
-from app.domain.laws.models import LawMapping, LawReference, Provision
+from app.domain.laws.lookup import LawIndex
+from app.domain.laws.models import LawMapping, LawReference, Provision, ProvisionRef
 from app.domain.laws.references import parse_query
-from app.domain.models import Clause, Document, Statement
+from app.domain.models import Clause, Document, Statement, VerificationReport
 from app.domain.results import Answer
 from app.domain.verification import ClauseIndex, merge_reports
 from app.prompts.builder import build
@@ -51,31 +53,34 @@ class LookupResult:
 
 
 def lookup(query: str, index: LawIndex, *, include_unreviewed: bool) -> LookupResult:
-    """Find every mapping for a reference the user typed.
+    """Find every mapping for a reference, or a topic, the user typed.
 
     Args:
-        query: What the user typed, in any recognised citation form.
+        query: What the user typed. Either a citation in any recognised form
+            (``"IPC 420"``), or a plain topic (``"rape"``) matched against
+            what each mapping's own title says it is about.
         index: The loaded law index.
         include_unreviewed: Whether rows still marked ``extracted`` count.
 
     Returns:
-        The result. An unparseable query or an unknown section returns empty
-        lists rather than a guess.
+        The result. A query that names neither a citation nor a topic the data
+        covers returns empty lists rather than a guess.
     """
     reference = parse_query(query)
-    if reference is None:
-        return LookupResult(query=query)
+    if reference is not None:
+        hits = index.lookup(reference, include_unreviewed=include_unreviewed)
+        suggestions = [] if hits else index.suggest(reference)
+    else:
+        hits = index.search_by_topic(query, include_unreviewed=include_unreviewed)
+        suggestions = []
 
-    hits: list[MappingHit] = index.lookup(reference, include_unreviewed=include_unreviewed)
     mappings = [hit.mapping for hit in hits]
-    provisions = _stored_texts(mappings, index)
-
     return LookupResult(
         query=query,
         reference=reference,
         mappings=mappings,
-        provisions=provisions,
-        suggestions=[] if mappings else index.suggest(reference),
+        provisions=_stored_texts(mappings, index),
+        suggestions=suggestions,
     )
 
 
@@ -190,6 +195,131 @@ def _as_document(old: Provision, new: Provision) -> Document:
     )
 
 
+@dataclass(frozen=True, slots=True)
+class LegalQAResult:
+    """A general legal question, answered from whichever provisions matched it.
+
+    Attributes:
+        question: What the reader asked.
+        matched: The sections the answer was allowed to draw from, for showing
+            as citations even where a statement did not use them.
+        answer: The verified answer. ``not_found`` when nothing matched, or
+            when nothing in the matched text supported an answer.
+    """
+
+    question: str
+    matched: list[ProvisionRef]
+    answer: Answer
+
+
+async def answer_legal_question(
+    question: str, audience: Audience, context: AnalysisContext
+) -> LegalQAResult:
+    """Answer a general legal question from the packaged statute text alone.
+
+    This is the one place a question is answered with no document behind it.
+    What stands in for the document is a handful of real, stored provisions
+    matched to the question's own words -- never the model's memory of what a
+    law says. With no matching provision, or nothing in the matched text that
+    verifies, the answer is ``not_found``, the same as document Q&A.
+
+    Args:
+        question: The reader's question.
+        audience: The reader's language and reading level.
+        context: The model adapter, settings, cache and packaged data.
+
+    Returns:
+        The matched sections and the verified answer.
+    """
+    provisions = context.registry.laws.matching_provisions(question)
+    if not provisions:
+        return LegalQAResult(
+            question=question,
+            matched=[],
+            answer=Answer(
+                question=question,
+                answer_type=AnswerType.NOT_FOUND,
+                verification=VerificationReport(),
+            ),
+        )
+
+    matched = [
+        ProvisionRef(act=provision.act, section=provision.section, title=provision.title)
+        for provision in provisions
+    ]
+    key = cache_key(
+        document_hash=_legal_qa_cache_id(provisions),
+        operation=Task.LEGAL_QA.value,
+        model=context.model,
+        params={**audience.as_params(), "q": question},
+    )
+    cached = context.cache.get(key)
+    if isinstance(cached, LegalQAResult):
+        return cached
+
+    document = _legal_qa_document(question, provisions)
+    prompt = build(document, Task.LEGAL_QA, audience, question=question)
+    raw = (await context.client.generate(prompt, LLMAnswer, task=Task.LEGAL_QA)).data
+    index = ClauseIndex(document)
+    statements, report = ground(raw.statements, index, threshold=context.threshold)
+
+    answer_type = raw.answer_type
+    if not statements and answer_type in {AnswerType.DIRECT, AnswerType.INTERPRETATION}:
+        answer_type = AnswerType.NOT_FOUND
+
+    result = LegalQAResult(
+        question=question,
+        matched=matched,
+        answer=Answer(
+            question=question,
+            answer_type=answer_type,
+            statements=statements,
+            needs_professional=raw.needs_professional,
+            questions_for_professional=raw.questions_for_professional,
+            related_clause_ids=[
+                clause_id for clause_id in raw.related_clause_ids if index.clause(clause_id)
+            ],
+            verification=report,
+        ),
+    )
+    context.cache.set(key, result)
+    logger.info(
+        "legal_qa_answered",
+        extra={
+            "matched": len(provisions),
+            "answer_type": result.answer.answer_type.value,
+            "verified": report.verified,
+            "total": report.total,
+        },
+    )
+    return result
+
+
+def _legal_qa_cache_id(provisions: list[Provision]) -> str:
+    """A stable id for a set of matched provisions, for the cache key."""
+    joined = "|".join(sorted(provision.key for provision in provisions))
+    return f"legalqa-{hashlib.sha256(joined.encode()).hexdigest()[:16]}"
+
+
+def _legal_qa_document(question: str, provisions: list[Provision]) -> Document:
+    """Present matched provisions as a document, real statute text as clauses."""
+    return Document(
+        id=_legal_qa_cache_id(provisions),
+        doc_type=DocType.GENERAL_CONTRACT,
+        title=question[:300],
+        clauses=[
+            Clause(
+                id=provision.key.upper().replace(":", "-"),
+                label=provision.display,
+                heading=provision.title[:300],
+                text=provision.text,
+                page=provision.source.page or 1,
+            )
+            for provision in provisions
+        ],
+    )
+
+
 def references_with_mappings(
     references: list[LawReference], index: LawIndex, *, include_unreviewed: bool
 ) -> list[tuple[LawReference, list[LawMapping]]]:
@@ -220,8 +350,10 @@ def old_acts_only(references: list[LawReference]) -> list[LawReference]:
 
 __all__ = [
     "LawAct",
+    "LegalQAResult",
     "LookupResult",
     "Statement",
+    "answer_legal_question",
     "browse",
     "explain_change",
     "lookup",

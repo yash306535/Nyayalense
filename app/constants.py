@@ -12,7 +12,7 @@ API_PREFIX: Final = "/api/v1"
 
 #: Version of the prompt contract in ``app/prompts/``. Bump on any wording change;
 #: it is part of the cache key so stale results are never reused.
-PROMPT_VERSION: Final = "2026-09-22.1"
+PROMPT_VERSION: Final = "2026-09-23.2"
 
 #: Date on which the criminal-law codes of 2023 came into force.
 NEW_CODES_IN_FORCE_ON: Final = "2024-07-01"

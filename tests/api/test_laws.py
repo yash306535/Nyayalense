@@ -182,6 +182,96 @@ async def test_an_unparseable_query_returns_nothing_rather_than_a_guess(
     assert body["suggestions"] == []
 
 
+# ---------------------------------------------------------------- topic search
+
+
+def test_search_by_topic_finds_a_mapping_by_its_own_title() -> None:
+    """A word naming no act, like 'cheating', still finds the row."""
+    index = _index(_mapping(verified=True))
+    hits = index.search_by_topic("cheating", include_unreviewed=False)
+    assert [hit.mapping.old.section for hit in hits] == ["420"]
+
+
+def test_search_by_topic_works_on_a_full_question_not_just_a_bare_word() -> None:
+    """Filler words are dropped before scoring, so a whole sentence still matches."""
+    index = _index(_mapping(verified=True))
+    hits = index.search_by_topic("What counts as cheating under the law?", include_unreviewed=False)
+    assert len(hits) == 1
+
+
+def test_search_by_topic_finds_nothing_for_an_unrelated_word() -> None:
+    index = _index(_mapping(verified=True))
+    assert index.search_by_topic("photosynthesis", include_unreviewed=False) == []
+
+
+def test_search_by_topic_hides_an_unreviewed_row_by_default() -> None:
+    index = _index(_mapping(verified=False))
+    assert index.search_by_topic("cheating", include_unreviewed=False) == []
+    assert len(index.search_by_topic("cheating", include_unreviewed=True)) == 1
+
+
+async def test_a_topic_query_reaches_the_lookup_endpoint(client: AsyncClient) -> None:
+    """The same endpoint a citation uses also answers a plain topic."""
+    body = (await client.get("/api/v1/laws/lookup", params={"q": "cheating"})).json()
+    assert body["reference"] is None
+    assert body["mappings"] != []
+    assert any(m["old"]["act"] == "ipc" for m in body["mappings"])
+
+
+def test_matching_provisions_resolves_real_stored_text() -> None:
+    """A topic match with stored text on both sides yields real clauses to answer from."""
+    index = _index(_mapping(verified=True))
+    index.provisions["ipc:420"] = Provision(
+        act=LawAct.IPC,
+        section="420",
+        title="Cheating",
+        text="Whoever cheats shall be punished.",
+        source=Source(document="test fixture"),
+        review_status=ReviewStatus.VERIFIED,
+        verified_on="2026-09-23",
+    )
+    matched = index.matching_provisions("cheating")
+    assert [provision.key for provision in matched] == ["ipc:420"]
+
+
+def test_matching_provisions_skips_a_match_with_no_stored_text() -> None:
+    """A topic match is not enough on its own: there has to be text to quote."""
+    index = _index(_mapping(verified=True))
+    assert index.matching_provisions("cheating") == []
+
+
+# ---------------------------------------------------------------- general legal Q&A
+
+
+async def test_a_legal_question_answers_from_matched_sections(client: AsyncClient) -> None:
+    body = (
+        await client.post("/api/v1/laws/qa", json={"question": "What is the punishment for rape?"})
+    ).json()
+    assert body["matched"] != []
+    assert {p["act"] for p in body["matched"]} >= {"ipc", "bns"}
+    assert body["answer"]["answer_type"] in {"direct", "interpretation"}
+    assert body["answer"]["verification"]["verified"] > 0
+    for statement in body["answer"]["statements"]:
+        assert statement["citations"]
+        assert all(citation["verified"] for citation in statement["citations"])
+
+
+async def test_a_legal_question_with_no_topic_match_is_not_found(client: AsyncClient) -> None:
+    body = (
+        await client.post(
+            "/api/v1/laws/qa", json={"question": "asdkjh qlwkejr nonsense zztelevision"}
+        )
+    ).json()
+    assert body["matched"] == []
+    assert body["answer"]["answer_type"] == "not_found"
+    assert body["answer"]["statements"] == []
+
+
+async def test_an_empty_legal_question_is_refused(client: AsyncClient) -> None:
+    response = await client.post("/api/v1/laws/qa", json={"question": ""})
+    assert response.status_code == 422
+
+
 async def test_an_empty_query_is_refused(client: AsyncClient) -> None:
     assert (await client.get("/api/v1/laws/lookup", params={"q": ""})).status_code == 422
 

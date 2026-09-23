@@ -109,6 +109,25 @@ def test_the_law_lookup_and_its_table_are_accessible(themed: Page) -> None:
     check(themed, "law comparison table")
 
 
+def test_the_legal_qa_mode_is_accessible(themed: Page) -> None:
+    themed.click('a[data-route="laws"]')
+    themed.click('label[for="assistant-mode-legal_qa"]')
+    themed.wait_for_selector("#legal-qa-input")
+    check(themed, "legal Q&A, empty")
+
+    themed.fill("#legal-qa-input", "cheating")
+    themed.click("#legal-qa-input ~ button, #assistant-mode-content form button[type='submit']")
+    themed.wait_for_selector(".chat-turn__answer .statement", timeout=40_000)
+    check(themed, "legal Q&A, answered")
+
+
+def test_the_document_qa_mode_is_accessible(themed: Page) -> None:
+    themed.click('a[data-route="laws"]')
+    themed.click('label[for="assistant-mode-document_qa"]')
+    themed.wait_for_selector("#assistant-mode-content")
+    check(themed, "document Q&A, no document open")
+
+
 def test_the_help_directory_is_accessible(themed: Page) -> None:
     themed.click('a[data-route="help"]')
     themed.wait_for_selector("#help-pane .register li", timeout=30_000)

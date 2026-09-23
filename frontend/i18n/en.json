@@ -16,7 +16,7 @@
   },
   "nav": {
     "check": "Check a document",
-    "laws": "Old and new laws",
+    "laws": "Legal assistant",
     "draft": "Draft a letter",
     "help": "Get help"
   },
@@ -145,6 +145,18 @@
     "talkToLawyer": "Talk to a lawyer before you sign",
     "noRisks": "Nothing stood out for your role in this document. That is not a clearance: read it yourself too."
   },
+  "assistant": {
+    "heading": "Legal assistant",
+    "subtitle": "Grounded in the packaged law data and, once you upload one, your own document. Every answer carries the quote it came from.",
+    "modeCompare": "Compare old vs new law",
+    "modeCompareHint": "Look up a section or a topic, side by side across the two codes.",
+    "modeLegalQa": "Ask a legal question",
+    "modeLegalQaHint": "General questions, answered with section numbers.",
+    "modeDocumentQa": "Ask about my document",
+    "modeDocumentQaHint": "Questions about the document you uploaded.",
+    "noDocument": "Upload a document first to ask questions about it.",
+    "noDocumentCta": "Go to Check a document"
+  },
   "ask": {
     "heading": "Ask about this document",
     "placeholder": "For example: how much notice do I have to give?",
@@ -159,6 +171,21 @@
     "needsProfessional": "Answering this properly needs legal judgement.",
     "questionsForLawyer": "Questions to put to a lawyer",
     "emptyState": "Ask anything about this document. If it doesn't say, NyayaLens will tell you so."
+  },
+  "legalQa": {
+    "heading": "Ask a legal question",
+    "placeholder": "For example: what counts as cheating under the law?",
+    "label": "Your question",
+    "submit": "Ask",
+    "disclaimer": "General legal information, grounded in the statute text below. Not advice about your situation, and never a prediction of what a court would do.",
+    "matchedSections": "Sections consulted",
+    "notFound": "None of the packaged sections answer that.",
+    "outOfScope": "That isn't a question about these criminal-law codes.",
+    "emptyState": "Ask a general question about the criminal-law codes. Every statement is matched to a real, reviewed section, old and new code both where both apply.",
+    "suggestion1": "What counts as cheating under the law?",
+    "suggestion2": "What is the punishment for theft?",
+    "suggestion3": "When can police arrest without a warrant?",
+    "suggestion4": "What changed between the old and new law on dowry death?"
   },
   "compare": {
     "heading": "Compare",

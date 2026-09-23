@@ -33,6 +33,7 @@ class Task(StrEnum):
     OVERVIEW = "overview"
     REVIEW = "review"
     QA = "qa"
+    LEGAL_QA = "legal_qa"
     SCENARIO = "scenario"
     COMPARE = "compare"
     LAW_CHANGE = "law_change"

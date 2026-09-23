@@ -13,6 +13,7 @@ import { initialLanguage, translator } from './i18n.js';
 import { currentRoute, showRoute } from './router.js';
 import {
   announceAlert,
+  announcePolite,
   cacheDom,
   dom,
   setGlossary,
@@ -21,13 +22,16 @@ import {
   showError,
   store,
   t,
+  withBusy,
 } from './session.js';
+import { findClause, legalAnswerReceived } from './state.js';
+import { trustLine } from './format.js';
 import { actions, exportFile, ingest } from './actions.js';
-import { renderWorkspace } from './workspace.js';
+import { renderAssistant, renderWorkspace } from './workspace.js';
 import { aboutView } from './views/about.js';
+import { assistantView } from './views/assistant.js';
 import { draftView } from './views/draft.js';
 import { helpView } from './views/help.js';
-import { lawsView } from './views/laws.js';
 import { uploadPanel } from './views/upload.js';
 
 const SUPPORTED = ['en', 'hi', 'mr'];
@@ -179,18 +183,92 @@ function beginIngest(call) {
 
 /** Render the law lookup page. */
 function renderLaws() {
+  const state = store.get();
   fill(
     dom['laws-pane'],
-    lawsView({
+    assistantView({
       t,
-      language: store.get().language,
-      references: store.get().lawReferences,
-      onLookup: (query) => api.lawLookup(query),
-      onBrowse: (kind) => api.lawChanges(kind),
-      onExport: (payload) => exportFile({ kind: 'law_comparison', ...payload }),
-      onError: showError,
+      mode: state.assistantMode,
+      onModeChange: (mode) => {
+        store.set({ assistantMode: mode });
+        renderLaws();
+      },
+      compare: {
+        t,
+        language: state.language,
+        references: state.lawReferences,
+        onLookup: (query) => api.lawLookup(query),
+        onBrowse: (kind) => api.lawChanges(kind),
+        onExport: (payload) => exportFile({ kind: 'law_comparison', ...payload }),
+        onError: showError,
+      },
+      legalQa: {
+        t,
+        answers: state.legalAnswers,
+        onAsk: askLegalQuestion,
+      },
+      documentQa: {
+        t,
+        hasDocument: Boolean(state.document),
+        // The check workspace's own ask tab can render at the same time,
+        // hidden behind this route: distinct ids keep the two panels valid.
+        idPrefix: 'assistant-',
+        clauseById: (id) => findClause(store.get(), id),
+        onShow: showClauseFromAssistant,
+        answers: state.answers,
+        suggested: actions().suggestedQuestions(),
+        onAsk: askAboutDocument,
+      },
     }),
   );
+}
+
+/**
+ * Ask a general legal question from the assistant page.
+ *
+ * @param {string} question What the reader typed.
+ */
+async function askLegalQuestion(question) {
+  await withBusy(t('app.loading'), async () => {
+    const result = await api.legalQA({
+      question,
+      audience: { language: store.get().language, reading_level: store.get().readingLevel },
+    });
+    store.update((state) => legalAnswerReceived(state, result));
+    renderLaws();
+    announcePolite(trustLine(result.answer.verification, t).text);
+  });
+}
+
+/**
+ * Ask about the open document from the assistant page.
+ *
+ * Delegates to the same action the "Check a document" tab uses, then repaints
+ * this page too: the two share `state.answers`, but each renders it into a
+ * different pane.
+ *
+ * @param {string} question What the reader typed.
+ */
+async function askAboutDocument(question) {
+  await actions().onAsk(question);
+  renderLaws();
+}
+
+/**
+ * Show a clause cited from the assistant page.
+ *
+ * The clause lives in the "Check a document" view, which may be hidden right
+ * now, so this switches to it and to the ask tab before revealing the clause,
+ * rather than writing into a pane nobody can see.
+ *
+ * @param {string} clauseId The clause to show.
+ * @param {object} citation The citation that pointed at it.
+ */
+function showClauseFromAssistant(clauseId, citation) {
+  store.set({ tab: 'ask' });
+  location.hash = '#/check';
+  renderAssistant(dom, store.get(), actions());
+  requestAnimationFrame(() => actions().onShowClause(clauseId, citation));
 }
 
 /** Render the letter drafting page. */

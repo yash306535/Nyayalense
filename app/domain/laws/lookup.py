@@ -5,6 +5,7 @@ mapping shown to a user is exactly what the source document said, and a section
 that is not in the data returns nothing rather than a plausible guess.
 """
 
+import re
 from dataclasses import dataclass, field
 from typing import Final
 
@@ -13,10 +14,105 @@ from rapidfuzz import fuzz, process
 from app.domain.enums import ChangeType, LawAct, ReviewStatus
 from app.domain.laws.models import LawMapping, LawReference, LawTransition, Provision
 
+_WORD_RE: Final = re.compile(r"[\w']+")
+
+#: Trailing punctuation a title ends with that a question rarely echoes, so it
+#: is stripped before scoring rather than counted against the match.
+_TRAILING_PUNCTUATION: Final = re.compile("[.\\-–—,;:]+$")
+
+#: English filler words dropped before topic matching, so "What counts as
+#: cheating under the law?" is scored on "cheating" alone. English only, which
+#: is a real limit: a Hindi or Marathi question falls back to matching on the
+#: whole sentence, the same as a query that happens to have no filler words.
+_STOPWORDS: Final = frozenset(
+    {
+        "a",
+        "an",
+        "the",
+        "is",
+        "are",
+        "was",
+        "were",
+        "be",
+        "been",
+        "being",
+        "what",
+        "which",
+        "who",
+        "whom",
+        "when",
+        "where",
+        "why",
+        "how",
+        "can",
+        "could",
+        "do",
+        "does",
+        "did",
+        "will",
+        "would",
+        "should",
+        "of",
+        "to",
+        "for",
+        "in",
+        "on",
+        "at",
+        "by",
+        "with",
+        "under",
+        "about",
+        "and",
+        "or",
+        "not",
+        "no",
+        "it",
+        "this",
+        "that",
+        "these",
+        "those",
+        "i",
+        "my",
+        "me",
+        "you",
+        "your",
+        "someone",
+        "anyone",
+        "law",
+        "laws",
+    }
+)
+
+#: Words shorter than this rarely carry enough of a topic to score on alone.
+MIN_KEYWORD_LENGTH: Final = 3
+
 #: Similarity above which a mistyped section number is offered as a suggestion.
 SUGGESTION_THRESHOLD: Final = 70
 
 MAX_SUGGESTIONS: Final = 5
+
+#: Similarity above which a free-text word counts as naming a provision's own
+#: title, rather than coincidentally overlapping a few letters of it. High,
+#: because a false match here shows a user the wrong law.
+TOPIC_MATCH_THRESHOLD: Final = 90
+
+MAX_TOPIC_MATCHES: Final = 6
+
+#: Clauses handed to the model for one general legal question. Capped so the
+#: prompt stays small and the answer stays about what was actually asked.
+MAX_LEGAL_QA_CLAUSES: Final = 8
+
+
+def _keywords(text: str) -> str:
+    """Reduce a query to its content words, casefolded and space-joined."""
+    words = [word.casefold() for word in _WORD_RE.findall(text)]
+    kept = [word for word in words if word not in _STOPWORDS and len(word) >= MIN_KEYWORD_LENGTH]
+    return " ".join(kept) if kept else text.casefold()
+
+
+def _stripped(title: str) -> str:
+    """A title's own words, casefolded, with its closing punctuation dropped."""
+    return _TRAILING_PUNCTUATION.sub("", title).strip().casefold()
 
 
 @dataclass(frozen=True, slots=True)
@@ -96,6 +192,64 @@ class LawIndex:
             for mapping in self._reverse.get(reference.key, [])
         )
         return [hit for hit in hits if include_unreviewed or hit.mapping.is_reviewed]
+
+    def search_by_topic(self, query: str, *, include_unreviewed: bool) -> list[MappingHit]:
+        """Find mappings by what they are about, not by a citation.
+
+        For a query like ``"What counts as cheating under the law?"`` that
+        names no act, a citation parser finds nothing. This instead reduces the
+        query to its content words -- dropping filler such as "what" and "the"
+        -- and scores every mapping's own title on both the old and new side
+        against them, order and extra words ignored. The threshold is high
+        enough that an unrelated title never appears, at the cost of missing a
+        paraphrase that shares none of the title's own words.
+
+        Args:
+            query: Free text, not expected to name an act or section.
+            include_unreviewed: Whether rows still marked ``extracted`` count.
+
+        Returns:
+            Up to :data:`MAX_TOPIC_MATCHES` mappings, best match first.
+        """
+        keywords = _keywords(query)
+        scored = []
+        for mapping in self.mappings:
+            if not include_unreviewed and not mapping.is_reviewed:
+                continue
+            titles = [mapping.old.title, *(ref.title for ref in mapping.new)]
+            score = max(
+                (fuzz.token_set_ratio(keywords, _stripped(title)) for title in titles if title),
+                default=0.0,
+            )
+            if score >= TOPIC_MATCH_THRESHOLD:
+                scored.append((score, mapping))
+        scored.sort(key=lambda pair: (-pair[0], pair[1].old.key))
+        return [MappingHit(mapping, matched_old=True) for _, mapping in scored[:MAX_TOPIC_MATCHES]]
+
+    def matching_provisions(self, query: str) -> list[Provision]:
+        """Find stored provision texts relevant to a general legal question.
+
+        Built from :meth:`search_by_topic`, but resolved down to whichever
+        matched sections actually have stored, reviewed text -- a topic match
+        with nothing to quote is not useful to a grounded answer.
+
+        Args:
+            query: The reader's question, or the topic within it.
+
+        Returns:
+            Up to :data:`MAX_LEGAL_QA_CLAUSES` provisions, best match first.
+        """
+        found: dict[str, Provision] = {}
+        for hit in self.search_by_topic(query, include_unreviewed=False):
+            for reference in [hit.mapping.old, *hit.mapping.new]:
+                if reference.key in found:
+                    continue
+                provision = self.provision(reference.act, reference.section)
+                if provision is not None and provision.review_status is ReviewStatus.VERIFIED:
+                    found[reference.key] = provision
+            if len(found) >= MAX_LEGAL_QA_CLAUSES:
+                break
+        return list(found.values())[:MAX_LEGAL_QA_CLAUSES]
 
     def provision(self, act: LawAct, section: str) -> Provision | None:
         """Return the stored text of a section, when one is packaged."""

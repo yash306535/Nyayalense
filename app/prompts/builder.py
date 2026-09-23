@@ -27,6 +27,7 @@ _TASK_FILES: Final[dict[Task, str]] = {
     Task.OVERVIEW: "overview.md",
     Task.REVIEW: "review.md",
     Task.QA: "qa.md",
+    Task.LEGAL_QA: "legal_qa.md",
     Task.SCENARIO: "scenario.md",
     Task.COMPARE: "compare.md",
     Task.LAW_CHANGE: "law_change.md",

@@ -26,6 +26,8 @@ export function initialState() {
     activeCitation: null,
     status: { busy: false, message: '' },
     error: null,
+    assistantMode: 'compare',
+    legalAnswers: [],
   };
 }
 
@@ -117,6 +119,21 @@ export function documentLoaded(state, result) {
  */
 export function answerReceived(state, answer) {
   return { answers: [...state.answers, answer] };
+}
+
+/**
+ * Append a general legal question and its answer to that conversation.
+ *
+ * Kept separate from `answers`, which is one document's Q&A history: a legal
+ * question draws on the packaged statute text, not on whatever document is
+ * open, so it outlives switching documents or having none open at all.
+ *
+ * @param {object} state Current state.
+ * @param {object} entry The `/laws/qa` response.
+ * @returns {object} The patch to apply.
+ */
+export function legalAnswerReceived(state, entry) {
+  return { legalAnswers: [...state.legalAnswers, entry] };
 }
 
 /**

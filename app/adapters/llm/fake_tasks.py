@@ -64,6 +64,36 @@ def build_qa(prompt: Prompt, clauses: tuple[PromptClause, ...]) -> LLMModel:
     )
 
 
+def build_legal_qa(prompt: Prompt, clauses: tuple[PromptClause, ...]) -> LLMModel:
+    """Answer a general legal question, citing each matched section by number.
+
+    Unlike :func:`build_qa`, the statement names the section it comes from -
+    the real prompt asks for this explicitly, and it is what the demo has to
+    show to look like a legal assistant rather than a document Q&A reused.
+    """
+    ranked = rank_clauses(clauses, prompt.question)
+    if not ranked:
+        return LLMAnswer(
+            answer_type=AnswerType.NOT_FOUND,
+            related_clause_ids=[clause.id for clause in clauses[:2]],
+            injection_warning=mentions_ai(clauses),
+        )
+    return LLMAnswer(
+        answer_type=AnswerType.DIRECT,
+        statements=[
+            statement_from(
+                f"Under {clause.label}: {quote_from(clause, prompt.question)}",
+                clause,
+                prompt.question,
+                StatementKind.DIRECT,
+            )
+            for clause, _ in ranked[:MAX_STATEMENTS]
+        ],
+        related_clause_ids=[clause.id for clause, _ in ranked[:MAX_STATEMENTS]],
+        injection_warning=mentions_ai(clauses),
+    )
+
+
 def _build_scenario(prompt: Prompt, clauses: tuple[PromptClause, ...]) -> LLMModel:
     """Say what the document itself covers about a situation.
 
@@ -162,6 +192,7 @@ def _build_wording(prompt: Prompt, clauses: tuple[PromptClause, ...]) -> LLMMode
 
 BUILDERS: Final[dict[Task, Callable[[Prompt, tuple[PromptClause, ...]], LLMModel]]] = {
     Task.QA: build_qa,
+    Task.LEGAL_QA: build_legal_qa,
     Task.OVERVIEW: build_overview,
     Task.REVIEW: build_review,
     Task.SCENARIO: _build_scenario,

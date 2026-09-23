@@ -77,7 +77,11 @@ def _verify(
                 name=party.name,
                 described_as=party.described_as,
                 is_user=party.is_user,
-                citations=[to_citation(citation) for citation in party.citations],
+                citations=[
+                    citation
+                    for citation in (to_citation(citation) for citation in party.citations)
+                    if citation is not None
+                ],
             )
             for party in raw.parties
         ],

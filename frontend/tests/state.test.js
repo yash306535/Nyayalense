@@ -9,6 +9,7 @@ import {
   findClause,
   highlightRanges,
   initialState,
+  legalAnswerReceived,
   recentTurns,
   situations,
 } from '../js/state.js';
@@ -109,6 +110,14 @@ describe('conversation history', () => {
     const patch = answerReceived(state, { question: 'two' });
     assert.equal(patch.answers.length, 2);
     assert.equal(state.answers.length, 1);
+  });
+
+  it('appends a legal answer separately from the document answers', () => {
+    const state = { ...initialState(), legalAnswers: [{ question: 'one' }], answers: [] };
+    const patch = legalAnswerReceived(state, { question: 'two' });
+    assert.equal(patch.legalAnswers.length, 2);
+    assert.equal(state.legalAnswers.length, 1);
+    assert.equal(state.answers.length, 0);
   });
 });
 

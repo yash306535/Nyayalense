@@ -125,7 +125,9 @@ tests that those refusals hold.
 | Review: checklist, risks, missing protections, contradictions | Shipped | `POST /analysis/review` | [`test_analysis.py`](tests/api/test_analysis.py) |
 | Grounded Q&A with a fail-closed `not_found` | Shipped | `POST /qa` | [`test_analysis.py`](tests/api/test_analysis.py) |
 | Compare versions, or two alternatives | Shipped | `POST /compare` | [`test_analysis.py`](tests/api/test_analysis.py) |
-| Old-to-new criminal law lookup, both directions | Shipped | `GET /laws/lookup` | [`test_laws.py`](tests/api/test_laws.py) |
+| Old-to-new criminal law lookup, by citation or by topic, both directions | Shipped | `GET /laws/lookup` | [`test_laws.py`](tests/api/test_laws.py) |
+| General legal Q&A, answered from matched statute sections with citations | Shipped | `POST /laws/qa` | [`test_laws.py`](tests/api/test_laws.py) |
+| One assistant page: compare, ask a legal question, or ask about your document | Shipped | — | [`test_main_flow.py`](tests/e2e/test_main_flow.py) |
 | Letter drafting with locked facts | Shipped | `POST /drafts/*` | [`test_drafting.py`](tests/api/test_drafting.py) |
 | Word and PDF export for drafts, briefs and comparisons | Shipped | `POST /exports` | [`test_drafting.py`](tests/api/test_drafting.py) |
 | Calendar export of absolute dates | Shipped | `POST /calendar` | [`test_ics.py`](tests/unit/test_ics.py) |

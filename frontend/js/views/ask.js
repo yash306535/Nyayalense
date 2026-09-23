@@ -12,16 +12,22 @@ import { questionPrompt, statements, trustBlock } from './evidence.js';
 /**
  * Render the ask panel.
  *
- * @param {object} deps `{ t, answers, suggested, busy, onAsk, clauseById, onShow }`.
+ * @param {object} deps `{ t, answers, suggested, busy, onAsk, clauseById, onShow, idPrefix }`.
+ *   `idPrefix` keeps element ids unique when the panel is rendered more than
+ *   once on the page at a time, such as from the legal assistant's "ask about
+ *   my document" mode alongside the check workspace's own ask tab. Empty by
+ *   default, for the one-panel case.
  * @returns {HTMLElement} The panel.
  */
 export function askView(deps) {
-  const { t, answers, suggested, onAsk } = deps;
+  const { t, answers, suggested, onAsk, idPrefix = '' } = deps;
+  const inputId = `${idPrefix}question-input`;
+  const hintId = `${idPrefix}ask-hint`;
 
   const input = el('input', {
     type: 'text',
-    id: 'question-input',
-    attrs: { placeholder: t('ask.placeholder'), maxlength: '1000', 'aria-describedby': 'ask-hint' },
+    id: inputId,
+    attrs: { placeholder: t('ask.placeholder'), maxlength: '1000', 'aria-describedby': hintId },
   });
 
   const button = el('button', {
@@ -53,16 +59,16 @@ export function askView(deps) {
       },
     }, [
       el('div', { className: 'field' }, [
-        el('label', { attrs: { for: 'question-input' }, text: t('ask.label') }),
+        el('label', { attrs: { for: inputId }, text: t('ask.label') }),
         input,
-        el('p', { id: 'ask-hint', className: 'field-hint', text: t('ask.emptyState') }),
+        el('p', { id: hintId, className: 'field-hint', text: t('ask.emptyState') }),
       ]),
       button,
     ]),
     suggested?.length > 0 && suggestedQuestions(suggested, t, onAsk),
     el(
       'div',
-      { className: 'stack', id: 'answers' },
+      { className: 'stack', id: `${idPrefix}answers` },
       [...answers].reverse().map((answer) => answerCard(answer, deps)),
     ),
   ]);
