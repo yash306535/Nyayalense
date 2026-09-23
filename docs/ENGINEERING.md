@@ -74,7 +74,8 @@ measures them and writes them to `evals/REPORT.md`.
 
 | Layer | Count | What it covers |
 | --- | --- | --- |
-| Unit | most of 577 | Normalisation offset maps, the verifier, amounts, redaction, segmentation, definitions, diff, ICS, document typing, law references, the data files, the renderers, drafting rules, the build script |
+| Invariants | 14 | The promises the product rests on, swept across every sample and every endpoint: no statement without a verified quote, every removal disclosed, no advice, no masked identifier reappearing, and an injected instruction changing nothing |
+| Unit | most of 591 | Normalisation offset maps, the verifier, amounts, redaction, segmentation, definitions, diff, ICS, document typing, law references, the data files, the renderers, drafting rules, the build script |
 | Property-based | within those | Any substring of a clause verifies to the right span; text not in the clause never does; every normalised character maps inside its source |
 | API | within those | Every route: success, 400, 404, 413, 415, 422, 429, the problem+json shape, and the security headers |
 | Frontend | 84 | The pure modules, and bundle parity across all three languages |

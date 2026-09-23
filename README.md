@@ -268,7 +268,8 @@ Measured on this checkout:
 
 | Check | Result |
 | --- | --- |
-| Backend tests | 577 passing, 93% statement coverage |
+| Invariant sweep | No statement reaches a reader without a verified quote, on any endpoint, for any sample ([`test_invariants.py`](tests/api/test_invariants.py)) |
+| Backend tests | 591 passing, 93% statement coverage |
 | Frontend unit tests | 84 passing under `node --test` |
 | Browser and accessibility tests | 60 passing |
 | axe violations | 0 across every view, both themes, at 320px and 200% text |
