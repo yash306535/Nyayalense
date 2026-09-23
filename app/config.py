@@ -49,7 +49,13 @@ class Settings(BaseSettings):
         default=False, description="Authenticate through Vertex AI with ADC instead of a key."
     )
     google_cloud_project: str | None = Field(default=None, description="Vertex AI project id.")
-    google_cloud_location: str = Field(default="asia-south1", description="Vertex AI region.")
+    google_cloud_location: str = Field(
+        default="global",
+        description=(
+            "Vertex AI location for Gemini calls. Most Gemini models are served "
+            "only from the global endpoint, not every regional one."
+        ),
+    )
     gemini_model: str = Field(
         default="gemini-3.6-flash", description="Main model for analysis and Q&A."
     )
@@ -136,8 +142,15 @@ class Settings(BaseSettings):
     @field_validator("document_ai_processor")
     @classmethod
     def _processor_looks_like_a_resource_name(cls, value: str | None) -> str | None:
-        """Reject a processor id that is not a full resource name."""
-        if value is not None and not value.startswith("projects/"):
+        """Reject a processor id that is not a full resource name.
+
+        An unset ``.env`` line reads as an empty string, not as absent, and an
+        empty processor is harmless while ``ENABLE_DOCUMENT_AI`` is off. Only a
+        non-empty value gets held to the resource-name shape.
+        """
+        if not value:
+            return None
+        if not value.startswith("projects/"):
             msg = "DOCUMENT_AI_PROCESSOR must be a full resource name starting with 'projects/'"
             raise ValueError(msg)
         return value

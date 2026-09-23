@@ -15,6 +15,10 @@ set -Eeuo pipefail
 MODE="${1:-vertex}"
 SERVICE="${SERVICE:-nyayalens}"
 REGION="${REGION:-asia-south1}"
+# Where the Gemini models are served, not where Cloud Run runs: the two are
+# set separately because most Gemini models are published only at the global
+# Vertex AI endpoint, not in every regional one such as asia-south1.
+VERTEX_LOCATION="${VERTEX_LOCATION:-global}"
 PROJECT_ID="${PROJECT_ID:?set PROJECT_ID to your Google Cloud project}"
 SERVICE_ACCOUNT="${SERVICE_ACCOUNT:-${SERVICE}-run@${PROJECT_ID}.iam.gserviceaccount.com}"
 SECRET_NAME="${SECRET_NAME:-gemini-api-key}"
@@ -44,7 +48,7 @@ args=(
 case "${MODE}" in
   vertex)
     echo "Deploying with Vertex AI. No API key will exist anywhere."
-    args+=(--set-env-vars "${common_env},GOOGLE_GENAI_USE_VERTEXAI=true,GOOGLE_CLOUD_PROJECT=${PROJECT_ID},GOOGLE_CLOUD_LOCATION=${REGION}")
+    args+=(--set-env-vars "${common_env},GOOGLE_GENAI_USE_VERTEXAI=true,GOOGLE_CLOUD_PROJECT=${PROJECT_ID},GOOGLE_CLOUD_LOCATION=${VERTEX_LOCATION}")
     ;;
   apikey)
     echo "Deploying with an AI Studio key from Secret Manager: ${SECRET_NAME}"
