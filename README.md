@@ -336,7 +336,8 @@ app/
   templates/    letter templates and the shared print stylesheet
 frontend/
   js/           session, actions, router, workspace, views, pure helpers
-  css/          tokens, base, layout, controls, components, utilities, print
+  css/          tokens, base, layout, controls, components, document,
+                surfaces, utilities, print
   i18n/         en, hi, mr, with identical key sets
   tests/        node --test, over the pure modules
 tests/          unit, api, e2e

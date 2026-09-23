@@ -1,0 +1,71 @@
+/* Surfaces that hold content: the help register, the drop zone, the dialog. */
+
+/* --- the help directory, styled as an office register ---------------- */
+
+.register { list-style: none; padding: 0; margin: 0; }
+
+.register > li {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  gap: var(--s3);
+  align-items: start;
+  padding: var(--s4) 0;
+  border-block-end: 1px solid var(--rule);
+}
+
+.register > li:last-child { border-block-end: 0; }
+
+@media (width < 44rem) {
+  .register > li { grid-template-columns: 2rem 1fr; }
+  .register__actions { grid-column: 2; }
+}
+
+.register__icon { color: var(--seal); padding-block-start: 0.2em; }
+.register__name { font-weight: 650; margin: 0 0 var(--s1); }
+.register__purpose { margin: 0 0 var(--s2); color: var(--ink-muted); max-inline-size: 52ch; }
+.register__meta { font-size: var(--text-xs); color: var(--ink-faint); }
+.register__actions { display: flex; flex-direction: column; gap: var(--s2); }
+.register__actions .btn { min-block-size: var(--target-touch); min-inline-size: var(--target-touch); }
+
+/* --- drop zone -------------------------------------------------------- */
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s3);
+  padding: var(--s7) var(--s5);
+  border: 2px dashed var(--rule-strong);
+  border-radius: var(--radius-lg);
+  background: var(--paper-raised);
+  text-align: center;
+}
+
+.dropzone--over { border-color: var(--seal); background: var(--seal-tint); }
+
+/* --- dialogs ---------------------------------------------------------- */
+
+dialog {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  background: var(--paper-raised);
+  color: var(--ink);
+  max-inline-size: min(42rem, calc(100vw - 2rem));
+  max-block-size: calc(100vh - 4rem);
+  box-shadow: var(--shadow-lift);
+}
+
+dialog::backdrop { background: rgb(15 17 20 / 55%); }
+
+.dialog__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+  padding: var(--s4);
+  border-block-end: 1px solid var(--rule);
+}
+
+.dialog__body { padding: var(--s4); overflow-y: auto; }
+

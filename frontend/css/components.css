@@ -1,8 +1,8 @@
-/* Components: the verification seal, the document pane, and the one table.
+/* Components: the verification seal, and the one comparison table.
  *
  * The seal is the only bold element in the interface, because it is the thing
- * that makes this product different from a chat box. Everything else stays
- * quiet so the document can be read.
+ * that makes this product different from a chat box. Every comparison in the
+ * product uses the table below, so there is one set of semantics to get right.
  */
 
 /* --- cards and panels ------------------------------------------------ */
@@ -137,76 +137,6 @@
 .notice--error { border-color: var(--high); background: var(--high-tint); color: var(--high); }
 .notice--seal { border-color: var(--seal-rule); background: var(--seal-tint); color: var(--seal-strong); }
 
-/* --- the document pane ----------------------------------------------- */
-
-.document {
-  background: var(--paper);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
-  padding: var(--s5) var(--s5) var(--s6);
-  font-family: var(--font-document);
-  font-size: var(--text-base);
-  line-height: var(--leading-document);
-}
-
-.document__title {
-  font-family: var(--font-app);
-  font-size: var(--text-sm);
-  color: var(--ink-faint);
-  border-block-end: 1px solid var(--rule);
-  padding-block-end: var(--s3);
-  margin-block-end: var(--s4);
-}
-
-.clauses { display: flex; flex-direction: column; gap: var(--s4); }
-
-.clause {
-  display: grid;
-  grid-template-columns: 4.5rem 1fr;
-  gap: var(--s3);
-  scroll-margin-block: 6rem;
-  content-visibility: auto;
-  contain-intrinsic-size: auto 6rem; /* keeps the scrollbar honest on long documents */
-  padding: var(--s1) var(--s2);
-  border-radius: var(--radius);
-}
-
-.clause:target,
-.clause--active {
-  background: var(--seal-tint);
-  box-shadow: inset 3px 0 0 var(--seal);
-}
-
-@media (width < 40rem) {
-  .clause { grid-template-columns: 1fr; gap: var(--s1); }
-}
-
-.clause__label {
-  font-family: var(--font-app);
-  font-size: var(--text-xs);
-  font-variant-numeric: tabular-nums;
-  color: var(--ink-faint);
-  padding-block-start: 0.3em;
-}
-
-.clause__heading {
-  font-weight: 650;
-  display: block;
-  margin-block-end: var(--s1);
-}
-
-.clause__text { margin: 0; max-inline-size: none; white-space: pre-wrap; }
-
-.outline {
-  font-family: var(--font-app);
-  font-size: var(--text-sm);
-}
-
-.outline ol { list-style: none; padding: 0; margin: 0; }
-.outline a { display: block; padding: var(--s1) var(--s2); border-radius: var(--radius-sm); color: var(--ink-muted); text-decoration: none; }
-.outline a:hover { background: var(--paper-sunken); color: var(--ink); }
-
 /* --- tabs ------------------------------------------------------------ */
 
 .tablist {
@@ -333,73 +263,4 @@
 }
 
 .filter-group input:focus-visible + label { outline: 3px solid var(--focus); outline-offset: 2px; }
-
-/* --- the help directory, styled as an office register ---------------- */
-
-.register { list-style: none; padding: 0; margin: 0; }
-
-.register > li {
-  display: grid;
-  grid-template-columns: 2rem 1fr auto;
-  gap: var(--s3);
-  align-items: start;
-  padding: var(--s4) 0;
-  border-block-end: 1px solid var(--rule);
-}
-
-.register > li:last-child { border-block-end: 0; }
-
-@media (width < 44rem) {
-  .register > li { grid-template-columns: 2rem 1fr; }
-  .register__actions { grid-column: 2; }
-}
-
-.register__icon { color: var(--seal); padding-block-start: 0.2em; }
-.register__name { font-weight: 650; margin: 0 0 var(--s1); }
-.register__purpose { margin: 0 0 var(--s2); color: var(--ink-muted); max-inline-size: 52ch; }
-.register__meta { font-size: var(--text-xs); color: var(--ink-faint); }
-.register__actions { display: flex; flex-direction: column; gap: var(--s2); }
-.register__actions .btn { min-block-size: var(--target-touch); min-inline-size: var(--target-touch); }
-
-/* --- drop zone -------------------------------------------------------- */
-
-.dropzone {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--s3);
-  padding: var(--s7) var(--s5);
-  border: 2px dashed var(--rule-strong);
-  border-radius: var(--radius-lg);
-  background: var(--paper-raised);
-  text-align: center;
-}
-
-.dropzone--over { border-color: var(--seal); background: var(--seal-tint); }
-
-/* --- dialogs ---------------------------------------------------------- */
-
-dialog {
-  border: 1px solid var(--rule);
-  border-radius: var(--radius-lg);
-  padding: 0;
-  background: var(--paper-raised);
-  color: var(--ink);
-  max-inline-size: min(42rem, calc(100vw - 2rem));
-  max-block-size: calc(100vh - 4rem);
-  box-shadow: var(--shadow-lift);
-}
-
-dialog::backdrop { background: rgb(15 17 20 / 55%); }
-
-.dialog__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--s3);
-  padding: var(--s4);
-  border-block-end: 1px solid var(--rule);
-}
-
-.dialog__body { padding: var(--s4); overflow-y: auto; }
 
