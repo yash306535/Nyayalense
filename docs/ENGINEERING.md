@@ -24,10 +24,13 @@ nothing here that the code does not do.
 | ESLint flat config, no `console.log` | [`eslint.config.mjs`](../eslint.config.mjs). Clean |
 | All tool config in `pyproject.toml`, plus `.editorconfig` and pre-commit | [`pyproject.toml`](../pyproject.toml), [`.pre-commit-config.yaml`](../.pre-commit-config.yaml) |
 
-Two deliberate departures from the size guidance, both documented rather than
-hidden: `frontend/css/components.css` is long because it holds every component
-in one stylesheet, as the brief specifies; and `app/domain/models.py` was split
-into `models.py` and `results.py` to stay under the limit.
+Measured on this checkout: **no module over 300 lines, no function body over 40
+lines, no function over complexity 10.** Several modules were split to get
+there, and the splits follow the seams rather than the line count: `overview.py`
+and `review.py` are two different analyses; `wording.py` is the one place a model
+may touch a letter; `mismatches.py` detects a defect while `amounts.py` only
+reads numbers; and the browser's `session.js`, `actions.js` and `main.js`
+separate state, behaviour and boot.
 
 ## Security
 

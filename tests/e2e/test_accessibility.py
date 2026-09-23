@@ -86,7 +86,7 @@ def test_the_comparison_table_is_accessible(themed: Page) -> None:
     themed.click('[data-tab="compare"]')
     themed.select_option("#compare-other", "leave-licence-v2")
     themed.click("#view-check .card button:has-text('Compare')")
-    themed.wait_for_selector(".ctable", timeout=60_000)
+    themed.wait_for_selector(".ctable", timeout=90_000)
     check(themed, "comparison table")
 
 

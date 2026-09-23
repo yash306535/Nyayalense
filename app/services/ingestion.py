@@ -13,13 +13,13 @@ from app.adapters.documents import Extracted, FileKind, extract
 from app.adapters.llm.base import LLMClient, Task
 from app.adapters.llm.schemas import LLMDocTypeGuess
 from app.config import Settings
-from app.domain.amounts import find_mismatches
 from app.domain.audience import Audience
 from app.domain.definitions import extract_defined_terms
 from app.domain.doc_type import guess_doc_type
 from app.domain.enums import DocumentWarning, IdentifierKind, Language
 from app.domain.laws.models import LawReference
 from app.domain.laws.references import find_references
+from app.domain.mismatches import find_mismatches
 from app.domain.models import AmountMismatch, Clause, Document, MaskedIdentifier
 from app.domain.redaction import mask_identifiers
 from app.domain.segmentation import segment
@@ -141,8 +141,7 @@ def build_document(
     Raises:
         InvalidDocumentError: No usable text was found.
     """
-    joined = "\n".join(pages)
-    truncated = len(joined) > settings.max_document_chars
+    truncated = len("\n".join(pages)) > settings.max_document_chars
     if truncated:
         pages = _truncate(pages, settings.max_document_chars)
 
@@ -154,28 +153,15 @@ def build_document(
         )
 
     masked_clauses, masked_counts = _mask_clauses(clauses)
-    text = "\n".join(clause.text for clause in masked_clauses)
-    guess = guess_doc_type(text)
-    references = find_references(text)
-
-    document = Document(
-        id=document_id(masked_clauses),
-        doc_type=guess.doc_type,
-        doc_type_confidence=guess.confidence,
-        language=_detect_language(text),
-        clauses=masked_clauses,
+    document = _assemble(
+        masked_clauses,
+        masked_counts,
+        title=title,
         page_count=max(len(pages), 1),
-        char_count=len(text),
-        title=title[:300],
         warnings=_warnings(extracted, masked_clauses, truncated=truncated),
-        masked=[
-            MaskedIdentifier(kind=kind, count=count)
-            for kind, count in sorted(masked_counts.items())
-        ],
-        defined_terms=extract_defined_terms(masked_clauses),
-        amount_mismatches=_mismatches(masked_clauses),
-        law_reference_ids=[reference.key for reference in references],
     )
+    references = find_references("\n".join(clause.text for clause in masked_clauses))
+
     logger.info(
         "document_ingested",
         extra={
@@ -188,6 +174,38 @@ def build_document(
         },
     )
     return Ingested(document=document, law_references=list(references))
+
+
+def _assemble(
+    clauses: list[Clause],
+    masked_counts: dict[IdentifierKind, int],
+    *,
+    title: str,
+    page_count: int,
+    warnings: list[DocumentWarning],
+) -> Document:
+    """Build the document, running every check that needs no model."""
+    text = "\n".join(clause.text for clause in clauses)
+    guess = guess_doc_type(text)
+
+    return Document(
+        id=document_id(clauses),
+        doc_type=guess.doc_type,
+        doc_type_confidence=guess.confidence,
+        language=_detect_language(text),
+        clauses=clauses,
+        page_count=page_count,
+        char_count=len(text),
+        title=title[:300],
+        warnings=warnings,
+        masked=[
+            MaskedIdentifier(kind=kind, count=count)
+            for kind, count in sorted(masked_counts.items())
+        ],
+        defined_terms=extract_defined_terms(clauses),
+        amount_mismatches=_mismatches(clauses),
+        law_reference_ids=[reference.key for reference in find_references(text)],
+    )
 
 
 def _truncate(pages: list[str], limit: int) -> list[str]:

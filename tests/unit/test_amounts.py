@@ -6,11 +6,11 @@ import pytest
 from app.domain.amounts import (
     digit_values,
     find_digit_amounts,
-    find_mismatches,
     find_word_amounts,
     numeric_values,
     words_to_number,
 )
+from app.domain.mismatches import find_mismatches
 
 
 @pytest.mark.parametrize(

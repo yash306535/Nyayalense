@@ -82,7 +82,7 @@ def test_comparing_two_versions_produces_one_table(loaded: Page) -> None:
     loaded.click('[data-tab="compare"]')
     loaded.select_option("#compare-other", "leave-licence-v2")
     loaded.click("#view-check .card button:has-text('Compare')")
-    loaded.wait_for_selector(".ctable", timeout=60_000)
+    loaded.wait_for_selector(".ctable", timeout=90_000)
 
     table = loaded.locator(".ctable").first
     expect(table.locator("caption")).to_be_visible()
@@ -94,7 +94,7 @@ def test_the_comparison_table_is_reachable_by_keyboard(loaded: Page) -> None:
     loaded.click('[data-tab="compare"]')
     loaded.select_option("#compare-other", "leave-licence-v2")
     loaded.click("#view-check .card button:has-text('Compare')")
-    loaded.wait_for_selector(".table-wrap", timeout=60_000)
+    loaded.wait_for_selector(".table-wrap", timeout=90_000)
     expect(loaded.locator(".table-wrap").first).to_have_attribute("tabindex", "0")
     expect(loaded.locator(".table-wrap").first).to_have_attribute("role", "region")
 

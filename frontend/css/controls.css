@@ -1,0 +1,114 @@
+/* Buttons and form controls: every interactive target in the interface.
+ *
+ * Each one meets the WCAG 2.2 minimum target size, and each takes the single
+ * focus ring defined in base.css rather than one of its own.
+ */
+
+/* --- buttons --------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s2);
+  min-block-size: var(--target-touch);
+  min-inline-size: var(--target);
+  padding: var(--s2) var(--s4);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  background: var(--paper-raised);
+  color: var(--ink);
+  font-size: var(--text-sm);
+  font-weight: 550;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.btn:hover:not(:disabled) { background: var(--paper-sunken); border-color: var(--ink-faint); }
+.btn:disabled { opacity: 0.55; cursor: not-allowed; }
+
+.btn--primary {
+  background: var(--seal);
+  border-color: var(--seal-strong);
+  color: #fff;
+}
+
+.btn--primary:hover:not(:disabled) { background: var(--seal-strong); }
+
+/* The seal is light-on-dark in the dark theme, so the label must flip too. */
+:root[data-theme='dark'] .btn--primary { color: #16121f; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .btn--primary { color: #16121f; }
+}
+
+.btn--quiet {
+  border-color: transparent;
+  background: transparent;
+  color: var(--ink-muted);
+}
+
+.btn--quiet:hover:not(:disabled) { background: var(--paper-sunken); color: var(--ink); }
+
+.btn--small {
+  min-block-size: var(--target);
+  padding: var(--s1) var(--s2);
+  font-size: var(--text-xs);
+}
+
+/* --- form controls --------------------------------------------------- */
+
+.field { display: flex; flex-direction: column; gap: var(--s1); }
+
+.field > label,
+.field-label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.field-hint {
+  font-size: var(--text-xs);
+  color: var(--ink-faint);
+}
+
+.field-error {
+  font-size: var(--text-sm);
+  color: var(--high);
+  font-weight: 550;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='date'],
+input[type='search'],
+select,
+textarea {
+  min-block-size: var(--target-touch);
+  padding: var(--s2) var(--s3);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  background: var(--paper-raised);
+  color: var(--ink);
+  inline-size: 100%;
+}
+
+textarea { min-block-size: 8rem; resize: vertical; line-height: var(--leading-normal); }
+
+input[aria-invalid='true'],
+textarea[aria-invalid='true'],
+select[aria-invalid='true'] {
+  border-color: var(--high);
+  border-inline-start-width: 3px;
+}
+
+fieldset {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: var(--s4);
+  margin: 0 0 var(--s4);
+}
+
+legend { font-weight: 600; padding-inline: var(--s2); }
+

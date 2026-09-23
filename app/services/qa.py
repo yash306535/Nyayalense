@@ -50,7 +50,6 @@ async def answer_question(
         The answer, downgraded to ``not_found`` if nothing could be verified.
     """
     turns = history or []
-    checklist: Checklist | None = context.registry.checklists.get(document.doc_type)
     key = cache_key(
         document_hash=document.id,
         operation=Task.QA.value,
@@ -61,6 +60,30 @@ async def answer_question(
     if isinstance(cached, Answer):
         return cached
 
+    answer = await _ask(document, question, audience, context, turns=turns)
+    context.cache.set(key, answer)
+    logger.info(
+        "qa_answered",
+        extra={
+            "answer_type": answer.answer_type.value,
+            "total": answer.verification.total,
+            "verified": answer.verification.verified,
+            "removed": answer.verification.removed_count,
+            "needs_professional": answer.needs_professional,
+        },
+    )
+    return answer
+
+
+async def _ask(
+    document: Document,
+    question: str,
+    audience: Audience,
+    context: AnalysisContext,
+    *,
+    turns: list[tuple[str, str]],
+) -> Answer:
+    """Put the question to the model and verify what comes back."""
     prompt = build(
         document,
         Task.QA,
@@ -72,11 +95,13 @@ async def answer_question(
     index = ClauseIndex(document)
     statements, report = ground(raw.statements, index, threshold=context.threshold)
 
+    # An answer with nothing verifiable is a not-found, not a thinner answer.
     answer_type = raw.answer_type
     if not statements and answer_type in {AnswerType.DIRECT, AnswerType.INTERPRETATION}:
         answer_type = AnswerType.NOT_FOUND
 
-    answer = Answer(
+    checklist: Checklist | None = context.registry.checklists.get(document.doc_type)
+    return Answer(
         question=question,
         answer_type=answer_type,
         statements=statements,
@@ -90,18 +115,6 @@ async def answer_question(
         ],
         verification=report,
     )
-    context.cache.set(key, answer)
-    logger.info(
-        "qa_answered",
-        extra={
-            "answer_type": answer.answer_type.value,
-            "total": report.total,
-            "verified": report.verified,
-            "removed": report.removed_count,
-            "needs_professional": answer.needs_professional,
-        },
-    )
-    return answer
 
 
 def _fallback_question(

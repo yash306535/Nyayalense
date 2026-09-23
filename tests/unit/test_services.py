@@ -9,7 +9,6 @@ from app.domain.laws.models import Provision, Source
 from app.domain.models import Document
 from app.domain.results import Answer
 from app.errors import FactAuditError, NotFoundError
-from app.services.analysis import build_overview, build_review
 from app.services.brief import BriefInput, brief_document, comparison_document
 from app.services.compare import compare_documents
 from app.services.context import AnalysisContext
@@ -18,11 +17,13 @@ from app.services.drafting import (
     escape_markdown,
     get_template,
     load_templates,
-    suggest_wording,
 )
 from app.services.exports import safe_filename
 from app.services.laws import explain_change, lookup, old_acts_only, provision_diff
+from app.services.overview import build_overview
 from app.services.qa import answer_question
+from app.services.review import build_review
+from app.services.wording import suggest_wording
 
 AUDIENCE = Audience(role=Role.TENANT, language=Language.EN)
 

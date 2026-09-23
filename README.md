@@ -97,9 +97,9 @@ removed before you saw it, and the result tells you how many.
 
 | The brief asks for | NyayaLens feature | Code | How it avoids hallucination |
 | --- | --- | --- | --- |
-| Simplify complex legal documents | Plain-language overview, glossary, reading-level toggle | [`services/analysis.py`](app/services/analysis.py), [`data/glossary.json`](app/data/glossary.json) | Every statement carries a verified quote; a term the document does not define falls back to a reviewed general meaning, labelled as such |
+| Simplify complex legal documents | Plain-language overview, glossary, reading-level toggle | [`services/overview.py`](app/services/overview.py), [`data/glossary.json`](app/data/glossary.json) | Every statement carries a verified quote; a term the document does not define falls back to a reviewed general meaning, labelled as such |
 | Compare contracts, agreements or policies | Version diff and side-by-side alternatives, in one table design | [`services/compare.py`](app/services/compare.py), [`domain/diff.py`](app/domain/diff.py) | Alignment and diffing are deterministic; only changed pairs reach a model, and only to say what the change means |
-| Highlight clauses, obligations, risks, inconsistencies | Review: curated checklist, role-aware risks, missing protections, contradictions | [`services/analysis.py`](app/services/analysis.py) | An item the model calls "found" without evidence is recorded as not found; a contradiction needs a verified quote from each of two clauses |
+| Highlight clauses, obligations, risks, inconsistencies | Review: curated checklist, role-aware risks, missing protections, contradictions |  [`services/review.py`](app/services/review.py) | An item the model calls "found" without evidence is recorded as not found; a contradiction needs a verified quote from each of two clauses |
 | Answer questions from the document | Grounded Q&A with a trust line on every answer | [`services/qa.py`](app/services/qa.py) | An answer with nothing verifiable is downgraded to `not_found` |
 | Help users understand options and next steps | What-if scenarios, Get help directory, contextual next steps | [`services/scenarios.py`](app/services/scenarios.py), [`data/resources.json`](app/data/resources.json) | Consequences are reported only where the document states them; contacts come from official sources with a check date |
 | Generate summaries, checklists, actionable outputs | Overview, checklists, calendar export, Word and PDF letters | [`domain/ics.py`](app/domain/ics.py), [`rendering/`](app/rendering/) | A draft contains only confirmed facts; a figure that is not one fails the export |
@@ -318,14 +318,25 @@ records in [`docs/adr/`](docs/adr/).
 ```
 app/
   api/          routes, RFC 9457 errors, middleware, dependency wiring
-  domain/       pure logic: verification, segmentation, amounts, laws, drafting
+  domain/       pure logic, no I/O:
+                  verification.py   the one place a quote is checked
+                  segmentation.py   text into numbered clauses
+                  amounts.py        reading Indian numbers
+                  mismatches.py     words against digits
+                  redaction.py      masking, with a Verhoeff-checked Aadhaar
+                  laws/             parsing and looking up statutory references
+                  drafting/         typed facts, the slot lock, the fact audit
   services/     use cases, the only place adapters and domain meet
   adapters/     LLM, documents, cache, all behind typing.Protocol
   rendering/    one DocumentModel, three renderers
   prompts/      the prompt contract, versioned
   data/         checklists, glossary, resources, samples, law mappings
   templates/    letter templates and the shared print stylesheet
-frontend/       ES modules, CSS tokens, three string bundles, node tests
+frontend/
+  js/           session, actions, router, workspace, views, pure helpers
+  css/          tokens, base, layout, controls, components, utilities, print
+  i18n/         en, hi, mr, with identical key sets
+  tests/        node --test, over the pure modules
 tests/          unit, api, e2e
 evals/          the live evaluation suite
 docs/           architecture, data provenance, engineering, demo, ADRs

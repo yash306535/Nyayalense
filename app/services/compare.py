@@ -25,9 +25,9 @@ from app.domain.results import (
 )
 from app.domain.verification import ClauseIndex, merge_reports
 from app.prompts.builder import build
-from app.services.analysis import build_review
 from app.services.context import AnalysisContext
 from app.services.grounding import ground
+from app.services.review import build_review
 
 logger = logging.getLogger(__name__)
 

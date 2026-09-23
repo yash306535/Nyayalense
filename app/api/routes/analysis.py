@@ -5,7 +5,8 @@ from fastapi import APIRouter
 from app.api.deps import ContextDep
 from app.api.schemas import DocumentRequest
 from app.domain.results import Overview, Review
-from app.services.analysis import build_overview, build_review
+from app.services.overview import build_overview
+from app.services.review import build_review
 
 router = APIRouter(prefix="/analysis", tags=["analysis"])
 

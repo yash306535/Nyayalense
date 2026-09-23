@@ -19,9 +19,9 @@ from app.services.drafting import (
     get_template,
     map_prefill,
     prefill,
-    suggest_wording,
     templates_for,
 )
+from app.services.wording import suggest_wording
 
 router = APIRouter(prefix="/drafts", tags=["drafting"])
 

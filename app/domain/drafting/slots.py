@@ -87,13 +87,35 @@ def check(text: str, *, allowed: set[str], required: set[str], max_words: int) -
         The outcome, naming the first rule that was broken.
     """
     stripped = text.strip()
-    used = set(find_slots(stripped))
-    outside = strip_slots(stripped)
+    for broken, violation, detail in _rules(
+        stripped, allowed=allowed, required=required, max_words=max_words
+    ):
+        if broken:
+            return SlotCheck(False, violation, detail)
+    return SlotCheck(True, slots=tuple(dict.fromkeys(find_slots(stripped))))
 
-    rules: tuple[tuple[bool, Violation, str], ...] = (
-        (not stripped, Violation.EMPTY, "The suggestion was empty."),
+
+def _rules(
+    text: str, *, allowed: set[str], required: set[str], max_words: int
+) -> tuple[tuple[bool, Violation, str], ...]:
+    """Build the ordered contract, each entry a condition and what it means.
+
+    Args:
+        text: The stripped wording.
+        allowed: Slot names the template defines.
+        required: Slot names the wording must contain.
+        max_words: Longest acceptable wording.
+
+    Returns:
+        Each rule as ``(broken, violation, detail)``, most fundamental first.
+    """
+    used = set(find_slots(text))
+    outside = strip_slots(text)
+
+    return (
+        (not text, Violation.EMPTY, "The suggestion was empty."),
         (
-            len(stripped.split()) > max_words,
+            len(text.split()) > max_words,
             Violation.TOO_LONG,
             f"Longer than {max_words} words.",
         ),
@@ -123,12 +145,6 @@ def check(text: str, *, allowed: set[str], required: set[str], max_words: int) -
             "A contact detail appears outside a slot.",
         ),
     )
-
-    for broken, violation, detail in rules:
-        if broken:
-            return SlotCheck(False, violation, detail)
-
-    return SlotCheck(True, slots=tuple(dict.fromkeys(find_slots(stripped))))
 
 
 def fill(text: str, values: dict[str, str]) -> str:
