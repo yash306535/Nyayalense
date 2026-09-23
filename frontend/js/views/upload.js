@@ -177,3 +177,34 @@ export function rolePicker({ t, roles, active, onChange }) {
     el('p', { id: 'role-hint', className: 'field-hint', text: t('upload.roleHint') }),
   ]);
 }
+
+/**
+ * Render the reading-level toggle.
+ *
+ * A radio group rather than a switch: two named options a screen reader can
+ * announce, rather than a control whose state has to be inferred.
+ *
+ * @param {object} deps `{ t, active, onChange }`.
+ * @returns {HTMLElement} The toggle.
+ */
+export function readingLevelPicker({ t, active, onChange }) {
+  const group = el('div', { className: 'filter-group', attrs: { role: 'radiogroup', 'aria-labelledby': 'level-label' } });
+
+  for (const level of ['simple', 'detailed']) {
+    const id = `level-${level}`;
+    group.append(
+      el('input', {
+        type: 'radio',
+        id,
+        attrs: { name: 'reading-level', value: level, checked: level === active },
+        onchange: () => onChange(level),
+      }),
+      el('label', { attrs: { for: id }, text: t(`overview.${level}`) }),
+    );
+  }
+
+  return el('div', { className: 'field' }, [
+    el('span', { id: 'level-label', className: 'field-label', text: t('overview.readingLevel') }),
+    group,
+  ]);
+}

@@ -27,6 +27,7 @@ const DOM_IDS = [
 let translate = (key) => key;
 let samples = [];
 let checklist = null;
+let glossary = [];
 
 /** Look up every element the controller uses. */
 export function cacheDom() {
@@ -82,6 +83,20 @@ export function getChecklist() {
  */
 export function setChecklist(value) {
   checklist = value;
+}
+
+/** @returns {object[]} The packaged glossary entries. */
+export function getGlossary() {
+  return glossary;
+}
+
+/**
+ * Record the packaged glossary entries.
+ *
+ * @param {object[]} entries What the API returned.
+ */
+export function setGlossary(entries) {
+  glossary = entries;
 }
 
 /**

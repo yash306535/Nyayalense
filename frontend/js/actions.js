@@ -14,6 +14,7 @@ import {
   announcePolite,
   dom,
   getChecklist,
+  getGlossary,
   getSamples,
   setChecklist,
   showError,
@@ -53,6 +54,13 @@ export function actions() {
       store.set({ role, overview: null, review: null });
       await loadAnalyses();
     },
+    onChangeReadingLevel: async (readingLevel) => {
+      store.set({ readingLevel, overview: null, review: null });
+      await loadAnalyses();
+    },
+    onRunScenario: runScenario,
+    presetScenarios: () => getChecklist()?.scenarios || [],
+    glossary: getGlossary,
     onAsk: ask,
     onCalendar: downloadCalendar,
     onCompare: runCompare,
@@ -176,6 +184,7 @@ async function clearDocument(setHeading) {
     overview: null,
     review: null,
     compare: null,
+    scenario: null,
     answers: [],
     lawReferences: [],
     view: 'upload',
@@ -217,6 +226,20 @@ export async function exportFile(payload) {
     });
     saveBlob(file.blob, file.filename || downloadName(payload.kind, payload.format));
     announcePolite(t('a11y.fileReady', { format: payload.format.toUpperCase() }));
+  });
+}
+
+/**
+ * Work through a what-if against the document.
+ *
+ * @param {string} scenario The situation the reader described or picked.
+ */
+async function runScenario(scenario) {
+  await withBusy(t('app.loading'), async () => {
+    const result = await api.scenario({ ...analysisBody(store.get()), scenario });
+    store.set({ scenario: result });
+    renderAssistant(dom, store.get(), actions());
+    announcePolite(trustLine(result.verification, t).text);
   });
 }
 

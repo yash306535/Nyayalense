@@ -124,3 +124,38 @@ def test_the_theme_can_be_switched(page: Page, base_url: str) -> None:
     page.click("#theme-toggle")
     expect(page.locator("html")).to_have_attribute("data-theme", "dark")
     expect(page.locator("#theme-toggle")).to_have_attribute("aria-pressed", "true")
+
+
+def test_the_glossary_prefers_the_documents_own_definition(loaded: Page) -> None:
+    glossary = loaded.locator("#tabpanel details").first
+    expect(glossary).to_be_visible()
+    glossary.click()
+    expect(glossary.locator("dt").first).to_be_visible()
+    # The rental sample defines Premises, Licensor and Licensee for itself.
+    expect(glossary).to_contain_text("Defined in this document")
+
+
+def test_a_what_if_reports_only_what_the_document_says(loaded: Page) -> None:
+    loaded.click('[data-tab="scenarios"]')
+    loaded.locator("#tabpanel .row button").first.click()
+    loaded.wait_for_selector("#tabpanel article.panel", timeout=40_000)
+
+    result = loaded.locator("#tabpanel article.panel")
+    expect(result.locator(".trust")).to_be_visible()
+    expect(result).to_contain_text("What you could do next")
+
+
+def test_a_what_if_the_document_does_not_cover(loaded: Page) -> None:
+    loaded.click('[data-tab="scenarios"]')
+    loaded.fill("#scenario-input", "A meteorite lands on the roof")
+    loaded.click('#tabpanel button[type="submit"]')
+    loaded.wait_for_selector("#tabpanel article.panel", timeout=40_000)
+    expect(loaded.locator("#tabpanel article.panel")).to_contain_text("does not describe")
+
+
+def test_the_reading_level_can_be_changed(loaded: Page) -> None:
+    expect(loaded.locator("#level-simple")).to_be_checked()
+    loaded.click('label[for="level-detailed"]')
+    expect(loaded.locator("#level-detailed")).to_be_checked()
+    loaded.wait_for_selector(".seal", timeout=40_000)
+    expect(loaded.locator(".seal").first).to_be_visible()

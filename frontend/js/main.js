@@ -15,6 +15,7 @@ import {
   announceAlert,
   cacheDom,
   dom,
+  setGlossary,
   setSamples,
   setTranslator,
   showError,
@@ -46,8 +47,13 @@ async function start() {
   window.addEventListener('hashchange', route);
 
   try {
-    const [meta, samples] = await Promise.all([api.meta(), api.samples()]);
+    const [meta, samples, glossary] = await Promise.all([
+      api.meta(),
+      api.samples(),
+      api.glossary(),
+    ]);
     setSamples(samples);
+    setGlossary(glossary);
     store.set({ meta });
     dom['demo-badge'].hidden = !meta.demo_mode;
   } catch (error) {

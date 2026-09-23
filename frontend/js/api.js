@@ -171,6 +171,9 @@ export const api = {
    */
   checklist: (docType) => request(`/checklists/${encodeURIComponent(docType)}`),
 
+  /** @returns {Promise<object[]>} General meanings for legal terms. */
+  glossary: () => request('/glossary'),
+
   /**
    * @param {object} [params] `doc_type`, `situation` and `contextual`.
    * @returns {Promise<object[]>} Help directory entries.

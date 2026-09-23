@@ -132,6 +132,8 @@ tests that those refusals hold.
 | Get help directory with contextual suggestions | Shipped | `GET /resources` | [`test_reference_data.py`](tests/unit/test_reference_data.py) |
 | Brief for a lawyer or legal-aid clinic | Shipped | assembled in the browser | [`brief.test.js`](frontend/tests/brief.test.js) |
 | What-if scenarios | Shipped | `POST /scenarios` | [`test_analysis.py`](tests/api/test_analysis.py) |
+| Glossary, preferring the document's own definition | Shipped | `GET /glossary` | [`glossary.test.js`](frontend/tests/glossary.test.js) |
+| Reading-level toggle | Shipped | — | [`test_main_flow.py`](tests/e2e/test_main_flow.py) |
 | English, Hindi and Marathi interface | Shipped | — | [`i18n.test.js`](frontend/tests/i18n.test.js) |
 | OCR for scans | Not built | — | — |
 | Read-aloud through Cloud Text-to-Speech | Not built | — | — |
@@ -266,9 +268,9 @@ Measured on this checkout:
 
 | Check | Result |
 | --- | --- |
-| Backend tests | 570 passing, 93% statement coverage |
-| Frontend unit tests | 76 passing under `node --test` |
-| Browser and accessibility tests | 51 passing |
+| Backend tests | 574 passing, 93% statement coverage |
+| Frontend unit tests | 84 passing under `node --test` |
+| Browser and accessibility tests | 59 passing |
 | axe violations | 0 across every view, both themes, at 320px and 200% text |
 | `mypy --strict` | clean over `app/` and `scripts/` |
 | Ruff, ESLint | clean |

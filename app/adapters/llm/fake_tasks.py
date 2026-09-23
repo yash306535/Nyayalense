@@ -65,15 +65,18 @@ def build_qa(prompt: Prompt, clauses: tuple[PromptClause, ...]) -> LLMModel:
 
 
 def _build_scenario(prompt: Prompt, clauses: tuple[PromptClause, ...]) -> LLMModel:
-    """Say what the document itself covers about a situation."""
-    ranked = rank_clauses(clauses, prompt.instructions + " " + prompt.question)
+    """Say what the document itself covers about a situation.
+
+    Ranked against the situation alone. Including the task instructions would
+    match almost any clause, which would make demo mode claim the document
+    covers situations it says nothing about.
+    """
+    situation = prompt.question
+    ranked = rank_clauses(clauses, situation)
     return LLMScenario(
         says=[
             statement_from(
-                "The document deals with this here.",
-                clause,
-                prompt.instructions,
-                StatementKind.DIRECT,
+                "The document deals with this here.", clause, situation, StatementKind.DIRECT
             )
             for clause, _ in ranked[:2]
         ],

@@ -256,3 +256,36 @@ async def test_alternatives_are_compared_without_a_winner(
     for row in response.json()["rows"]:
         assert "better" not in row["difference"].casefold()
         assert "worse" not in row["difference"].casefold()
+
+
+async def test_a_scenario_says_plainly_when_the_document_does_not_cover_it(
+    client: AsyncClient, rental_document: Document
+) -> None:
+    response = await client.post(
+        "/api/v1/scenarios",
+        json={**body(rental_document), "scenario": "A meteorite lands on the roof"},
+    )
+    assert response.status_code == 200
+    result = response.json()
+    assert result["not_covered"] or not result["says"]
+
+
+async def test_a_scenario_never_returns_an_unverified_statement(
+    client: AsyncClient, rental_document: Document
+) -> None:
+    response = await client.post(
+        "/api/v1/scenarios",
+        json={**body(rental_document), "scenario": "Rent is paid late"},
+    )
+    for group in ("says", "consequences"):
+        for statement in response.json()[group]:
+            assert any(citation["verified"] for citation in statement["citations"])
+
+
+async def test_an_over_long_scenario_is_refused(
+    client: AsyncClient, rental_document: Document
+) -> None:
+    response = await client.post(
+        "/api/v1/scenarios", json={**body(rental_document), "scenario": "x" * 501}
+    )
+    assert response.status_code == 422

@@ -16,10 +16,12 @@ import { documentPane } from './views/document.js';
 import { helpStrip } from './views/help.js';
 import { overviewView } from './views/overview.js';
 import { reviewView } from './views/review.js';
-import { rolePicker } from './views/upload.js';
+import { readingLevelPicker, rolePicker } from './views/upload.js';
+import { glossaryView, termsInDocument } from './views/glossary.js';
+import { scenariosView } from './views/scenarios.js';
 
 /** The tabs of the assistant panel, in order. */
-export const TABS = ['overview', 'review', 'ask', 'compare', 'brief'];
+export const TABS = ['overview', 'review', 'ask', 'compare', 'scenarios', 'brief'];
 
 /**
  * Render both panes.
@@ -69,12 +71,19 @@ export function renderAssistant(dom, state, actions) {
   fill(panel, tabContent(state, deps, actions));
 
   fill(dom['assistant-pane'], [
-    rolePicker({
-      t,
-      roles: state.suggestedRoles.length ? state.suggestedRoles : ['other'],
-      active: state.role,
-      onChange: actions.onChangeRole,
-    }),
+    el('div', { className: 'row' }, [
+      rolePicker({
+        t,
+        roles: state.suggestedRoles.length ? state.suggestedRoles : ['other'],
+        active: state.role,
+        onChange: actions.onChangeRole,
+      }),
+      readingLevelPicker({
+        t,
+        active: state.readingLevel,
+        onChange: actions.onChangeReadingLevel,
+      }),
+    ]),
     tablist,
     panel,
   ]);
@@ -122,9 +131,11 @@ function buildTablist(state, t) {
  */
 function tabContent(state, deps, actions) {
   if (state.tab === 'overview') {
-    return state.overview
-      ? overviewView(state.overview, { ...deps, onCalendar: actions.onCalendar })
-      : loadingPlaceholder(deps.t);
+    if (!state.overview) return loadingPlaceholder(deps.t);
+    return el('div', { className: 'stack' }, [
+      overviewView(state.overview, { ...deps, onCalendar: actions.onCalendar }),
+      glossaryView(termsInDocument(state.document, actions.glossary()), deps),
+    ]);
   }
   if (state.tab === 'review') {
     return state.review
@@ -140,6 +151,14 @@ function tabContent(state, deps, actions) {
       answers: state.answers,
       suggested: actions.suggestedQuestions(),
       onAsk: actions.onAsk,
+    });
+  }
+  if (state.tab === 'scenarios') {
+    return scenariosView({
+      ...deps,
+      presets: actions.presetScenarios(),
+      result: state.scenario,
+      onRun: actions.onRunScenario,
     });
   }
   if (state.tab === 'compare') {

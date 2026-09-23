@@ -1,6 +1,6 @@
 # Demo script
 
-Three minutes. Run `make dev-fake` and everything below works offline with no
+Three and a half minutes. Run `make dev-fake` and everything below works offline with no
 keys, including the law lookup.
 
 > For the law views, `make dev-fake` sets `LAW_DATA_SHOW_UNREVIEWED=true`, so the
@@ -80,7 +80,16 @@ Load **Job offer with a service bond**, set role to **Employee**, open **Review*
 > a document can't change the answer, because the answer has to be backed by a
 > quote from a legitimate clause."
 
-## 2:15 — Compare (20 seconds)
+## 2:10 — What if (15 seconds)
+
+Open **What if**, click **"I want to leave before the lock-in ends"**.
+
+> "The preset situations come from the checklist for this document type. It
+> reports what the document says and what the document itself says follows — not
+> what a court would do. Ask it about a meteorite and it says the document
+> doesn't describe that."
+
+## 2:25 — Compare (20 seconds)
 
 Go back to the rental sample, open **Compare**, pick the revised version.
 
@@ -91,7 +100,7 @@ Go back to the rental sample, open **Compare**, pick the revised version.
 > The alignment and the diff are ordinary code. Only the clauses that actually
 > changed go to a model, and only to say what the change means for you."
 
-## 2:35 — Old and new laws (20 seconds)
+## 2:45 — Old and new laws (20 seconds)
 
 Open **Old and new laws**, search **IPC 420**.
 
@@ -108,7 +117,7 @@ Try **IPC 124A** if there is time.
 > "Sedition. No direct equivalent, with the reason. Never presented as a
 > renaming."
 
-## 2:55 — Draft a letter (20 seconds)
+## 3:05 — Draft a letter (20 seconds)
 
 Open **Draft a letter → Request to refund a security deposit**.
 
@@ -122,7 +131,7 @@ Open **Draft a letter → Request to refund a security deposit**.
 
 Tick the box, click **Download PDF**.
 
-## 3:15 — Close (15 seconds)
+## 3:25 — Close (15 seconds)
 
 Point at the footer.
 

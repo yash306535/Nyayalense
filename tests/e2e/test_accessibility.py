@@ -202,3 +202,23 @@ def test_text_survives_being_enlarged_to_200_percent(browser: Browser, base_url:
     )
     assert not overflows, "the page scrolls sideways at 200% text size"
     context.close()
+
+
+def test_the_what_if_panel_is_accessible(themed: Page) -> None:
+    themed.click('[data-sample="leave-licence-v1"]')
+    themed.wait_for_selector(".seal", timeout=40_000)
+    themed.click('[data-tab="scenarios"]')
+    themed.wait_for_selector("#scenario-input", timeout=20_000)
+    check(themed, "what if, empty")
+
+    themed.locator("#tabpanel .row button").first.click()
+    themed.wait_for_selector("#tabpanel article.panel", timeout=40_000)
+    check(themed, "what if, with a result")
+
+
+def test_the_glossary_is_accessible(themed: Page) -> None:
+    themed.click('[data-sample="leave-licence-v1"]')
+    themed.wait_for_selector(".seal", timeout=40_000)
+    themed.locator("#tabpanel details").first.click()
+    themed.wait_for_timeout(300)
+    check(themed, "glossary open")

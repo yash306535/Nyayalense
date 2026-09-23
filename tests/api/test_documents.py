@@ -151,3 +151,16 @@ async def test_a_clause_map_outside_the_limits_is_refused(
         json={"document": {"id": "x", "doc_type": "general_contract", "clauses": clauses}},
     )
     assert response.status_code == 422
+
+
+# ---------------------------------------------------------------- glossary
+
+
+async def test_the_glossary_is_served_in_every_language(client: AsyncClient) -> None:
+    response = await client.get("/api/v1/glossary")
+    assert response.status_code == 200
+    entries = response.json()
+    assert entries
+    for entry in entries:
+        assert set(entry["meaning"]) == {"en", "hi", "mr"}
+        assert entry["term"]

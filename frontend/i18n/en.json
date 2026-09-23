@@ -297,5 +297,18 @@
     "lockedFacts": "Actionable outputs with locked facts. Letters and briefs download as Word and PDF. Every fact comes from your confirmed facts sheet; the model never types a number, date or name.",
     "privacy": "Privacy by design. Aadhaar and PAN numbers, phone numbers and email addresses are masked before any model call, and nothing is stored.",
     "accessible": "Accessible and multilingual. WCAG 2.2 AA, explanations in English, Hindi and Marathi, and tagged PDFs."
+  },
+  "scenarios": {
+    "intro": "Ask what this document says about a situation. It reports what the document states, and says plainly when the document does not cover it.",
+    "presets": "Common situations",
+    "label": "Describe the situation",
+    "placeholder": "For example: I want to leave before the lock-in ends",
+    "run": "Check the document",
+    "says": "What the document says",
+    "consequences": "What the document says follows",
+    "whatItDoesNotCover": "What this document does not cover",
+    "nextSteps": "What you could do next",
+    "notCovered": "This document does not describe that situation.",
+    "emptyState": "Pick a situation above, or describe your own."
   }
 }
