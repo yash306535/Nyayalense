@@ -13,7 +13,7 @@ from app.adapters.cache import cache_key, content_hash
 from app.adapters.llm.base import Task
 from app.adapters.llm.schemas import LLMCompare
 from app.domain.audience import Audience
-from app.domain.diff import AlignedPair, align, count_changes
+from app.domain.diff import AlignedPair, align, count_changes, word_diff
 from app.domain.enums import ChangeKind, ChecklistStatus, CompareMode, Severity
 from app.domain.models import Document, VerificationReport
 from app.domain.results import (
@@ -21,6 +21,7 @@ from app.domain.results import (
     ChecklistResult,
     ClausePair,
     CompareResult,
+    DiffToken,
     Review,
 )
 from app.domain.verification import ClauseIndex, merge_reports
@@ -104,17 +105,40 @@ async def _compare_versions(
 def _to_clause_pair(pair: AlignedPair, explanations: dict[str, ClausePair]) -> ClausePair:
     """Render one aligned pair for the table, attaching its explanation."""
     explained = explanations.get(pair.label)
+    before_text = pair.before.text if pair.before else ""
+    after_text = pair.after.text if pair.after else ""
+
     return ClausePair(
         change=pair.change,
         before_clause_id=pair.before.id if pair.before else None,
         after_clause_id=pair.after.id if pair.after else None,
         label=pair.label,
-        before_text=pair.before.text if pair.before else "",
-        after_text=pair.after.text if pair.after else "",
+        before_text=before_text,
+        after_text=after_text,
+        diff=_diff_tokens(before_text, after_text, changed=pair.change is ChangeKind.CHANGED),
         what_changed=explained.what_changed if explained else [],
         impact=explained.impact if explained else "",
         severity=explained.severity if explained else Severity.LOW,
     )
+
+
+def _diff_tokens(before: str, after: str, *, changed: bool) -> list[DiffToken]:
+    """Diff a changed pair word by word.
+
+    Only changed pairs are diffed: an unchanged clause has nothing to mark, and
+    an added or removed one is already labelled by its own cell.
+
+    Args:
+        before: The clause in the earlier version.
+        after: The clause in the later version.
+        changed: Whether the pair was classified as changed.
+
+    Returns:
+        The diff tokens, or an empty list.
+    """
+    if not (changed and before and after):
+        return []
+    return [DiffToken(kind=token.kind, text=token.text) for token in word_diff(before, after)]
 
 
 async def _explain_changes(

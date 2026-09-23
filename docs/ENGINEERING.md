@@ -74,11 +74,11 @@ measures them and writes them to `evals/REPORT.md`.
 
 | Layer | Count | What it covers |
 | --- | --- | --- |
-| Unit | most of 570 | Normalisation offset maps, the verifier, amounts, redaction, segmentation, definitions, diff, ICS, document typing, law references, the data files, the renderers, drafting rules, the build script |
+| Unit | most of 577 | Normalisation offset maps, the verifier, amounts, redaction, segmentation, definitions, diff, ICS, document typing, law references, the data files, the renderers, drafting rules, the build script |
 | Property-based | within those | Any substring of a clause verifies to the right span; text not in the clause never does; every normalised character maps inside its source |
 | API | within those | Every route: success, 400, 404, 413, 415, 422, 429, the problem+json shape, and the security headers |
-| Frontend | 76 | The pure modules, and bundle parity across all three languages |
-| Browser | 51 | The main flow, a keyboard-only run of it, and axe on every view and state |
+| Frontend | 84 | The pure modules, and bundle parity across all three languages |
+| Browser | 60 | The main flow, a keyboard-only run of it, and axe on every view and state |
 
 - **Coverage: 93%** on `app/`, with the gate at 90.
 - **Tests never touch the network.** `LLM_PROVIDER=fake` everywhere.

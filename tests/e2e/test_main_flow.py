@@ -159,3 +159,20 @@ def test_the_reading_level_can_be_changed(loaded: Page) -> None:
     expect(loaded.locator("#level-detailed")).to_be_checked()
     loaded.wait_for_selector(".seal", timeout=40_000)
     expect(loaded.locator(".seal").first).to_be_visible()
+
+
+def test_the_comparison_marks_changes_without_relying_on_colour(loaded: Page) -> None:
+    loaded.click('[data-tab="compare"]')
+    loaded.select_option("#compare-other", "leave-licence-v2")
+    loaded.click("#view-check .card button:has-text('Compare')")
+    loaded.wait_for_selector(".ctable ins", timeout=90_000)
+
+    inserted = loaded.locator(".ctable ins").first
+    deleted = loaded.locator(".ctable del").first
+    expect(inserted).to_be_visible()
+    expect(deleted).to_be_visible()
+
+    # Each carries visually hidden wording, so the change is not colour alone.
+    expect(inserted.locator(".sr-only")).to_have_count(1)
+    expect(deleted.locator(".sr-only")).to_have_count(1)
+    assert inserted.locator(".sr-only").inner_text().strip()

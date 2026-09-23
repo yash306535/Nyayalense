@@ -268,9 +268,9 @@ Measured on this checkout:
 
 | Check | Result |
 | --- | --- |
-| Backend tests | 574 passing, 93% statement coverage |
+| Backend tests | 577 passing, 93% statement coverage |
 | Frontend unit tests | 84 passing under `node --test` |
-| Browser and accessibility tests | 59 passing |
+| Browser and accessibility tests | 60 passing |
 | axe violations | 0 across every view, both themes, at 320px and 200% text |
 | `mypy --strict` | clean over `app/` and `scripts/` |
 | Ruff, ESLint | clean |

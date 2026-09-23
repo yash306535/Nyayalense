@@ -7,7 +7,14 @@
 
 import { el } from '../dom.js';
 import { statements } from './evidence.js';
-import { captionFor, comparisonTable, filterRows, impactLabel, tableControls } from './table.js';
+import {
+  captionFor,
+  comparisonTable,
+  diffFragment,
+  filterRows,
+  impactLabel,
+  tableControls,
+} from './table.js';
 
 const FILTERS = [
   { id: 'all', key: 'compare.filterAll' },
@@ -133,12 +140,29 @@ function versionRows(result, deps) {
     cells: [
       pair.before_text ? { text: pair.before_text } : { empty: t('compare.notInVersion') },
       pair.after_text ? { text: pair.after_text } : { empty: t('compare.notInVersion') },
-      pair.what_changed?.length
-        ? { node: statements(pair.what_changed, deps) }
-        : { empty: t('compare.notSpecified') },
+      changedCell(pair, deps),
       pair.impact ? { text: pair.impact, badge: impactLabel(pair.severity, t) } : { empty: t('compare.notSpecified') },
     ],
   }));
+}
+
+/**
+ * Build the "what changed" cell: the word-level diff, then the explanation.
+ *
+ * @param {object} pair One aligned clause pair.
+ * @param {object} deps Render dependencies.
+ * @returns {object} The cell.
+ */
+function changedCell(pair, deps) {
+  const { t } = deps;
+  if (!pair.diff?.length && !pair.what_changed?.length) {
+    return { empty: t('compare.notSpecified') };
+  }
+
+  const holder = el('div', { className: 'stack-sm' });
+  if (pair.diff?.length) holder.append(el('p', { className: 'flush' }, [diffFragment(pair.diff, t)]));
+  if (pair.what_changed?.length) holder.append(statements(pair.what_changed, deps));
+  return { node: holder };
 }
 
 /**

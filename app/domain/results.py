@@ -169,6 +169,18 @@ class ScenarioResult(Grounded):
     next_steps: list[ShortText] = Field(default_factory=list)
 
 
+class DiffToken(Frozen):
+    """A run of words shared, added or removed between two versions.
+
+    The frontend renders additions as ``<ins>`` and removals as ``<del>``, each
+    carrying visually hidden wording, and exports write them as "Added:" and
+    "Removed:". A change is never signalled by colour alone.
+    """
+
+    kind: ChangeKind
+    text: ShortText
+
+
 class ClausePair(Frozen):
     """Two aligned clauses from different versions of a document."""
 
@@ -178,6 +190,9 @@ class ClausePair(Frozen):
     label: ShortText = ""
     before_text: str = ""
     after_text: str = ""
+    diff: list[DiffToken] = Field(
+        default_factory=list, description="Word-level diff. Empty unless the clause changed."
+    )
     what_changed: list[Statement] = Field(default_factory=list)
     impact: ShortText = ""
     severity: Severity = Severity.LOW

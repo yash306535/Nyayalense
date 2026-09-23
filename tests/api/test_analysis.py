@@ -289,3 +289,71 @@ async def test_an_over_long_scenario_is_refused(
         "/api/v1/scenarios", json={**body(rental_document), "scenario": "x" * 501}
     )
     assert response.status_code == 422
+
+
+async def test_a_changed_clause_carries_a_word_level_diff(
+    client: AsyncClient, rental_document: Document, rental_document_v2: Document
+) -> None:
+    response = await client.post(
+        "/api/v1/compare",
+        json={
+            "mode": "versions",
+            "before": rental_document.model_dump(mode="json"),
+            "after": rental_document_v2.model_dump(mode="json"),
+        },
+    )
+    pairs = response.json()["pairs"]
+    changed = [pair for pair in pairs if pair["change"] == "changed"]
+    assert changed
+
+    for pair in changed:
+        kinds = {token["kind"] for token in pair["diff"]}
+        assert {"added", "removed"} & kinds, "a changed clause must show what changed"
+
+    # The escalation went from 5% to 10%; both must be marked.
+    escalation = next(pair for pair in changed if pair["label"] == "3.2")
+    marked = {(token["kind"], token["text"]) for token in escalation["diff"]}
+    assert ("removed", "5%") in marked
+    assert ("added", "10%") in marked
+
+
+async def test_an_unchanged_clause_carries_no_diff(
+    client: AsyncClient, rental_document: Document, rental_document_v2: Document
+) -> None:
+    response = await client.post(
+        "/api/v1/compare",
+        json={
+            "mode": "versions",
+            "before": rental_document.model_dump(mode="json"),
+            "after": rental_document_v2.model_dump(mode="json"),
+        },
+    )
+    unchanged = [pair for pair in response.json()["pairs"] if pair["change"] == "unchanged"]
+    assert unchanged
+    assert all(pair["diff"] == [] for pair in unchanged)
+
+
+async def test_an_exported_comparison_spells_the_diff_out_in_words(
+    client: AsyncClient, rental_document: Document, rental_document_v2: Document
+) -> None:
+    """An export cannot rely on underlining, so the change is written out."""
+    comparison = (
+        await client.post(
+            "/api/v1/compare",
+            json={
+                "mode": "versions",
+                "before": rental_document.model_dump(mode="json"),
+                "after": rental_document_v2.model_dump(mode="json"),
+            },
+        )
+    ).json()
+
+    from app.domain.results import CompareResult
+    from app.services.brief import comparison_document
+
+    document = comparison_document(
+        CompareResult.model_validate(comparison), title="Comparison", language="en"
+    )
+    assert "Removed: 5%" in document.text
+    assert "Added: 10%" in document.text
+    assert "impact" in document.text.casefold()

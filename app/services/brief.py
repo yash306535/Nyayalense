@@ -18,8 +18,8 @@ from app.domain.document_model import (
     quote,
     table,
 )
-from app.domain.enums import CompareMode
-from app.domain.results import CompareResult, Overview, Review
+from app.domain.enums import ChangeKind, CompareMode
+from app.domain.results import ClausePair, CompareResult, Overview, Review
 
 FOOTER: Final = "Prepared with NyayaLens. Information, not legal advice."
 
@@ -175,6 +175,30 @@ def _answer_blocks(answers: Sequence[AnswerLike]) -> list[Block]:
     return blocks
 
 
+def _describe_change(pair: ClausePair) -> str:
+    """Write a clause pair's change out in words.
+
+    An export cannot rely on underlining or a strike-through, so insertions and
+    deletions are spelled out. Anyone reading the file, or hearing it read, gets
+    the same information as someone looking at the screen.
+
+    Args:
+        pair: One aligned clause pair.
+
+    Returns:
+        The change as a sentence, or a plain statement that none was found.
+    """
+    parts = []
+    added = " ".join(token.text for token in pair.diff if token.kind is ChangeKind.ADDED)
+    removed = " ".join(token.text for token in pair.diff if token.kind is ChangeKind.REMOVED)
+    if removed:
+        parts.append(f"Removed: {removed}")
+    if added:
+        parts.append(f"Added: {added}")
+    parts.extend(statement.text for statement in pair.what_changed)
+    return ". ".join(parts) if parts else "Not specified"
+
+
 def comparison_document(result: CompareResult, *, title: str, language: str) -> DocumentModel:
     """Build a comparison as a document model.
 
@@ -198,7 +222,7 @@ def comparison_document(result: CompareResult, *, title: str, language: str) -> 
                 pair.label or "—",
                 pair.before_text or "Not in this version",
                 pair.after_text or "Not in this version",
-                " ".join(statement.text for statement in pair.what_changed) or "Not specified",
+                _describe_change(pair),
                 f"{pair.impact or 'Not specified'} ({pair.severity.value} impact)",
             ]
             for pair in result.pairs
