@@ -233,10 +233,17 @@ reviewed" label. See [`docs/DATA.md`](docs/DATA.md) for the procedure and for
 the handful of sections (IPC 124A, 377, 497) that the tables cannot surface at
 all and which were added by hand instead.
 
-**No statutory text is packaged.** Copying provision text from memory is exactly
-the failure this product exists to prevent, so `app/data/laws/texts/` is empty
-and the interface says "The full text of this section is not stored in
-NyayaLens. Read it on India Code."
+**Statutory text is copied, never written.** `app/data/laws/texts/` holds 1,795
+sections built by `make provision-texts` from <https://indiacode.gov.in> — the
+three new codes from its section records, the Indian Penal Code and the Indian
+Evidence Act from the consolidated act PDFs it keeps on their repeal entries.
+Every row cites the page it can be checked against and ships `extracted`.
+
+The Code of Criminal Procedure is the exception: the only copy India Code still
+publishes is a gazette scan whose text layer has decayed into `Code ot Criminai
+.Procedure`, so **no CrPC text is packaged**. A CrPC lookup shows the mapping and
+the BNSS text that replaced it, and says of the old side: "The full text of this
+section is not stored in NyayaLens. Read it on India Code."
 
 ---
 
@@ -370,8 +377,10 @@ docs/           architecture, data provenance, engineering, demo, ADRs
 ## Known limitations
 
 - Scanned documents are not supported. There is no OCR.
-- No provision texts are packaged, so the law comparison shows the mapping and
-  the source, not the two texts side by side.
+- No CrPC text is packaged, so a CrPC comparison shows the mapping and the new
+  text, not the two texts side by side. India Code no longer publishes a
+  consolidated CrPC that is clean enough to quote.
+- Packaged provision texts ship unreviewed and hidden, like the mappings.
 - Law mappings ship unreviewed and hidden. See [`docs/DATA.md`](docs/DATA.md).
 - Hindi and Marathi strings have not been reviewed by a fluent speaker.
 - The manual screen-reader checklist in [`ACCESSIBILITY.md`](ACCESSIBILITY.md)

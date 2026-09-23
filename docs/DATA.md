@@ -132,44 +132,78 @@ a `change_type`.
 
 ---
 
-## Statutory text: why none ships
+## Statutory text
 
-`app/data/laws/texts/` is empty, and a test asserts that it is.
+`app/data/laws/texts/` holds one file per act, built by
+`make provision-texts` from <https://indiacode.gov.in>. Nothing in it is
+written from memory: statutory text has to be exact, and a plausible-looking
+wrong section is worse than no section at all.
 
-Statutory text has to be exact. Writing it from memory is precisely the failure
-this product exists to prevent, and a plausible-looking wrong section is worse
-than no section at all. So the comparison view shows the mapping, the change
-type and the source, and says:
+| File | Sections | Read from |
+| --- | --- | --- |
+| `bns.json` | 358 | India Code section records, over its REST API |
+| `bnss.json` | 531 | India Code section records, over its REST API |
+| `bsa.json` | 170 | India Code section records, over its REST API |
+| `ipc.json` | 552 | `data_sources/indiacode-ipc.pdf` |
+| `iea.json` | 184 | `data_sources/indiacode-iea.pdf` |
+
+Every row ships `review_status: "extracted"` with the India Code page it can be
+checked against. Extraction is not review.
+
+### Why the two halves are read differently
+
+India Code publishes each section of the three new codes as its own record, with
+the text in a field of that record. Those are read over its REST API — its own
+site, not a search engine, and with no model anywhere near the text.
+
+The codes they replaced are no longer published that way. Since their repeal on
+1 July 2024 the Indian Penal Code and the Indian Evidence Act survive only as
+the consolidated act PDF attached to their repeal entry, so those two are read
+from the PDF. The reader drops the diagonal watermark, the footnote apparatus
+and the running page numbers, and leaves the words alone. It finds a section by
+the one thing the typesetting is consistent about — **a section's heading is set
+in bold and its text is not** — rather than by the dash that usually follows a
+title, because a few sections have no dash and others carry a full stop inside
+the title.
+
+State legislatures' variants are printed beneath the section they vary. They are
+left out: they are not the text the correspondence tables compare, and showing
+one state's wording as the central section would mislead. The act's own
+arrangement of sections is what tells the two apart.
+
+### The Code of Criminal Procedure has no stored text
+
+The only copy India Code still publishes is a scan of the 1974 gazette whose
+text layer has decayed — its own running head reads `Code ot Criminai
+.Procedure`, and body text reads `~sse.µibly does; not disperse`. Quoting that
+at a user would break the one promise this application makes, so **no CrPC text
+is packaged, and a test asserts that none is.** A CrPC lookup shows the mapping
+and the BNSS text that replaced it, and says of the old side:
 
 > The full text of this section is not stored in NyayaLens. Read it on India Code.
 
-### Adding provision texts
+If India Code republishes a clean consolidated CrPC, add it to `SPECS` in
+`scripts/build_provision_texts.py` and rebuild.
 
-Copy them from <https://www.indiacode.nic.in>, one JSON file per act, as a list:
-
-```json
-[
-  {
-    "act": "ipc",
-    "section": "420",
-    "title": "Cheating and dishonestly inducing delivery of property",
-    "text": "<the exact text, copied from India Code>",
-    "source": { "document": "India Code", "url": "https://www.indiacode.nic.in/..." },
-    "review_status": "verified",
-    "verified_on": "2026-09-22"
-  }
-]
-```
-
-Start with the sections people meet most: cheating, criminal breach of trust,
-criminal intimidation, defamation, cruelty and dowry offences, FIR registration,
-bail, and the electronic-evidence certificate.
+### What stored text switches on
 
 Once both sides of a mapping have stored text, three things switch on by
 themselves: the word-level diff, the extracted punishment, and a plain-language
 description of the difference. That description is generated **only** from the
 two stored texts, treated as a two-clause document, and goes through the same
 verifier as everything else. With no stored text, nothing is generated.
+
+### Rebuilding
+
+```bash
+make provision-texts                                   # every act
+python scripts/build_provision_texts.py --only ipc     # or one of them
+python scripts/build_provision_texts.py --dry-run      # or neither
+```
+
+The script prints what it left out and why: sections whose only printed form is
+`[Repealed.]`, numbers printed twice, and anything that does not fit the schema.
+Nothing is cut short to make it fit — half a provision reads like the whole one.
 
 ---
 
@@ -184,7 +218,7 @@ against official or official-press sources:
 | National Cyber Crime Reporting Portal | 1930 | <https://cybercrime.gov.in> |
 | National Consumer Helpline | 1915 | <https://consumerhelpline.gov.in> |
 | e-Daakhil | — | <https://edaakhil.nic.in> |
-| India Code | — | <https://www.indiacode.nic.in> |
+| India Code | — | <https://indiacode.gov.in> |
 | BPR&D | — | <https://bprd.nic.in> |
 
 **Re-verify these before release.** Helplines and portals change. Every entry

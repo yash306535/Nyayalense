@@ -30,7 +30,7 @@ export function aboutView({ t, meta }) {
     section(t('about.dataSources'), [
       el('p', { className: 'prose', text: t('laws.sourceNote') }),
       el('ul', {}, [
-        el('li', {}, [externalLink('https://www.indiacode.nic.in', 'India Code', t('a11y.newTab'))]),
+        el('li', {}, [externalLink('https://indiacode.gov.in', 'India Code', t('a11y.newTab'))]),
         el('li', {}, [externalLink('https://bprd.nic.in', 'Bureau of Police Research & Development', t('a11y.newTab'))]),
         el('li', {}, [externalLink('https://nalsa.gov.in', 'NALSA', t('a11y.newTab'))]),
       ]),

@@ -76,6 +76,10 @@ ban-relative-imports = "all"
 "app/domain/segmentation.py" = ["RUF001"]
 "app/domain/definitions.py" = ["RUF001"]
 "app/domain/laws/references.py" = ["RUF001"]
+# The dashes and quotation marks India Code typesets its acts with are what
+# this reader has to recognise, so the literals are deliberate.
+"scripts/indiacode/consolidated.py" = ["T20", "RUF001"]
+"scripts/indiacode/pages.py" = ["T20", "RUF001"]
 "evals/**" = ["T20", "D100", "D103"]
 "scripts/**" = ["T20"]
 

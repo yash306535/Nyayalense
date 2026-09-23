@@ -60,6 +60,9 @@ eval: install ## Run the live evaluation suite (needs a real API key)
 laws-data: install ## Rebuild law data from the official PDFs in data_sources/
 	$(PY) scripts/build_law_data.py
 
+provision-texts: install ## Rebuild provision texts from India Code
+	$(PY) scripts/build_provision_texts.py
+
 check: lint typecheck security test ## Everything CI runs, except the browser tests
 
 lock: install ## Re-pin requirements.txt from requirements.in
