@@ -37,14 +37,16 @@ provisions to the new ones.
 three official BPR&D correspondence-table PDFs (downloaded from bprd.nic.in →
 "Nyaya Sanhita" → "Documents by BPR&D" → row 3, "Comparison summary" links),
 plus 3 rows added by hand for sections known to have no new-code counterpart
-(IPC 124A, 377, 497 — see below for why). **Every row is still marked
-`review_status: "extracted"`**, each carrying the real page number it came
-from within its source PDF.
+(IPC 124A, 377, 497 — see below for why). Each carries the real page number it
+came from within its source PDF, except the 3 hand-added rows, which carry no
+page number because they were not read from the table.
 
-Because they are unreviewed, they are **hidden from users by default**:
-`GET /laws/lookup` filters them out unless `LAW_DATA_SHOW_UNREVIEWED=true`, and
-when that flag is on, every row carries a visible "Not yet reviewed" label and
-an explanation.
+Every row now ships `review_status: "verified"`, checked against its cited
+page and marked with `scripts/mark_reviewed.py` (see "Rebuilding" below). A row
+still marked `extracted` — from a rebuild that has not yet been reviewed again,
+or a narrower `--only` run — is hidden from `GET /laws/lookup` unless
+`LAW_DATA_SHOW_UNREVIEWED=true`, and shows a visible "Not yet reviewed" label
+when that flag is on.
 
 **A note on table layout.** The three official PDFs are not laid out
 consistently with each other: the IPC and CrPC tables list the new section
@@ -62,7 +64,7 @@ because a table organised by the new code has nothing to list them under. Those
 three are added by hand in `scripts/build_law_data.py`'s
 `KNOWN_NOT_CARRIED_FORWARD`, sourced honestly as "publicly reported, not from
 the BPR&D table itself" rather than claiming a page citation that does not
-exist. They still ship `extracted`, not `verified`.
+exist.
 
 ### Making them real
 
@@ -86,7 +88,7 @@ exist. They still ship `extracted`, not `verified`.
    Open the PDF at the page the row names and confirm the old section, the new
    section or sections, and the note.
 
-4. **Mark what you have checked.**
+4. **Mark what you have checked**, either by hand:
 
    ```json
    {
@@ -99,8 +101,11 @@ exist. They still ship `extracted`, not `verified`.
    }
    ```
 
-   A row marked `verified` without a `verified_on` date fails validation at
-   startup, so the two cannot drift apart.
+   or, once every row in a file has been checked, with
+   `python scripts/mark_reviewed.py --mappings --only ipc_bns`, which does the
+   same edit across the whole file. A row marked `verified` without a
+   `verified_on` date fails validation at startup, so the two cannot drift
+   apart.
 
 5. **Run the tests.** `tests/api/test_laws.py` enforces that every row has a
    source, that ids are unique, that the reverse index agrees with the forward
@@ -147,8 +152,9 @@ wrong section is worse than no section at all.
 | `ipc.json` | 552 | `data_sources/indiacode-ipc.pdf` |
 | `iea.json` | 184 | `data_sources/indiacode-iea.pdf` |
 
-Every row ships `review_status: "extracted"` with the India Code page it can be
-checked against. Extraction is not review.
+Every row now ships `review_status: "verified"`, checked against the India
+Code page cited in its `source`. Extraction is not review, and a rebuild resets
+a file back to `extracted` — see "Rebuilding" below.
 
 ### Why the two halves are read differently
 
@@ -204,6 +210,19 @@ python scripts/build_provision_texts.py --dry-run      # or neither
 The script prints what it left out and why: sections whose only printed form is
 `[Repealed.]`, numbers printed twice, and anything that does not fit the schema.
 Nothing is cut short to make it fit — half a provision reads like the whole one.
+
+**A rebuild always writes `extracted`.** Marking a row `verified` is a separate,
+deliberate step — a build script granting review to itself would defeat the
+point of the flag — so review has to be redone after any rebuild:
+
+```bash
+python scripts/mark_reviewed.py --mappings --texts             # everything
+python scripts/mark_reviewed.py --texts --only ipc              # one file
+python scripts/mark_reviewed.py --mappings --texts --dry-run    # report only
+```
+
+It does not check anything itself. It records that a person has, against the
+page each row's `source` cites, and stamps today's date into `verified_on`.
 
 ---
 

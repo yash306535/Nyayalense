@@ -137,6 +137,14 @@ class Provision(Frozen):
     review_status: ReviewStatus = ReviewStatus.EXTRACTED
     verified_on: IsoDate | None = None
 
+    @model_validator(mode="after")
+    def _verified_carries_a_date(self) -> Self:
+        """Mirror the same check on ``LawMapping``: verified means dated."""
+        if self.review_status is ReviewStatus.VERIFIED and not self.verified_on:
+            msg = "a verified provision must carry the date it was verified"
+            raise ValueError(msg)
+        return self
+
     @property
     def key(self) -> str:
         """Canonical ``act:section`` key."""

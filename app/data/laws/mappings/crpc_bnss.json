@@ -27,7 +27,8 @@
         "page": 1,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -49,7 +50,8 @@
         "page": 1,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -71,7 +73,8 @@
         "page": 2,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -93,7 +96,8 @@
         "page": 2,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -115,7 +119,8 @@
         "page": 2,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -137,7 +142,8 @@
         "page": 2,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -159,7 +165,8 @@
         "page": 2,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -181,7 +188,8 @@
         "page": 2,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -203,7 +211,8 @@
         "page": 2,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -225,7 +234,8 @@
         "page": 2,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -247,7 +257,8 @@
         "page": 2,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -269,7 +280,8 @@
         "page": 2,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -291,7 +303,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -313,7 +326,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -335,7 +349,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -357,7 +372,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -379,7 +395,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -401,7 +418,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -423,7 +441,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -445,7 +464,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -467,7 +487,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -489,7 +510,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -511,7 +533,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -533,7 +556,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -555,7 +579,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -577,7 +602,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -599,7 +625,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -621,7 +648,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -643,7 +671,8 @@
         "page": 3,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -665,7 +694,8 @@
         "page": 4,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -687,7 +717,8 @@
         "page": 4,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -709,7 +740,8 @@
         "page": 4,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -731,7 +763,8 @@
         "page": 4,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -753,7 +786,8 @@
         "page": 4,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -775,7 +809,8 @@
         "page": 4,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -797,7 +832,8 @@
         "page": 4,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -819,7 +855,8 @@
         "page": 4,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -841,7 +878,8 @@
         "page": 4,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -863,7 +901,8 @@
         "page": 4,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -885,7 +924,8 @@
         "page": 4,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -907,7 +947,8 @@
         "page": 4,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -929,7 +970,8 @@
         "page": 4,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -951,7 +993,8 @@
         "page": 4,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -973,7 +1016,8 @@
         "page": 5,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -995,7 +1039,8 @@
         "page": 5,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1017,7 +1062,8 @@
         "page": 5,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1039,7 +1085,8 @@
         "page": 5,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1061,7 +1108,8 @@
         "page": 5,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1083,7 +1131,8 @@
         "page": 5,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1105,7 +1154,8 @@
         "page": 5,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1127,7 +1177,8 @@
         "page": 5,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1149,7 +1200,8 @@
         "page": 5,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1171,7 +1223,8 @@
         "page": 5,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1193,7 +1246,8 @@
         "page": 5,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1215,7 +1269,8 @@
         "page": 5,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1237,7 +1292,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1259,7 +1315,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1281,7 +1338,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1303,7 +1361,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1325,7 +1384,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1347,7 +1407,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1369,7 +1430,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1391,7 +1453,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1413,7 +1476,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1435,7 +1499,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1457,7 +1522,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1479,7 +1545,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1501,7 +1568,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1523,7 +1591,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1545,7 +1614,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1567,7 +1637,8 @@
         "page": 6,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1589,7 +1660,8 @@
         "page": 7,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1611,7 +1683,8 @@
         "page": 7,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1633,7 +1706,8 @@
         "page": 7,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1655,7 +1729,8 @@
         "page": 7,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1677,7 +1752,8 @@
         "page": 7,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1699,7 +1775,8 @@
         "page": 7,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1721,7 +1798,8 @@
         "page": 7,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1743,7 +1821,8 @@
         "page": 7,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1765,7 +1844,8 @@
         "page": 7,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1787,7 +1867,8 @@
         "page": 7,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1809,7 +1890,8 @@
         "page": 7,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1831,7 +1913,8 @@
         "page": 7,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1853,7 +1936,8 @@
         "page": 7,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1875,7 +1959,8 @@
         "page": 7,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1897,7 +1982,8 @@
         "page": 8,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1919,7 +2005,8 @@
         "page": 8,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1941,7 +2028,8 @@
         "page": 8,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1963,7 +2051,8 @@
         "page": 8,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -1985,7 +2074,8 @@
         "page": 8,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2007,7 +2097,8 @@
         "page": 8,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2029,7 +2120,8 @@
         "page": 8,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2051,7 +2143,8 @@
         "page": 8,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2073,7 +2166,8 @@
         "page": 8,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2095,7 +2189,8 @@
         "page": 8,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2117,7 +2212,8 @@
         "page": 8,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2139,7 +2235,8 @@
         "page": 8,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2161,7 +2258,8 @@
         "page": 9,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2183,7 +2281,8 @@
         "page": 9,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2205,7 +2304,8 @@
         "page": 9,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2227,7 +2327,8 @@
         "page": 9,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2249,7 +2350,8 @@
         "page": 9,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2271,7 +2373,8 @@
         "page": 9,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2293,7 +2396,8 @@
         "page": 9,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2315,7 +2419,8 @@
         "page": 9,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2337,7 +2442,8 @@
         "page": 9,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2359,7 +2465,8 @@
         "page": 9,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2381,7 +2488,8 @@
         "page": 9,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2403,7 +2511,8 @@
         "page": 9,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2425,7 +2534,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2447,7 +2557,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2469,7 +2580,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2491,7 +2603,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2513,7 +2626,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2535,7 +2649,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2557,7 +2672,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2579,7 +2695,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2601,7 +2718,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2623,7 +2741,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2645,7 +2764,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2667,7 +2787,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2689,7 +2810,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2711,7 +2833,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2733,7 +2856,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2755,7 +2879,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2777,7 +2902,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2799,7 +2925,8 @@
         "page": 10,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2821,7 +2948,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2843,7 +2971,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2865,7 +2994,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2887,7 +3017,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2909,7 +3040,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2931,7 +3063,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2953,7 +3086,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2975,7 +3109,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -2997,7 +3132,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3019,7 +3155,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3041,7 +3178,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3063,7 +3201,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3085,7 +3224,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3107,7 +3247,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3129,7 +3270,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3151,7 +3293,8 @@
         "page": 11,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3173,7 +3316,8 @@
         "page": 12,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3195,7 +3339,8 @@
         "page": 12,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3217,7 +3362,8 @@
         "page": 12,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3239,7 +3385,8 @@
         "page": 12,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3261,7 +3408,8 @@
         "page": 12,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3283,7 +3431,8 @@
         "page": 12,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3305,7 +3454,8 @@
         "page": 12,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3327,7 +3477,8 @@
         "page": 12,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3349,7 +3500,8 @@
         "page": 12,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3371,7 +3523,8 @@
         "page": 12,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3393,7 +3546,8 @@
         "page": 12,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3415,7 +3569,8 @@
         "page": 12,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3437,7 +3592,8 @@
         "page": 12,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3459,7 +3615,8 @@
         "page": 12,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3481,7 +3638,8 @@
         "page": 13,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3503,7 +3661,8 @@
         "page": 13,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3525,7 +3684,8 @@
         "page": 13,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3547,7 +3707,8 @@
         "page": 13,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3569,7 +3730,8 @@
         "page": 13,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3591,7 +3753,8 @@
         "page": 13,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3613,7 +3776,8 @@
         "page": 14,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3635,7 +3799,8 @@
         "page": 14,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3657,7 +3822,8 @@
         "page": 14,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3679,7 +3845,8 @@
         "page": 14,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3701,7 +3868,8 @@
         "page": 14,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3723,7 +3891,8 @@
         "page": 14,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3745,7 +3914,8 @@
         "page": 14,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3767,7 +3937,8 @@
         "page": 14,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3789,7 +3960,8 @@
         "page": 14,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3811,7 +3983,8 @@
         "page": 15,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3833,7 +4006,8 @@
         "page": 15,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3855,7 +4029,8 @@
         "page": 15,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3877,7 +4052,8 @@
         "page": 15,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3899,7 +4075,8 @@
         "page": 15,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3921,7 +4098,8 @@
         "page": 15,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3943,7 +4121,8 @@
         "page": 16,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3965,7 +4144,8 @@
         "page": 16,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -3987,7 +4167,8 @@
         "page": 16,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4009,7 +4190,8 @@
         "page": 16,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4031,7 +4213,8 @@
         "page": 16,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4053,7 +4236,8 @@
         "page": 16,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4075,7 +4259,8 @@
         "page": 16,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4097,7 +4282,8 @@
         "page": 16,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4119,7 +4305,8 @@
         "page": 16,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4141,7 +4328,8 @@
         "page": 17,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4163,7 +4351,8 @@
         "page": 17,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4185,7 +4374,8 @@
         "page": 17,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4207,7 +4397,8 @@
         "page": 17,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4229,7 +4420,8 @@
         "page": 17,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4251,7 +4443,8 @@
         "page": 17,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4273,7 +4466,8 @@
         "page": 17,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4295,7 +4489,8 @@
         "page": 17,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4317,7 +4512,8 @@
         "page": 17,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4339,7 +4535,8 @@
         "page": 17,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4361,7 +4558,8 @@
         "page": 17,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4383,7 +4581,8 @@
         "page": 17,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4405,7 +4604,8 @@
         "page": 17,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4427,7 +4627,8 @@
         "page": 18,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4449,7 +4650,8 @@
         "page": 18,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4471,7 +4673,8 @@
         "page": 18,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4493,7 +4696,8 @@
         "page": 18,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4515,7 +4719,8 @@
         "page": 18,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4537,7 +4742,8 @@
         "page": 18,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4559,7 +4765,8 @@
         "page": 18,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4581,7 +4788,8 @@
         "page": 19,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4603,7 +4811,8 @@
         "page": 19,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4625,7 +4834,8 @@
         "page": 19,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4647,7 +4857,8 @@
         "page": 19,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4669,7 +4880,8 @@
         "page": 19,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4691,7 +4903,8 @@
         "page": 19,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4713,7 +4926,8 @@
         "page": 19,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4735,7 +4949,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4757,7 +4972,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4779,7 +4995,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4801,7 +5018,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4823,7 +5041,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4845,7 +5064,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4867,7 +5087,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4889,7 +5110,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4911,7 +5133,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4933,7 +5156,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4955,7 +5179,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4977,7 +5202,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -4999,7 +5225,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5021,7 +5248,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5043,7 +5271,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5065,7 +5294,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5087,7 +5317,8 @@
         "page": 20,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5109,7 +5340,8 @@
         "page": 21,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5131,7 +5363,8 @@
         "page": 21,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5153,7 +5386,8 @@
         "page": 21,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5175,7 +5409,8 @@
         "page": 21,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5197,7 +5432,8 @@
         "page": 21,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5219,7 +5455,8 @@
         "page": 21,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5241,7 +5478,8 @@
         "page": 21,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5263,7 +5501,8 @@
         "page": 21,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5285,7 +5524,8 @@
         "page": 21,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5307,7 +5547,8 @@
         "page": 21,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5329,7 +5570,8 @@
         "page": 21,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5351,7 +5593,8 @@
         "page": 21,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5373,7 +5616,8 @@
         "page": 21,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5395,7 +5639,8 @@
         "page": 21,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5417,7 +5662,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5439,7 +5685,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5461,7 +5708,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5483,7 +5731,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5505,7 +5754,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5527,7 +5777,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5549,7 +5800,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5571,7 +5823,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5593,7 +5846,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5615,7 +5869,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5637,7 +5892,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5659,7 +5915,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5681,7 +5938,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5703,7 +5961,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5725,7 +5984,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5747,7 +6007,8 @@
         "page": 22,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5769,7 +6030,8 @@
         "page": 23,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5791,7 +6053,8 @@
         "page": 23,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5813,7 +6076,8 @@
         "page": 23,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5835,7 +6099,8 @@
         "page": 23,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5857,7 +6122,8 @@
         "page": 23,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5879,7 +6145,8 @@
         "page": 23,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5901,7 +6168,8 @@
         "page": 23,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5923,7 +6191,8 @@
         "page": 23,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5945,7 +6214,8 @@
         "page": 23,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5967,7 +6237,8 @@
         "page": 23,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -5989,7 +6260,8 @@
         "page": 23,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6011,7 +6283,8 @@
         "page": 23,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6033,7 +6306,8 @@
         "page": 23,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6055,7 +6329,8 @@
         "page": 23,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6077,7 +6352,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6099,7 +6375,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6121,7 +6398,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6143,7 +6421,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6165,7 +6444,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6187,7 +6467,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6209,7 +6490,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6231,7 +6513,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6253,7 +6536,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6275,7 +6559,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6297,7 +6582,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6319,7 +6605,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6341,7 +6628,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6363,7 +6651,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6385,7 +6674,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6407,7 +6697,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6429,7 +6720,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6451,7 +6743,8 @@
         "page": 24,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6473,7 +6766,8 @@
         "page": 25,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6495,7 +6789,8 @@
         "page": 25,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6517,7 +6812,8 @@
         "page": 25,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6539,7 +6835,8 @@
         "page": 25,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6561,7 +6858,8 @@
         "page": 25,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6583,7 +6881,8 @@
         "page": 25,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6605,7 +6904,8 @@
         "page": 25,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6627,7 +6927,8 @@
         "page": 25,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6649,7 +6950,8 @@
         "page": 25,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6671,7 +6973,8 @@
         "page": 25,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6693,7 +6996,8 @@
         "page": 25,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6715,7 +7019,8 @@
         "page": 25,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6737,7 +7042,8 @@
         "page": 25,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6759,7 +7065,8 @@
         "page": 25,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6781,7 +7088,8 @@
         "page": 26,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6803,7 +7111,8 @@
         "page": 26,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6825,7 +7134,8 @@
         "page": 26,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6847,7 +7157,8 @@
         "page": 26,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6869,7 +7180,8 @@
         "page": 26,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6891,7 +7203,8 @@
         "page": 26,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6913,7 +7226,8 @@
         "page": 26,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6935,7 +7249,8 @@
         "page": 26,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6957,7 +7272,8 @@
         "page": 26,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -6979,7 +7295,8 @@
         "page": 26,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7001,7 +7318,8 @@
         "page": 26,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7023,7 +7341,8 @@
         "page": 26,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7045,7 +7364,8 @@
         "page": 26,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7067,7 +7387,8 @@
         "page": 26,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7089,7 +7410,8 @@
         "page": 27,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7111,7 +7433,8 @@
         "page": 27,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7133,7 +7456,8 @@
         "page": 27,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7155,7 +7479,8 @@
         "page": 27,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7177,7 +7502,8 @@
         "page": 27,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7199,7 +7525,8 @@
         "page": 27,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7221,7 +7548,8 @@
         "page": 27,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7243,7 +7571,8 @@
         "page": 27,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7265,7 +7594,8 @@
         "page": 27,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7287,7 +7617,8 @@
         "page": 27,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7309,7 +7640,8 @@
         "page": 27,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7331,7 +7663,8 @@
         "page": 27,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7353,7 +7686,8 @@
         "page": 28,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7375,7 +7709,8 @@
         "page": 28,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7397,7 +7732,8 @@
         "page": 28,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7419,7 +7755,8 @@
         "page": 28,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7441,7 +7778,8 @@
         "page": 28,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7463,7 +7801,8 @@
         "page": 28,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7485,7 +7824,8 @@
         "page": 28,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7507,7 +7847,8 @@
         "page": 28,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7529,7 +7870,8 @@
         "page": 28,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7551,7 +7893,8 @@
         "page": 28,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7573,7 +7916,8 @@
         "page": 28,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7595,7 +7939,8 @@
         "page": 28,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7617,7 +7962,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7639,7 +7985,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7661,7 +8008,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7683,7 +8031,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7705,7 +8054,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7727,7 +8077,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7749,7 +8100,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7771,7 +8123,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7793,7 +8146,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7815,7 +8169,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7837,7 +8192,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7859,7 +8215,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7881,7 +8238,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7903,7 +8261,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7925,7 +8284,8 @@
         "page": 29,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7947,7 +8307,8 @@
         "page": 30,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7969,7 +8330,8 @@
         "page": 30,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -7991,7 +8353,8 @@
         "page": 30,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8013,7 +8376,8 @@
         "page": 30,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8035,7 +8399,8 @@
         "page": 30,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8057,7 +8422,8 @@
         "page": 30,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8079,7 +8445,8 @@
         "page": 30,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8101,7 +8468,8 @@
         "page": 30,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8123,7 +8491,8 @@
         "page": 30,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8145,7 +8514,8 @@
         "page": 30,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8167,7 +8537,8 @@
         "page": 31,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8189,7 +8560,8 @@
         "page": 31,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8211,7 +8583,8 @@
         "page": 31,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8233,7 +8606,8 @@
         "page": 31,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8255,7 +8629,8 @@
         "page": 31,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8277,7 +8652,8 @@
         "page": 31,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8299,7 +8675,8 @@
         "page": 31,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8321,7 +8698,8 @@
         "page": 31,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8343,7 +8721,8 @@
         "page": 31,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8365,7 +8744,8 @@
         "page": 31,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8387,7 +8767,8 @@
         "page": 31,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8409,7 +8790,8 @@
         "page": 31,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8431,7 +8813,8 @@
         "page": 31,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8453,7 +8836,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8475,7 +8859,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8497,7 +8882,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8519,7 +8905,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8541,7 +8928,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8563,7 +8951,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8585,7 +8974,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8607,7 +8997,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8629,7 +9020,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8651,7 +9043,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8673,7 +9066,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8695,7 +9089,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8717,7 +9112,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8739,7 +9135,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8761,7 +9158,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8783,7 +9181,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8805,7 +9204,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8827,7 +9227,8 @@
         "page": 32,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8849,7 +9250,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8871,7 +9273,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8893,7 +9296,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8915,7 +9319,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8937,7 +9342,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8959,7 +9365,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -8981,7 +9388,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9003,7 +9411,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9025,7 +9434,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9047,7 +9457,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9069,7 +9480,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9091,7 +9503,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9113,7 +9526,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9135,7 +9549,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9157,7 +9572,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9179,7 +9595,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9201,7 +9618,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9223,7 +9641,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9245,7 +9664,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9267,7 +9687,8 @@
         "page": 33,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9289,7 +9710,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9311,7 +9733,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9333,7 +9756,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9355,7 +9779,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9377,7 +9802,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9399,7 +9825,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9421,7 +9848,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9443,7 +9871,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9465,7 +9894,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9487,7 +9917,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9509,7 +9940,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9531,7 +9963,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9553,7 +9986,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9575,7 +10009,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9597,7 +10032,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9619,7 +10055,8 @@
         "page": 34,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9641,7 +10078,8 @@
         "page": 35,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9663,7 +10101,8 @@
         "page": 35,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9685,7 +10124,8 @@
         "page": 35,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9707,7 +10147,8 @@
         "page": 35,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9729,7 +10170,8 @@
         "page": 35,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9751,7 +10193,8 @@
         "page": 35,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9773,7 +10216,8 @@
         "page": 35,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9795,7 +10239,8 @@
         "page": 35,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9817,7 +10262,8 @@
         "page": 35,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9839,7 +10285,8 @@
         "page": 35,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9861,7 +10308,8 @@
         "page": 35,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9883,7 +10331,8 @@
         "page": 35,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9905,7 +10354,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9927,7 +10377,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9949,7 +10400,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9971,7 +10423,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -9993,7 +10446,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10015,7 +10469,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10037,7 +10492,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10059,7 +10515,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10081,7 +10538,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10103,7 +10561,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10125,7 +10584,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10147,7 +10607,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10169,7 +10630,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10191,7 +10653,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10213,7 +10676,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10235,7 +10699,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10257,7 +10722,8 @@
         "page": 36,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10279,7 +10745,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10301,7 +10768,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10323,7 +10791,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10345,7 +10814,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10367,7 +10837,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10389,7 +10860,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10411,7 +10883,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10433,7 +10906,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10455,7 +10929,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10477,7 +10952,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10499,7 +10975,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10521,7 +10998,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10543,7 +11021,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10565,7 +11044,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10587,7 +11067,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10609,7 +11090,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10631,7 +11113,8 @@
         "page": 37,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10653,7 +11136,8 @@
         "page": 38,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10675,7 +11159,8 @@
         "page": 38,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10697,7 +11182,8 @@
         "page": 38,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10719,7 +11205,8 @@
         "page": 38,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10741,7 +11228,8 @@
         "page": 38,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10763,7 +11251,8 @@
         "page": 38,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10785,7 +11274,8 @@
         "page": 38,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10807,7 +11297,8 @@
         "page": 38,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     },
     {
       "old": {
@@ -10829,7 +11320,8 @@
         "page": 38,
         "url": ""
       },
-      "review_status": "extracted"
+      "review_status": "verified",
+      "verified_on": "2026-09-23"
     }
   ]
 }

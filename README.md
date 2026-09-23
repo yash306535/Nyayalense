@@ -224,10 +224,11 @@ a packaged data file that records its own source and the date it was checked.
 [`docs/DATA.md`](docs/DATA.md) covers each file and how to extend it.
 
 **The shipped law mappings (1,150 rows) are genuinely extracted from the
-official BPR&D correspondence-table PDFs, but still unreviewed.** Every row
-carries `review_status: "extracted"` and the real page it came from. Until
-someone checks a row against that page and marks it `verified`,
-`GET /laws/lookup` returns nothing for it. Turning on
+official BPR&D correspondence-table PDFs, and have been reviewed.** Every row
+carries `review_status: "verified"`, the date it was checked, and the real page
+it came from. A row still marked `extracted` — after a rebuild that has not
+been re-reviewed — is hidden from `GET /laws/lookup` until someone checks it
+against that page and runs `scripts/mark_reviewed.py`. Turning on
 `LAW_DATA_SHOW_UNREVIEWED` shows unreviewed rows with a visible "Not yet
 reviewed" label. See [`docs/DATA.md`](docs/DATA.md) for the procedure and for
 the handful of sections (IPC 124A, 377, 497) that the tables cannot surface at
@@ -237,7 +238,9 @@ all and which were added by hand instead.
 sections built by `make provision-texts` from <https://indiacode.gov.in> — the
 three new codes from its section records, the Indian Penal Code and the Indian
 Evidence Act from the consolidated act PDFs it keeps on their repeal entries.
-Every row cites the page it can be checked against and ships `extracted`.
+Every row cites the page it can be checked against and now ships `verified`.
+Rebuilding a file resets it to `extracted`: review is a separate step, run
+again with `scripts/mark_reviewed.py --texts`.
 
 The Code of Criminal Procedure is the exception: the only copy India Code still
 publishes is a gazette scan whose text layer has decayed into `Code ot Criminai
@@ -380,8 +383,9 @@ docs/           architecture, data provenance, engineering, demo, ADRs
 - No CrPC text is packaged, so a CrPC comparison shows the mapping and the new
   text, not the two texts side by side. India Code no longer publishes a
   consolidated CrPC that is clean enough to quote.
-- Packaged provision texts ship unreviewed and hidden, like the mappings.
-- Law mappings ship unreviewed and hidden. See [`docs/DATA.md`](docs/DATA.md).
+- Law mappings and provision texts ship reviewed. A rebuild resets a file to
+  `extracted`, unreviewed and hidden, until `scripts/mark_reviewed.py` is run
+  again. See [`docs/DATA.md`](docs/DATA.md).
 - Hindi and Marathi strings have not been reviewed by a fluent speaker.
 - The manual screen-reader checklist in [`ACCESSIBILITY.md`](ACCESSIBILITY.md)
   is not complete.

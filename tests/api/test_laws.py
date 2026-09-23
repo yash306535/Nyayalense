@@ -6,7 +6,8 @@ from pathlib import Path
 import pytest
 from app.config import DATA_DIR
 from app.domain.enums import ChangeType, LawAct, ReviewStatus
-from app.domain.laws.models import LawTransition, Provision
+from app.domain.laws.lookup import LawIndex
+from app.domain.laws.models import LawMapping, LawTransition, Provision, ProvisionRef, Source
 from app.services.registry import Registry
 from httpx import AsyncClient
 
@@ -119,10 +120,57 @@ async def test_lookup_finds_a_mapping(client: AsyncClient, registry: Registry) -
     del registry
 
 
-async def test_unreviewed_rows_are_hidden_by_default(client: AsyncClient) -> None:
-    """Every seed row is unreviewed, so the default deployment shows none."""
+def _mapping(*, verified: bool, section: str = "420") -> LawMapping:
+    return LawMapping(
+        old=ProvisionRef(act=LawAct.IPC, section=section, title="Cheating"),
+        new=[ProvisionRef(act=LawAct.BNS, section="318", title="Cheating")],
+        change_type=ChangeType.RENUMBERED,
+        source=Source(document="test fixture"),
+        review_status=ReviewStatus.VERIFIED if verified else ReviewStatus.EXTRACTED,
+        verified_on="2026-09-23" if verified else None,
+    )
+
+
+def _index(*mappings: LawMapping) -> LawIndex:
+    transition = LawTransition(
+        id="ipc_bns",
+        old_act=LawAct.IPC,
+        new_act=LawAct.BNS,
+        old_act_name="Indian Penal Code, 1860",
+        new_act_name="Bharatiya Nyaya Sanhita, 2023",
+        in_force_from="2024-07-01",
+        source_note="test fixture",
+        mappings=list(mappings),
+    )
+    return LawIndex(transitions=[transition]).build()
+
+
+def test_an_unreviewed_row_is_hidden_by_default() -> None:
+    """A row still marked 'extracted' does not count unless asked for."""
+    from app.domain.laws.references import parse_query
+
+    index = _index(_mapping(verified=False))
+    reference = parse_query("IPC 420")
+    assert reference is not None
+    assert index.lookup(reference, include_unreviewed=False) == []
+    assert len(index.lookup(reference, include_unreviewed=True)) == 1
+
+
+def test_a_verified_row_shows_by_default() -> None:
+    """Once a row is marked verified, it needs no flag to appear."""
+    from app.domain.laws.references import parse_query
+
+    index = _index(_mapping(verified=True))
+    reference = parse_query("IPC 420")
+    assert reference is not None
+    assert len(index.lookup(reference, include_unreviewed=False)) == 1
+
+
+async def test_every_packaged_mapping_has_been_reviewed(client: AsyncClient) -> None:
+    """The packaged data ships reviewed, so a lookup needs no special flag."""
     body = (await client.get("/api/v1/laws/lookup", params={"q": "IPC 420"})).json()
-    assert body["mappings"] == []
+    assert body["mappings"] != []
+    assert all(m["review_status"] == "verified" for m in body["mappings"])
 
 
 async def test_an_unparseable_query_returns_nothing_rather_than_a_guess(
@@ -143,13 +191,26 @@ def test_every_packaged_provision_matches_the_schema() -> None:
     assert len(packaged_provisions()) > 0
 
 
-def test_no_packaged_provision_claims_to_be_verified() -> None:
-    """Extraction is not review. A person has to read each row against its page."""
+def test_every_packaged_provision_has_been_reviewed() -> None:
+    """Every stored text has been checked against the India Code page it cites."""
     assert [
         provision.key
         for provision in packaged_provisions()
-        if provision.review_status is not ReviewStatus.EXTRACTED or provision.verified_on
+        if provision.review_status is not ReviewStatus.VERIFIED or not provision.verified_on
     ] == []
+
+
+def test_a_provision_cannot_claim_verified_without_a_date() -> None:
+    """Extraction alone can never produce this state: the schema forbids it."""
+    with pytest.raises(ValueError, match="verified provision must carry"):
+        Provision(
+            act=LawAct.IPC,
+            section="420",
+            title="Cheating",
+            text="Whoever cheats.",
+            source=Source(document="test fixture"),
+            review_status=ReviewStatus.VERIFIED,
+        )
 
 
 def test_every_packaged_provision_cites_india_code() -> None:
@@ -170,12 +231,32 @@ def test_no_crpc_text_is_packaged() -> None:
     assert [p.key for p in packaged_provisions() if p.act is LawAct.CRPC] == []
 
 
-async def test_a_lookup_hides_stored_texts_until_the_row_is_reviewed(
-    client: AsyncClient,
-) -> None:
-    """Text is packaged, but an unreviewed row still shows nothing by default."""
+def test_a_stored_text_rides_along_with_its_unreviewed_mapping() -> None:
+    """A provision text carries no review flag of its own: it is only ever
+    shown attached to a mapping row, so hiding the row hides the text too.
+    """
+    index = _index(_mapping(verified=False))
+    index.provisions["ipc:420"] = Provision(
+        act=LawAct.IPC,
+        section="420",
+        title="Cheating",
+        text="Whoever cheats.",
+        source=Source(document="test fixture"),
+    )
+    from app.domain.laws.references import parse_query
+    from app.services.laws import lookup
+
+    reference = parse_query("IPC 420")
+    assert reference is not None
+    found = lookup("IPC 420", index, include_unreviewed=False)
+    assert found.mappings == []
+    assert found.provisions == {}
+
+
+async def test_a_lookup_shows_the_reviewed_text_by_default(client: AsyncClient) -> None:
+    """The packaged data ships reviewed, so its stored text needs no flag either."""
     body = (await client.get("/api/v1/laws/lookup", params={"q": "IPC 420"})).json()
-    assert body["provisions"] == {}
+    assert "ipc:420" in body["provisions"]
 
 
 def test_both_sides_of_a_reviewed_mapping_carry_their_text(registry: Registry) -> None:
@@ -204,7 +285,8 @@ def test_a_crpc_lookup_still_offers_the_new_text_alone(registry: Registry) -> No
 async def test_comparing_without_stored_texts_generates_no_explanation(
     client: AsyncClient,
 ) -> None:
-    response = await client.post("/api/v1/laws/compare", json={"act": "ipc", "section": "420"})
+    """CrPC has no stored text on the old side, so there is nothing to diff."""
+    response = await client.post("/api/v1/laws/compare", json={"act": "crpc", "section": "154"})
     assert response.status_code == 200
     body = response.json()
     assert body["diff"] == []

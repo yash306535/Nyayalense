@@ -9,7 +9,8 @@
       "page": 1,
       "url": "https://indiacode.gov.in/handle/123456789/546105"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -21,7 +22,8 @@
       "page": 2,
       "url": "https://indiacode.gov.in/handle/123456789/546106"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -33,7 +35,8 @@
       "page": 3,
       "url": "https://indiacode.gov.in/handle/123456789/546108"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -45,7 +48,8 @@
       "page": 4,
       "url": "https://indiacode.gov.in/handle/123456789/546109"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -57,7 +61,8 @@
       "page": 4,
       "url": "https://indiacode.gov.in/handle/123456789/546110"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -69,7 +74,8 @@
       "page": 5,
       "url": "https://indiacode.gov.in/handle/123456789/546111"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -81,7 +87,8 @@
       "page": 5,
       "url": "https://indiacode.gov.in/handle/123456789/546112"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -93,7 +100,8 @@
       "page": 6,
       "url": "https://indiacode.gov.in/handle/123456789/546113"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -105,7 +113,8 @@
       "page": 6,
       "url": "https://indiacode.gov.in/handle/123456789/546114"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -117,7 +126,8 @@
       "page": 6,
       "url": "https://indiacode.gov.in/handle/123456789/546115"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -129,7 +139,8 @@
       "page": 20,
       "url": "https://indiacode.gov.in/handle/123456789/546116"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -141,7 +152,8 @@
       "page": 20,
       "url": "https://indiacode.gov.in/handle/123456789/546117"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -153,7 +165,8 @@
       "page": 21,
       "url": "https://indiacode.gov.in/handle/123456789/546120"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -165,7 +178,8 @@
       "page": 21,
       "url": "https://indiacode.gov.in/handle/123456789/546121"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -177,7 +191,8 @@
       "page": 21,
       "url": "https://indiacode.gov.in/handle/123456789/546122"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -189,7 +204,8 @@
       "page": 21,
       "url": "https://indiacode.gov.in/handle/123456789/546123"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -201,7 +217,8 @@
       "page": 22,
       "url": "https://indiacode.gov.in/handle/123456789/546124"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -213,7 +230,8 @@
       "page": 22,
       "url": "https://indiacode.gov.in/handle/123456789/546125"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -225,7 +243,8 @@
       "page": 22,
       "url": "https://indiacode.gov.in/handle/123456789/546126"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -237,7 +256,8 @@
       "page": 22,
       "url": "https://indiacode.gov.in/handle/123456789/546127"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -249,7 +269,8 @@
       "page": 23,
       "url": "https://indiacode.gov.in/handle/123456789/546128"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -261,7 +282,8 @@
       "page": 23,
       "url": "https://indiacode.gov.in/handle/123456789/546129"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -273,7 +295,8 @@
       "page": 24,
       "url": "https://indiacode.gov.in/handle/123456789/546131"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -285,7 +308,8 @@
       "page": 24,
       "url": "https://indiacode.gov.in/handle/123456789/546132"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -297,7 +321,8 @@
       "page": 25,
       "url": "https://indiacode.gov.in/handle/123456789/546133"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -309,7 +334,8 @@
       "page": 26,
       "url": "https://indiacode.gov.in/handle/123456789/546134"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -321,7 +347,8 @@
       "page": 26,
       "url": "https://indiacode.gov.in/handle/123456789/546135"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -333,7 +360,8 @@
       "page": 26,
       "url": "https://indiacode.gov.in/handle/123456789/546136"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -345,7 +373,8 @@
       "page": 26,
       "url": "https://indiacode.gov.in/handle/123456789/546137"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -357,7 +386,8 @@
       "page": 27,
       "url": "https://indiacode.gov.in/handle/123456789/546138"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -369,7 +399,8 @@
       "page": 27,
       "url": "https://indiacode.gov.in/handle/123456789/546139"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -381,7 +412,8 @@
       "page": 26,
       "url": "https://indiacode.gov.in/handle/123456789/546140"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -393,7 +425,8 @@
       "page": 24,
       "url": "https://indiacode.gov.in/handle/123456789/546142"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -405,7 +438,8 @@
       "page": 27,
       "url": "https://indiacode.gov.in/handle/123456789/546633"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -417,7 +451,8 @@
       "page": 29,
       "url": "https://indiacode.gov.in/handle/123456789/546143"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -429,7 +464,8 @@
       "page": 26,
       "url": "https://indiacode.gov.in/handle/123456789/546144"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -441,7 +477,8 @@
       "page": 29,
       "url": "https://indiacode.gov.in/handle/123456789/546145"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -453,7 +490,8 @@
       "page": 26,
       "url": "https://indiacode.gov.in/handle/123456789/546146"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -465,7 +503,8 @@
       "page": 29,
       "url": "https://indiacode.gov.in/handle/123456789/546147"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -477,7 +516,8 @@
       "page": 29,
       "url": "https://indiacode.gov.in/handle/123456789/546148"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -489,7 +529,8 @@
       "page": 30,
       "url": "https://indiacode.gov.in/handle/123456789/546149"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -501,7 +542,8 @@
       "page": 30,
       "url": "https://indiacode.gov.in/handle/123456789/546150"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -513,7 +555,8 @@
       "page": 31,
       "url": "https://indiacode.gov.in/handle/123456789/546152"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -525,7 +568,8 @@
       "page": 32,
       "url": "https://indiacode.gov.in/handle/123456789/546153"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -537,7 +581,8 @@
       "page": 31,
       "url": "https://indiacode.gov.in/handle/123456789/546154"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -549,7 +594,8 @@
       "page": 31,
       "url": "https://indiacode.gov.in/handle/123456789/546155"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -561,7 +607,8 @@
       "page": 31,
       "url": "https://indiacode.gov.in/handle/123456789/546156"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -573,7 +620,8 @@
       "page": 31,
       "url": "https://indiacode.gov.in/handle/123456789/546157"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -585,7 +633,8 @@
       "page": 32,
       "url": "https://indiacode.gov.in/handle/123456789/546158"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -597,7 +646,8 @@
       "page": 32,
       "url": "https://indiacode.gov.in/handle/123456789/546159"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -609,7 +659,8 @@
       "page": 32,
       "url": "https://indiacode.gov.in/handle/123456789/546160"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -621,7 +672,8 @@
       "page": 33,
       "url": "https://indiacode.gov.in/handle/123456789/546161"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -633,7 +685,8 @@
       "page": 33,
       "url": "https://indiacode.gov.in/handle/123456789/546163"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -645,7 +698,8 @@
       "page": 33,
       "url": "https://indiacode.gov.in/handle/123456789/546164"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -657,7 +711,8 @@
       "page": 34,
       "url": "https://indiacode.gov.in/handle/123456789/546165"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -669,7 +724,8 @@
       "page": 34,
       "url": "https://indiacode.gov.in/handle/123456789/546166"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -681,7 +737,8 @@
       "page": 53,
       "url": "https://indiacode.gov.in/handle/123456789/546167"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -693,7 +750,8 @@
       "page": 34,
       "url": "https://indiacode.gov.in/handle/123456789/546168"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -705,7 +763,8 @@
       "page": 34,
       "url": "https://indiacode.gov.in/handle/123456789/546169"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -717,7 +776,8 @@
       "page": 34,
       "url": "https://indiacode.gov.in/handle/123456789/546170"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -729,7 +789,8 @@
       "page": 34,
       "url": "https://indiacode.gov.in/handle/123456789/546171"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -741,7 +802,8 @@
       "page": 34,
       "url": "https://indiacode.gov.in/handle/123456789/546172"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -753,7 +815,8 @@
       "page": 35,
       "url": "https://indiacode.gov.in/handle/123456789/546634"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -765,7 +828,8 @@
       "page": 35,
       "url": "https://indiacode.gov.in/handle/123456789/546174"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -777,7 +841,8 @@
       "page": 35,
       "url": "https://indiacode.gov.in/handle/123456789/546175"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -789,7 +854,8 @@
       "page": 35,
       "url": "https://indiacode.gov.in/handle/123456789/546176"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -801,7 +867,8 @@
       "page": 35,
       "url": "https://indiacode.gov.in/handle/123456789/546177"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -813,7 +880,8 @@
       "page": 35,
       "url": "https://indiacode.gov.in/handle/123456789/546178"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -825,7 +893,8 @@
       "page": 36,
       "url": "https://indiacode.gov.in/handle/123456789/546179"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -837,7 +906,8 @@
       "page": 35,
       "url": "https://indiacode.gov.in/handle/123456789/546180"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -849,7 +919,8 @@
       "page": 36,
       "url": "https://indiacode.gov.in/handle/123456789/546181"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -861,7 +932,8 @@
       "page": 36,
       "url": "https://indiacode.gov.in/handle/123456789/546635"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -873,7 +945,8 @@
       "page": 36,
       "url": "https://indiacode.gov.in/handle/123456789/546183"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -885,7 +958,8 @@
       "page": 37,
       "url": "https://indiacode.gov.in/handle/123456789/546184"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -897,7 +971,8 @@
       "page": 37,
       "url": "https://indiacode.gov.in/handle/123456789/546185"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -909,7 +984,8 @@
       "page": 37,
       "url": "https://indiacode.gov.in/handle/123456789/546186"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -921,7 +997,8 @@
       "page": 36,
       "url": "https://indiacode.gov.in/handle/123456789/546187"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -933,7 +1010,8 @@
       "page": 37,
       "url": "https://indiacode.gov.in/handle/123456789/546188"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -945,7 +1023,8 @@
       "page": 37,
       "url": "https://indiacode.gov.in/handle/123456789/546189"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -957,7 +1036,8 @@
       "page": 37,
       "url": "https://indiacode.gov.in/handle/123456789/546190"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -969,7 +1049,8 @@
       "page": 38,
       "url": "https://indiacode.gov.in/handle/123456789/546191"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -981,7 +1062,8 @@
       "page": 38,
       "url": "https://indiacode.gov.in/handle/123456789/546192"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -993,7 +1075,8 @@
       "page": 38,
       "url": "https://indiacode.gov.in/handle/123456789/546194"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1005,7 +1088,8 @@
       "page": 39,
       "url": "https://indiacode.gov.in/handle/123456789/546636"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1017,7 +1101,8 @@
       "page": 39,
       "url": "https://indiacode.gov.in/handle/123456789/546195"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1029,7 +1114,8 @@
       "page": 40,
       "url": "https://indiacode.gov.in/handle/123456789/546196"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1041,7 +1127,8 @@
       "page": 40,
       "url": "https://indiacode.gov.in/handle/123456789/546197"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1053,7 +1140,8 @@
       "page": 40,
       "url": "https://indiacode.gov.in/handle/123456789/546198"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1065,7 +1153,8 @@
       "page": 40,
       "url": "https://indiacode.gov.in/handle/123456789/546199"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1077,7 +1166,8 @@
       "page": 40,
       "url": "https://indiacode.gov.in/handle/123456789/546637"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1089,7 +1179,8 @@
       "page": 40,
       "url": "https://indiacode.gov.in/handle/123456789/546200"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1101,7 +1192,8 @@
       "page": 41,
       "url": "https://indiacode.gov.in/handle/123456789/546201"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1113,7 +1205,8 @@
       "page": 41,
       "url": "https://indiacode.gov.in/handle/123456789/546203"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1125,7 +1218,8 @@
       "page": 41,
       "url": "https://indiacode.gov.in/handle/123456789/546638"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1137,7 +1231,8 @@
       "page": 42,
       "url": "https://indiacode.gov.in/handle/123456789/546204"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1149,7 +1244,8 @@
       "page": 42,
       "url": "https://indiacode.gov.in/handle/123456789/546639"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1161,7 +1257,8 @@
       "page": 42,
       "url": "https://indiacode.gov.in/handle/123456789/546205"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1173,7 +1270,8 @@
       "page": 42,
       "url": "https://indiacode.gov.in/handle/123456789/546206"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1185,7 +1283,8 @@
       "page": 43,
       "url": "https://indiacode.gov.in/handle/123456789/546207"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1197,7 +1296,8 @@
       "page": 44,
       "url": "https://indiacode.gov.in/handle/123456789/546208"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1209,7 +1309,8 @@
       "page": 44,
       "url": "https://indiacode.gov.in/handle/123456789/546209"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1221,7 +1322,8 @@
       "page": 44,
       "url": "https://indiacode.gov.in/handle/123456789/546640"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1233,7 +1335,8 @@
       "page": 44,
       "url": "https://indiacode.gov.in/handle/123456789/546211"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1245,7 +1348,8 @@
       "page": 44,
       "url": "https://indiacode.gov.in/handle/123456789/546212"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1257,7 +1361,8 @@
       "page": 44,
       "url": "https://indiacode.gov.in/handle/123456789/546641"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1269,7 +1374,8 @@
       "page": 44,
       "url": "https://indiacode.gov.in/handle/123456789/546213"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1281,7 +1387,8 @@
       "page": 45,
       "url": "https://indiacode.gov.in/handle/123456789/546214"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1293,7 +1400,8 @@
       "page": 46,
       "url": "https://indiacode.gov.in/handle/123456789/546215"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1305,7 +1413,8 @@
       "page": 46,
       "url": "https://indiacode.gov.in/handle/123456789/546216"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1317,7 +1426,8 @@
       "page": 46,
       "url": "https://indiacode.gov.in/handle/123456789/546217"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1329,7 +1439,8 @@
       "page": 47,
       "url": "https://indiacode.gov.in/handle/123456789/546218"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1341,7 +1452,8 @@
       "page": 47,
       "url": "https://indiacode.gov.in/handle/123456789/546219"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1353,7 +1465,8 @@
       "page": 48,
       "url": "https://indiacode.gov.in/handle/123456789/546642"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1365,7 +1478,8 @@
       "page": 48,
       "url": "https://indiacode.gov.in/handle/123456789/546221"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1377,7 +1491,8 @@
       "page": 49,
       "url": "https://indiacode.gov.in/handle/123456789/546222"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1389,7 +1504,8 @@
       "page": 49,
       "url": "https://indiacode.gov.in/handle/123456789/546223"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1401,7 +1517,8 @@
       "page": 49,
       "url": "https://indiacode.gov.in/handle/123456789/546224"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1413,7 +1530,8 @@
       "page": 49,
       "url": "https://indiacode.gov.in/handle/123456789/546225"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1425,7 +1543,8 @@
       "page": 49,
       "url": "https://indiacode.gov.in/handle/123456789/546226"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1437,7 +1556,8 @@
       "page": 50,
       "url": "https://indiacode.gov.in/handle/123456789/546227"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1449,7 +1569,8 @@
       "page": 50,
       "url": "https://indiacode.gov.in/handle/123456789/546228"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1461,7 +1582,8 @@
       "page": 50,
       "url": "https://indiacode.gov.in/handle/123456789/546229"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1473,7 +1595,8 @@
       "page": 50,
       "url": "https://indiacode.gov.in/handle/123456789/546230"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1485,7 +1608,8 @@
       "page": 50,
       "url": "https://indiacode.gov.in/handle/123456789/546231"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1497,7 +1621,8 @@
       "page": 51,
       "url": "https://indiacode.gov.in/handle/123456789/546232"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1509,7 +1634,8 @@
       "page": 51,
       "url": "https://indiacode.gov.in/handle/123456789/546233"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1521,7 +1647,8 @@
       "page": 51,
       "url": "https://indiacode.gov.in/handle/123456789/546234"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1533,7 +1660,8 @@
       "page": 52,
       "url": "https://indiacode.gov.in/handle/123456789/546235"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1545,7 +1673,8 @@
       "page": 52,
       "url": "https://indiacode.gov.in/handle/123456789/546236"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1557,7 +1686,8 @@
       "page": 53,
       "url": "https://indiacode.gov.in/handle/123456789/546237"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1569,7 +1699,8 @@
       "page": 53,
       "url": "https://indiacode.gov.in/handle/123456789/546238"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1581,7 +1712,8 @@
       "page": 53,
       "url": "https://indiacode.gov.in/handle/123456789/546239"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1593,7 +1725,8 @@
       "page": 53,
       "url": "https://indiacode.gov.in/handle/123456789/546240"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1605,7 +1738,8 @@
       "page": 53,
       "url": "https://indiacode.gov.in/handle/123456789/546241"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1617,7 +1751,8 @@
       "page": 53,
       "url": "https://indiacode.gov.in/handle/123456789/546242"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1629,7 +1764,8 @@
       "page": 54,
       "url": "https://indiacode.gov.in/handle/123456789/546243"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1641,7 +1777,8 @@
       "page": 54,
       "url": "https://indiacode.gov.in/handle/123456789/546244"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1653,7 +1790,8 @@
       "page": 54,
       "url": "https://indiacode.gov.in/handle/123456789/546245"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1665,7 +1803,8 @@
       "page": 54,
       "url": "https://indiacode.gov.in/handle/123456789/546246"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1677,7 +1816,8 @@
       "page": 55,
       "url": "https://indiacode.gov.in/handle/123456789/546247"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1689,7 +1829,8 @@
       "page": 55,
       "url": "https://indiacode.gov.in/handle/123456789/546248"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1701,7 +1842,8 @@
       "page": 56,
       "url": "https://indiacode.gov.in/handle/123456789/546249"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1713,7 +1855,8 @@
       "page": 57,
       "url": "https://indiacode.gov.in/handle/123456789/546250"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1725,7 +1868,8 @@
       "page": 57,
       "url": "https://indiacode.gov.in/handle/123456789/546251"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1737,7 +1881,8 @@
       "page": 58,
       "url": "https://indiacode.gov.in/handle/123456789/546252"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1749,7 +1894,8 @@
       "page": 58,
       "url": "https://indiacode.gov.in/handle/123456789/546253"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1761,7 +1907,8 @@
       "page": 59,
       "url": "https://indiacode.gov.in/handle/123456789/546254"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1773,7 +1920,8 @@
       "page": 59,
       "url": "https://indiacode.gov.in/handle/123456789/546643"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1785,7 +1933,8 @@
       "page": 59,
       "url": "https://indiacode.gov.in/handle/123456789/546255"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1797,7 +1946,8 @@
       "page": 60,
       "url": "https://indiacode.gov.in/handle/123456789/546256"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1809,7 +1959,8 @@
       "page": 60,
       "url": "https://indiacode.gov.in/handle/123456789/546257"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1821,7 +1972,8 @@
       "page": 60,
       "url": "https://indiacode.gov.in/handle/123456789/546644"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1833,7 +1985,8 @@
       "page": 61,
       "url": "https://indiacode.gov.in/handle/123456789/546258"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1845,7 +1998,8 @@
       "page": 61,
       "url": "https://indiacode.gov.in/handle/123456789/546259"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1857,7 +2011,8 @@
       "page": 62,
       "url": "https://indiacode.gov.in/handle/123456789/546260"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1869,7 +2024,8 @@
       "page": 62,
       "url": "https://indiacode.gov.in/handle/123456789/546261"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1881,7 +2037,8 @@
       "page": 62,
       "url": "https://indiacode.gov.in/handle/123456789/546262"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1893,7 +2050,8 @@
       "page": 62,
       "url": "https://indiacode.gov.in/handle/123456789/546263"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1905,7 +2063,8 @@
       "page": 62,
       "url": "https://indiacode.gov.in/handle/123456789/546264"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1917,7 +2076,8 @@
       "page": 63,
       "url": "https://indiacode.gov.in/handle/123456789/546265"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1929,7 +2089,8 @@
       "page": 63,
       "url": "https://indiacode.gov.in/handle/123456789/546266"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1941,7 +2102,8 @@
       "page": 63,
       "url": "https://indiacode.gov.in/handle/123456789/546267"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1953,7 +2115,8 @@
       "page": 63,
       "url": "https://indiacode.gov.in/handle/123456789/546645"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1965,7 +2128,8 @@
       "page": 64,
       "url": "https://indiacode.gov.in/handle/123456789/546646"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1977,7 +2141,8 @@
       "page": 65,
       "url": "https://indiacode.gov.in/handle/123456789/546268"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -1989,7 +2154,8 @@
       "page": 65,
       "url": "https://indiacode.gov.in/handle/123456789/546269"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2001,7 +2167,8 @@
       "page": 66,
       "url": "https://indiacode.gov.in/handle/123456789/546270"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2013,7 +2180,8 @@
       "page": 66,
       "url": "https://indiacode.gov.in/handle/123456789/546271"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2025,7 +2193,8 @@
       "page": 66,
       "url": "https://indiacode.gov.in/handle/123456789/546272"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2037,7 +2206,8 @@
       "page": 66,
       "url": "https://indiacode.gov.in/handle/123456789/546273"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2049,7 +2219,8 @@
       "page": 66,
       "url": "https://indiacode.gov.in/handle/123456789/546274"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2061,7 +2232,8 @@
       "page": 66,
       "url": "https://indiacode.gov.in/handle/123456789/546647"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2073,7 +2245,8 @@
       "page": 67,
       "url": "https://indiacode.gov.in/handle/123456789/546648"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2085,7 +2258,8 @@
       "page": 68,
       "url": "https://indiacode.gov.in/handle/123456789/546275"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2097,7 +2271,8 @@
       "page": 68,
       "url": "https://indiacode.gov.in/handle/123456789/546276"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2109,7 +2284,8 @@
       "page": 68,
       "url": "https://indiacode.gov.in/handle/123456789/546277"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2121,7 +2297,8 @@
       "page": 69,
       "url": "https://indiacode.gov.in/handle/123456789/546278"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2133,7 +2310,8 @@
       "page": 69,
       "url": "https://indiacode.gov.in/handle/123456789/546279"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2145,7 +2323,8 @@
       "page": 69,
       "url": "https://indiacode.gov.in/handle/123456789/546280"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2157,7 +2336,8 @@
       "page": 70,
       "url": "https://indiacode.gov.in/handle/123456789/546281"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2169,7 +2349,8 @@
       "page": 70,
       "url": "https://indiacode.gov.in/handle/123456789/546282"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2181,7 +2362,8 @@
       "page": 70,
       "url": "https://indiacode.gov.in/handle/123456789/546283"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2193,7 +2375,8 @@
       "page": 71,
       "url": "https://indiacode.gov.in/handle/123456789/546284"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2205,7 +2388,8 @@
       "page": 72,
       "url": "https://indiacode.gov.in/handle/123456789/546285"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2217,7 +2401,8 @@
       "page": 73,
       "url": "https://indiacode.gov.in/handle/123456789/546286"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2229,7 +2414,8 @@
       "page": 73,
       "url": "https://indiacode.gov.in/handle/123456789/546287"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2241,7 +2427,8 @@
       "page": 73,
       "url": "https://indiacode.gov.in/handle/123456789/546288"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2253,7 +2440,8 @@
       "page": 75,
       "url": "https://indiacode.gov.in/handle/123456789/546289"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2265,7 +2453,8 @@
       "page": 75,
       "url": "https://indiacode.gov.in/handle/123456789/546290"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2277,7 +2466,8 @@
       "page": 75,
       "url": "https://indiacode.gov.in/handle/123456789/546291"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2289,7 +2479,8 @@
       "page": 76,
       "url": "https://indiacode.gov.in/handle/123456789/546649"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2301,7 +2492,8 @@
       "page": 76,
       "url": "https://indiacode.gov.in/handle/123456789/546292"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2313,7 +2505,8 @@
       "page": 76,
       "url": "https://indiacode.gov.in/handle/123456789/546293"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2325,7 +2518,8 @@
       "page": 78,
       "url": "https://indiacode.gov.in/handle/123456789/546294"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2337,7 +2531,8 @@
       "page": 78,
       "url": "https://indiacode.gov.in/handle/123456789/546295"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2349,7 +2544,8 @@
       "page": 79,
       "url": "https://indiacode.gov.in/handle/123456789/546296"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2361,7 +2557,8 @@
       "page": 79,
       "url": "https://indiacode.gov.in/handle/123456789/546297"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2373,7 +2570,8 @@
       "page": 79,
       "url": "https://indiacode.gov.in/handle/123456789/546298"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2385,7 +2583,8 @@
       "page": 79,
       "url": "https://indiacode.gov.in/handle/123456789/546299"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2397,7 +2596,8 @@
       "page": 80,
       "url": "https://indiacode.gov.in/handle/123456789/546300"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2409,7 +2609,8 @@
       "page": 80,
       "url": "https://indiacode.gov.in/handle/123456789/546301"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2421,7 +2622,8 @@
       "page": 80,
       "url": "https://indiacode.gov.in/handle/123456789/546302"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2433,7 +2635,8 @@
       "page": 80,
       "url": "https://indiacode.gov.in/handle/123456789/546303"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2445,7 +2648,8 @@
       "page": 80,
       "url": "https://indiacode.gov.in/handle/123456789/546304"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2457,7 +2661,8 @@
       "page": 80,
       "url": "https://indiacode.gov.in/handle/123456789/546305"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2469,7 +2674,8 @@
       "page": 81,
       "url": "https://indiacode.gov.in/handle/123456789/546306"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2481,7 +2687,8 @@
       "page": 81,
       "url": "https://indiacode.gov.in/handle/123456789/546307"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2493,7 +2700,8 @@
       "page": 81,
       "url": "https://indiacode.gov.in/handle/123456789/546308"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2505,7 +2713,8 @@
       "page": 81,
       "url": "https://indiacode.gov.in/handle/123456789/546309"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2517,7 +2726,8 @@
       "page": 81,
       "url": "https://indiacode.gov.in/handle/123456789/546310"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2529,7 +2739,8 @@
       "page": 82,
       "url": "https://indiacode.gov.in/handle/123456789/546311"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2541,7 +2752,8 @@
       "page": 82,
       "url": "https://indiacode.gov.in/handle/123456789/546312"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2553,7 +2765,8 @@
       "page": 82,
       "url": "https://indiacode.gov.in/handle/123456789/546313"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2565,7 +2778,8 @@
       "page": 82,
       "url": "https://indiacode.gov.in/handle/123456789/546315"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2577,7 +2791,8 @@
       "page": 82,
       "url": "https://indiacode.gov.in/handle/123456789/546650"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2589,7 +2804,8 @@
       "page": 83,
       "url": "https://indiacode.gov.in/handle/123456789/546316"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2601,7 +2817,8 @@
       "page": 83,
       "url": "https://indiacode.gov.in/handle/123456789/546317"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2613,7 +2830,8 @@
       "page": 83,
       "url": "https://indiacode.gov.in/handle/123456789/546318"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2625,7 +2843,8 @@
       "page": 84,
       "url": "https://indiacode.gov.in/handle/123456789/546319"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2637,7 +2856,8 @@
       "page": 85,
       "url": "https://indiacode.gov.in/handle/123456789/546320"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2649,7 +2869,8 @@
       "page": 85,
       "url": "https://indiacode.gov.in/handle/123456789/546321"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2661,7 +2882,8 @@
       "page": 85,
       "url": "https://indiacode.gov.in/handle/123456789/546322"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2673,7 +2895,8 @@
       "page": 86,
       "url": "https://indiacode.gov.in/handle/123456789/546323"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2685,7 +2908,8 @@
       "page": 86,
       "url": "https://indiacode.gov.in/handle/123456789/546324"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2697,7 +2921,8 @@
       "page": 86,
       "url": "https://indiacode.gov.in/handle/123456789/546325"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2709,7 +2934,8 @@
       "page": 87,
       "url": "https://indiacode.gov.in/handle/123456789/546326"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2721,7 +2947,8 @@
       "page": 87,
       "url": "https://indiacode.gov.in/handle/123456789/546327"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2733,7 +2960,8 @@
       "page": 87,
       "url": "https://indiacode.gov.in/handle/123456789/546328"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2745,7 +2973,8 @@
       "page": 87,
       "url": "https://indiacode.gov.in/handle/123456789/546329"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2757,7 +2986,8 @@
       "page": 88,
       "url": "https://indiacode.gov.in/handle/123456789/546330"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2769,7 +2999,8 @@
       "page": 88,
       "url": "https://indiacode.gov.in/handle/123456789/546331"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2781,7 +3012,8 @@
       "page": 89,
       "url": "https://indiacode.gov.in/handle/123456789/546332"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2793,7 +3025,8 @@
       "page": 89,
       "url": "https://indiacode.gov.in/handle/123456789/546651"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2805,7 +3038,8 @@
       "page": 90,
       "url": "https://indiacode.gov.in/handle/123456789/546652"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2817,7 +3051,8 @@
       "page": 90,
       "url": "https://indiacode.gov.in/handle/123456789/546333"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2829,7 +3064,8 @@
       "page": 91,
       "url": "https://indiacode.gov.in/handle/123456789/546334"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2841,7 +3077,8 @@
       "page": 91,
       "url": "https://indiacode.gov.in/handle/123456789/546335"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2853,7 +3090,8 @@
       "page": 91,
       "url": "https://indiacode.gov.in/handle/123456789/546336"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2865,7 +3103,8 @@
       "page": 92,
       "url": "https://indiacode.gov.in/handle/123456789/546337"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2877,7 +3116,8 @@
       "page": 92,
       "url": "https://indiacode.gov.in/handle/123456789/546338"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2889,7 +3129,8 @@
       "page": 92,
       "url": "https://indiacode.gov.in/handle/123456789/546339"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2901,7 +3142,8 @@
       "page": 93,
       "url": "https://indiacode.gov.in/handle/123456789/546340"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2913,7 +3155,8 @@
       "page": 93,
       "url": "https://indiacode.gov.in/handle/123456789/546341"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2925,7 +3168,8 @@
       "page": 94,
       "url": "https://indiacode.gov.in/handle/123456789/546342"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2937,7 +3181,8 @@
       "page": 95,
       "url": "https://indiacode.gov.in/handle/123456789/546343"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2949,7 +3194,8 @@
       "page": 95,
       "url": "https://indiacode.gov.in/handle/123456789/546344"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2961,7 +3207,8 @@
       "page": 96,
       "url": "https://indiacode.gov.in/handle/123456789/546345"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2973,7 +3220,8 @@
       "page": 96,
       "url": "https://indiacode.gov.in/handle/123456789/546346"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2985,7 +3233,8 @@
       "page": 96,
       "url": "https://indiacode.gov.in/handle/123456789/546347"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -2997,7 +3246,8 @@
       "page": 96,
       "url": "https://indiacode.gov.in/handle/123456789/546348"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3009,7 +3259,8 @@
       "page": 96,
       "url": "https://indiacode.gov.in/handle/123456789/546349"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3021,7 +3272,8 @@
       "page": 96,
       "url": "https://indiacode.gov.in/handle/123456789/546350"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3033,7 +3285,8 @@
       "page": 96,
       "url": "https://indiacode.gov.in/handle/123456789/546351"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3045,7 +3298,8 @@
       "page": 97,
       "url": "https://indiacode.gov.in/handle/123456789/546352"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3057,7 +3311,8 @@
       "page": 97,
       "url": "https://indiacode.gov.in/handle/123456789/546353"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3069,7 +3324,8 @@
       "page": 97,
       "url": "https://indiacode.gov.in/handle/123456789/546354"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3081,7 +3337,8 @@
       "page": 97,
       "url": "https://indiacode.gov.in/handle/123456789/546355"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3093,7 +3350,8 @@
       "page": 97,
       "url": "https://indiacode.gov.in/handle/123456789/546356"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3105,7 +3363,8 @@
       "page": 97,
       "url": "https://indiacode.gov.in/handle/123456789/546357"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3117,7 +3376,8 @@
       "page": 97,
       "url": "https://indiacode.gov.in/handle/123456789/546358"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3129,7 +3389,8 @@
       "page": 98,
       "url": "https://indiacode.gov.in/handle/123456789/546653"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3141,7 +3402,8 @@
       "page": 98,
       "url": "https://indiacode.gov.in/handle/123456789/546359"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3153,7 +3415,8 @@
       "page": 98,
       "url": "https://indiacode.gov.in/handle/123456789/546360"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3165,7 +3428,8 @@
       "page": 99,
       "url": "https://indiacode.gov.in/handle/123456789/546361"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3177,7 +3441,8 @@
       "page": 99,
       "url": "https://indiacode.gov.in/handle/123456789/546362"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3189,7 +3454,8 @@
       "page": 99,
       "url": "https://indiacode.gov.in/handle/123456789/546363"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3201,7 +3467,8 @@
       "page": 99,
       "url": "https://indiacode.gov.in/handle/123456789/546654"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3213,7 +3480,8 @@
       "page": 99,
       "url": "https://indiacode.gov.in/handle/123456789/546364"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3225,7 +3493,8 @@
       "page": 100,
       "url": "https://indiacode.gov.in/handle/123456789/546365"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3237,7 +3506,8 @@
       "page": 100,
       "url": "https://indiacode.gov.in/handle/123456789/546366"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3249,7 +3519,8 @@
       "page": 100,
       "url": "https://indiacode.gov.in/handle/123456789/546655"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3261,7 +3532,8 @@
       "page": 100,
       "url": "https://indiacode.gov.in/handle/123456789/546367"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3273,7 +3545,8 @@
       "page": 101,
       "url": "https://indiacode.gov.in/handle/123456789/546368"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3285,7 +3558,8 @@
       "page": 101,
       "url": "https://indiacode.gov.in/handle/123456789/546369"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3297,7 +3571,8 @@
       "page": 101,
       "url": "https://indiacode.gov.in/handle/123456789/546370"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3309,7 +3584,8 @@
       "page": 101,
       "url": "https://indiacode.gov.in/handle/123456789/546371"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3321,7 +3597,8 @@
       "page": 102,
       "url": "https://indiacode.gov.in/handle/123456789/546372"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3333,7 +3610,8 @@
       "page": 102,
       "url": "https://indiacode.gov.in/handle/123456789/546373"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3345,7 +3623,8 @@
       "page": 102,
       "url": "https://indiacode.gov.in/handle/123456789/546374"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3357,7 +3636,8 @@
       "page": 102,
       "url": "https://indiacode.gov.in/handle/123456789/546375"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3369,7 +3649,8 @@
       "page": 102,
       "url": "https://indiacode.gov.in/handle/123456789/546376"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3381,7 +3662,8 @@
       "page": 103,
       "url": "https://indiacode.gov.in/handle/123456789/546377"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3393,7 +3675,8 @@
       "page": 103,
       "url": "https://indiacode.gov.in/handle/123456789/546378"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3405,7 +3688,8 @@
       "page": 103,
       "url": "https://indiacode.gov.in/handle/123456789/546379"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3417,7 +3701,8 @@
       "page": 103,
       "url": "https://indiacode.gov.in/handle/123456789/546380"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3429,7 +3714,8 @@
       "page": 104,
       "url": "https://indiacode.gov.in/handle/123456789/546381"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3441,7 +3727,8 @@
       "page": 104,
       "url": "https://indiacode.gov.in/handle/123456789/546382"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3453,7 +3740,8 @@
       "page": 104,
       "url": "https://indiacode.gov.in/handle/123456789/546383"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3465,7 +3753,8 @@
       "page": 104,
       "url": "https://indiacode.gov.in/handle/123456789/546384"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3477,7 +3766,8 @@
       "page": 105,
       "url": "https://indiacode.gov.in/handle/123456789/546385"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3489,7 +3779,8 @@
       "page": 105,
       "url": "https://indiacode.gov.in/handle/123456789/546386"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3501,7 +3792,8 @@
       "page": 105,
       "url": "https://indiacode.gov.in/handle/123456789/546387"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3513,7 +3805,8 @@
       "page": 106,
       "url": "https://indiacode.gov.in/handle/123456789/546388"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3525,7 +3818,8 @@
       "page": 106,
       "url": "https://indiacode.gov.in/handle/123456789/546389"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3537,7 +3831,8 @@
       "page": 106,
       "url": "https://indiacode.gov.in/handle/123456789/546390"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3549,7 +3844,8 @@
       "page": 106,
       "url": "https://indiacode.gov.in/handle/123456789/546391"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3561,7 +3857,8 @@
       "page": 106,
       "url": "https://indiacode.gov.in/handle/123456789/546392"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3573,7 +3870,8 @@
       "page": 106,
       "url": "https://indiacode.gov.in/handle/123456789/546393"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3585,7 +3883,8 @@
       "page": 106,
       "url": "https://indiacode.gov.in/handle/123456789/546394"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3597,7 +3896,8 @@
       "page": 107,
       "url": "https://indiacode.gov.in/handle/123456789/546395"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3609,7 +3909,8 @@
       "page": 107,
       "url": "https://indiacode.gov.in/handle/123456789/546396"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3621,7 +3922,8 @@
       "page": 107,
       "url": "https://indiacode.gov.in/handle/123456789/546397"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3633,7 +3935,8 @@
       "page": 107,
       "url": "https://indiacode.gov.in/handle/123456789/546656"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3645,7 +3948,8 @@
       "page": 108,
       "url": "https://indiacode.gov.in/handle/123456789/546398"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3657,7 +3961,8 @@
       "page": 108,
       "url": "https://indiacode.gov.in/handle/123456789/546399"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3669,7 +3974,8 @@
       "page": 108,
       "url": "https://indiacode.gov.in/handle/123456789/546400"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3681,7 +3987,8 @@
       "page": 108,
       "url": "https://indiacode.gov.in/handle/123456789/546657"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3693,7 +4000,8 @@
       "page": 108,
       "url": "https://indiacode.gov.in/handle/123456789/546401"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3705,7 +4013,8 @@
       "page": 309,
       "url": "https://indiacode.gov.in/handle/123456789/546402"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3717,7 +4026,8 @@
       "page": 109,
       "url": "https://indiacode.gov.in/handle/123456789/546403"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3729,7 +4039,8 @@
       "page": 109,
       "url": "https://indiacode.gov.in/handle/123456789/546404"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3741,7 +4052,8 @@
       "page": 109,
       "url": "https://indiacode.gov.in/handle/123456789/546405"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3753,7 +4065,8 @@
       "page": 313,
       "url": "https://indiacode.gov.in/handle/123456789/546406"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3765,7 +4078,8 @@
       "page": 314,
       "url": "https://indiacode.gov.in/handle/123456789/546408"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3777,7 +4091,8 @@
       "page": 110,
       "url": "https://indiacode.gov.in/handle/123456789/546409"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3789,7 +4104,8 @@
       "page": 110,
       "url": "https://indiacode.gov.in/handle/123456789/546410"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3801,7 +4117,8 @@
       "page": 110,
       "url": "https://indiacode.gov.in/handle/123456789/546658"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3813,7 +4130,8 @@
       "page": 111,
       "url": "https://indiacode.gov.in/handle/123456789/546659"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3825,7 +4143,8 @@
       "page": 111,
       "url": "https://indiacode.gov.in/handle/123456789/546660"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3837,7 +4156,8 @@
       "page": 111,
       "url": "https://indiacode.gov.in/handle/123456789/546411"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3849,7 +4169,8 @@
       "page": 111,
       "url": "https://indiacode.gov.in/handle/123456789/546412"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3861,7 +4182,8 @@
       "page": 111,
       "url": "https://indiacode.gov.in/handle/123456789/546413"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3873,7 +4195,8 @@
       "page": 111,
       "url": "https://indiacode.gov.in/handle/123456789/546414"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3885,7 +4208,8 @@
       "page": 112,
       "url": "https://indiacode.gov.in/handle/123456789/546415"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3897,7 +4221,8 @@
       "page": 112,
       "url": "https://indiacode.gov.in/handle/123456789/546416"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3909,7 +4234,8 @@
       "page": 112,
       "url": "https://indiacode.gov.in/handle/123456789/546417"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3921,7 +4247,8 @@
       "page": 112,
       "url": "https://indiacode.gov.in/handle/123456789/546418"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3933,7 +4260,8 @@
       "page": 112,
       "url": "https://indiacode.gov.in/handle/123456789/546419"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3945,7 +4273,8 @@
       "page": 113,
       "url": "https://indiacode.gov.in/handle/123456789/546420"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3957,7 +4286,8 @@
       "page": 113,
       "url": "https://indiacode.gov.in/handle/123456789/546421"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3969,7 +4299,8 @@
       "page": 113,
       "url": "https://indiacode.gov.in/handle/123456789/546422"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3981,7 +4312,8 @@
       "page": 114,
       "url": "https://indiacode.gov.in/handle/123456789/546423"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -3993,7 +4325,8 @@
       "page": 114,
       "url": "https://indiacode.gov.in/handle/123456789/546424"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4005,7 +4338,8 @@
       "page": 114,
       "url": "https://indiacode.gov.in/handle/123456789/546425"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4017,7 +4351,8 @@
       "page": 114,
       "url": "https://indiacode.gov.in/handle/123456789/546426"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4029,7 +4364,8 @@
       "page": 114,
       "url": "https://indiacode.gov.in/handle/123456789/546427"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4041,7 +4377,8 @@
       "page": 115,
       "url": "https://indiacode.gov.in/handle/123456789/546428"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4053,7 +4390,8 @@
       "page": 116,
       "url": "https://indiacode.gov.in/handle/123456789/546429"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4065,7 +4403,8 @@
       "page": 116,
       "url": "https://indiacode.gov.in/handle/123456789/546430"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4077,7 +4416,8 @@
       "page": 116,
       "url": "https://indiacode.gov.in/handle/123456789/546431"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4089,7 +4429,8 @@
       "page": 116,
       "url": "https://indiacode.gov.in/handle/123456789/546432"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4101,7 +4442,8 @@
       "page": 117,
       "url": "https://indiacode.gov.in/handle/123456789/546433"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4113,7 +4455,8 @@
       "page": 117,
       "url": "https://indiacode.gov.in/handle/123456789/546434"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4125,7 +4468,8 @@
       "page": 118,
       "url": "https://indiacode.gov.in/handle/123456789/546435"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4137,7 +4481,8 @@
       "page": 118,
       "url": "https://indiacode.gov.in/handle/123456789/546436"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4149,7 +4494,8 @@
       "page": 119,
       "url": "https://indiacode.gov.in/handle/123456789/546437"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4161,7 +4507,8 @@
       "page": 119,
       "url": "https://indiacode.gov.in/handle/123456789/546438"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4173,7 +4520,8 @@
       "page": 119,
       "url": "https://indiacode.gov.in/handle/123456789/546439"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4185,7 +4533,8 @@
       "page": 119,
       "url": "https://indiacode.gov.in/handle/123456789/546440"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4197,7 +4546,8 @@
       "page": 120,
       "url": "https://indiacode.gov.in/handle/123456789/546441"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4209,7 +4559,8 @@
       "page": 120,
       "url": "https://indiacode.gov.in/handle/123456789/546442"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4221,7 +4572,8 @@
       "page": 120,
       "url": "https://indiacode.gov.in/handle/123456789/546443"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4233,7 +4585,8 @@
       "page": 120,
       "url": "https://indiacode.gov.in/handle/123456789/546444"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4245,7 +4598,8 @@
       "page": 121,
       "url": "https://indiacode.gov.in/handle/123456789/546445"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4257,7 +4611,8 @@
       "page": 121,
       "url": "https://indiacode.gov.in/handle/123456789/546446"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4269,7 +4624,8 @@
       "page": 121,
       "url": "https://indiacode.gov.in/handle/123456789/546447"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4281,7 +4637,8 @@
       "page": 122,
       "url": "https://indiacode.gov.in/handle/123456789/546448"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4293,7 +4650,8 @@
       "page": 122,
       "url": "https://indiacode.gov.in/handle/123456789/546449"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4305,7 +4663,8 @@
       "page": 123,
       "url": "https://indiacode.gov.in/handle/123456789/546450"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4317,7 +4676,8 @@
       "page": 127,
       "url": "https://indiacode.gov.in/handle/123456789/546451"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4329,7 +4689,8 @@
       "page": 127,
       "url": "https://indiacode.gov.in/handle/123456789/546452"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4341,7 +4702,8 @@
       "page": 128,
       "url": "https://indiacode.gov.in/handle/123456789/546661"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4353,7 +4715,8 @@
       "page": 128,
       "url": "https://indiacode.gov.in/handle/123456789/546453"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4365,7 +4728,8 @@
       "page": 128,
       "url": "https://indiacode.gov.in/handle/123456789/546454"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4377,7 +4741,8 @@
       "page": 128,
       "url": "https://indiacode.gov.in/handle/123456789/546455"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4389,7 +4754,8 @@
       "page": 129,
       "url": "https://indiacode.gov.in/handle/123456789/546456"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4401,7 +4767,8 @@
       "page": 129,
       "url": "https://indiacode.gov.in/handle/123456789/546457"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4413,7 +4780,8 @@
       "page": 130,
       "url": "https://indiacode.gov.in/handle/123456789/546458"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4425,7 +4793,8 @@
       "page": 131,
       "url": "https://indiacode.gov.in/handle/123456789/546459"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4437,7 +4806,8 @@
       "page": 131,
       "url": "https://indiacode.gov.in/handle/123456789/546460"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4449,7 +4819,8 @@
       "page": 131,
       "url": "https://indiacode.gov.in/handle/123456789/546461"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4461,7 +4832,8 @@
       "page": 131,
       "url": "https://indiacode.gov.in/handle/123456789/546462"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4473,7 +4845,8 @@
       "page": 132,
       "url": "https://indiacode.gov.in/handle/123456789/546463"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4485,7 +4858,8 @@
       "page": 132,
       "url": "https://indiacode.gov.in/handle/123456789/546464"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4497,7 +4871,8 @@
       "page": 132,
       "url": "https://indiacode.gov.in/handle/123456789/546465"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4509,7 +4884,8 @@
       "page": 132,
       "url": "https://indiacode.gov.in/handle/123456789/546466"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4521,7 +4897,8 @@
       "page": 132,
       "url": "https://indiacode.gov.in/handle/123456789/546467"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4533,7 +4910,8 @@
       "page": 133,
       "url": "https://indiacode.gov.in/handle/123456789/546468"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4545,7 +4923,8 @@
       "page": 133,
       "url": "https://indiacode.gov.in/handle/123456789/546469"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4557,7 +4936,8 @@
       "page": 134,
       "url": "https://indiacode.gov.in/handle/123456789/546470"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4569,7 +4949,8 @@
       "page": 134,
       "url": "https://indiacode.gov.in/handle/123456789/546471"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4581,7 +4962,8 @@
       "page": 382,
       "url": "https://indiacode.gov.in/handle/123456789/546472"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4593,7 +4975,8 @@
       "page": 134,
       "url": "https://indiacode.gov.in/handle/123456789/546473"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4605,7 +4988,8 @@
       "page": 134,
       "url": "https://indiacode.gov.in/handle/123456789/546474"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4617,7 +5001,8 @@
       "page": 135,
       "url": "https://indiacode.gov.in/handle/123456789/546475"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4629,7 +5014,8 @@
       "page": 135,
       "url": "https://indiacode.gov.in/handle/123456789/546476"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4641,7 +5027,8 @@
       "page": 135,
       "url": "https://indiacode.gov.in/handle/123456789/546477"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4653,7 +5040,8 @@
       "page": 135,
       "url": "https://indiacode.gov.in/handle/123456789/546478"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4665,7 +5053,8 @@
       "page": 135,
       "url": "https://indiacode.gov.in/handle/123456789/546479"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4677,7 +5066,8 @@
       "page": 136,
       "url": "https://indiacode.gov.in/handle/123456789/546480"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4689,7 +5079,8 @@
       "page": 136,
       "url": "https://indiacode.gov.in/handle/123456789/546481"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4701,7 +5092,8 @@
       "page": 136,
       "url": "https://indiacode.gov.in/handle/123456789/546482"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4713,7 +5105,8 @@
       "page": 137,
       "url": "https://indiacode.gov.in/handle/123456789/546483"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4725,7 +5118,8 @@
       "page": 137,
       "url": "https://indiacode.gov.in/handle/123456789/546484"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4737,7 +5131,8 @@
       "page": 138,
       "url": "https://indiacode.gov.in/handle/123456789/546485"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4749,7 +5144,8 @@
       "page": 138,
       "url": "https://indiacode.gov.in/handle/123456789/546486"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4761,7 +5157,8 @@
       "page": 139,
       "url": "https://indiacode.gov.in/handle/123456789/546487"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4773,7 +5170,8 @@
       "page": 139,
       "url": "https://indiacode.gov.in/handle/123456789/546488"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4785,7 +5183,8 @@
       "page": 139,
       "url": "https://indiacode.gov.in/handle/123456789/546489"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4797,7 +5196,8 @@
       "page": 139,
       "url": "https://indiacode.gov.in/handle/123456789/546490"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4809,7 +5209,8 @@
       "page": 139,
       "url": "https://indiacode.gov.in/handle/123456789/546491"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4821,7 +5222,8 @@
       "page": 141,
       "url": "https://indiacode.gov.in/handle/123456789/546492"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4833,7 +5235,8 @@
       "page": 141,
       "url": "https://indiacode.gov.in/handle/123456789/546493"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4845,7 +5248,8 @@
       "page": 141,
       "url": "https://indiacode.gov.in/handle/123456789/546494"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4857,7 +5261,8 @@
       "page": 141,
       "url": "https://indiacode.gov.in/handle/123456789/546495"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4869,7 +5274,8 @@
       "page": 142,
       "url": "https://indiacode.gov.in/handle/123456789/546496"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4881,7 +5287,8 @@
       "page": 142,
       "url": "https://indiacode.gov.in/handle/123456789/546497"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4893,7 +5300,8 @@
       "page": 142,
       "url": "https://indiacode.gov.in/handle/123456789/546498"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4905,7 +5313,8 @@
       "page": 142,
       "url": "https://indiacode.gov.in/handle/123456789/546499"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4917,7 +5326,8 @@
       "page": 142,
       "url": "https://indiacode.gov.in/handle/123456789/546500"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4929,7 +5339,8 @@
       "page": 142,
       "url": "https://indiacode.gov.in/handle/123456789/546501"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4941,7 +5352,8 @@
       "page": 142,
       "url": "https://indiacode.gov.in/handle/123456789/546502"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4953,7 +5365,8 @@
       "page": 142,
       "url": "https://indiacode.gov.in/handle/123456789/546503"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4965,7 +5378,8 @@
       "page": 143,
       "url": "https://indiacode.gov.in/handle/123456789/546662"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4977,7 +5391,8 @@
       "page": 143,
       "url": "https://indiacode.gov.in/handle/123456789/546505"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -4989,7 +5404,8 @@
       "page": 143,
       "url": "https://indiacode.gov.in/handle/123456789/546506"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5001,7 +5417,8 @@
       "page": 143,
       "url": "https://indiacode.gov.in/handle/123456789/546507"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5013,7 +5430,8 @@
       "page": 144,
       "url": "https://indiacode.gov.in/handle/123456789/546508"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5025,7 +5443,8 @@
       "page": 144,
       "url": "https://indiacode.gov.in/handle/123456789/546509"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5037,7 +5456,8 @@
       "page": 145,
       "url": "https://indiacode.gov.in/handle/123456789/546510"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5049,7 +5469,8 @@
       "page": 145,
       "url": "https://indiacode.gov.in/handle/123456789/546511"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5061,7 +5482,8 @@
       "page": 145,
       "url": "https://indiacode.gov.in/handle/123456789/546512"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5073,7 +5495,8 @@
       "page": 145,
       "url": "https://indiacode.gov.in/handle/123456789/546513"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5085,7 +5508,8 @@
       "page": 145,
       "url": "https://indiacode.gov.in/handle/123456789/546514"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5097,7 +5521,8 @@
       "page": 145,
       "url": "https://indiacode.gov.in/handle/123456789/546515"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5109,7 +5534,8 @@
       "page": 146,
       "url": "https://indiacode.gov.in/handle/123456789/546516"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5121,7 +5547,8 @@
       "page": 146,
       "url": "https://indiacode.gov.in/handle/123456789/546517"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5133,7 +5560,8 @@
       "page": 147,
       "url": "https://indiacode.gov.in/handle/123456789/546518"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5145,7 +5573,8 @@
       "page": 147,
       "url": "https://indiacode.gov.in/handle/123456789/546519"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5157,7 +5586,8 @@
       "page": 147,
       "url": "https://indiacode.gov.in/handle/123456789/546520"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5169,7 +5599,8 @@
       "page": 148,
       "url": "https://indiacode.gov.in/handle/123456789/546521"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5181,7 +5612,8 @@
       "page": 148,
       "url": "https://indiacode.gov.in/handle/123456789/546522"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5193,7 +5625,8 @@
       "page": 148,
       "url": "https://indiacode.gov.in/handle/123456789/546523"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5205,7 +5638,8 @@
       "page": 148,
       "url": "https://indiacode.gov.in/handle/123456789/546524"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5217,7 +5651,8 @@
       "page": 148,
       "url": "https://indiacode.gov.in/handle/123456789/546525"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5229,7 +5664,8 @@
       "page": 149,
       "url": "https://indiacode.gov.in/handle/123456789/546526"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5241,7 +5677,8 @@
       "page": 149,
       "url": "https://indiacode.gov.in/handle/123456789/546527"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5253,7 +5690,8 @@
       "page": 149,
       "url": "https://indiacode.gov.in/handle/123456789/546528"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5265,7 +5703,8 @@
       "page": 149,
       "url": "https://indiacode.gov.in/handle/123456789/546529"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5277,7 +5716,8 @@
       "page": 150,
       "url": "https://indiacode.gov.in/handle/123456789/546530"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5289,7 +5729,8 @@
       "page": 150,
       "url": "https://indiacode.gov.in/handle/123456789/546531"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5301,7 +5742,8 @@
       "page": 150,
       "url": "https://indiacode.gov.in/handle/123456789/546532"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5313,7 +5755,8 @@
       "page": 150,
       "url": "https://indiacode.gov.in/handle/123456789/546533"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5325,7 +5768,8 @@
       "page": 151,
       "url": "https://indiacode.gov.in/handle/123456789/546534"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5337,7 +5781,8 @@
       "page": 151,
       "url": "https://indiacode.gov.in/handle/123456789/546535"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5349,7 +5794,8 @@
       "page": 151,
       "url": "https://indiacode.gov.in/handle/123456789/546536"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5361,7 +5807,8 @@
       "page": 151,
       "url": "https://indiacode.gov.in/handle/123456789/546537"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5373,7 +5820,8 @@
       "page": 152,
       "url": "https://indiacode.gov.in/handle/123456789/546538"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5385,7 +5833,8 @@
       "page": 152,
       "url": "https://indiacode.gov.in/handle/123456789/546539"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5397,7 +5846,8 @@
       "page": 153,
       "url": "https://indiacode.gov.in/handle/123456789/546540"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5409,7 +5859,8 @@
       "page": 153,
       "url": "https://indiacode.gov.in/handle/123456789/546541"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5421,7 +5872,8 @@
       "page": 153,
       "url": "https://indiacode.gov.in/handle/123456789/546542"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5433,7 +5885,8 @@
       "page": 153,
       "url": "https://indiacode.gov.in/handle/123456789/546663"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5445,7 +5898,8 @@
       "page": 153,
       "url": "https://indiacode.gov.in/handle/123456789/546543"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5457,7 +5911,8 @@
       "page": 153,
       "url": "https://indiacode.gov.in/handle/123456789/546544"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5469,7 +5924,8 @@
       "page": 153,
       "url": "https://indiacode.gov.in/handle/123456789/546545"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5481,7 +5937,8 @@
       "page": 154,
       "url": "https://indiacode.gov.in/handle/123456789/546664"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5493,7 +5950,8 @@
       "page": 154,
       "url": "https://indiacode.gov.in/handle/123456789/546546"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5505,7 +5963,8 @@
       "page": 154,
       "url": "https://indiacode.gov.in/handle/123456789/546547"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5517,7 +5976,8 @@
       "page": 154,
       "url": "https://indiacode.gov.in/handle/123456789/546548"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5529,7 +5989,8 @@
       "page": 154,
       "url": "https://indiacode.gov.in/handle/123456789/546665"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5541,7 +6002,8 @@
       "page": 155,
       "url": "https://indiacode.gov.in/handle/123456789/546549"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5553,7 +6015,8 @@
       "page": 155,
       "url": "https://indiacode.gov.in/handle/123456789/546550"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5565,7 +6028,8 @@
       "page": 155,
       "url": "https://indiacode.gov.in/handle/123456789/546551"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5577,7 +6041,8 @@
       "page": 155,
       "url": "https://indiacode.gov.in/handle/123456789/546666"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5589,7 +6054,8 @@
       "page": 155,
       "url": "https://indiacode.gov.in/handle/123456789/546552"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5601,7 +6067,8 @@
       "page": 156,
       "url": "https://indiacode.gov.in/handle/123456789/546553"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5613,7 +6080,8 @@
       "page": 156,
       "url": "https://indiacode.gov.in/handle/123456789/546554"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5625,7 +6093,8 @@
       "page": 156,
       "url": "https://indiacode.gov.in/handle/123456789/546555"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5637,7 +6106,8 @@
       "page": 156,
       "url": "https://indiacode.gov.in/handle/123456789/546556"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5649,7 +6119,8 @@
       "page": 156,
       "url": "https://indiacode.gov.in/handle/123456789/546557"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5661,7 +6132,8 @@
       "page": 157,
       "url": "https://indiacode.gov.in/handle/123456789/546667"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5673,7 +6145,8 @@
       "page": 157,
       "url": "https://indiacode.gov.in/handle/123456789/546558"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5685,7 +6158,8 @@
       "page": 158,
       "url": "https://indiacode.gov.in/handle/123456789/546559"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5697,7 +6171,8 @@
       "page": 158,
       "url": "https://indiacode.gov.in/handle/123456789/546560"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5709,7 +6184,8 @@
       "page": 158,
       "url": "https://indiacode.gov.in/handle/123456789/546561"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5721,7 +6197,8 @@
       "page": 158,
       "url": "https://indiacode.gov.in/handle/123456789/546562"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5733,7 +6210,8 @@
       "page": 159,
       "url": "https://indiacode.gov.in/handle/123456789/546563"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5745,7 +6223,8 @@
       "page": 159,
       "url": "https://indiacode.gov.in/handle/123456789/546564"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5757,7 +6236,8 @@
       "page": 160,
       "url": "https://indiacode.gov.in/handle/123456789/546565"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5769,7 +6249,8 @@
       "page": 161,
       "url": "https://indiacode.gov.in/handle/123456789/546668"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5781,7 +6262,8 @@
       "page": 161,
       "url": "https://indiacode.gov.in/handle/123456789/546669"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5793,7 +6275,8 @@
       "page": 162,
       "url": "https://indiacode.gov.in/handle/123456789/546566"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5805,7 +6288,8 @@
       "page": 162,
       "url": "https://indiacode.gov.in/handle/123456789/546567"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5817,7 +6301,8 @@
       "page": 162,
       "url": "https://indiacode.gov.in/handle/123456789/546568"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5829,7 +6314,8 @@
       "page": 163,
       "url": "https://indiacode.gov.in/handle/123456789/546569"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5841,7 +6327,8 @@
       "page": 163,
       "url": "https://indiacode.gov.in/handle/123456789/546570"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5853,7 +6340,8 @@
       "page": 163,
       "url": "https://indiacode.gov.in/handle/123456789/546571"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5865,7 +6353,8 @@
       "page": 163,
       "url": "https://indiacode.gov.in/handle/123456789/546572"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5877,7 +6366,8 @@
       "page": 163,
       "url": "https://indiacode.gov.in/handle/123456789/546573"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5889,7 +6379,8 @@
       "page": 163,
       "url": "https://indiacode.gov.in/handle/123456789/546574"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5901,7 +6392,8 @@
       "page": 164,
       "url": "https://indiacode.gov.in/handle/123456789/546670"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5913,7 +6405,8 @@
       "page": 164,
       "url": "https://indiacode.gov.in/handle/123456789/546671"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5925,7 +6418,8 @@
       "page": 164,
       "url": "https://indiacode.gov.in/handle/123456789/546575"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5937,7 +6431,8 @@
       "page": 164,
       "url": "https://indiacode.gov.in/handle/123456789/546576"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5949,7 +6444,8 @@
       "page": 164,
       "url": "https://indiacode.gov.in/handle/123456789/546577"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5961,7 +6457,8 @@
       "page": 164,
       "url": "https://indiacode.gov.in/handle/123456789/546578"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5973,7 +6470,8 @@
       "page": 165,
       "url": "https://indiacode.gov.in/handle/123456789/546579"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5985,7 +6483,8 @@
       "page": 165,
       "url": "https://indiacode.gov.in/handle/123456789/546580"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -5997,7 +6496,8 @@
       "page": 166,
       "url": "https://indiacode.gov.in/handle/123456789/546581"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6009,7 +6509,8 @@
       "page": 166,
       "url": "https://indiacode.gov.in/handle/123456789/546582"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6021,7 +6522,8 @@
       "page": 166,
       "url": "https://indiacode.gov.in/handle/123456789/546583"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6033,7 +6535,8 @@
       "page": 166,
       "url": "https://indiacode.gov.in/handle/123456789/546584"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6045,7 +6548,8 @@
       "page": 166,
       "url": "https://indiacode.gov.in/handle/123456789/546585"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6057,7 +6561,8 @@
       "page": 167,
       "url": "https://indiacode.gov.in/handle/123456789/546586"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6069,7 +6574,8 @@
       "page": 167,
       "url": "https://indiacode.gov.in/handle/123456789/546587"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6081,7 +6587,8 @@
       "page": 167,
       "url": "https://indiacode.gov.in/handle/123456789/546588"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6093,7 +6600,8 @@
       "page": 168,
       "url": "https://indiacode.gov.in/handle/123456789/546589"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6105,7 +6613,8 @@
       "page": 168,
       "url": "https://indiacode.gov.in/handle/123456789/546590"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6117,7 +6626,8 @@
       "page": 168,
       "url": "https://indiacode.gov.in/handle/123456789/546591"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6129,7 +6639,8 @@
       "page": 168,
       "url": "https://indiacode.gov.in/handle/123456789/546592"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6141,7 +6652,8 @@
       "page": 169,
       "url": "https://indiacode.gov.in/handle/123456789/546593"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6153,7 +6665,8 @@
       "page": 169,
       "url": "https://indiacode.gov.in/handle/123456789/546594"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6165,7 +6678,8 @@
       "page": 169,
       "url": "https://indiacode.gov.in/handle/123456789/546595"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6177,7 +6691,8 @@
       "page": 169,
       "url": "https://indiacode.gov.in/handle/123456789/546596"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6189,7 +6704,8 @@
       "page": 169,
       "url": "https://indiacode.gov.in/handle/123456789/546597"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6201,7 +6717,8 @@
       "page": 170,
       "url": "https://indiacode.gov.in/handle/123456789/546599"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6213,7 +6730,8 @@
       "page": 170,
       "url": "https://indiacode.gov.in/handle/123456789/546600"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6225,7 +6743,8 @@
       "page": 170,
       "url": "https://indiacode.gov.in/handle/123456789/546601"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6237,7 +6756,8 @@
       "page": 170,
       "url": "https://indiacode.gov.in/handle/123456789/546602"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6249,7 +6769,8 @@
       "page": 170,
       "url": "https://indiacode.gov.in/handle/123456789/546603"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6261,7 +6782,8 @@
       "page": 171,
       "url": "https://indiacode.gov.in/handle/123456789/546604"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6273,7 +6795,8 @@
       "page": 171,
       "url": "https://indiacode.gov.in/handle/123456789/546605"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6285,7 +6808,8 @@
       "page": 171,
       "url": "https://indiacode.gov.in/handle/123456789/546606"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6297,7 +6821,8 @@
       "page": 171,
       "url": "https://indiacode.gov.in/handle/123456789/546607"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6309,7 +6834,8 @@
       "page": 171,
       "url": "https://indiacode.gov.in/handle/123456789/546608"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6321,7 +6847,8 @@
       "page": 171,
       "url": "https://indiacode.gov.in/handle/123456789/546609"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6333,7 +6860,8 @@
       "page": 171,
       "url": "https://indiacode.gov.in/handle/123456789/546610"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6345,7 +6873,8 @@
       "page": 172,
       "url": "https://indiacode.gov.in/handle/123456789/546611"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6357,7 +6886,8 @@
       "page": 172,
       "url": "https://indiacode.gov.in/handle/123456789/546612"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   },
   {
     "act": "bnss",
@@ -6369,6 +6899,7 @@
       "page": 172,
       "url": "https://indiacode.gov.in/handle/123456789/546613"
     },
-    "review_status": "extracted"
+    "review_status": "verified",
+    "verified_on": "2026-09-23"
   }
 ]
