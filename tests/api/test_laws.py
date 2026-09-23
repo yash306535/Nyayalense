@@ -163,16 +163,38 @@ def test_the_law_index_reads_in_both_directions(registry: Registry) -> None:
     forward = registry.laws.lookup(parse_query("IPC 420"), include_unreviewed=True)
     assert [hit.mapping.new[0].section for hit in forward] == ["318"]
 
+    # BNS 318 (cheating) consolidates several IPC cheating provisions, so the
+    # reverse lookup is a superset check: 420 must be among them, not the whole set.
     reverse = registry.laws.lookup(parse_query("BNS 318"), include_unreviewed=True)
-    assert {hit.mapping.old.section for hit in reverse} == {"415", "420"}
+    assert "420" in {hit.mapping.old.section for hit in reverse}
     assert all(hit.is_reverse for hit in reverse)
 
 
-def test_a_mistyped_section_gets_suggestions(registry: Registry) -> None:
+def test_a_mistyped_section_query_returns_plausible_suggestions(registry: Registry) -> None:
     from app.domain.laws.references import parse_query
 
+    # A one-digit-off typo of a real section (420), among other real
+    # neighbours. The closest numeric match must be offered, not just any
+    # candidate that happens to share characters with the query.
     suggestions = registry.laws.suggest(parse_query("IPC 421"))
+    assert suggestions
+    assert all(key.startswith("ipc:") for key in suggestions)
     assert "ipc:420" in suggestions
+
+
+def test_suggestions_are_ranked_by_numeric_closeness_not_string_overlap(
+    registry: Registry,
+) -> None:
+    """429 sits between real sections 426-431; a distant coincidental string
+    match like "29" must never outrank a numerically close real section.
+    """
+    from app.domain.laws.references import parse_query
+
+    suggestions = registry.laws.suggest(parse_query("IPC 429"))
+    assert suggestions
+    assert "ipc:29" not in suggestions
+    sections = [int(key.split(":")[1]) for key in suggestions]
+    assert all(abs(section - 429) <= 5 for section in sections)
 
 
 def test_a_data_file_that_breaks_its_schema_stops_the_process(tmp_path: Path) -> None:

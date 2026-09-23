@@ -104,21 +104,59 @@ class LawIndex:
     def suggest(self, reference: LawReference) -> list[str]:
         """Offer near matches for a section number that is not in the data.
 
+        A mistyped section is almost always one wrong digit in an otherwise
+        correct number, such as ``429`` for ``420``. Character-ratio scoring
+        cannot tell that apart from a typo in a completely different position
+        (``429`` versus ``129``): both share two of three characters and score
+        identically, even though only one is numerically close. So a purely
+        numeric, same-length query is ranked by numeric distance instead, and
+        ratio scoring is kept only as the fallback for lettered sections such
+        as ``498A``, where "distance" has no obvious meaning.
+
         Args:
             reference: The reference that found nothing.
 
         Returns:
             Up to :data:`MAX_SUGGESTIONS` keys that look like what was typed.
         """
-        candidates = [key for key in self._keys if key.startswith(f"{reference.act.value}:")]
+        candidates = {
+            key: key.split(":", 1)[1]
+            for key in self._keys
+            if key.startswith(f"{reference.act.value}:")
+        }
+        query = reference.section.upper()
+
+        numeric = self._suggest_by_numeric_distance(candidates, query)
+        if numeric:
+            return numeric
+        return self._suggest_by_ratio(candidates, query)
+
+    @staticmethod
+    def _suggest_by_numeric_distance(candidates: dict[str, str], query: str) -> list[str]:
+        """Rank same-length, all-digit candidates by how close the number is."""
+        if not query.isdigit():
+            return []
+        same_length_numeric = {
+            key: int(value)
+            for key, value in candidates.items()
+            if value.isdigit() and len(value) == len(query)
+        }
+        if not same_length_numeric:
+            return []
+        ranked = sorted(same_length_numeric.items(), key=lambda item: abs(item[1] - int(query)))
+        return [key for key, _ in ranked[:MAX_SUGGESTIONS]]
+
+    @staticmethod
+    def _suggest_by_ratio(candidates: dict[str, str], query: str) -> list[str]:
+        """Fall back to character-ratio scoring, for lettered sections."""
         matches = process.extract(
-            reference.key,
+            query,
             candidates,
             scorer=fuzz.ratio,
             limit=MAX_SUGGESTIONS,
             score_cutoff=SUGGESTION_THRESHOLD,
         )
-        return [match[0] for match in matches]
+        return [match[2] for match in matches]
 
     def changes(self, kind: ChangeType, *, include_unreviewed: bool) -> list[LawMapping]:
         """List the rows of one change type, for the browse lists.

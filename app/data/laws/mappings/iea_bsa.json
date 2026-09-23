@@ -5,27 +5,76 @@
   "old_act_name": "Indian Evidence Act, 1872",
   "new_act_name": "Bharatiya Sakshya Adhiniyam, 2023",
   "in_force_from": "2024-07-01",
-  "source_note": "Correspondence tables published by the Bureau of Police Research & Development (https://bprd.nic.in), 21 June 2024. They are a police training aid and reference document, not a statutory instrument.",
+  "source_note": "Correspondence tables published by the Bureau of Police Research & Development (https://bprd.nic.in), under 'Nyaya Sanhita' > 'Documents by BPR&D'. They are a police training aid and reference document, not a statutory instrument.",
   "mappings": [
     {
       "old": {
         "act": "iea",
-        "section": "3",
-        "title": "Interpretation clause"
+        "section": "1",
+        "title": "Short title, application and commencement."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "2",
-          "title": "Definitions"
+          "section": "1",
+          "title": "Short title, application and commencement."
         }
       ],
       "change_type": "modified",
-      "note": "The new Act expands the definition of a document to cover electronic records.",
+      "note": "Indian Evidence Act, 1872 (IEA) provided that it extended to the whole of India, whereas Bharatiya Sakshya Adhiniyam, 2023 (BSA) excludes this provision of territorial extent.",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 1,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "2",
+        "title": "\"Court\"."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "3",
+          "title": "\"Court\"."
+        },
+        {
+          "act": "bsa",
+          "section": "4",
+          "title": "\"Court\"."
+        }
+      ],
+      "change_type": "split",
+      "note": "\"Act\" is replaced with \"Adhiniyam\". Wherever the word “Act” is used in IEA the word “Adhiniyam” is used in BSA, therefore, this fact will not be specifically mentioned in this table hereinafter. Word \"means\" is added. / Words \"A fact is said to be disproved\" are replaced by \"in relation to a fact, means\". / The words \"or otherwise recorded\" and \"or any other means\", \"and includes electronic and digital records\" are added. / \"Words\" \"including statements given electronically\" ",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 1,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "4",
+        "title": "Relevancy of facts forming part of same transaction."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "6",
+          "title": "Relevancy of facts forming part of same transaction."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
       },
       "review_status": "extracted"
     },
@@ -33,21 +82,263 @@
       "old": {
         "act": "iea",
         "section": "5",
-        "title": "Evidence may be given of facts in issue and relevant facts"
+        "title": "Facts which are occasion, cause or effect of facts in issue or relevant facts."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "4",
-          "title": "Evidence may be given of facts in issue and relevant facts"
+          "section": "7",
+          "title": "Facts which are occasion, cause or effect of facts in issue or relevant facts."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Words \"or relevant facts\" added in heading.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "6",
+        "title": "Motive, preparation and previous or subsequent conduct."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "8",
+          "title": "Motive, preparation and previous or subsequent conduct."
+        }
+      ],
+      "change_type": "modified",
+      "note": "In explanation. And in illustrations \"vakils\" is replaced by \"advocates\" \"man\" is replaced by \"person\" and \"ravished\" is replaced by \" raped\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "7",
+        "title": "Facts necessary to explain or introduce fact in issue or relevant facts."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "9",
+          "title": "Facts necessary to explain or introduce fact in issue or relevant facts."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Words \"fact in issue or\" are added in the heading. \"A\" is replaced by \"he\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "8",
+        "title": "Things said or done by conspirator in reference to common design."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "10",
+          "title": "Things said or done by conspirator in reference to common design."
         }
       ],
       "change_type": "renumbered",
       "note": "",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "9",
+        "title": "When facts not otherwise relevant become relevant."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "11",
+          "title": "When facts not otherwise relevant become relevant."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "10",
+        "title": "Facts tending to enable Court to determine amount are relevant in suits for damages."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "12",
+          "title": "Facts tending to enable Court to determine amount are relevant in suits for damages."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "11",
+        "title": "Facts relevant when right or custom is in question."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "13",
+          "title": "Facts relevant when right or custom is in question."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "12",
+        "title": "Facts showing existence of state of mind, or of body or bodily feeling."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "14",
+          "title": "Facts showing existence of state of mind, or of body or bodily feeling."
+        }
+      ],
+      "change_type": "modified",
+      "note": "In illustrations, word \"coin\" is replaced by \"currency\" and \"carriage\" is replaced by \"cars\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "13",
+        "title": "Facts bearing on question whether act was accidental or intentional."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "15",
+          "title": "Facts bearing on question whether act was accidental or intentional."
+        }
+      ],
+      "change_type": "modified",
+      "note": "In illustrations, word \"rupee\" is replaced by \"currency\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "14",
+        "title": "Existence of course of business when relevant."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "16",
+          "title": "Existence of course of business when relevant."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "15",
+        "title": "Admission defined."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "17",
+          "title": "Admission defined."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "16",
+        "title": "Admission by party to proceeding or his agent."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "18",
+          "title": "Admission by party to proceeding or his agent."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Headings of paragraphs are excluded and written as subsections and clauses.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
       },
       "review_status": "extracted"
     },
@@ -55,21 +346,136 @@
       "old": {
         "act": "iea",
         "section": "17",
-        "title": "Admission defined"
+        "title": "Admissions by persons whose position must be proved as against party to suit."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "15",
-          "title": "Admission defined"
+          "section": "19",
+          "title": "Admissions by persons whose position must be proved as against party to suit."
         }
       ],
       "change_type": "renumbered",
       "note": "",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "18",
+        "title": "Admissions by persons expressly referred to by party to suit."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "20",
+          "title": "Admissions by persons expressly referred to by party to suit."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "19",
+        "title": "Proof of admissions against persons making them, and by or on their behalf."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "21",
+          "title": "Proof of admissions against persons making them, and by or on their behalf."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Word \"coin\" is replaced by \"currency\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "20",
+        "title": "When oral admissions as to contents of documents are relevant."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "22",
+          "title": "When oral admissions as to contents of documents are relevant."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 2,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "22",
+        "title": "Confession caused by inducement, threat, coercion or promise, when irrelevant in criminal proceeding."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "24",
+          "title": "Confession caused by inducement, threat, coercion or promise, when irrelevant in criminal proceeding."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The word \"coercion\" is added. Section 28 IEA and Section 29 IEA are given as provisos to Section 22 of the BSA. Heading is dropped as sections are included as provisos.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 3,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "23",
+        "title": "Confession to police officer."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "25",
+          "title": "Confession to police officer."
+        },
+        {
+          "act": "bsa",
+          "section": "26",
+          "title": "Confession to police officer."
+        }
+      ],
+      "change_type": "split",
+      "note": "Words \"not to be proved\" are excluded from heading. / Heading is dropped as the section is included as a subsection. Word \"whilst\" is replaced by \"while\" and words \"such person\" are replaced by \"him\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 3,
+        "url": ""
       },
       "review_status": "extracted"
     },
@@ -77,21 +483,21 @@
       "old": {
         "act": "iea",
         "section": "24",
-        "title": "Confession caused by inducement, threat or promise"
+        "title": "Consideration of proved confession affecting person making it and others jointly under trial for same offence."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "22",
-          "title": "Confession caused by inducement, threat or promise"
+          "section": "30",
+          "title": "Consideration of proved confession affecting person making it and others jointly under trial for same offence."
         }
       ],
-      "change_type": "renumbered",
-      "note": "",
+      "change_type": "modified",
+      "note": "A new explanation II is added, mentioning that \"A trial of more persons than one held in the absence of the accused who has absconded or who fails to comply with a proclamation issued under Section 84 of the Bharatiya Nagarik Suraksha Sanhita, 2023, shall be deemed to be a joint trial for the purpose of this section.\"",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 3,
+        "url": ""
       },
       "review_status": "extracted"
     },
@@ -99,21 +505,43 @@
       "old": {
         "act": "iea",
         "section": "25",
-        "title": "Confession to police officer not to be proved"
+        "title": "Admissions not conclusive proof, but may estop."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "23",
-          "title": "Confession to police officer not to be proved"
+          "section": "31",
+          "title": "Admissions not conclusive proof, but may estop."
         }
       ],
       "change_type": "renumbered",
       "note": "",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 3,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "26",
+        "title": "Cases in which statement of relevant fact by person who is dead or cannot be found, etc., is relevant."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "32",
+          "title": "Cases in which statement of relevant fact by person who is dead or cannot be found, etc., is relevant."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Word \"namely\" is added and headings of subsections are dropped. In illustration word \"ravished\" is replaced by \"raped\" and word \"banya\" is replaced by \"business\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 3,
+        "url": ""
       },
       "review_status": "extracted"
     },
@@ -121,21 +549,87 @@
       "old": {
         "act": "iea",
         "section": "27",
-        "title": "How much of information received from an accused may be proved"
+        "title": "Relevancy of certain evidence for proving, in subsequent proceeding, truth of facts therein stated."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "23",
-          "title": "Confession to police officer not to be proved"
+          "section": "33",
+          "title": "Relevancy of certain evidence for proving, in subsequent proceeding, truth of facts therein stated."
         }
       ],
-      "change_type": "merged",
+      "change_type": "renumbered",
       "note": "",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 3,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "28",
+        "title": "Entries in books of account when relevant."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "34",
+          "title": "Entries in books of account when relevant."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 3,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "30",
+        "title": "Relevancy of statements in maps, charts and plans."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "36",
+          "title": "Relevancy of statements in maps, charts and plans."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 4,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "31",
+        "title": "Relevancy of statement as to fact of public nature contained in certain Acts or notifications."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "37",
+          "title": "Relevancy of statement as to fact of public nature contained in certain Acts or notifications."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Words \"any Act of Parliament 4 (of the United Kingdom) or or in any 5 Central Act, Provincial Act or 6 a State Act or in a Government notification or notification by the Crown Representative appearing in the Official Gazette or in any printed paper purporting to be the London Gazette or the Government Gazette of any Dominion, colony, or possession of his Majesty is a relevant fact.\" are replaced by \"any Central Act or State Act or in a Central Government or State Government n",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 4,
+        "url": ""
       },
       "review_status": "extracted"
     },
@@ -143,21 +637,290 @@
       "old": {
         "act": "iea",
         "section": "32",
-        "title": "Cases in which a statement of a relevant fact by a person who is dead is relevant"
+        "title": "Relevancy of statements as to any law contained in law books including electronic or digital form."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "26",
-          "title": "Cases in which a statement of a relevant fact by a person who is dead is relevant"
+          "section": "38",
+          "title": "Relevancy of statements as to any law contained in law books including electronic or digital form."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Words \"including in electronic or digital form\" are added in heading as well as in the main text of the section.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 4,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "33",
+        "title": "What evidence to be given when statement forms part of a conversation, document, electronic record, book or series of letters or papers."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "39",
+          "title": "What evidence to be given when statement forms part of a conversation, document, electronic record, book or series of letters or papers."
         }
       ],
       "change_type": "renumbered",
       "note": "",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 4,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "34",
+        "title": "Previous judgments relevant to bar a second suit or trial."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "40",
+          "title": "Previous judgments relevant to bar a second suit or trial."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 4,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "35",
+        "title": "Relevancy of certain judgments in probate, etc., jurisdiction."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "41",
+          "title": "Relevancy of certain judgments in probate, etc., jurisdiction."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The word \"Tribunal\" is added. Paragraph \"Such judgment, order or decree is conclusive proof that\" is given as subsection (2) and conditions under this are enumerated as (i), (ii), (iii), and (iv). The word \"that\" is excluded.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 4,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "36",
+        "title": "Relevancy and effect of judgments, orders or decrees, other than those mentioned in section35[41 IEA]."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "42",
+          "title": "Relevancy and effect of judgments, orders or decrees, other than those mentioned in section35[41 IEA]."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 4,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "37",
+        "title": "Judgments, etc., other than those mentioned in sections 34, 35 and 36 [40to 42 IEA] when relevant."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "43",
+          "title": "Judgments, etc., other than those mentioned in sections 34, 35 and 36 [40to 42 IEA] when relevant."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 4,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "38",
+        "title": "Fraud or collusion in obtaining judgment, or incompetency of Court, may be proved."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "44",
+          "title": "Fraud or collusion in obtaining judgment, or incompetency of Court, may be proved."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 4,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "39",
+        "title": "Opinions of experts."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "45",
+          "title": "Opinions of experts."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Words \"or any other field\" are added. Thus, scope is expanded greatly.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 4,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "40",
+        "title": "Facts bearing upon opinions of experts."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "46",
+          "title": "Facts bearing upon opinions of experts."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "41",
+        "title": "Opinion as to handwriting and signature, when relevant."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "47",
+          "title": "Opinion as to handwriting and signature, when relevant."
+        },
+        {
+          "act": "bsa",
+          "section": "47A",
+          "title": "Opinion as to handwriting and signature, when relevant."
+        }
+      ],
+      "change_type": "split",
+      "note": "Words \"and signature\" are added in heading. / Heading is dropped as section is added as a subsection.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "42",
+        "title": "Opinion as to existence of general custom or right, when relevant."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "48",
+          "title": "Opinion as to existence of general custom or right, when relevant."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "43",
+        "title": "Opinion as to usages, tenets, etc., when relevant."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "49",
+          "title": "Opinion as to usages, tenets, etc., when relevant."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Paragraphs are numbered as clauses (i), (ii) and (iii).",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "44",
+        "title": "Opinion on relationship, when relevant."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "50",
+          "title": "Opinion on relationship, when relevant."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
       },
       "review_status": "extracted"
     },
@@ -165,21 +928,307 @@
       "old": {
         "act": "iea",
         "section": "45",
-        "title": "Opinions of experts"
+        "title": "Grounds of opinion, when relevant."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "39",
-          "title": "Opinions of experts"
+          "section": "51",
+          "title": "Grounds of opinion, when relevant."
         }
       ],
       "change_type": "renumbered",
       "note": "",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "46",
+        "title": "In civil cases character to prove conduct imputed, irrelevant."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "52",
+          "title": "In civil cases character to prove conduct imputed, irrelevant."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "47",
+        "title": "In criminal cases previous good character relevant."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "53",
+          "title": "In criminal cases previous good character relevant."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "48",
+        "title": "Evidence of character or previous sexual experience not relevant in certain cases."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "53A",
+          "title": "Evidence of character or previous sexual experience not relevant in certain cases."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "49",
+        "title": "Previous bad character not relevant, except in reply."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "54",
+          "title": "Previous bad character not relevant, except in reply."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "50",
+        "title": "Character as affecting damages."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "55",
+          "title": "Character as affecting damages."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "51",
+        "title": "Fact judicially noticeable need not be proved."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "56",
+          "title": "Fact judicially noticeable need not be proved."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "52",
+        "title": "Facts of which Court shall take judicial notice."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "57",
+          "title": "Facts of which Court shall take judicial notice."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Paragraphs are numbered as subsections (1) and (2), and facts enumeration as (1) to (13) is replaced by alphabetic clauses (a) to (l), excluding (2), (3), and (5). These exclusions remove colonial vestiges from the text. A new clause (b) is newly added, mentioning \"international treaty, agreement or convention with country or countries by India, or decisions made by India at the international associations or other bodies;\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "53",
+        "title": "Facts admitted need not be proved."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "58",
+          "title": "Facts admitted need not be proved."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "54",
+        "title": "Proof of facts by oral evidence."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "59",
+          "title": "Proof of facts by oral evidence."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Words \"or electronic records\" are excluded.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "55",
+        "title": "Oral evidence to be direct."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "60",
+          "title": "Oral evidence to be direct."
+        }
+      ],
+      "change_type": "modified",
+      "note": "In heading word \"must\" is replaced by \"to\" and paragraph are numbered as clauses (i), (ii), (iii)and (iv). Word \"also\" is replaced by \"further\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "56",
+        "title": "Proof of contents of documents."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "61",
+          "title": "Proof of contents of documents."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "57",
+        "title": "Primary evidence."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "62",
+          "title": "Primary evidence."
+        }
+      ],
+      "change_type": "modified",
+      "note": "4 new explanations are added.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "58",
+        "title": "Secondary evidence."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "63",
+          "title": "Secondary evidence."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Words \"means and\" are excluded and three new clauses (vi), (vii), and (viii) are added.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 5,
+        "url": ""
       },
       "review_status": "extracted"
     },
@@ -187,43 +1236,21 @@
       "old": {
         "act": "iea",
         "section": "60",
-        "title": "Oral evidence must be direct"
+        "title": "Cases in which secondary evidence relating to documents may be given."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "55",
-          "title": "Oral evidence must be direct"
+          "section": "65",
+          "title": "Cases in which secondary evidence relating to documents may be given."
         }
       ],
-      "change_type": "renumbered",
-      "note": "",
+      "change_type": "modified",
+      "note": "The word \"namely\" is added and paragraph of clause (a) are numbered as (i), (ii), and (iii).",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
-      },
-      "review_status": "extracted"
-    },
-    {
-      "old": {
-        "act": "iea",
-        "section": "61",
-        "title": "Proof of contents of documents"
-      },
-      "new": [
-        {
-          "act": "bsa",
-          "section": "56",
-          "title": "Proof of contents of documents"
-        }
-      ],
-      "change_type": "renumbered",
-      "note": "",
-      "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 6,
+        "url": ""
       },
       "review_status": "extracted"
     },
@@ -231,21 +1258,21 @@
       "old": {
         "act": "iea",
         "section": "62",
-        "title": "Primary evidence"
+        "title": "Special provisions as to evidence relating to electronic record."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "57",
-          "title": "Primary evidence"
+          "section": "65A",
+          "title": "Special provisions as to evidence relating to electronic record."
         }
       ],
-      "change_type": "modified",
+      "change_type": "renumbered",
       "note": "",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 6,
+        "url": ""
       },
       "review_status": "extracted"
     },
@@ -253,65 +1280,796 @@
       "old": {
         "act": "iea",
         "section": "63",
-        "title": "Secondary evidence"
+        "title": "Admissibility of electronic records."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "58",
-          "title": "Secondary evidence"
+          "section": "65B",
+          "title": "Admissibility of electronic records."
         }
       ],
       "change_type": "modified",
-      "note": "",
+      "note": "Words \"or semiconductor memory\" \"or any communication device or otherwise stored, recorded, or copied in any electronic form\" is added in subsection (1). Words \"communication device\", \"create\" are added in subsection (2). In subsection (3), the word \"computer\" is replaced by \"by means of one or more computers or communication devices,\" and new clauses (a) to (e) are added newly. In subsection (4), the words \"that is to say\" are replaced by \"shall be submitted along with the e",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 6,
+        "url": ""
       },
       "review_status": "extracted"
     },
     {
       "old": {
         "act": "iea",
-        "section": "65A",
-        "title": "Special provisions as to evidence relating to electronic record"
+        "section": "64",
+        "title": "Rules as to notice to produce."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "63",
-          "title": "Admissibility of electronic records"
+          "section": "66",
+          "title": "Rules as to notice to produce."
         }
       ],
-      "change_type": "merged",
-      "note": "",
+      "change_type": "modified",
+      "note": "\"attorney or pleader\" is replaced by \"advocate or representative\".",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 6,
+        "url": ""
       },
       "review_status": "extracted"
     },
     {
       "old": {
         "act": "iea",
-        "section": "65B",
-        "title": "Admissibility of electronic records"
+        "section": "65",
+        "title": "Proof of signature and handwriting of person alleged to have signed or written document produced."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "63",
-          "title": "Admissibility of electronic records"
+          "section": "67",
+          "title": "Proof of signature and handwriting of person alleged to have signed or written document produced."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 6,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "66",
+        "title": "Proof as to electronic signature."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "67A",
+          "title": "Proof as to electronic signature."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 6,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "68",
+        "title": "Proof where no attesting witness found."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "69",
+          "title": "Proof where no attesting witness found."
         }
       ],
       "change_type": "modified",
-      "note": "The certificate requirement is carried forward in the new Act with a revised schedule and form.",
+      "note": "Words \"or if the document purports to have been executed in the United Kingdom\" are excluded.",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 7,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "69",
+        "title": "Admission of execution by party to attested document."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "70",
+          "title": "Admission of execution by party to attested document."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 7,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "70",
+        "title": "Proof when attesting witness denies execution."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "71",
+          "title": "Proof when attesting witness denies execution."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 7,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "71",
+        "title": "Proof of document not required by law to be attested."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "72",
+          "title": "Proof of document not required by law to be attested."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 7,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "72",
+        "title": "Comparison of signature, writing or seal with others admitted or proved."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "73",
+          "title": "Comparison of signature, writing or seal with others admitted or proved."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Paragraph are numbered as Subsections (1), (2) and (3).",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 7,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "73",
+        "title": "Proof as to verification of digital signature."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "73A",
+          "title": "Proof as to verification of digital signature."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 7,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "74",
+        "title": "Public and private documents."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "74",
+          "title": "Public and private documents."
+        },
+        {
+          "act": "bsa",
+          "section": "75",
+          "title": "Public and private documents."
+        }
+      ],
+      "change_type": "split",
+      "note": "The words \" and private\" are added in the heading. The words \"any part of\" and \"or of the commonwealth\" are excluded. / The words \"or Union territory\" and \"except the documents referred to in sub-section (1)\" are added.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 7,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "75",
+        "title": "Certified copies of public documents."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "76",
+          "title": "Certified copies of public documents."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 7,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "76",
+        "title": "Proof of documents by production of certified copies."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "77",
+          "title": "Proof of documents by production of certified copies."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 7,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "77",
+        "title": "Proof of other official documents."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "78",
+          "title": "Proof of other official documents."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The conditions' enumeration as (1) to (6) is changed to (a) to (f). The expressions \"or of the Crown Representative\", \"or, as the case may be, of the Crown Representative;\", \"Her Majesty] or by the Privy Council, or by any department of Her Majesty’s Government\" and \"London Gazette, or purporting to be printed by the Queen’s Printer;\" are excluded. The words \"Ministries and\" \"or Union territory Administration\", \"Parliament or a State\" and \"President of India or the Governor o",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 7,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "78",
+        "title": "Presumption as to genuineness of certified copies."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "79",
+          "title": "Presumption as to genuineness of certified copies."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The words \"or by any officer [in the State of Jammu and Kashmir] who is duly authorised thereto by the Central Government:\" are excluded and paragraph are numbered as subsections.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 7,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "79",
+        "title": "Presumption as to documents produced as record of evidence, etc."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "80",
+          "title": "Presumption as to documents produced as record of evidence, etc."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The word \"that\" is excluded and paragraph are numbered as clauses (i), (ii) and (iii).",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 7,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "81",
+        "title": "Presumption as to Gazettes in electronic or digital record."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "81A",
+          "title": "Presumption as to Gazettes in electronic or digital record."
+        }
+      ],
+      "change_type": "modified",
+      "note": "A new explanation is added regarding proper custody of electronic document. Its phraseology is similar to the new explanation added in the preceding section.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "82",
+        "title": "Presumption as to maps or plans made by authority of Government."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "83",
+          "title": "Presumption as to maps or plans made by authority of Government."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "83",
+        "title": "Presumption as to collections of laws and reports of decisions."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "84",
+          "title": "Presumption as to collections of laws and reports of decisions."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "84",
+        "title": "Presumption as to powers-of- attorney."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "85",
+          "title": "Presumption as to powers-of- attorney."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "85",
+        "title": "Presumption as to electronic agreements."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "85A",
+          "title": "Presumption as to electronic agreements."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The words \"or digitals\" are added.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "86",
+        "title": "Presumption as to electronic records and electronic signatures."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "85B",
+          "title": "Presumption as to electronic records and electronic signatures."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "87",
+        "title": "Presumption as to Electronic Signature Certificates."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "85C",
+          "title": "Presumption as to Electronic Signature Certificates."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "88",
+        "title": "Presumption as to certified copies of foreign judicial records."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "86",
+          "title": "Presumption as to certified copies of foreign judicial records."
+        }
+      ],
+      "change_type": "modified",
+      "note": "\"any country not forming part of India or of Her Majesty’s Dominions\" is replaced by \"beyond India\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "89",
+        "title": "Presumption as to books, maps and charts."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "87",
+          "title": "Presumption as to books, maps and charts."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "90",
+        "title": "Presumption as to electronic messages."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "88A",
+          "title": "Presumption as to electronic messages."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Explanation excluded.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "91",
+        "title": "Presumption as to due execution, etc., of documents not produced."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "89",
+          "title": "Presumption as to due execution, etc., of documents not produced."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "92",
+        "title": "Presumption as to documents thirty years old."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "90",
+          "title": "Presumption as to documents thirty years old."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "93",
+        "title": "Presumption as to electronic records five years old."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "90A",
+          "title": "Presumption as to electronic records five years old."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "94",
+        "title": "Evidence of terms of contracts, grants and other dispositions of property reduced to form of document."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "91",
+          "title": "Evidence of terms of contracts, grants and other dispositions of property reduced to form of document."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "95",
+        "title": "Exclusion of evidence of oral agreement."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "92",
+          "title": "Exclusion of evidence of oral agreement."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The words \"to the last section\" are replaced by section number \"94\" Instead of writing \"Proviso 1\" \"Proviso 2\" etc. \"Provided that\", Provided further that\" etc. are used while writing proviso in this",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 8,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "96",
+        "title": "Exclusion of evidence to explain or amend ambiguous document."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "93",
+          "title": "Exclusion of evidence to explain or amend ambiguous document."
+        }
+      ],
+      "change_type": "modified",
+      "note": "In illustrations, \"Rs. 1000\" and \"Rs. 1500\" are replaced by \"one lakh rupees\" \"one lakh fifty thousand rupees\" respectively.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "97",
+        "title": "Exclusion of evidence against application of document to existing facts."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "94",
+          "title": "Exclusion of evidence against application of document to existing facts."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "98",
+        "title": "Evidence as to document unmeaning in reference to existing facts."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "95",
+          "title": "Evidence as to document unmeaning in reference to existing facts."
+        }
+      ],
+      "change_type": "modified",
+      "note": "In illustrations, \" Calcutta\" is replaced by \"Kolkata\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "99",
+        "title": "Evidence as to application of language which can apply to one only of several persons."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "96",
+          "title": "Evidence as to application of language which can apply to one only of several persons."
+        }
+      ],
+      "change_type": "modified",
+      "note": "In illustrations, \"Haidarabad\", \"Haidarabad in Dekkan\" and \"Haidarabad in sindh\" are replaced by \"Ramgarh\" , \"Ramgarh in Rajasthan\" and \"Ramgarh in Uttarakhand\" respectively.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "100",
+        "title": "Evidence as to application of language to one of two sets of facts, to neither of which the whole correctly applies."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "97",
+          "title": "Evidence as to application of language to one of two sets of facts, to neither of which the whole correctly applies."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
       },
       "review_status": "extracted"
     },
@@ -319,21 +2077,263 @@
       "old": {
         "act": "iea",
         "section": "101",
-        "title": "Burden of proof"
+        "title": "Evidence as to meaning of illegible characters, etc."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "104",
-          "title": "Burden of proof"
+          "section": "98",
+          "title": "Evidence as to meaning of illegible characters, etc."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The word \"provincial\" is replaced by \"regional\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "102",
+        "title": "Who may give evidence of agreement varying terms of document."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "99",
+          "title": "Who may give evidence of agreement varying terms of document."
         }
       ],
       "change_type": "renumbered",
       "note": "",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "103",
+        "title": "Saving of provisions of Indian Succession Act relating to wills."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "100",
+          "title": "Saving of provisions of Indian Succession Act relating to wills."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The words \"the Indian Succession Act, (10 of 1865)\" are replaced by \"the Indian Succession Act, 1925 (39 of 1925)\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "104",
+        "title": "Burden of proof."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "101",
+          "title": "Burden of proof."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "105",
+        "title": "On whom burden of proof lies."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "102",
+          "title": "On whom burden of proof lies."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "106",
+        "title": "Burden of proof as to particular fact."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "103",
+          "title": "Burden of proof as to particular fact."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "107",
+        "title": "Burden of proving fact to be proved to make evidence admissible."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "104",
+          "title": "Burden of proving fact to be proved to make evidence admissible."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "108",
+        "title": "Burden of proving that case of accused comes within exceptions."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "105",
+          "title": "Burden of proving that case of accused comes within exceptions."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The words \"the Indian Penal Code (45 of 1860)\" are replaced by \"the Bharatiya Nyaya Sanhita, 2023\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "109",
+        "title": "Burden of proving fact especially within knowledge."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "106",
+          "title": "Burden of proving fact especially within knowledge."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "110",
+        "title": "Burden of proving death of person known to have been alive within thirty years."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "107",
+          "title": "Burden of proving death of person known to have been alive within thirty years."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 9,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "112",
+        "title": "Burden of proof as to relationship in the cases of partners, landlord and tenant, principal and agent."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "109",
+          "title": "Burden of proof as to relationship in the cases of partners, landlord and tenant, principal and agent."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "113",
+        "title": "Burden of proof as to ownership."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "110",
+          "title": "Burden of proof as to ownership."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
       },
       "review_status": "extracted"
     },
@@ -341,21 +2341,1197 @@
       "old": {
         "act": "iea",
         "section": "114",
-        "title": "Court may presume existence of certain facts"
+        "title": "Proof of good faith in transactions where one party is in relation of active confidence."
       },
       "new": [
         {
           "act": "bsa",
-          "section": "119",
-          "title": "Court may presume existence of certain facts"
+          "section": "111",
+          "title": "Proof of good faith in transactions where one party is in relation of active confidence."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The word \"attorney\" is replaced by \"advocate\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "115",
+        "title": "Presumption as to certain offences."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "111A",
+          "title": "Presumption as to certain offences."
+        }
+      ],
+      "change_type": "modified",
+      "note": "IPC sections are replaced by corresponding BNS sections.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "116",
+        "title": "Birth during marriage, conclusive proof of legitimacy."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "112",
+          "title": "Birth during marriage, conclusive proof of legitimacy."
+        }
+      ],
+      "change_type": "modified",
+      "note": "\"son\" is replaced by \"child\" thus made gender neutral.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "117",
+        "title": "Presumption as to abetment of suicide by a married woman."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "113A",
+          "title": "Presumption as to abetment of suicide by a married woman."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The words \"section 498A of the Indian Penal Code (45 of 1860)\" are replaced by \"section 86 of the Bharatiya Nyaya Sanhita, 2023\" in the explanation.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "118",
+        "title": "Presumption as to dowry death."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "113B",
+          "title": "Presumption as to dowry death."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The words \"section 304B of the Indian Penal Code (45 of 1860)\" are replaced by \"section 80 of the Bharatiya Nyaya Sanhita, 2023\" in explanation.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "119",
+        "title": "Court may presume existence of certain facts."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "114",
+          "title": "Court may presume existence of certain facts."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Paragraph are numbered as subsections (1) and (2), and illustrations to subsection (2) are numbered from (i) to (x).",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "120",
+        "title": "Presumption as to absence of consent in certain prosecution for rape."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "114A",
+          "title": "Presumption as to absence of consent in certain prosecution for rape."
+        }
+      ],
+      "change_type": "modified",
+      "note": "IPC sections are replaced by corresponding BNS sections.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "121",
+        "title": "Estoppel."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "115",
+          "title": "Estoppel."
         }
       ],
       "change_type": "renumbered",
       "note": "",
       "source": {
-        "document": "Seed row drafted for NyayaLens. NOT extracted from the official source. Replace with the output of scripts/build_law_data.py run against the BPR&D correspondence tables, then mark reviewed. See docs/DATA.md.",
-        "page": 0,
-        "url": "https://bprd.nic.in"
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "122",
+        "title": "Estoppel of tenant and of licensee of person in possession."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "116",
+          "title": "Estoppel of tenant and of licensee of person in possession."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The words \"or any time thereafter\" are added.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "123",
+        "title": "Estoppel of acceptor of bill of exchange, bailee or licensee."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "117",
+          "title": "Estoppel of acceptor of bill of exchange, bailee or licensee."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "124",
+        "title": "Who may testify."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "118",
+          "title": "Who may testify."
+        }
+      ],
+      "change_type": "modified",
+      "note": "The word \"Lunatic\" is replaced by \"A person of unsound mind\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "125",
+        "title": "Witness unable to communicate verbally."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "119",
+          "title": "Witness unable to communicate verbally."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "126",
+        "title": "Competency of husband and wife as witnesses in certain cases."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "120",
+          "title": "Competency of husband and wife as witnesses in certain cases."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Heading \"Parties to civil suit, and their wives or husbands. Husband or wife of a person under criminal trial\" is replaced by \"Competency of husband and wife as witnesses in certain cases\". Paragraphs are numbered as subsections (1) and (2),",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "127",
+        "title": "Judges and Magistrates."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "121",
+          "title": "Judges and Magistrates."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "128",
+        "title": "Communications during marriage."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "122",
+          "title": "Communications during marriage."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "129",
+        "title": "Evidence as to affairs of State."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "123",
+          "title": "Evidence as to affairs of State."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "130",
+        "title": "Official communications."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "124",
+          "title": "Official communications."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "131",
+        "title": "Information as to commission of offences."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "125",
+          "title": "Information as to commission of offences."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 10,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "132",
+        "title": "Professional communications to apply interpreters, etc\"."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "127",
+          "title": "Professional communications to apply interpreters, etc\"."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Section127 of IEA is added as subsection (3) in which the words \"or servants of barristers, pleaders, attorneys and vakils\" are replaced by \"or employees of advocates\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "133",
+        "title": "Privilege not waived by volunteering evidence."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "128",
+          "title": "Privilege not waived by volunteering evidence."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Words \"barrister, attorney, pleader or vakil\" are replaced by \"advocate\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "134",
+        "title": "Confidential communication with legal advisers."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "129",
+          "title": "Confidential communication with legal advisers."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Words \"legal professional adviser\" are replaced by \"legal adviser\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "135",
+        "title": "Production of title-deeds of witness not a party."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "130",
+          "title": "Production of title-deeds of witness not a party."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "136",
+        "title": "Production of documents or electronic records which another person, having possession, could refuse to produce."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "131",
+          "title": "Production of documents or electronic records which another person, having possession, could refuse to produce."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "137",
+        "title": "Witness not excused from answering on ground that answer will criminate."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "132",
+          "title": "Witness not excused from answering on ground that answer will criminate."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Word \"Proviso\" is excluded.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "138",
+        "title": "Accomplice."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "133",
+          "title": "Accomplice."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Words \"merely because\" are replaced by \"if\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "139",
+        "title": "Number of witnesses."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "134",
+          "title": "Number of witnesses."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "140",
+        "title": "Order of production and examination of witnesses."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "135",
+          "title": "Order of production and examination of witnesses."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "141",
+        "title": "Judge to decide as to admissibility of evidence."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "136",
+          "title": "Judge to decide as to admissibility of evidence."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Paragraph are numbered as subsections (1), (2) and (3).",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "142",
+        "title": "Examination of witnesses."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "137",
+          "title": "Examination of witnesses."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Paragraphs are numbered as subsections (1), (2) and (3), and headings of paragraph are excluded.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "143",
+        "title": "Order of examinations."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "138",
+          "title": "Order of examinations."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Paragraph are numbered as subsections (1), (2) and (3), and word \"in-chief\" included. The words in paragraph heading \"Direction of re- examination\" are excluded.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "144",
+        "title": "Cross- examination of person called to produce a document."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "139",
+          "title": "Cross- examination of person called to produce a document."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "145",
+        "title": "Witnesses to character."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "140",
+          "title": "Witnesses to character."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "146",
+        "title": "Leading questions."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "141",
+          "title": "Leading questions."
+        },
+        {
+          "act": "bsa",
+          "section": "142",
+          "title": "Leading questions."
+        },
+        {
+          "act": "bsa",
+          "section": "143",
+          "title": "Leading questions."
+        }
+      ],
+      "change_type": "split",
+      "note": "Section 141 IEA is included as subsection (1) of 146 BSA. / Section 142 IEA is included as subsection (2) and (3) of 146 BSA. / Section 143 IEA is included as subsection (4) of 146 BSA.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "147",
+        "title": "Evidence as to matters in writing."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "144",
+          "title": "Evidence as to matters in writing."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "148",
+        "title": "Cross- examination as to previous statements in writing."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "145",
+          "title": "Cross- examination as to previous statements in writing."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 11,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "150",
+        "title": "When witness to be compelled to answer."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "147",
+          "title": "When witness to be compelled to answer."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "151",
+        "title": "Court to decide when question shall be asked and when witness compelled to answer."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "148",
+          "title": "Court to decide when question shall be asked and when witness compelled to answer."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Word \"namely\" is added in its subsection (2).",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "152",
+        "title": "Question not to be asked without reasonable grounds."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "149",
+          "title": "Question not to be asked without reasonable grounds."
+        }
+      ],
+      "change_type": "modified",
+      "note": "In illustrations, the words \"barrister\", \"an attorney or vakil\", \"dakait\" and \"A pleader\" are replaced by words \"advocate\", \"another advocate\", \"dacoit\" and \"a advocate\" respectively.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "153",
+        "title": "Procedure of Court in case of question being asked without reasonable grounds."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "150",
+          "title": "Procedure of Court in case of question being asked without reasonable grounds."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Word \"barrister, attorney, pleader or vakil\" are replaced by \"advocate\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "154",
+        "title": "Indecent and scandalous questions."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "151",
+          "title": "Indecent and scandalous questions."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "155",
+        "title": "Questions intended to insult or annoy."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "152",
+          "title": "Questions intended to insult or annoy."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "156",
+        "title": "Exclusion of evidence to contradict answers to questions testing veracity."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "153",
+          "title": "Exclusion of evidence to contradict answers to questions testing veracity."
+        }
+      ],
+      "change_type": "modified",
+      "note": "\"Lahore\" and Calcutta\" are replaced by \"Goa\" and \"Varanasi\" respectively.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "157",
+        "title": "Question by party to his own witness."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "154",
+          "title": "Question by party to his own witness."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "158",
+        "title": "Impeaching credit of witness."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "155",
+          "title": "Impeaching credit of witness."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Numbers (1), (2) and (3) are replaced by (a), (b) and (c). Word \"indicted\" is replaced by \"accused\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "159",
+        "title": "Questions tending to corroborate evidence of relevant fact, admissible."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "156",
+          "title": "Questions tending to corroborate evidence of relevant fact, admissible."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "160",
+        "title": "Former statements of witness may be proved to corroborate later testimony as to same fact."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "157",
+          "title": "Former statements of witness may be proved to corroborate later testimony as to same fact."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "161",
+        "title": "What matters may be proved in connection with proved statement relevant under section 26 or 27. [ section 32 or 33]."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "158",
+          "title": "What matters may be proved in connection with proved statement relevant under section 26 or 27. [ section 32 or 33]."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "162",
+        "title": "Refreshing memory."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "159",
+          "title": "Refreshing memory."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Paragraphs are numbered as subsections (1) and (2). Sub-heading words \"When witness may use copy of document to refresh memory\" are excluded from subsection (2). Words \"Provided that\" and \"Provided further that\" are added in provisos.",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "163",
+        "title": "Testimony to facts stated in document mentioned in section 162[159]."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "160",
+          "title": "Testimony to facts stated in document mentioned in section 162[159]."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "164",
+        "title": "Right of adverse party as to writing used to refresh memory."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "161",
+          "title": "Right of adverse party as to writing used to refresh memory."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Word \"must\" is replaced by \"shall\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 12,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "166",
+        "title": "Giving, as evidence, of document called for and produced on notice."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "163",
+          "title": "Giving, as evidence, of document called for and produced on notice."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 13,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "167",
+        "title": "Using, as evidence, of document production of which was refused on notice."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "164",
+          "title": "Using, as evidence, of document production of which was refused on notice."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 13,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "168",
+        "title": "Judge's power to put questions or order production."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "165",
+          "title": "Judge's power to put questions or order production."
+        }
+      ],
+      "change_type": "modified",
+      "note": "Words \"proper\", \"please\" and \"relevant or irrelevant\" are excluded. Word \"agents\" is replaced by \"representatives\".",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 13,
+        "url": ""
+      },
+      "review_status": "extracted"
+    },
+    {
+      "old": {
+        "act": "iea",
+        "section": "169",
+        "title": "No new trial for improper admission or rejection of evidence."
+      },
+      "new": [
+        {
+          "act": "bsa",
+          "section": "167",
+          "title": "No new trial for improper admission or rejection of evidence."
+        }
+      ],
+      "change_type": "renumbered",
+      "note": "",
+      "source": {
+        "document": "BPR&D correspondence table: bprd-iea-bsa.pdf",
+        "page": 13,
+        "url": ""
       },
       "review_status": "extracted"
     }

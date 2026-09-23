@@ -33,23 +33,36 @@ provisions to the new ones.
 
 ### What ships today
 
-`app/data/laws/mappings/` contains 102 seed rows covering the sections people
-meet most often. **Every one is marked `review_status: "extracted"`**, and each
-names its source as:
-
-> Seed row drafted for NyayaLens. NOT extracted from the official source.
-> Replace with the output of `scripts/build_law_data.py` run against the BPR&D
-> correspondence tables, then mark reviewed.
+`app/data/laws/mappings/` contains **1,150 rows genuinely extracted** from the
+three official BPR&D correspondence-table PDFs (downloaded from bprd.nic.in →
+"Nyaya Sanhita" → "Documents by BPR&D" → row 3, "Comparison summary" links),
+plus 3 rows added by hand for sections known to have no new-code counterpart
+(IPC 124A, 377, 497 — see below for why). **Every row is still marked
+`review_status: "extracted"`**, each carrying the real page number it came
+from within its source PDF.
 
 Because they are unreviewed, they are **hidden from users by default**:
 `GET /laws/lookup` filters them out unless `LAW_DATA_SHOW_UNREVIEWED=true`, and
 when that flag is on, every row carries a visible "Not yet reviewed" label and
 an explanation.
 
-They ship in this state on purpose. They give the schema, the parser, the
-lookup, the interface and the tests something real to work against, and they
-give whoever verifies the data a starting point, without any of them being
-presented to a reader as checked.
+**A note on table layout.** The three official PDFs are not laid out
+consistently with each other: the IPC and CrPC tables list the new section
+first (new section, subject, old section, note), while the IEA table lists the
+old section first (old, new, subject, note). `scripts/build_law_data.py`
+handles both. Roughly 6-8% of rows in each table cite something other than a
+plain section number — a proviso, an explanation, an illustration — and those
+are skipped and counted rather than forced into a section number they are not.
+
+**A structural gap, not a data gap.** Because these tables are organised by
+the *new* code, a section that is genuinely new in BNS/BNSS/BSA with no old
+counterpart has no row to extract (there is no old section number to key it
+on). The reverse is also true: IPC 124A, 377 and 497 have no BNS row at all,
+because a table organised by the new code has nothing to list them under. Those
+three are added by hand in `scripts/build_law_data.py`'s
+`KNOWN_NOT_CARRIED_FORWARD`, sourced honestly as "publicly reported, not from
+the BPR&D table itself" rather than claiming a page citation that does not
+exist. They still ship `extracted`, not `verified`.
 
 ### Making them real
 

@@ -223,12 +223,15 @@ Everything NyayaLens states about the law or about where to get help comes from
 a packaged data file that records its own source and the date it was checked.
 [`docs/DATA.md`](docs/DATA.md) covers each file and how to extend it.
 
-**The shipped law mappings are seed rows and are hidden by default.** They carry
-`review_status: "extracted"` and a source note saying plainly that they were not
-extracted from the official PDF. Until someone checks them against the source
-and marks them `verified`, `GET /laws/lookup` returns nothing for them. Turning
-on `LAW_DATA_SHOW_UNREVIEWED` shows them with a visible "Not yet reviewed"
-label. See [`docs/DATA.md`](docs/DATA.md) for the procedure.
+**The shipped law mappings (1,150 rows) are genuinely extracted from the
+official BPR&D correspondence-table PDFs, but still unreviewed.** Every row
+carries `review_status: "extracted"` and the real page it came from. Until
+someone checks a row against that page and marks it `verified`,
+`GET /laws/lookup` returns nothing for it. Turning on
+`LAW_DATA_SHOW_UNREVIEWED` shows unreviewed rows with a visible "Not yet
+reviewed" label. See [`docs/DATA.md`](docs/DATA.md) for the procedure and for
+the handful of sections (IPC 124A, 377, 497) that the tables cannot surface at
+all and which were added by hand instead.
 
 **No statutory text is packaged.** Copying provision text from memory is exactly
 the failure this product exists to prevent, so `app/data/laws/texts/` is empty
