@@ -67,4 +67,8 @@ url="$(gcloud run services describe "${SERVICE}" --project "${PROJECT_ID}" --reg
 echo
 echo "Deployed: ${url}"
 echo "Checking health..."
-curl -fsS "${url}/healthz" && echo " ok"
+# Not /healthz: Google's own front end intercepts that exact path ahead of the
+# container on a *.run.app domain and answers with its own 404 page, so the
+# request never reaches the app. /api/v1/meta is an ordinary route and proves
+# the container is actually serving.
+curl -fsS "${url}/api/v1/meta" && echo " ok"
