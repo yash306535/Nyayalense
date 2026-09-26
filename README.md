@@ -2,19 +2,48 @@
 
 **Understand what you sign, with proof.**
 
-[![CI](https://github.com/OWNER/nyayalens/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/nyayalens/actions/workflows/ci.yml)
+[![CI](https://github.com/yash306535/Nyayalense/actions/workflows/ci.yml/badge.svg)](https://github.com/yash306535/Nyayalense/actions/workflows/ci.yml)
 
 NyayaLens explains a legal document in plain language and shows you the exact
 clause behind every statement it makes. When the document does not answer your
 question, it says so.
 
-- **Live app:** [add link]
-- **Demo video:** [add link]
+- **Live app:** https://nyayalens-566538768180.asia-south1.run.app
 - **API reference:** `/docs` on any running instance
 
 > NyayaLens provides information, not legal advice. It will not tell you whether
 > to sign, predict what a court would do, or tell you what the law requires of
 > you. Free legal aid is available to people who qualify: NALSA, 15100.
+
+## Chosen vertical
+
+**AI for Legal Assistance & Access.**
+
+The persona is an ordinary person in India holding a legal document they must
+act on (a rental agreement, an offer letter, a notice citing an old criminal
+law) who cannot afford a lawyer to read it first. The assistant adapts to that
+person's context: the document type it detects, the role the reader holds in it
+(tenant or landlord, employee or employer), their language (English, Hindi or
+Marathi) and the reading level they choose. It decides what to show by what the
+source text supports: an answer the document backs is shown with its quote, and
+one it does not back becomes "this document doesn't say", with a question to put
+to the other party instead.
+
+- **Approach and logic:** [The solution](#the-solution-and-why-it-is-not-a-chat-box)
+  and [How NyayaLens answers the problem statement](#how-nyayalens-answers-the-problem-statement)
+- **How it works:** [Architecture](#architecture)
+
+## Assumptions
+
+- Documents are digital: a PDF with a text layer, a Word file, or pasted text.
+  Scanned images are not read, because there is no OCR.
+- The reader wants to understand, not to be advised. NyayaLens explains and
+  cites; it never says whether to sign or predicts an outcome, and routes
+  anything needing judgement to a lawyer or to free legal aid (NALSA, 15100).
+- Criminal-law lookups cover the 1 July 2024 transition only (IPC to BNS, CrPC
+  to BNSS, IEA to BSA), from official BPR&D tables and India Code text.
+- Nothing a user uploads needs to be kept. The API is stateless, and the result
+  cache is in memory, bounded and expiring.
 
 ---
 
