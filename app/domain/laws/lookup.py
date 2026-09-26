@@ -141,6 +141,10 @@ class LawIndex:
     _forward: dict[str, list[LawMapping]] = field(default_factory=dict, repr=False)
     _reverse: dict[str, list[LawMapping]] = field(default_factory=dict, repr=False)
     _keys: list[str] = field(default_factory=list, repr=False)
+    # Parallel lists: every non-empty title, already stripped, and the mapping
+    # it belongs to. Prepared once so a topic search scores them in one batch.
+    _topic_titles: list[str] = field(default_factory=list, repr=False)
+    _topic_owners: list[LawMapping] = field(default_factory=list, repr=False)
 
     @property
     def mappings(self) -> list[LawMapping]:
@@ -155,10 +159,16 @@ class LawIndex:
         """
         self._forward.clear()
         self._reverse.clear()
+        self._topic_titles.clear()
+        self._topic_owners.clear()
         for mapping in self.mappings:
             self._forward.setdefault(mapping.old.key, []).append(mapping)
             for counterpart in mapping.new:
                 self._reverse.setdefault(counterpart.key, []).append(mapping)
+            for title in (mapping.old.title, *(ref.title for ref in mapping.new)):
+                if title:
+                    self._topic_titles.append(_stripped(title))
+                    self._topic_owners.append(mapping)
         self._keys = sorted(set(self._forward) | set(self._reverse))
         return self
 
@@ -211,20 +221,24 @@ class LawIndex:
         Returns:
             Up to :data:`MAX_TOPIC_MATCHES` mappings, best match first.
         """
-        keywords = _keywords(query)
-        scored = []
-        for mapping in self.mappings:
+        matches = process.extract(
+            _keywords(query),
+            self._topic_titles,
+            scorer=fuzz.token_set_ratio,
+            score_cutoff=TOPIC_MATCH_THRESHOLD,
+            limit=None,
+        )
+        # A mapping scores as its best-matching title, old side or new.
+        best: dict[int, tuple[float, LawMapping]] = {}
+        for _, score, position in matches:
+            mapping = self._topic_owners[position]
             if not include_unreviewed and not mapping.is_reviewed:
                 continue
-            titles = [mapping.old.title, *(ref.title for ref in mapping.new)]
-            score = max(
-                (fuzz.token_set_ratio(keywords, _stripped(title)) for title in titles if title),
-                default=0.0,
-            )
-            if score >= TOPIC_MATCH_THRESHOLD:
-                scored.append((score, mapping))
-        scored.sort(key=lambda pair: (-pair[0], pair[1].old.key))
-        return [MappingHit(mapping, matched_old=True) for _, mapping in scored[:MAX_TOPIC_MATCHES]]
+            current = best.get(id(mapping))
+            if current is None or score > current[0]:
+                best[id(mapping)] = (score, mapping)
+        ranked = sorted(best.values(), key=lambda pair: (-pair[0], pair[1].old.key))
+        return [MappingHit(mapping, matched_old=True) for _, mapping in ranked[:MAX_TOPIC_MATCHES]]
 
     def matching_provisions(self, query: str) -> list[Provision]:
         """Find stored provision texts relevant to a general legal question.

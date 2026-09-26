@@ -204,6 +204,21 @@ def test_search_by_topic_finds_nothing_for_an_unrelated_word() -> None:
     assert index.search_by_topic("photosynthesis", include_unreviewed=False) == []
 
 
+def test_search_by_topic_matches_a_title_on_the_new_side_alone() -> None:
+    """A row whose old title shares no word with the query is found by its new one."""
+    renamed = LawMapping(
+        old=ProvisionRef(act=LawAct.IPC, section="124A", title="Sedition"),
+        new=[ProvisionRef(act=LawAct.BNS, section="152", title="Endangering sovereignty")],
+        change_type=ChangeType.MODIFIED,
+        source=Source(document="test fixture"),
+        review_status=ReviewStatus.VERIFIED,
+        verified_on="2026-09-23",
+    )
+    index = _index(_mapping(verified=True), renamed)
+    hits = index.search_by_topic("sovereignty", include_unreviewed=False)
+    assert [hit.mapping.old.section for hit in hits] == ["124A"]
+
+
 def test_search_by_topic_hides_an_unreviewed_row_by_default() -> None:
     index = _index(_mapping(verified=False))
     assert index.search_by_topic("cheating", include_unreviewed=False) == []

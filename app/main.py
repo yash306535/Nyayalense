@@ -6,8 +6,10 @@ a bad data file stops the process rather than reaching a user.
 """
 
 import logging
+import os
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
+from os import PathLike
 from typing import Final
 
 from fastapi import FastAPI
@@ -18,6 +20,7 @@ from slowapi.errors import RateLimitExceeded
 from slowapi.util import get_remote_address
 from starlette.requests import Request
 from starlette.responses import Response
+from starlette.types import Scope
 
 from app import __version__
 from app.api.deps import get_registry
@@ -86,9 +89,29 @@ _ROUTERS: Final = (
     meta.router,
 )
 
-#: Cache static assets for a day. They are versioned by the deployment, and the
-#: browser revalidates with the ETag Starlette sets.
-STATIC_CACHE_SECONDS: Final = 86_400
+#: Static files keep their cached copy but revalidate it on every use, and the
+#: ETag Starlette sets turns an unchanged file into a bodyless 304. A max-age is
+#: not safe here: file names carry no version, and the ES modules import each
+#: other, so a browser holding some old modules and some new ones after a
+#: deployment would break. Without any header at all, browsers guess a lifetime
+#: from Last-Modified instead, which can serve stale code for days.
+STATIC_CACHE_CONTROL: Final = "no-cache"
+
+
+class _RevalidatedStaticFiles(StaticFiles):
+    """Static files that carry :data:`STATIC_CACHE_CONTROL`."""
+
+    def file_response(
+        self,
+        full_path: PathLike[str] | str,
+        stat_result: os.stat_result,
+        scope: Scope,
+        status_code: int = 200,
+    ) -> Response:
+        """Serve one file, or a 304, with the cache policy attached."""
+        response = super().file_response(full_path, stat_result, scope, status_code)
+        response.headers["Cache-Control"] = STATIC_CACHE_CONTROL
+        return response
 
 
 @asynccontextmanager
@@ -183,9 +206,11 @@ def _mount_frontend(app: FastAPI) -> None:
     @app.get("/", include_in_schema=False)
     async def index() -> FileResponse:
         """Serve the single page."""
-        return FileResponse(FRONTEND_DIR / "index.html")
+        return FileResponse(
+            FRONTEND_DIR / "index.html", headers={"Cache-Control": STATIC_CACHE_CONTROL}
+        )
 
-    app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
+    app.mount("/", _RevalidatedStaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
 
 
 app = create_app()
